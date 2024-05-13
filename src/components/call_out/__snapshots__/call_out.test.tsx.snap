@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCallOut is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiCallOut wuiCallOut--primary testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiText wuiText--small"
+  >
+    Content
+  </div>
+</div>
+`;
+
+exports[`WuiCallOut props color danger is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--danger"
+/>
+`;
+
+exports[`WuiCallOut props color primary is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props color success is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--success"
+/>
+`;
+
+exports[`WuiCallOut props color warning is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--warning"
+/>
+`;
+
+exports[`WuiCallOut props heading h1 is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props heading h2 is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props heading h3 is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props heading h4 is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props heading h5 is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props heading h6 is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props heading p is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props iconType is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+/>
+`;
+
+exports[`WuiCallOut props title is rendered 1`] = `
+<div
+  class="wuiCallOut wuiCallOut--primary"
+>
+  <div
+    class="wuiCallOutHeader"
+  >
+    <span
+      class="wuiCallOutHeader__title"
+    >
+      Title
+    </span>
+  </div>
+  <div
+    class="wuiText wuiText--small"
+  >
+    Content
+  </div>
+</div>
+`;

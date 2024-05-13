@@ -1,0 +1,26 @@
+.wuiFlyoutBody {
+  flex-grow: 1;
+  overflow-y: hidden;
+  height: 100%;
+
+  .wuiFlyoutBody__overflow {
+    @include wuiYScrollWithShadows;
+
+    &.wuiFlyoutBody__overflow--hasBanner {
+      @include wuiOverflowShadow('y', 'end');
+
+    }
+  }
+
+  .wuiFlyoutBody__banner .wuiCallOut {
+    border: none; // Remove border from callout when it is a flyout banner
+    border-radius: 0; // Ensures no border-radius in all themes
+    padding-left: $wuiSizeL; // Align callout's content with flyout's title
+    padding-right: $wuiSizeL; // Align callout's content with flyout's title
+  }
+
+  .wuiFlyoutBody__overflowContent {
+    padding: $wuiSizeL;
+  }
+
+}

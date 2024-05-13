@@ -1,0 +1,120 @@
+.wuiTreeView__wrapper .wuiTreeView {
+  margin: 0;
+  list-style-type: none;
+}
+
+.wuiTreeView .wuiTreeView {
+  padding-left: $wuiSizeL;
+}
+
+.wuiTreeView__node {
+  max-height: $wuiSizeXL;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: $wuiSizeXL;
+}
+
+.wuiTreeView__node--expanded {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.wuiTreeView__nodeInner {
+  @include wuiTextTruncate;
+
+  padding-left: $wuiSizeS;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: $wuiSizeXL;
+  border-radius: $wuiBorderRadius;
+  width: 100%;
+  text-align-last: left;
+
+  &:focus {
+    box-shadow: inset 0 0 0 $wuiSizeXS / 4 $wuiFocusRingColor;
+  }
+
+  &:hover,
+  &:active {
+    background-color: tintOrShade($wuiColorLightShade, 50%, 10%);
+  }
+
+  .wuiTreeView__iconPlaceholder {
+    width: $wuiSizeXL;
+  }
+
+}
+
+.wuiTreeView__nodeLabel {
+  @include wuiTextTruncate;
+}
+
+.wuiTreeView__iconWrapper {
+  margin-top: -($wuiSizeXS / 2);
+  margin-right: $wuiSizeS;
+
+  // This helps tokens appear vertically centered
+  .wuiToken {
+    margin-top: $wuiSizeXS / 2;
+  }
+}
+
+.wuiTreeView--compressed {
+  .wuiTreeView__node {
+    max-height: $wuiSizeL;
+    line-height: $wuiSizeL;
+
+    .wuiTreeView__nodeInner {
+      height: $wuiSizeL;
+
+    }
+
+    .wuiTreeView__iconWrapper {
+      margin: 0 ($wuiSizeS * .75) 0 0;
+    }
+
+    .wuiTreeView__nodeLabel {
+      margin-top: -1px;
+    }
+
+    .wuiTreeView__iconPlaceholder {
+      width: $wuiSizeL;
+    }
+  }
+
+  .wuiTreeView__node--expanded {
+    max-height: 100vh;
+    overflow: auto;
+  }
+}
+
+.wuiTreeView--withArrows {
+  .wuiTreeView__expansionArrow {
+    margin-right: $wuiSizeXS;
+  }
+
+  &.wuiTreeView {
+    .wuiTreeView__nodeInner--withArrows {
+      .wuiTreeView__iconWrapper {
+        margin-left: 0;
+      }
+    }
+
+    .wuiTreeView__iconWrapper {
+      margin-left: $wuiSize + $wuiSizeXS;
+    }
+  }
+
+  &.wuiTreeView--compressed {
+    .wuiTreeView__nodeInner--withArrows {
+      .wuiTreeView__iconWrapper {
+        margin-left: 0;
+      }
+    }
+
+    .wuiTreeView__iconWrapper {
+      margin-left: $wuiSize;
+    }
+  }
+}

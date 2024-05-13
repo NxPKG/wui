@@ -1,0 +1,43 @@
+// sass-lint:disable no-empty-rulesets
+
+.wuiDraggable {
+  &.wuiDraggable--isDragging {
+    // Overriding inline styles on JS-inserted HTML elements
+    z-index: $wuiZLevel9 !important; // sass-lint:disable-line no-important
+  }
+
+  &.wuiDraggable--hasClone:not(.wuiDraggable--isDragging) {
+    // Overriding inline styles on JS-inserted HTML elements
+    transform: none !important; // sass-lint:disable-line no-important
+  }
+
+  &.wuiDraggable--withoutDropAnimation {
+    // Overriding inline styles on JS-inserted HTML elements
+    transition-duration: .001s !important; // sass-lint:disable-line no-important
+  }
+
+  &:focus > .wuiDraggable__item,
+  &.wuiDraggable--hasCustomDragHandle > .wuiDraggable__item [data-react-beautiful-dnd-drag-handle]:focus {
+    @include wuiFocusRing;
+  }
+
+  .wuiDraggable__item {
+    &.wuiDraggable__item--isDisabled {
+      cursor: not-allowed;
+    }
+
+    &.wuiDraggable__item--isDragging {
+      // TODO: Resolve below
+      // Commenting this out for now,
+      // I'm thinking about adding an optional prop to auto-add these styles versus always having them
+      // @include wuiBottomShadow;
+      // @include wuiFocusRing;
+    }
+  }
+}
+
+@each $size, $spacing in $wuiDragAndDropSpacing {
+  .wuiDraggable--#{$size} {
+    padding: $spacing;
+  }
+}

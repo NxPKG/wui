@@ -1,0 +1,176 @@
+.wuiDataGridHeader {
+  display: inline-flex;
+  min-width: 100%; // Needed to prevent wraps. Inline flex is tricky
+  z-index: 3; // Needs to sit above the content and focused cells
+  background: $wuiColorEmptyShade;
+  position: sticky; // In IE11 this does not work, but doesn't cause a break.
+  top: 0;
+}
+
+@include wuiDataGridHeaderCell {
+  @include wuiFontSizeS;
+
+  font-weight: $wuiFontWeightBold;
+  padding: $wuiDataGridCellPaddingM;
+  flex: 0 0 auto;
+  position: relative;
+  align-items: center;
+  display: flex;
+
+  > * {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &.wuiDataGridHeaderCell--numeric {
+    text-align: right;
+  }
+
+  &.wuiDataGridHeaderCell--currency {
+    text-align: right;
+  }
+
+  &:focus {
+    @include wuiDataGridCellFocus;
+  }
+
+  // We only truncate if the cell is not a control column.
+  &:not(.wuiDataGridHeaderCell--controlColumn) {
+
+    &:focus-within {
+      @include wuiDataGridCellFocus;
+    }
+
+    .wuiDataGridHeaderCell__button {
+      flex: 0 0 auto;
+      position: relative;
+      align-items: center;
+      display: flex;
+      text-align: left;
+      font-weight: $wuiFontWeightBold;
+    }
+
+    .wuiDataGridHeaderCell__content {
+      @include wuiTextTruncate;
+      overflow: hidden;
+      white-space: nowrap;
+      flex-grow: 1;
+    }
+
+    .wuiDataGridHeaderCell__popover {
+      flex-grow: 0;
+      flex-basis: auto;
+      width: auto;
+      padding-left: $wuiSizeXS;
+    }
+  }
+}
+
+.wuiDataGridHeader__action--selected {
+  // sass-lint:disable-block no-important
+  font-weight: $wuiFontWeightBold !important;
+}
+
+// Header alternates
+// Often these need extra specificity because they need to gracefully clash with the border settings
+
+@include wuiDataGridStyles(bordersNone, bordersHorizontal) {
+  .wuiDataGridHeader {
+    background: $wuiColorEmptyShade;
+  }
+}
+
+@include wuiDataGridStyles(headerUnderline) {
+  @include wuiDataGridHeaderCell {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: $wuiBorderThick;
+    border-bottom-color: $wuiTextColor;
+  }
+}
+
+@include wuiDataGridStyles(bordersNone, headerUnderline) {
+  @include wuiDataGridHeaderCell {
+    border-bottom: $wuiBorderThick;
+    border-color: $wuiTextColor;
+  }
+}
+
+@include wuiDataGridStyles(headerShade) {
+  @include wuiDataGridHeaderCell {
+    background: tintOrShade($wuiColorLightestShade, 0%, 10%);
+  }
+}
+
+@include wuiDataGridStyles(headerShade, bordersAll) {
+  @include wuiDataGridHeaderCell {
+    border-right: $wuiBorderThin;
+    border-bottom: $wuiBorderThin;
+    border-left: none;
+
+    &:first-of-type {
+      border-left: $wuiBorderThin;
+    }
+  }
+}
+
+@include wuiDataGridStyles(headerShade, bordersHorizontal) {
+  @include wuiDataGridHeaderCell {
+    border-top: none;
+    border-bottom: $wuiBorderThin;
+  }
+}
+
+// Border alternates
+@include wuiDataGridStyles(bordersNone) {
+  @include wuiDataGridHeaderCell {
+    border: none;
+  }
+}
+
+@include wuiDataGridStyles(borderhorizontal) {
+  @include wuiDataGridHeaderCell {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+// Font alternates
+@include wuiDataGridStyles(fontSizeSmall) {
+  @include wuiDataGridHeaderCell {
+    @include wuiFontSizeXS;
+  }
+}
+
+@include wuiDataGridStyles(fontSizeLarge) {
+  @include wuiDataGridHeaderCell {
+    @include wuiFontSize;
+  }
+}
+
+// Padding alternates
+@include wuiDataGridStyles(paddingSmall) {
+  @include wuiDataGridHeaderCell {
+    padding: $wuiDataGridCellPaddingS;
+  }
+}
+
+@include wuiDataGridStyles(paddingLarge) {
+  @include wuiDataGridHeaderCell {
+    padding: $wuiDataGridCellPaddingL;
+  }
+}
+
+@include wuiDataGridStyles(noControls, bordersAll) {
+  @include wuiDataGridHeaderCell {
+    border-top: $wuiBorderThin;
+  }
+}
+
+@include wuiDataGridStyles(noControls, bordersHorizontal) {
+  @include wuiDataGridHeaderCell {
+    border-top: $wuiBorderThin;
+  }
+}

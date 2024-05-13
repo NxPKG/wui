@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSuggestItem is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiSuggestItem testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiSuggestItem__type wuiSuggestItem__type--tint1"
+  >
+    <div
+      data-wuiicon-type="search"
+    />
+  </span>
+  <span
+    class="wuiSuggestItem__label wuiSuggestItem__labelDisplay--fixed wuiSuggestItem__labelDisplay--expand"
+  >
+    Test label
+  </span>
+  <span
+    class="wuiSuggestItem__description"
+  />
+</div>
+`;
+
+exports[`props item with no description has expanded label is rendered 1`] = `
+<div
+  class="wuiSuggestItem"
+>
+  <span
+    class="wuiSuggestItem__type wuiSuggestItem__type--tint2"
+  >
+    <div
+      data-wuiicon-type="kqlValue"
+    />
+  </span>
+  <span
+    class="wuiSuggestItem__label wuiSuggestItem__labelDisplay--fixed wuiSuggestItem__labelDisplay--expand"
+  >
+    This is the description
+  </span>
+  <span
+    class="wuiSuggestItem__description"
+  />
+</div>
+`;
+
+exports[`props labelDisplay as expand is rendered 1`] = `
+<div
+  class="wuiSuggestItem"
+>
+  <span
+    class="wuiSuggestItem__type wuiSuggestItem__type--tint2"
+  >
+    <div
+      data-wuiicon-type="kqlValue"
+    />
+  </span>
+  <span
+    class="wuiSuggestItem__label wuiSuggestItem__labelDisplay--expand"
+  >
+    This is the description
+  </span>
+  <span
+    class="wuiSuggestItem__description"
+  >
+    This is the description
+  </span>
+</div>
+`;

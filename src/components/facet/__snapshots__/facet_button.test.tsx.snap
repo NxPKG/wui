@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFacetButton is rendered 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiFacetButton wuiFacetButton--unSelected testClass1 testClass2"
+  data-test-subj="test subject string"
+  title="aria-label"
+  type="button"
+>
+  <span
+    class="wuiFacetButton__content"
+  >
+    <span
+      class="wuiFacetButton__text"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFacetButton props icon is rendered 1`] = `
+<button
+  class="wuiFacetButton wuiFacetButton--unSelected"
+  type="button"
+>
+  <span
+    class="wuiFacetButton__content"
+  >
+    <div
+      class="wuiFacetButton__icon"
+      data-wuiicon-type="dot"
+    />
+    <span
+      class="wuiFacetButton__text"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFacetButton props isDisabled is rendered 1`] = `
+<button
+  class="wuiFacetButton wuiFacetButton--unSelected"
+  disabled=""
+  type="button"
+>
+  <span
+    class="wuiFacetButton__content"
+  >
+    <span
+      class="wuiFacetButton__text"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFacetButton props isLoading is rendered 1`] = `
+<button
+  class="wuiFacetButton wuiFacetButton--unSelected"
+  disabled=""
+  type="button"
+>
+  <span
+    class="wuiFacetButton__content"
+  >
+    <span
+      class="wuiFacetButton__text"
+    >
+      Content
+    </span>
+    <span
+      class="wuiLoadingSpinner wuiLoadingSpinner--medium wuiFacetButton__spinner"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiFacetButton props isSelected is rendered 1`] = `
+<button
+  class="wuiFacetButton wuiFacetButton--isSelected"
+  type="button"
+>
+  <span
+    class="wuiFacetButton__content"
+  >
+    <span
+      class="wuiFacetButton__text"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFacetButton props quantity is rendered 1`] = `
+<button
+  class="wuiFacetButton wuiFacetButton--unSelected"
+  type="button"
+>
+  <span
+    class="wuiFacetButton__content"
+  >
+    <span
+      class="wuiFacetButton__text"
+    >
+      Content
+    </span>
+    <span
+      class="wuiNotificationBadge wuiNotificationBadge--medium wuiNotificationBadge--subdued wuiFacetButton__quantity"
+    >
+      60
+    </span>
+  </span>
+</button>
+`;

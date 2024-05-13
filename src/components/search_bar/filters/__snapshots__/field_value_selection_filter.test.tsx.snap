@@ -1,0 +1,477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldValueSelectionFilter active - field is global 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={true}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__items"
+  >
+    <WuiFilterSelectItem
+      key="0"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      feature
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      Text
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      checked="on"
+      key="2"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      <div>
+        bug
+      </div>
+    </WuiFilterSelectItem>
+  </div>
+</WuiPopover>
+`;
+
+exports[`FieldValueSelectionFilter active - fields in options 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={true}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__items"
+  >
+    <WuiFilterSelectItem
+      key="0"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      feature
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      Text
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      checked="on"
+      key="2"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      <div>
+        bug
+      </div>
+    </WuiFilterSelectItem>
+  </div>
+</WuiPopover>
+`;
+
+exports[`FieldValueSelectionFilter inactive - field is global 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={false}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__items"
+  >
+    <WuiFilterSelectItem
+      key="0"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      feature
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      Text
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="2"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      <div>
+        bug
+      </div>
+    </WuiFilterSelectItem>
+  </div>
+</WuiPopover>
+`;
+
+exports[`FieldValueSelectionFilter inactive - fields in options 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={false}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__items"
+  >
+    <WuiFilterSelectItem
+      key="0"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      feature
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      Text
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="2"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      <div>
+        bug
+      </div>
+    </WuiFilterSelectItem>
+  </div>
+</WuiPopover>
+`;
+
+exports[`FieldValueSelectionFilter render - all configurations 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={false}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__note"
+  >
+    <div
+      className="wuiFilterSelect__noteContent"
+    >
+      <WuiLoadingChart
+        size="m"
+      />
+      <WuiSpacer
+        size="xs"
+      />
+      <p>
+        loading...
+      </p>
+    </div>
+  </div>
+</WuiPopover>
+`;
+
+exports[`FieldValueSelectionFilter render - fields in options 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={false}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__items"
+  >
+    <WuiFilterSelectItem
+      key="0"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      feature
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      Text
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="2"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      <div>
+        bug
+      </div>
+    </WuiFilterSelectItem>
+  </div>
+</WuiPopover>
+`;
+
+exports[`FieldValueSelectionFilter render - multi-select OR 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={false}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__note"
+  >
+    <div
+      className="wuiFilterSelect__noteContent"
+    >
+      <WuiLoadingChart
+        size="m"
+      />
+      <WuiSpacer
+        size="xs"
+      />
+      <p>
+        loading...
+      </p>
+    </div>
+  </div>
+</WuiPopover>
+`;
+
+exports[`FieldValueSelectionFilter render - options as a function 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={false}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__note"
+  >
+    <div
+      className="wuiFilterSelect__noteContent"
+    >
+      <WuiLoadingChart
+        size="m"
+      />
+      <WuiSpacer
+        size="xs"
+      />
+      <p>
+        Loading...
+      </p>
+    </div>
+  </div>
+</WuiPopover>
+`;
+
+exports[`FieldValueSelectionFilter render - options as an array 1`] = `
+<WuiPopover
+  anchorPosition="downCenter"
+  button={
+    <WuiFilterButton
+      grow={true}
+      hasActiveFilters={false}
+      iconSide="right"
+      iconType="arrowDown"
+      onClick={[Function]}
+    >
+      Tag
+    </WuiFilterButton>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="field_value_selection_0"
+  isOpen={false}
+  ownFocus={true}
+  panelClassName="wuiFilterGroup__popoverPanel"
+  panelPaddingSize="none"
+  withTitle={false}
+>
+  <div
+    className="wuiFilterSelect__items"
+  >
+    <WuiFilterSelectItem
+      key="0"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      feature
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="1"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      Text
+    </WuiFilterSelectItem>
+    <WuiFilterSelectItem
+      key="2"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      showIcons={true}
+    >
+      <div>
+        bug
+      </div>
+    </WuiFilterSelectItem>
+  </div>
+</WuiPopover>
+`;

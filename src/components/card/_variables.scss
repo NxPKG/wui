@@ -1,0 +1,25 @@
+$wuiCardSpacing: map-get($wuiPanelPaddingModifiers, 'paddingMedium');
+$wuiCardBottomNodeHeight: $wuiSizeXXL;
+
+$wuiCardSelectButtonBorders: (
+  text: $wuiColorSuccess, // Default for selected
+  primary: $wuiColorPrimary,
+  success: $wuiColorSuccess,
+  danger: $wuiColorDanger,
+  ghost: $wuiColorDarkShade,
+);
+
+$wuiCardSelectButtonBackgrounds: (
+  text: $wuiColorLightestShade, // Default for unselected
+  primary: tintOrShade($wuiColorPrimary, 90%, 70%),
+  success: tintOrShade($wuiColorSuccess, 90%, 70%),
+  danger: tintOrShade($wuiColorDanger, 90%, 70%),
+  ghost: $wuiColorDarkShade,
+);
+
+$wuiCardPaddingModifiers: (
+  'paddingNone': 0,
+  'paddingSmall': $wuiSizeS,
+  'paddingMedium': $wuiSize,
+  'paddingLarge': $wuiSizeL
+) !default;

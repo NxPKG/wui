@@ -1,0 +1,5 @@
+.wuiFormErrorText {
+  @include wuiFontSizeXS;
+  padding-top: $wuiSizeXS;
+  color: $wuiColorDanger;
+}

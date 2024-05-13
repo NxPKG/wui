@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHideFor l is rendered 1`] = `
+<span>
+  Child
+</span>
+`;
+
+exports[`WuiHideFor m is rendered 1`] = `
+<span>
+  Child
+</span>
+`;
+
+exports[`WuiHideFor never renders for "all" 1`] = `null`;
+
+exports[`WuiHideFor renders 1`] = `null`;
+
+exports[`WuiHideFor renders for "none" 1`] = `
+<span>
+  Child
+</span>
+`;
+
+exports[`WuiHideFor renders for multiple breakpoints 1`] = `null`;
+
+exports[`WuiHideFor s is rendered 1`] = `null`;
+
+exports[`WuiHideFor xl is rendered 1`] = `
+<span>
+  Child
+</span>
+`;
+
+exports[`WuiHideFor xs is rendered 1`] = `
+<span>
+  Child
+</span>
+`;

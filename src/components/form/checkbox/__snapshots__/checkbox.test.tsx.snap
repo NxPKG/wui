@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCheckbox is rendered 1`] = `
+<div
+  class="wuiCheckbox wuiCheckbox--noLabel testClass1 testClass2"
+>
+  <input
+    aria-label="aria-label"
+    class="wuiCheckbox__input"
+    data-test-subj="test subject string"
+    id="id"
+    type="checkbox"
+  />
+  <div
+    class="wuiCheckbox__square"
+  />
+</div>
+`;
+
+exports[`WuiCheckbox props check is rendered 1`] = `
+<div
+  class="wuiCheckbox wuiCheckbox--noLabel"
+>
+  <input
+    checked=""
+    class="wuiCheckbox__input"
+    id="id"
+    type="checkbox"
+  />
+  <div
+    class="wuiCheckbox__square"
+  />
+</div>
+`;
+
+exports[`WuiCheckbox props disabled disabled is rendered 1`] = `
+<div
+  class="wuiCheckbox wuiCheckbox--noLabel"
+>
+  <input
+    class="wuiCheckbox__input"
+    disabled=""
+    id="id"
+    type="checkbox"
+  />
+  <div
+    class="wuiCheckbox__square"
+  />
+</div>
+`;
+
+exports[`WuiCheckbox props label is rendered 1`] = `
+<div
+  class="wuiCheckbox"
+>
+  <input
+    class="wuiCheckbox__input"
+    id="id"
+    type="checkbox"
+  />
+  <div
+    class="wuiCheckbox__square"
+  />
+  <label
+    class="wuiCheckbox__label"
+    for="id"
+  >
+    <span>
+      Label
+    </span>
+  </label>
+</div>
+`;
+
+exports[`WuiCheckbox props type inList is rendered 1`] = `
+<div
+  class="wuiCheckbox wuiCheckbox--inList wuiCheckbox--noLabel"
+>
+  <input
+    class="wuiCheckbox__input"
+    id="id"
+    type="checkbox"
+  />
+  <div
+    class="wuiCheckbox__square"
+  />
+</div>
+`;

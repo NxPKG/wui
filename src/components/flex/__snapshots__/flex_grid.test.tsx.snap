@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFlexGrid is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--thirds wuiFlexGrid--responsive testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <h2>
+    My Child
+  </h2>
+</div>
+`;
+
+exports[`WuiFlexGrid props columns 0 is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--wrap wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props columns 1 is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--single wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props columns 2 is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--halves wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props columns 3 is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--thirds wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props columns 4 is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--fourths wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props direction column is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--wrap wuiFlexGrid--directionColumn wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props direction row is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--wrap wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props gutterSize l is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--wrap wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props gutterSize m is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterMedium wuiFlexGrid--wrap wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props gutterSize none is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterNone wuiFlexGrid--wrap wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props gutterSize s is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterSmall wuiFlexGrid--wrap wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props gutterSize xl is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterXLarge wuiFlexGrid--wrap wuiFlexGrid--responsive"
+/>
+`;
+
+exports[`WuiFlexGrid props responsive is rendered 1`] = `
+<div
+  class="wuiFlexGrid wuiFlexGrid--gutterLarge wuiFlexGrid--wrap"
+/>
+`;

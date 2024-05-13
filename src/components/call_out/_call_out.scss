@@ -1,0 +1,58 @@
+.wuiCallOut {
+  padding: $wuiSize;
+  border-left: $wuiSizeXS / 2 solid transparent;
+
+  &.wuiCallOut--small {
+    padding: $wuiSizeS;
+  }
+
+  .wuiCallOutHeader__icon {
+    flex: 0 0 auto;
+    // Vertically center icon with first line of title
+    transform: translateY(2px);
+  }
+
+  .wuiCallOutHeader__title {
+    @include wuiCallOutTitle;
+    margin-bottom: 0; // In case it's nested inside WuiText
+  }
+}
+
+// smaller font size for headers in small callout
+.wuiCallOut--small .wuiCallOutHeader__title {
+  @include wuiCallOutTitle('s');
+}
+
+// Create callout modifiers based upon the map.
+@each $name, $color in $wuiCallOutTypes {
+  .wuiCallOut--#{$name} {
+    border-color: $color;
+    background-color: wuiCallOutColor($name, 'background');
+
+    .wuiCallOutHeader__icon {
+      fill: wuiCallOutColor($name, 'foreground');
+    }
+
+    .wuiCallOutHeader__title {
+      color: wuiCallOutColor($name, 'foreground');
+    }
+  }
+}
+
+/**
+ * 1. Align icon with first line of title text if it wraps.
+ * 2. If content exists under the header, space it appropriately.
+ * 3. Apply margin to all but last item in the flex.
+ */
+.wuiCallOutHeader {
+  display: flex;
+  align-items: baseline; /* 1 */
+
+  + * {
+    margin-top: $wuiSizeS; /* 1 */
+  }
+
+  > * + * {
+    margin-left: $wuiSizeS; /* 3 */
+  }
+}

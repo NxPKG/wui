@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSkipLink is rendered 1`] = `
+<a
+  aria-label="aria-label"
+  class="wuiButton wuiButton--primary wuiButton--small wuiScreenReaderOnly--showOnFocus wuiSkipLink wuiSkipLink--static testClass1 testClass2 wuiButton--fill"
+  data-test-subj="test subject string"
+  href="#somewhere"
+  rel="noreferrer"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    >
+      Skip
+    </span>
+  </span>
+</a>
+`;
+
+exports[`WuiSkipLink props onClick is rendered 1`] = `
+<a
+  class="wuiButton wuiButton--primary wuiButton--small wuiScreenReaderOnly--showOnFocus wuiSkipLink wuiSkipLink--static wuiButton--fill"
+  href="#somewhere"
+  rel="noreferrer"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</a>
+`;
+
+exports[`WuiSkipLink props position absolute is rendered 1`] = `
+<a
+  class="wuiButton wuiButton--primary wuiButton--small wuiScreenReaderOnly--showOnFocus wuiSkipLink wuiSkipLink--absolute wuiButton--fill"
+  href="#somewhere"
+  rel="noreferrer"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</a>
+`;
+
+exports[`WuiSkipLink props position fixed is rendered 1`] = `
+<a
+  class="wuiButton wuiButton--primary wuiButton--small wuiScreenReaderOnly--showOnFocus wuiSkipLink wuiSkipLink--fixed wuiButton--fill"
+  href="#somewhere"
+  rel="noreferrer"
+  tabindex="0"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</a>
+`;
+
+exports[`WuiSkipLink props position static is rendered 1`] = `
+<a
+  class="wuiButton wuiButton--primary wuiButton--small wuiScreenReaderOnly--showOnFocus wuiSkipLink wuiSkipLink--static wuiButton--fill"
+  href="#somewhere"
+  rel="noreferrer"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</a>
+`;
+
+exports[`WuiSkipLink props tabIndex is rendered 1`] = `
+<a
+  class="wuiButton wuiButton--primary wuiButton--small wuiScreenReaderOnly--showOnFocus wuiSkipLink wuiSkipLink--static wuiButton--fill"
+  href="#somewhere"
+  rel="noreferrer"
+  tabindex="-1"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</a>
+`;

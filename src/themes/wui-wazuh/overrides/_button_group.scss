@@ -1,0 +1,14 @@
+.wuiButtonGroup--compressed {
+  .wuiButtonGroup__button {
+    &:not(.wuiButtonGroup__button--selected):not(:disabled) {
+      background-color: transparentize($wuiColorLightShade, .6);
+    }
+  }
+
+  .wuiButtonToggle__input:enabled:hover + .wuiButtonGroup__button,
+  .wuiButtonToggle__input:enabled:focus + .wuiButtonGroup__button,
+  .wuiButtonGroup__button--selected {
+    background-color: $wuiColorDarkShade;
+    color: $wuiColorLightestShade;
+  }
+}

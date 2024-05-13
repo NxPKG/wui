@@ -1,0 +1,65 @@
+// Sizing
+$wuiFormMaxWidth: $wuiSizeXXL * 10 !default;
+$wuiFormControlHeight: $wuiSizeXXL !default;
+$wuiFormControlCompressedHeight: $wuiSizeXL !default;
+$wuiFormControlPadding: $wuiSizeM !default;
+$wuiFormControlCompressedPadding: $wuiSizeS !default;
+$wuiFormControlBorderRadius: 0 !default;
+$wuiFormControlCompressedBorderRadius: $wuiBorderRadius / 2 !default;
+
+$wuiRadioSize: $wuiSize !default;
+$wuiCheckBoxSize: $wuiSize !default;
+$wuiCheckboxBorderRadius: $wuiBorderRadius !default;
+
+// Switch
+$wuiSwitchHeight: $wuiSize * 1.25 !default;
+$wuiSwitchWidth: ($wuiSize * 2.5) + $wuiSizeXS !default;
+$wuiSwitchThumbSize: $wuiSwitchHeight !default;
+$wuiSwitchIconHeight: $wuiSize !default;
+
+$wuiSwitchHeightCompressed: $wuiSize !default;
+$wuiSwitchWidthCompressed: $wuiSize * 1.75 !default;
+$wuiSwitchThumbSizeCompressed: $wuiSwitchHeightCompressed !default;
+
+$wuiSwitchHeightMini: $wuiSwitchHeight * .5 !default;
+$wuiSwitchWidthMini: $wuiSwitchWidth * .5 !default;
+$wuiSwitchThumbSizeMini: $wuiSwitchHeightMini !default;
+
+// Coloring
+$wuiFormBackgroundColor: tintOrShade($wuiColorLightestShade, 60%, 40%) !default;
+$wuiFormBackgroundDisabledColor: darken($wuiColorLightestShade, 2%) !default;
+$wuiFormBackgroundReadOnlyColor: transparentize(lightOrDarkTheme($wuiColorLightShade, $wuiColorInk), .95) !default;
+$wuiFormBorderOpaqueColor: shadeOrTint(desaturate(adjust-hue($wuiColorPrimary, 22), 22.95), 26%, 100%) !default;
+$wuiFormBorderColor: transparentize($wuiFormBorderOpaqueColor, .9) !default;
+$wuiFormBorderDisabledColor: transparentize($wuiFormBorderOpaqueColor, .9) !default;
+$wuiFormCustomControlDisabledIconColor: shadeOrTint($wuiColorMediumShade, 38%, 48.5%) !default; // exact 508c foreground for $wuiColorLightShade
+$wuiFormCustomControlBorderColor: shadeOrTint($wuiColorLightestShade, 18%, 30%) !default;
+$wuiFormControlDisabledColor: $wuiColorMediumShade !default;
+$wuiFormControlBoxShadow: 0 1px 1px -1px transparentize($wuiShadowColor, .8), 0 3px 2px -2px transparentize($wuiShadowColor, .8) !default;
+$wuiFormInputGroupLabelBackground: tintOrShade($wuiColorLightShade, 50%, 40%) !default;
+$wuiFormInputGroupBorder: 1px solid shadeOrTint($wuiFormInputGroupLabelBackground, 2%, 4%) !default;
+$wuiSwitchOffColor: lightOrDarkTheme(transparentize($wuiColorMediumShade, .8), transparentize($wuiColorMediumShade, .3)) !default;
+
+// Control Layout
+$wuiFormControlLayoutGroupInputHeight: $wuiFormControlHeight - 2px !default;
+$wuiFormControlLayoutGroupInputCompressedHeight: $wuiFormControlCompressedHeight - 2px !default;
+$wuiFormControlLayoutGroupInputCompressedBorderRadius: $wuiFormControlCompressedBorderRadius / 2 !default;
+
+// Range
+$wuiRangeTrackColor: $wuiColorDarkShade !default;
+
+$wuiRangeThumbRadius: 50% !default;
+$wuiRangeThumbHeight: $wuiSize !default;
+$wuiRangeThumbWidth: $wuiSize !default;
+$wuiRangeThumbBorderColor: $wuiRangeTrackColor !default;
+
+$wuiRangeTrackWidth: 100% !default;
+$wuiRangeTrackHeight: 2px !default;
+$wuiRangeTrackBorderWidth: 0 !default;
+$wuiRangeTrackBorderColor: $wuiRangeTrackColor !default;
+$wuiRangeTrackRadius: $wuiBorderRadius !default;
+
+$wuiRangeDisabledOpacity: .25 !default;
+
+$wuiRangeHighlightHeight: $wuiSizeXS !default;
+

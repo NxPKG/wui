@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiStep is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiStep testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Step 1"
+      class="wuiStepNumber wuiStep__circle"
+    >
+      1
+    </div>
+    <p
+      class="wuiTitle wuiTitle--small wuiStep__title"
+    >
+      First step
+    </p>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiStep props headingElement 1`] = `
+<div
+  class="wuiStep"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Step 1"
+      class="wuiStepNumber wuiStep__circle"
+    >
+      1
+    </div>
+    <h3
+      class="wuiTitle wuiTitle--small wuiStep__title"
+    >
+      First step
+    </h3>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiStep props status complete is rendered 1`] = `
+<div
+  class="wuiStep"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Step 1"
+      class="wuiStepNumber wuiStepNumber--complete wuiStep__circle"
+    >
+      <div
+        aria-label="complete"
+        class="wuiStepNumber__icon"
+        data-wuiicon-type="check"
+      />
+    </div>
+    <p
+      class="wuiTitle wuiTitle--small wuiStep__title"
+    >
+      First step
+    </p>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiStep props status danger is rendered 1`] = `
+<div
+  class="wuiStep"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Step 1"
+      class="wuiStepNumber wuiStepNumber--danger wuiStep__circle"
+    >
+      <div
+        aria-label="has errors"
+        class="wuiStepNumber__icon"
+        data-wuiicon-type="cross"
+      />
+    </div>
+    <p
+      class="wuiTitle wuiTitle--small wuiStep__title"
+    >
+      First step
+    </p>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiStep props status disabled is rendered 1`] = `
+<div
+  class="wuiStep"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Step 1"
+      class="wuiStepNumber wuiStepNumber--disabled wuiStep__circle"
+    >
+      1
+    </div>
+    <p
+      class="wuiTitle wuiTitle--small wuiStep__title"
+    >
+      First step
+    </p>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiStep props status incomplete is rendered 1`] = `
+<div
+  class="wuiStep"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Incomplete Step 1"
+      class="wuiStepNumber wuiStepNumber--incomplete wuiStepNumber-isHollow wuiStep__circle"
+    />
+    <p
+      class="wuiTitle wuiTitle--small wuiStep__title"
+    >
+      First step
+    </p>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiStep props status warning is rendered 1`] = `
+<div
+  class="wuiStep"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Step 1"
+      class="wuiStepNumber wuiStepNumber--warning wuiStep__circle"
+    >
+      <div
+        aria-label="has warnings"
+        class="wuiStepNumber__icon"
+        data-wuiicon-type="alert"
+      />
+    </div>
+    <p
+      class="wuiTitle wuiTitle--small wuiStep__title"
+    >
+      First step
+    </p>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiStep props step 1`] = `
+<div
+  class="wuiStep"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Step 5"
+      class="wuiStepNumber wuiStep__circle"
+    >
+      5
+    </div>
+    <p
+      class="wuiTitle wuiTitle--small wuiStep__title"
+    >
+      First step
+    </p>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiStep props titleSize 1`] = `
+<div
+  class="wuiStep wuiStep--small"
+>
+  <div
+    class="wuiStep__titleWrapper"
+  >
+    <div
+      aria-label="Step 1"
+      class="wuiStepNumber wuiStep__circle wuiStepNumber--small"
+    >
+      1
+    </div>
+    <p
+      class="wuiTitle wuiTitle--xsmall wuiStep__title"
+    >
+      First step
+    </p>
+  </div>
+  <div
+    class="wuiStep__content"
+  >
+    <p>
+      Do this
+    </p>
+  </div>
+</div>
+`;

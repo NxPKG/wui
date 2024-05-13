@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiLoadingSpinner is rendered 1`] = `
+<span
+  aria-label="aria-label"
+  class="wuiLoadingSpinner wuiLoadingSpinner--medium testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiLoadingSpinner size l is rendered 1`] = `
+<span
+  class="wuiLoadingSpinner wuiLoadingSpinner--large"
+/>
+`;
+
+exports[`WuiLoadingSpinner size m is rendered 1`] = `
+<span
+  class="wuiLoadingSpinner wuiLoadingSpinner--medium"
+/>
+`;
+
+exports[`WuiLoadingSpinner size s is rendered 1`] = `
+<span
+  class="wuiLoadingSpinner wuiLoadingSpinner--small"
+/>
+`;
+
+exports[`WuiLoadingSpinner size xl is rendered 1`] = `
+<span
+  class="wuiLoadingSpinner wuiLoadingSpinner--xLarge"
+/>
+`;

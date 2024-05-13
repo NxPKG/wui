@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiLoadingChart is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiLoadingChart testClass1 testClass2 wuiLoadingChart--medium"
+  data-test-subj="test subject string"
+>
+  <div
+    aria-label="animation"
+    role="button"
+    style="width:100%;height:100%;overflow:hidden;margin:0 auto;outline:none"
+    tabindex="0"
+    title=""
+  />
+</div>
+`;
+
+exports[`WuiLoadingChart mono is rendered 1`] = `
+<div
+  class="wuiLoadingChart wuiLoadingChart--medium"
+>
+  <div
+    aria-label="animation"
+    role="button"
+    style="width:100%;height:100%;overflow:hidden;margin:0 auto;outline:none"
+    tabindex="0"
+    title=""
+  />
+</div>
+`;
+
+exports[`WuiLoadingChart size l is rendered 1`] = `
+<div
+  class="wuiLoadingChart wuiLoadingChart--large"
+>
+  <div
+    aria-label="animation"
+    role="button"
+    style="width:100%;height:100%;overflow:hidden;margin:0 auto;outline:none"
+    tabindex="0"
+    title=""
+  />
+</div>
+`;
+
+exports[`WuiLoadingChart size m is rendered 1`] = `
+<div
+  class="wuiLoadingChart wuiLoadingChart--medium"
+>
+  <div
+    aria-label="animation"
+    role="button"
+    style="width:100%;height:100%;overflow:hidden;margin:0 auto;outline:none"
+    tabindex="0"
+    title=""
+  />
+</div>
+`;
+
+exports[`WuiLoadingChart size xl is rendered 1`] = `
+<div
+  class="wuiLoadingChart wuiLoadingChart--xLarge"
+>
+  <div
+    aria-label="animation"
+    role="button"
+    style="width:100%;height:100%;overflow:hidden;margin:0 auto;outline:none"
+    tabindex="0"
+    title=""
+  />
+</div>
+`;

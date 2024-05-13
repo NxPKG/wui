@@ -1,0 +1,32 @@
+.globalFilterItem {
+  line-height: $wuiSizeL + $wuiSizeXS;
+  border: none;
+  color: $wuiTextColor;
+
+  &:not(.globalFilterItem-isDisabled) {
+    @include wuiFormControlDefaultShadow;
+  }
+}
+
+.globalFilterItem-isDisabled {
+  background-color: transparentize($wuiColorLightShade, .4);
+  text-decoration: line-through;
+  font-weight: $wuiFontWeightRegular;
+  font-style: italic;
+}
+
+.globalFilterItem-isPinned {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: $wuiSizeXS;
+    background-color: $wuiColorSuccess;
+    border-top-left-radius: $wuiBorderRadius / 2;
+    border-bottom-left-radius: $wuiBorderRadius / 2;
+  }
+}

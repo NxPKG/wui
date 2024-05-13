@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSuperUpdateButton is rendered 1`] = `
+<WuiToolTip
+  delay="regular"
+  position="bottom"
+>
+  <WuiButton
+    className="wuiSuperUpdateButton"
+    color="primary"
+    fill={true}
+    iconType="refresh"
+    isDisabled={false}
+    isLoading={false}
+    onClick={[Function]}
+    textProps={
+      Object {
+        "className": "wuiSuperUpdateButton__text",
+      }
+    }
+  >
+    <WuiI18n
+      default="Refresh"
+      token="wuiSuperUpdateButton.refreshButtonLabel"
+    />
+  </WuiButton>
+</WuiToolTip>
+`;
+
+exports[`WuiSuperUpdateButton isDisabled 1`] = `
+<WuiToolTip
+  content={
+    <WuiI18n
+      default="Cannot update"
+      token="wuiSuperUpdateButton.cannotUpdateTooltip"
+    />
+  }
+  delay="regular"
+  position="bottom"
+>
+  <WuiButton
+    className="wuiSuperUpdateButton"
+    color="primary"
+    fill={true}
+    iconType="refresh"
+    isDisabled={true}
+    isLoading={false}
+    onClick={[Function]}
+    textProps={
+      Object {
+        "className": "wuiSuperUpdateButton__text",
+      }
+    }
+  >
+    <WuiI18n
+      default="Refresh"
+      token="wuiSuperUpdateButton.refreshButtonLabel"
+    />
+  </WuiButton>
+</WuiToolTip>
+`;
+
+exports[`WuiSuperUpdateButton isLoading 1`] = `
+<WuiToolTip
+  delay="regular"
+  position="bottom"
+>
+  <WuiButton
+    className="wuiSuperUpdateButton"
+    color="secondary"
+    fill={true}
+    iconType="qryFunction"
+    isDisabled={false}
+    isLoading={true}
+    onClick={[Function]}
+    textProps={
+      Object {
+        "className": "wuiSuperUpdateButton__text",
+      }
+    }
+  >
+    <WuiI18n
+      default="Updating"
+      token="wuiSuperUpdateButton.updatingButtonLabel"
+    />
+  </WuiButton>
+</WuiToolTip>
+`;
+
+exports[`WuiSuperUpdateButton needsUpdate 1`] = `
+<WuiToolTip
+  content={
+    <WuiI18n
+      default="Click to apply"
+      token="wuiSuperUpdateButton.clickToApplyTooltip"
+    />
+  }
+  delay="regular"
+  position="bottom"
+>
+  <WuiButton
+    className="wuiSuperUpdateButton"
+    color="secondary"
+    fill={true}
+    iconType="qryFunction"
+    isDisabled={false}
+    isLoading={false}
+    onClick={[Function]}
+    textProps={
+      Object {
+        "className": "wuiSuperUpdateButton__text",
+      }
+    }
+  >
+    <WuiI18n
+      default="Update"
+      token="wuiSuperUpdateButton.updateButtonLabel"
+    />
+  </WuiButton>
+</WuiToolTip>
+`;
+
+exports[`WuiSuperUpdateButton showTooltip 1`] = `
+<WuiToolTip
+  delay="regular"
+  position="bottom"
+>
+  <WuiButton
+    className="wuiSuperUpdateButton"
+    color="primary"
+    fill={true}
+    iconType="refresh"
+    isDisabled={false}
+    isLoading={false}
+    onClick={[Function]}
+    textProps={
+      Object {
+        "className": "wuiSuperUpdateButton__text",
+      }
+    }
+  >
+    <WuiI18n
+      default="Refresh"
+      token="wuiSuperUpdateButton.refreshButtonLabel"
+    />
+  </WuiButton>
+</WuiToolTip>
+`;

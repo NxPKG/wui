@@ -1,0 +1,53 @@
+// This file has lots of modifiers and is somewhat nesty by nature
+//sass-lint:disable nesting-depth
+
+.wuiButton {
+  // sass-lint:disable no-important
+  // remove for all states
+  box-shadow: none !important;
+
+  // Added exclusion of the `ghost` type of button
+  // so as not to override those specific styles from default theme
+  // And the only style that needs to change is the non-filled version
+  &:disabled:not(.wuiButton--ghost):not(.wuiButton--fill) {
+    $backgroundColorSimulated: mix($wuiPageBackgroundColor, $wuiButtonColorDisabled, 70%);
+    background-color: transparentize($wuiButtonColorDisabled, .7);
+    color: makeHighContrastColor($wuiButtonColorDisabled, $backgroundColorSimulated, 2);
+  }
+}
+
+.wuiButton--small {
+  // Use a moderately smaller radius on small buttons
+  // so that they don't appear completely rounded
+  border-radius: $wuiBorderRadius * .667;
+}
+
+// Change the hollow (bordered) buttons to have a transparent background
+// and no border
+@each $name, $color in $wuiButtonTypes {
+  .wuiButton--#{$name} {
+    @include wuiButtonDefaultStyle($color);
+
+    @if ($name == 'ghost') {
+      // Ghost is unique and ALWAYS sits against a dark background.
+      $backgroundColorSimulated: mix($wuiColorInk, $color, 70%);
+      color: makeHighContrastColor($color, $backgroundColorSimulated);
+    }
+
+    &.wuiButton--fill:enabled {
+      &:hover,
+      &:focus {
+        background-color: darken($color, 10%);
+      }
+    }
+  }
+}
+
+// Fix ghost/disabled look specifically
+.wuiButton:disabled.wuiButton--ghost:not(.wuiButton--fill) {
+  &,
+  &:hover,
+  &:focus {
+    background-color: transparentize($wuiButtonColorGhostDisabled, .7);
+  }
+}

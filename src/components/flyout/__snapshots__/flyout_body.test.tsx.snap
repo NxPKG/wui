@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFlyoutBody is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiFlyoutBody testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiFlyoutBody__overflow"
+  >
+    <div
+      class="wuiFlyoutBody__overflowContent"
+    />
+  </div>
+</div>
+`;

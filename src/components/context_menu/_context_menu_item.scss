@@ -1,0 +1,56 @@
+.wuiContextMenuItem {
+  display: block;
+  padding: $wuiSizeM;
+  width: 100%;
+  text-align: left;
+  color: $wuiTextColor;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    background-color: $wuiFocusBackgroundColor;
+  }
+
+  &.wuiContextMenuItem-isDisabled {
+    color: $wuiButtonColorDisabledText;
+    cursor: default;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.wuiContextMenuItem__inner {
+  display: flex;
+}
+
+.wuiContextMenuItem__text {
+  flex-grow: 1;
+  overflow: hidden; // allows for text truncation
+}
+
+.wuiContextMenuItem__arrow {
+  align-self: flex-end;
+}
+
+.wuiContextMenu__itemLayout {
+  display: flex;
+  align-items: center;
+
+  &.wuiContextMenu__itemLayout--bottom {
+    align-items: flex-end;
+  }
+
+  &.wuiContextMenu__itemLayout--top {
+    align-items: flex-start;
+  }
+
+  .wuiContextMenu__icon {
+    flex-shrink: 0;
+  }
+}

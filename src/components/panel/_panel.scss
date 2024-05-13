@@ -1,0 +1,15 @@
+// Export basic class & modifiers
+@include wuiPanel($selector: '.wuiPanel');
+@include wuiHasBetaBadge($selector: '.wuiPanel');
+
+// Specific
+@each $modifier, $amount in $wuiPanelPaddingModifiers {
+  .wuiPanel--#{$modifier} {
+    padding: $amount;
+
+    // Overwrite @hasBetaBadge max-width depending upon padding
+    .wuiPanel__betaBadgeWrapper {
+      max-width: calc(100% - #{$amount*2});
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiToolTip is rendered 1`] = `
+<span
+  class="wuiToolTipAnchor"
+>
+  <button>
+    Trigger
+  </button>
+</span>
+`;
+
+exports[`WuiToolTip shows tooltip on focus 1`] = `
+<span
+  class="wuiToolTipAnchor"
+>
+  <button
+    aria-describedby="id"
+    data-test-subj="trigger"
+  >
+    Trigger
+  </button>
+</span>
+`;

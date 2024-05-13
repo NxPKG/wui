@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`align defaults to left 1`] = `
+<td
+  class="wuiTableRowCell"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`align renders center when specified 1`] = `
+<td
+  class="wuiTableRowCell"
+>
+  <div
+    class="wuiTableCellContent wuiTableCellContent--alignCenter"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`align renders right when specified 1`] = `
+<td
+  class="wuiTableRowCell"
+>
+  <div
+    class="wuiTableCellContent wuiTableCellContent--alignRight"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`children's className merges new classnames into existing ones 1`] = `
+<td
+  class="wuiTableRowCell"
+>
+  <div
+    class="wuiTableCellContent wuiTableCellContent--showOnHover wuiTableCellContent--overflowingContent"
+  >
+    <div
+      class="testClass wuiTableCellContent__hoverItem"
+    />
+  </div>
+</td>
+`;
+
+exports[`renders WuiTableRowCell 1`] = `
+<td
+  aria-label="aria-label"
+  class="wuiTableRowCell"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiTableCellContent testClass1 testClass2"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      children
+    </span>
+  </div>
+</td>
+`;
+
+exports[`textOnly defaults to true 1`] = `
+<td
+  class="wuiTableRowCell"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`textOnly is rendered when specified 1`] = `
+<td
+  class="wuiTableRowCell"
+>
+  <div
+    class="wuiTableCellContent wuiTableCellContent--overflowingContent"
+  />
+</td>
+`;
+
+exports[`truncateText defaults to false 1`] = `
+<td
+  class="wuiTableRowCell"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`truncateText is rendered when specified 1`] = `
+<td
+  class="wuiTableRowCell"
+>
+  <div
+    class="wuiTableCellContent wuiTableCellContent--truncateText"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`width and style accepts style attribute 1`] = `
+<td
+  class="wuiTableRowCell"
+  style="width:20%"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      Test
+    </span>
+  </div>
+</td>
+`;
+
+exports[`width and style accepts width attribute 1`] = `
+<td
+  class="wuiTableRowCell"
+  style="width:10%"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      Test
+    </span>
+  </div>
+</td>
+`;
+
+exports[`width and style accepts width attribute as number 1`] = `
+<td
+  class="wuiTableRowCell"
+  style="width:100px"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      Test
+    </span>
+  </div>
+</td>
+`;
+
+exports[`width and style resolves style and width attribute 1`] = `
+<td
+  class="wuiTableRowCell"
+  style="width:10%"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      Test
+    </span>
+  </div>
+</td>
+`;

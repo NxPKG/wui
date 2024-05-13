@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFacetGroup is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiFlexGroup wuiFlexGroup--directionColumn wuiFlexGroup--responsive wuiFacetGroup wuiFacetGroup--vertical wuiFacetGroup--gutterMedium testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiFacetGroup props gutterSize l is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--directionColumn wuiFlexGroup--responsive wuiFacetGroup wuiFacetGroup--vertical wuiFacetGroup--gutterLarge"
+/>
+`;
+
+exports[`WuiFacetGroup props gutterSize m is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--directionColumn wuiFlexGroup--responsive wuiFacetGroup wuiFacetGroup--vertical wuiFacetGroup--gutterMedium"
+/>
+`;
+
+exports[`WuiFacetGroup props gutterSize none is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--directionColumn wuiFlexGroup--responsive wuiFacetGroup wuiFacetGroup--vertical wuiFacetGroup--gutterNone"
+/>
+`;
+
+exports[`WuiFacetGroup props gutterSize s is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--directionColumn wuiFlexGroup--responsive wuiFacetGroup wuiFacetGroup--vertical wuiFacetGroup--gutterSmall"
+/>
+`;
+
+exports[`WuiFacetGroup props layout horizontal is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--directionRow wuiFlexGroup--responsive wuiFlexGroup--wrap wuiFacetGroup wuiFacetGroup--horizontal wuiFacetGroup--gutterMedium"
+/>
+`;
+
+exports[`WuiFacetGroup props layout vertical is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--directionColumn wuiFlexGroup--responsive wuiFacetGroup wuiFacetGroup--vertical wuiFacetGroup--gutterMedium"
+/>
+`;

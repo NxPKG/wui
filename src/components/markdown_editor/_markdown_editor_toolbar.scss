@@ -1,0 +1,29 @@
+.wuiMarkdownEditorToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  background: $wuiColorLightestShade;
+  border: $wuiBorderThin;
+  border-color: $wuiColorLightShade;
+  border-bottom: none;
+  padding: $wuiSizeXS;
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+
+    > * {
+      margin-right: $wuiSizeXS;
+    }
+  }
+
+  &__divider {
+    content: '';
+    height: $wuiSizeL;
+    display: block;
+    margin-left: $wuiSizeXS;
+    padding-right: $wuiSizeXS;
+    border-left: 1px solid $wuiColorLightShade;
+  }
+}

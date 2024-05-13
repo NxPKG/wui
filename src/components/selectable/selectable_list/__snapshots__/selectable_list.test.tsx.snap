@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSelectableListItem is rendered 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props activeOptionIndex 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props allowExclusions 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props bordered 1`] = `
+<div
+  class="wuiSelectableList wuiSelectableList-bordered testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props height is forced 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props height is full 1`] = `
+<div
+  class="wuiSelectableList wuiSelectableList-fullHeight testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;height:0;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props renderOption 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props rowHeight 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props searchValue 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props searchValue 2`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props showIcons can be turned off 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props singleSelection can be forced so that at least one must be selected 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props singleSelection can be turned on 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;
+
+exports[`WuiSelectableListItem props visibleOptions 1`] = `
+<div
+  class="wuiSelectableList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    style="overflow:visible;width:0"
+  />
+</div>
+`;

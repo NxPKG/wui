@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSelectableSearch is rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <input
+      aria-autocomplete="list"
+      aria-controls="list"
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-label="aria-label"
+      aria-owns="list"
+      autocomplete="off"
+      class="wuiFieldSearch wuiFieldSearch--fullWidth wuiFieldSearch-isClearable wuiSelectableSearch testClass1 testClass2"
+      data-test-subj="test subject string"
+      role="combobox"
+      type="search"
+      value=""
+    />
+    <div
+      class="wuiFormControlLayoutIcons"
+    >
+      <span
+        class="wuiFormControlLayoutCustomIcon"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiFormControlLayoutCustomIcon__icon"
+          data-wuiicon-type="search"
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSelectableSearch props defaultValue 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <input
+      aria-autocomplete="list"
+      aria-controls="list"
+      aria-expanded="true"
+      aria-haspopup="listbox"
+      aria-owns="list"
+      autocomplete="off"
+      class="wuiFieldSearch wuiFieldSearch--fullWidth wuiFieldSearch-isClearable wuiSelectableSearch"
+      role="combobox"
+      type="search"
+      value="Mi"
+    />
+    <div
+      class="wuiFormControlLayoutIcons"
+    >
+      <span
+        class="wuiFormControlLayoutCustomIcon"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiFormControlLayoutCustomIcon__icon"
+          data-wuiicon-type="search"
+        />
+      </span>
+    </div>
+    <div
+      class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+    >
+      <button
+        aria-label="Clear input"
+        class="wuiFormControlLayoutClearButton"
+        type="button"
+      >
+        <div
+          class="wuiFormControlLayoutClearButton__icon"
+          data-wuiicon-type="cross"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,208 @@
+/**
+  * REMEMBER: --large modifiers must come last to override --compressed
+  */
+
+.wuiFilePicker {
+  @include wuiFormControlSize($includeAlternates: true);
+  position: relative;
+
+  &.wuiFilePicker--large {
+    border-radius: $wuiFormControlBorderRadius;
+    overflow: hidden;
+    height: auto;
+  }
+
+  &.wuiFilePicker--large.wuiFilePicker--compressed {
+    border-radius: $wuiFormControlCompressedBorderRadius;
+  }
+}
+
+// The input is an invisible dropzone / button
+.wuiFilePicker__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover:disabled {
+    cursor: not-allowed;
+  }
+
+  &:disabled ~ .wuiFilePicker__prompt {
+    color: $wuiColorMediumShade;
+  }
+}
+
+.wuiFilePicker__icon {
+  position: absolute;
+  left: $wuiSizeM;
+  top: $wuiSizeM;
+  transition: transform $wuiAnimSpeedFast $wuiAnimSlightResistance;
+
+  .wuiFilePicker--compressed & {
+    top: $wuiSizeS;
+    left: $wuiSizeS;
+  }
+
+  .wuiFilePicker--large & {
+    position: static;
+    margin-bottom: $wuiSize;
+  }
+}
+
+/**
+  * 1. Don't block the user from dropping files onto the filepicker.
+  * 2. Ensure space for import icon, loading spinner, and clear button (only if it has files)
+  * 3. Delay focus gradient or else it will only partially transition while file chooser opens
+  * 4. Static height so that it doesn't shift its surrounding contents around
+  */
+.wuiFilePicker__prompt {
+  @include wuiFormControlDefaultShadow;
+  @include wuiFormControlWithIcon; /* 2 */
+  height: $wuiFormControlHeight;
+  padding-top: $wuiFormControlPadding;
+  padding-right: $wuiFormControlPadding;
+  padding-bottom: $wuiFormControlPadding;
+  pointer-events: none; /* 1 */
+  border-radius: $wuiFormControlBorderRadius;
+
+  // sass-lint:disable-block indentation
+  transition:
+    box-shadow $wuiAnimSpeedFast ease-in,
+    background-color $wuiAnimSpeedFast ease-in,
+    background-image $wuiAnimSpeedFast ease-in,
+    background-size $wuiAnimSpeedFast ease-in $wuiAnimSpeedFast; /* 3 */
+
+  .wuiFilePicker--compressed & {
+    @include wuiFormControlStyleCompressed($includeStates: false);
+    @include wuiFormControlWithIcon($compressed: true); /* 2 */
+    height: $wuiFormControlCompressedHeight;
+    border-radius: $wuiFormControlCompressedBorderRadius;
+  }
+
+  .wuiFilePicker--large & {
+    height: $wuiFilePickerTallHeight; /* 4 */
+    padding: 0 $wuiSizeL;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wuiFilePicker--large.wuiFilePicker--compressed & {
+    height: $wuiFilePickerTallHeight - $wuiSizeL; /* 4 */
+  }
+
+  .wuiFilePicker-isInvalid & {
+    @include wuiFormControlInvalidStyle;
+  }
+}
+
+.wuiFilePicker__promptText {
+  @include wuiFontSizeS;
+  @include wuiTextTruncate;
+  line-height: $wuiSize;
+
+  // make normal sized prompt look like placeholder
+  .wuiFilePicker:not(.wuiFilePicker--large):not(.wuiFilePicker-hasFiles) & {
+    color: $wuiColorMediumShade;
+  }
+}
+
+.wuiFilePicker__clearButton,
+.wuiFilePicker__loadingSpinner {
+  position: absolute;
+  right: $wuiSizeM;
+  top: $wuiSizeM;
+
+  .wuiFilePicker--compressed & {
+    top: $wuiSizeS;
+  }
+}
+
+/**
+  * 1. Undo the pointer-events: none applied to the enclosing prompt.
+  */
+.wuiFilePicker__clearButton {
+  pointer-events: auto; /* 1 */
+
+  .wuiFilePicker:not(.wuiFilePicker--large) & {
+    @include wuiFormControlLayoutClearIcon('.wuiFilePicker__clearIcon');
+  }
+
+  .wuiFilePicker--large & {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+// Focus
+.wuiFilePicker__showDrop .wuiFilePicker__prompt,
+.wuiFilePicker__input:focus + .wuiFilePicker__prompt {
+  @include wuiFormControlFocusStyle;
+
+  .wuiFilePicker--compressed & {
+    @include wuiFormControlFocusStyle($borderOnly: true);
+  }
+}
+
+// Disabled
+.wuiFilePicker__input:disabled + .wuiFilePicker__prompt {
+  @include wuiFormControlDisabledStyle;
+}
+
+// Make space for the icons on the right
+.wuiFilePicker:not(.wuiFilePicker--large) {
+  &.wuiFilePicker-isLoading .wuiFilePicker__prompt,
+  &.wuiFilePicker-hasFiles .wuiFilePicker__prompt {
+    @include wuiFormControlWithIcon(false, 'right'); /* 2 */
+  }
+}
+
+// When the filepicker has files in it
+.wuiFilePicker-hasFiles .wuiFilePicker__promptText {
+  color: $wuiTextColor;
+}
+
+// Large styles only
+.wuiFilePicker--large {
+  // sass-lint:disable-block nesting-depth
+  // Hover and focus
+  .wuiFilePicker__input:hover:not(:disabled),
+  .wuiFilePicker__input:focus {
+    + .wuiFilePicker__prompt {
+      .wuiFilePicker__promptText {
+        // Adding the underline to the prompt text ensures the underline
+        // color is the same as the current text color
+        text-decoration: underline;
+      }
+
+      .wuiFilePicker__icon {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  // While dragging files over the dropzone
+  &.wuiFilePicker__showDrop .wuiFilePicker__prompt {
+    .wuiFilePicker__promptText {
+      text-decoration: underline;
+    }
+
+    .wuiFilePicker__icon {
+      transform: scale(1.1);
+    }
+  }
+
+  &.wuiFilePicker-hasFiles .wuiFilePicker__promptText {
+    font-weight: $wuiFontWeightBold;
+  }
+}

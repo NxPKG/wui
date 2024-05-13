@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFieldText is rendered 1`] = `
+<wui-form-control-layout
+  fullwidth="false"
+  icon="foo"
+  inputid="1"
+>
+  <wui-validatable-control>
+    <input
+      aria-label="aria-label"
+      class="wuiFieldText testClass1 testClass2 wuiFieldText--withIcon"
+      data-test-subj="test subject string"
+      id="1"
+      name="wazuh"
+      placeholder="Placeholder"
+      type="text"
+      value="1"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldText props controlOnly is rendered 1`] = `
+<wui-validatable-control>
+  <input
+    class="wuiFieldText"
+    type="text"
+  />
+</wui-validatable-control>
+`;
+
+exports[`WuiFieldText props fullWidth is rendered 1`] = `
+<wui-form-control-layout
+  fullwidth="true"
+>
+  <wui-validatable-control>
+    <input
+      class="wuiFieldText wuiFieldText--fullWidth"
+      type="text"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldText props isInvalid is rendered 1`] = `
+<wui-form-control-layout
+  fullwidth="false"
+>
+  <wui-validatable-control
+    isinvalid="true"
+  >
+    <input
+      class="wuiFieldText"
+      type="text"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldText props isLoading is rendered 1`] = `
+<wui-form-control-layout
+  fullwidth="false"
+  isloading="true"
+>
+  <wui-validatable-control>
+    <input
+      class="wuiFieldText wuiFieldText-isLoading"
+      type="text"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldText props readOnly is rendered 1`] = `
+<wui-form-control-layout
+  fullwidth="false"
+  readonly="true"
+>
+  <wui-validatable-control>
+    <input
+      class="wuiFieldText"
+      readonly=""
+      type="text"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSelectableMessage bordered is rendered 1`] = `
+<div
+  class="wuiText wuiText--extraSmall wuiSelectableMessage wuiSelectableMessage--bordered"
+>
+  <div
+    class="wuiTextColor wuiTextColor--subdued"
+  />
+</div>
+`;
+
+exports[`WuiSelectableMessage is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiText wuiText--extraSmall wuiSelectableMessage testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiTextColor wuiTextColor--subdued"
+  />
+</div>
+`;

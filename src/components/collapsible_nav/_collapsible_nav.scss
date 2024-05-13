@@ -1,0 +1,77 @@
+// Extends wuiFlyout
+@import '../flyout/variables';
+@import '../flyout/mixins';
+
+.wuiCollapsibleNav {
+  @include wuiFlyout;
+  border-left: none;
+  right: auto;
+  left: 0;
+  width: $wuiCollapsibleNavWidth;
+  max-width: 80vw;
+  animation: wuiCollapsibleNavIn $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+  clip-path: polygon(0 0, 150% 0, 150% 100%, 0 100%); // Must include the width of the close button too
+}
+
+.wuiCollapsibleNav__closeButton {
+  position: absolute;
+  right: 0;
+  top: $wuiSize;
+  margin-right: -27%;
+  padding: $wuiSizeM 0;
+  line-height: 1;
+  border-radius: $wuiBorderRadius;
+
+  &:focus {
+    @include wuiFocusRing;
+  }
+
+  &,
+  &:focus {
+    // Override default `WuiButtonEmpty` :focus background to ensure better contrast
+    background: $wuiColorEmptyShade;
+  }
+}
+
+// The addition of this class is handled through JS
+// via the `dockingBreakpoint` and `isDocked` combination
+.wuiCollapsibleNav.wuiCollapsibleNav--isDocked {
+  @include wuiBottomShadowMedium;
+  z-index: $wuiZHeader; // When docked, make it the same level as the header
+  clip-path: none;
+
+  .wuiCollapsibleNav__closeButton {
+    display: none;
+  }
+}
+
+.wuiBody--collapsibleNavIsDocked {
+  // Shrink the content from the left so it's no longer overlapped by the nav drawer (ALWAYS)
+  padding-left: $wuiCollapsibleNavWidth !important; // sass-lint:disable-line no-important
+  transition: padding $wuiAnimSpeedFast $wuiAnimSlightResistance;
+}
+
+@include wuiBreakpoint('xs') {
+  // At tiny screens, reduce the close button to a simple `x`
+  .wuiCollapsibleNav__closeButton {
+    margin-right: -15%;
+
+    .wuiCollapsibleNav__closeButtonText {
+      // But be sure the text can still be read by a screen reader
+      @include wuiScreenReaderOnly;
+    }
+  }
+}
+
+// Specific keyframes so in comes in from the left
+@keyframes wuiCollapsibleNavIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

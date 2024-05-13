@@ -1,0 +1,117 @@
+/**
+ * 1. Keep each expression's text together as much as possible,
+ *    but then wrap long words
+ */
+.wuiExpression {
+  @include wuiTextBreakWord; /* 1 */
+  @include wuiFontSizeS;
+  @include wuiCodeFont;
+
+  border-bottom: $wuiBorderWidthThick solid transparent;
+  display: inline-block; /* 1 */
+  text-align: left;
+  padding: ($wuiSizeXS / 2) 0;
+  transition: all $wuiAnimSpeedNormal ease-in-out;
+  color: $wuiTextColor;
+
+  &:focus {
+    border-bottom-style: solid;
+  }
+
+  & + .wuiExpression {
+    margin-left: $wuiSizeS;
+  }
+
+  &.wuiExpression--columns {
+    border-color: transparent;
+    // Ensures there's no flash of the dashed style before turning solid for the active state
+    border-bottom-style: solid;
+    margin-bottom: $wuiSizeXS;
+  }
+
+  &.wuiExpression--truncate {
+    max-width: 100%;
+
+    .wuiExpression__description,
+    .wuiExpression__value {
+      @include wuiTextTruncate;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+  }
+}
+
+.wuiExpression-isUppercase .wuiExpression__description {
+  text-transform: uppercase;
+}
+
+.wuiExpression-isClickable {
+  cursor: pointer;
+  border-bottom: $wuiBorderEditable;
+
+  &:hover:not(:disabled) {
+    border-bottom-style: solid;
+    transform: translateY(-1px);
+  }
+}
+
+.wuiExpression__icon {
+  margin-left: $wuiSizeXS;
+}
+
+.wuiExpression-isActive {
+  border-bottom-style: solid;
+}
+
+.wuiExpression--columns {
+  width: 100%;
+  display: flex;
+  padding: $wuiSizeXS;
+  border-radius: $wuiSizeXS;
+
+  &.wuiExpression-isClickable {
+    background-color: $wuiColorLightestShade;
+
+    // sass-lint:disable-block nesting-depth
+    &:focus,
+    &:hover:not(:disabled) {
+      .wuiExpression__description,
+      .wuiExpression__value {
+        // inner child specificity so it inherits underline color from text color
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .wuiExpression__description {
+    text-align: right;
+    margin-right: $wuiSizeS;
+    flex-shrink: 0; // Ensures it doesn't get smaller in case the value is really long
+  }
+
+  .wuiExpression__value {
+    flex-grow: 1;
+  }
+
+  .wuiExpression__icon {
+    margin-top: $wuiSizeXS;
+  }
+}
+
+@each $name, $color in $wuiExpressionColors {
+  .wuiExpression--#{$name} {
+    &:focus {
+      background-color: transparentize($color, .9);
+    }
+
+    &.wuiExpression-isActive {
+      border-bottom-color: $color;
+      border-color: $color;
+    }
+
+    .wuiExpression__description {
+      color: $color;
+    }
+  }
+}

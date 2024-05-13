@@ -1,0 +1,41 @@
+.wuiFormControlLayoutDelimited {
+  border-radius: $wuiFormControlBorderRadius;
+
+  &.wuiFormControlLayout--group {
+    .wuiFormControlLayout__childrenWrapper:first-child {
+      border-radius: $wuiFormControlBorderRadius 0 0 $wuiFormControlBorderRadius;
+    }
+  }
+
+  .wuiFormControlLayout__childrenWrapper:only-child {
+    border-radius: $wuiFormControlBorderRadius;
+    overflow: hidden;
+  }
+
+  .wuiFormControlLayout__prepend +
+  .wuiFormControlLayout__childrenWrapper {
+    &:last-child {
+      border-radius: 0 $wuiFormControlBorderRadius $wuiFormControlBorderRadius 0;
+    }
+  }
+
+  &.wuiFormControlLayout--compressed {
+    &.wuiFormControlLayout--group {
+      .wuiFormControlLayout__childrenWrapper:first-child {
+        border-radius: $wuiFormControlCompressedBorderRadius 0 0 $wuiFormControlCompressedBorderRadius;
+      }
+    }
+
+    .wuiFormControlLayout__childrenWrapper:only-child {
+      border-radius: $wuiFormControlCompressedBorderRadius;
+      overflow: hidden;
+    }
+
+    .wuiFormControlLayout__prepend +
+    .wuiFormControlLayout__childrenWrapper {
+      &:last-child {
+        border-radius: 0 $wuiFormControlCompressedBorderRadius $wuiFormControlCompressedBorderRadius 0;
+      }
+    }
+  }
+}

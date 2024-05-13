@@ -1,0 +1,20 @@
+@mixin wuiTableCell {
+  vertical-align: middle;
+  border-top: $wuiBorderThin;
+  border-bottom: $wuiBorderThin;
+  font-weight: inherit;
+  text-align: inherit;
+}
+
+@mixin wuiTableCellCheckbox {
+  @include wuiTableCell;
+  width: $wuiTableCellCheckboxWidth;
+  vertical-align: middle;
+}
+
+@mixin wuiTableActionsBackgroundMobile {
+  background-image: linear-gradient(to right, $wuiTableActionsBorderColor 0, $wuiTableActionsBorderColor 1px, transparent 1px, transparent 100%);
+  background-size: $wuiTableActionsAreaWidth 100%;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}

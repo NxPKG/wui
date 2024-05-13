@@ -1,0 +1,11 @@
+$wuiStepNumberSize: $wuiSizeXL !default;
+$wuiStepNumberSmallSize: $wuiSizeL !default;
+$wuiStepNumberMargin: $wuiSize !default;
+
+// Modifier naming and colors.
+$wuiStepStatusColorsToFade: (
+  warning: $wuiColorWarning,
+  danger: $wuiColorDanger,
+  disabled: $wuiColorDarkShade,
+  incomplete: $wuiColorDarkShade,
+) !default;

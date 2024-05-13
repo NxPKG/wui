@@ -1,0 +1,27 @@
+@function wuiCallOutColor($type: 'primary', $returnBackgroundOrForeground: 'background') {
+  @if (map-has-key($wuiCallOutTypes, $type)) {
+    $color: map-get($wuiCallOutTypes, $type);
+    $backgroundColor: tintOrShade($color, 90%, 70%);
+    $foregroundColor: shadeOrTint(makeHighContrastColor($color, $backgroundColor), 0, 20%);
+
+    @if ($returnBackgroundOrForeground == 'background') {
+      @return $backgroundColor;
+    } @else if ($returnBackgroundOrForeground == 'foreground') {
+      @return $foregroundColor;
+    } @else {
+      @warn 'Incorrect value provided as $returnBackgroundOrForeground';
+    }
+  } @else {
+    @warn 'Incorrect type of call out provided. See the $wuiCallOutTypes map for allowed values.';
+  }
+}
+
+@mixin wuiCallOutTitle($size: null) {
+  @if ($size == 's') {
+    @include wuiTitle('xxs');
+    font-weight: $wuiFontWeightRegular;
+  } @else {
+    @include wuiTitle('xs');
+    font-weight: $wuiFontWeightRegular;
+  }
+}

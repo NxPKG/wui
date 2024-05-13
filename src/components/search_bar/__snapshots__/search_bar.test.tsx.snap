@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar render - box 1`] = `
+<WuiFlexGroup
+  alignItems="center"
+  gutterSize="m"
+  wrap={true}
+>
+  <WuiFlexItem
+    className="wuiSearchBar__searchHolder"
+    grow={true}
+  >
+    <WuiSearchBox
+      aria-label="aria-label"
+      className="testClass1 testClass2"
+      data-test-subj="test subject string"
+      incremental={false}
+      isInvalid={false}
+      onSearch={[Function]}
+      placeholder="find something..."
+      query=""
+    />
+  </WuiFlexItem>
+</WuiFlexGroup>
+`;
+
+exports[`SearchBar render - no config, no query 1`] = `
+<WuiFlexGroup
+  alignItems="center"
+  gutterSize="m"
+  wrap={true}
+>
+  <WuiFlexItem
+    className="wuiSearchBar__searchHolder"
+    grow={true}
+  >
+    <WuiSearchBox
+      incremental={false}
+      isInvalid={false}
+      onSearch={[Function]}
+      placeholder="Search..."
+      query=""
+    />
+  </WuiFlexItem>
+</WuiFlexGroup>
+`;
+
+exports[`SearchBar render - provided query, filters 1`] = `
+<WuiFlexGroup
+  alignItems="center"
+  gutterSize="m"
+  wrap={true}
+>
+  <WuiFlexItem
+    className="wuiSearchBar__searchHolder"
+    grow={true}
+  >
+    <WuiSearchBox
+      incremental={false}
+      isInvalid={false}
+      onSearch={[Function]}
+      placeholder="Search..."
+      query="this is a query"
+    />
+  </WuiFlexItem>
+  <WuiFlexItem
+    className="wuiSearchBar__filtersHolder"
+    grow={false}
+  >
+    <WuiSearchFilters
+      filters={
+        Array [
+          Object {
+            "field": "open",
+            "name": "Open",
+            "type": "is",
+          },
+          Object {
+            "field": "tag",
+            "name": "Tag",
+            "options": [Function],
+            "type": "field_value_selection",
+          },
+        ]
+      }
+      onChange={[Function]}
+      query={
+        Query {
+          "ast": _AST {
+            "_clauses": Array [
+              Object {
+                "match": "must",
+                "type": "term",
+                "value": "this",
+              },
+              Object {
+                "match": "must",
+                "type": "term",
+                "value": "is",
+              },
+              Object {
+                "match": "must",
+                "type": "term",
+                "value": "a",
+              },
+              Object {
+                "match": "must",
+                "type": "term",
+                "value": "query",
+              },
+            ],
+            "_indexedClauses": Object {
+              "field": Object {},
+              "group": Array [],
+              "is": Object {},
+              "term": Array [
+                Object {
+                  "match": "must",
+                  "type": "term",
+                  "value": "this",
+                },
+                Object {
+                  "match": "must",
+                  "type": "term",
+                  "value": "is",
+                },
+                Object {
+                  "match": "must",
+                  "type": "term",
+                  "value": "a",
+                },
+                Object {
+                  "match": "must",
+                  "type": "term",
+                  "value": "query",
+                },
+              ],
+            },
+          },
+          "syntax": Object {
+            "parse": [Function],
+            "print": [Function],
+            "printClause": [Function],
+          },
+          "text": "this is a query",
+        }
+      }
+    />
+  </WuiFlexItem>
+</WuiFlexGroup>
+`;
+
+exports[`SearchBar render - tools 1`] = `
+<WuiFlexGroup
+  alignItems="center"
+  gutterSize="m"
+  wrap={true}
+>
+  <WuiFlexItem
+    grow={false}
+  >
+    <div>
+      Left
+    </div>
+  </WuiFlexItem>
+  <WuiFlexItem
+    className="wuiSearchBar__searchHolder"
+    grow={true}
+  >
+    <WuiSearchBox
+      incremental={false}
+      isInvalid={false}
+      onSearch={[Function]}
+      placeholder="Search..."
+      query=""
+    />
+  </WuiFlexItem>
+  <WuiFlexItem
+    grow={false}
+  >
+    <div>
+      Right
+    </div>
+  </WuiFlexItem>
+</WuiFlexGroup>
+`;

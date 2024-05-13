@@ -1,0 +1,381 @@
+// -------------------------------------
+// Colors guideline page
+// -------------------------------------
+.guidelineColor__palette {
+  padding: $wuiSize;
+  padding-bottom: $wuiSizeXL;
+}
+
+.guidelineColor__swatch {
+  height: $wuiSizeM;
+  width: $wuiSizeM;
+  border-radius: 50%;
+}
+
+.guidelineColor__stripe {
+  height: $wuiSizeL;
+  line-height: $wuiSizeL;
+}
+
+.guidelineColor__test {
+  text-align: center;
+  font-size: $wuiFontSizeS;
+}
+
+// sass-lint:disable no-important
+.guidelineColor__title {
+  color: $wuiColorMediumShade !important;
+}
+
+.guideColorPalette__swatch {
+  span {
+    height: $wuiSize;
+    width: $wuiSizeL;
+  }
+
+  &--small span {
+    width: auto;
+    height: $wuiSizeS;
+  }
+}
+
+.guideColorPalette__swatchHolder {
+  border-radius: $wuiBorderRadius;
+  overflow: hidden;
+}
+
+// -------------------------------------
+// Sass guideline page
+// -------------------------------------
+.guideSass__swatchItem + .guideSass__swatchItem {
+  margin-top: $wuiSize;
+}
+
+.guideSass__swatch {
+  height: $wuiSizeL;
+  width: $wuiSizeL;
+}
+
+.guideSass__swatch--danger {
+  background: $wuiColorDanger;
+}
+
+.guideSass__swatch--dangerTint {
+  background: tint($wuiColorDanger, 30%);
+}
+
+.guideSass__swatch--dangerShade {
+  background: shade($wuiColorDanger, 30%);
+}
+
+// sass-lint:disable no-color-literals
+.guideSass__swatch--primaryLight {
+  background: #0079A5;
+}
+
+// sass-lint:disable no-color-literals
+.guideSass__swatch--primaryDark {
+  background: #4DA1C0;
+}
+
+.guideSass__levelRow {
+  padding-left: $wuiSizeS;
+}
+
+.guideSass__levelRow + .guideSass__levelRow {
+  margin-top: $wuiSizeS;
+}
+
+.guideSass__level {
+  background-color: $wuiColorMediumShade;
+  transform: scaleY(.5) rotate(30deg) skew(-30deg, 0deg);
+  width: $wuiSize;
+  height: $wuiSize;
+}
+
+.guideSass__sizeRow + .guideSass__sizeRow {
+  margin-top: $wuiSize;
+}
+
+.guideSass__size {
+  background-color: $wuiColorFullShade;
+  display: inline-block;
+}
+
+.guideSass__sizeItem {
+  width: $wuiSizeXXL;
+  text-align: right;
+}
+
+.guideSass__fontSizeExample + .guideSass__fontSizeExample {
+  margin-top: $wuiSizeL;
+}
+
+.guideSass__fontSize {
+  margin-bottom: $wuiSizeS;
+}
+
+.guideSass__fontSize--wuiFontSizeXS {
+  @include wuiFontSizeXS;
+}
+
+.guideSass__fontSize--wuiFontSizeS {
+  @include wuiFontSizeS;
+}
+
+.guideSass__fontSize--wuiFontSizeM {
+  @include wuiFontSizeM;
+}
+
+.guideSass__fontSize--wuiFontSize {
+  @include wuiFontSize;
+}
+
+.guideSass__fontSize--wuiFontSizeL {
+  @include wuiFontSizeL;
+}
+
+.guideSass__fontSize--wuiFontSizeXL {
+  @include wuiFontSizeXL;
+}
+
+.guideSass__fontSize--wuiFontSizeXXL {
+  @include wuiFontSizeXL;
+}
+
+.guideSass__shadow {
+  padding: $wuiSizeXXL;
+  background: $wuiColorEmptyShade;
+  border-radius: $wuiBorderRadius;
+
+  & + .guideSass__shadow {
+    margin-top: $wuiSizeXL;
+  }
+}
+
+.colorGuidelines_colorPreviewTooLight rect {
+  stroke: transparentize($wuiColorLightShade, lightOrDarkTheme(.5, 0));
+  stroke-width: .25px;
+}
+
+.guideSass__shadow--wuiSlightShadow { @include wuiSlightShadow; }
+.guideSass__shadow--wuiBottomShadowSmall { @include wuiBottomShadowSmall; }
+.guideSass__shadow--wuiBottomShadowMedium { @include wuiBottomShadowMedium; }
+.guideSass__shadow--wuiBottomShadowFlat { @include wuiBottomShadowFlat; }
+.guideSass__shadow--wuiBottomShadow { @include wuiBottomShadow; }
+.guideSass__shadow--wuiBottomShadowLarge { @include wuiBottomShadowLarge; }
+
+.guideSass__overflowShadows {
+  overflow-y: hidden;
+  height: 200px;
+
+  .guideSass__overflowShadowText {
+    @include wuiYScrollWithShadows;
+    padding: $wuiSizeS;
+  }
+}
+
+.guideSass__overflowShadowsX {
+  @include wuiXScrollWithShadows;
+  padding: $wuiSizeS $wuiSizeS 0;
+
+  .guideSass__overflowShadowTextX {
+    width: 150%;
+  }
+}
+
+.guideSass__shadow--color {
+  @include wuiBottomShadowLarge(desaturate($wuiColorPrimary, 30%));
+}
+
+.guideSass__border {
+  display: flex;
+  padding: $wuiSize;
+}
+
+.guideSass__border--radius {
+  border: $wuiBorderThin;
+  border-radius: $wuiBorderRadius;
+}
+
+.guideSass__border--wuiBorderThin {
+  border: $wuiBorderThin;
+}
+
+.guideSass__border--wuiBorderThick {
+  border: $wuiBorderThick;
+}
+
+.guideSass__border--wuiBorderEditable {
+  border: $wuiBorderEditable;
+}
+
+.guideSass__fontFamily {
+  font-size: $wuiSizeL;
+  background: $wuiColorDarkestShade;
+  text-align: center;
+  width: $wuiSizeXL * 2;
+  height: $wuiSizeXL;
+  line-height: $wuiSizeXL;
+  color: $wuiColorEmptyShade;
+
+  &--code {
+    @include wuiCodeFont;
+  }
+}
+
+.guideSass__animRow + .guideSass__animRow {
+  margin-top: $wuiSizeL;
+}
+
+.guideSass__animParent {
+  background: $wuiColorLightestShade;
+  height: $wuiSize;
+  margin-top: $wuiSizeS;
+  position: relative;
+}
+
+.guideSass__animChild {
+  width: $wuiSize;
+  height: $wuiSize;
+  background: $wuiColorDarkestShade;
+  position: absolute;
+  left: 0;
+}
+
+.guideSass__animRow:hover .guideSass__animChild {
+  transition-property: left;
+  transition-timing-function: linear;
+  left: calc(100% - #{$wuiSize});
+}
+
+.guideSass__animRow--wuiAnimSpeedExtraFast:hover .guideSass__animChild {
+  transition-duration: $wuiAnimSpeedExtraFast;
+}
+
+.guideSass__animRow--wuiAnimSpeedFast:hover .guideSass__animChild {
+  transition-duration: $wuiAnimSpeedFast;
+}
+
+.guideSass__animRow--wuiAnimSpeedNormal:hover .guideSass__animChild {
+  transition-duration: $wuiAnimSpeedNormal;
+}
+
+.guideSass__animRow--wuiAnimSpeedSlow:hover .guideSass__animChild {
+  transition-duration: $wuiAnimSpeedSlow;
+}
+
+.guideSass__animRow--wuiAnimSpeedExtraSlow:hover .guideSass__animChild {
+  transition-duration: $wuiAnimSpeedExtraSlow;
+}
+
+.guideSass__animRow--wuiAnimSlightBounce:hover .guideSass__animChild {
+  transition-timing-function: $wuiAnimSlightBounce;
+  transition-duration: $wuiAnimSpeedSlow;
+}
+
+.guideSass__animRow--wuiAnimSlightResistance:hover .guideSass__animChild {
+  transition-timing-function: $wuiAnimSlightResistance;
+  transition-duration: $wuiAnimSpeedSlow;
+}
+
+.guideSass__breakpointExample {
+  padding: $wuiSize;
+  color: $wuiColorGhost;
+}
+
+.guideSass__themedBox {
+  padding: $wuiSize;
+  border-left: $wuiBorderThick;
+}
+
+// sass-lint:disable no-color-literals
+.guideSass__themedBox--light {
+  border-color: #0079A5;
+  background: tint(#0079A5, 90%);
+  color: #333;
+}
+
+.guideSass__themedBox--dark {
+  // sass-lint:disable no-color-literals
+  border-color: #4DA1C0;
+  background: shade(#4DA1C0, 70%);
+  color: #FFF;
+}
+
+.guideSass__contrastExample {
+  $backgroundColor: tintOrShade($wuiColorWarning, 90%, 70%);
+
+  background: $backgroundColor;
+  color: makeHighContrastColor($wuiColorWarning, $backgroundColor);
+  padding: $wuiSize;
+  border-left: $wuiBorderThick;
+  border-color: $wuiColorWarning;
+
+  .square {
+    fill: makeGraphicContrastColor($wuiColorWarning, $backgroundColor);
+    vertical-align: bottom;
+  }
+}
+
+.guideSection__shadedBox {
+  background-color: $wuiPageBackgroundColor;
+  padding: $wuiSize;
+  border-radius: $wuiBorderRadius;
+}
+
+.guideSection__emptyBox {
+  background-color: $wuiColorEmptyShade;
+}
+
+@import 'colors/color_section';
+
+@include wuiBreakpoint('xl') {
+  .guideSass__breakpointExample {
+    background: $wuiColorPrimary;
+
+    &:before {
+      content: 'You are currently in the xl breakpoint';
+    }
+  }
+}
+
+@include wuiBreakpoint('l') {
+  .guideSass__breakpointExample {
+    background: $wuiColorSecondary;
+
+    &:before {
+      content: 'You are currently in the l breakpoint';
+    }
+  }
+}
+
+@include wuiBreakpoint('m') {
+  .guideSass__breakpointExample {
+    background: $wuiColorAccent;
+
+    &:before {
+      content: 'You are currently in the m breakpoint';
+    }
+  }
+}
+
+@include wuiBreakpoint('s') {
+  .guideSass__breakpointExample {
+    background: $wuiColorWarning;
+
+    &:before {
+      content: 'You are currently in the s breakpoint';
+    }
+  }
+}
+
+@include wuiBreakpoint('xs') {
+  .guideSass__breakpointExample {
+    background: $wuiColorDanger;
+
+    &:before {
+      content: 'You are currently in the xs breakpoint';
+    }
+  }
+}

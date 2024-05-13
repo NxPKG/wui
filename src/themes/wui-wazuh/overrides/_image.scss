@@ -1,0 +1,6 @@
+.wuiImage-isFullScreen {
+  .wuiImage__caption {
+    color: $wuiColorGhost;
+    text-shadow: 0 1px 2px transparentize($wuiColorInk, .6);
+  }
+}

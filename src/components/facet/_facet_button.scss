@@ -1,0 +1,69 @@
+/**
+ * 1. Make sure the quantity doesn't get an underline on hover
+ */
+.wuiFacetButton {
+  @include wuiButtonBase;
+  @include wuiFont;
+  @include wuiFontSizeS;
+
+  height: $wuiButtonHeightSmall;
+  text-align: left;
+  text-decoration: none;
+  transition: all $wuiAnimSpeedFast ease-in;
+
+  &:hover,
+  &:focus {
+    &:not(:disabled) .wuiFacetButton__text {
+      text-decoration: underline; /* 1 */
+    }
+  }
+
+  &:focus {
+    background-color: $wuiFocusBackgroundColor;
+    // use box-shadow as a "faux outline" to apply left/right padding only
+    box-shadow: -$wuiSizeXS 0 $wuiFocusBackgroundColor, $wuiSizeXS 0 $wuiFocusBackgroundColor;
+  }
+
+  &:disabled {
+    color: $wuiButtonColorDisabledText;
+    pointer-events: none;
+
+    .wuiFacetButton__content {
+      pointer-events: auto;
+      cursor: not-allowed;
+    }
+
+    .wuiFacetButton__icon,
+    .wuiFacetButton__quantity {
+      opacity: .5;
+    }
+
+    &:focus {
+      background-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.wuiFacetButton__content {
+  @include wuiButtonContent;
+}
+
+.wuiFacetButton__text {
+  @include wuiTextShift;
+  @include wuiTextTruncate;
+  flex-grow: 1;
+  vertical-align: middle;
+
+  .wuiFacetButton--isSelected & {
+    font-weight: $wuiFontWeightBold;
+  }
+}
+
+.wuiFacetButton__icon {
+  transition: all $wuiAnimSpeedFast ease-in;
+}

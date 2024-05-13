@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTablePagination is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--alignItemsCenter wuiFlexGroup--justifyContentSpaceBetween wuiFlexGroup--directionRow"
+>
+  <div
+    class="wuiFlexItem wuiFlexItem--flexGrowZero"
+  >
+    <div
+      class="wuiPopover wuiPopover--anchorUpRight wuiPopover--withTitle"
+    >
+      <div
+        class="wuiPopover__anchor"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall"
+          data-test-subj="tablePaginationPopoverButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="arrowDown"
+            />
+            <span
+              class="wuiButtonEmpty__text"
+            >
+              Rows per page: 50
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiFlexItem wuiFlexItem--flexGrowZero"
+  >
+    <nav
+      aria-label="aria-label"
+      class="wuiPagination testClass1 testClass2"
+      data-test-subj="test subject string"
+    >
+      <button
+        aria-label="Previous page, 1"
+        class="wuiButtonIcon wuiButtonIcon--text"
+        data-test-subj="pagination-button-previous"
+        type="button"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+      </button>
+      <ul
+        aria-label="aria-label"
+        class="wuiPagination__list"
+      >
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-label="Page 1 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-0"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                1
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-current="true"
+            aria-label="Page 2 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiButtonEmpty-isDisabled wuiPaginationButton wuiPaginationButton-isActive wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-1"
+            disabled=""
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                2
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-label="Page 3 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-2"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                3
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-label="Page 4 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-3"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                4
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-label="Page 5 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-4"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                5
+              </span>
+            </span>
+          </button>
+        </li>
+      </ul>
+      <button
+        aria-label="Next page, 3"
+        class="wuiButtonIcon wuiButtonIcon--text"
+        data-test-subj="pagination-button-next"
+        type="button"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </button>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`WuiTablePagination is rendered when hiding the per page options 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--alignItemsCenter wuiFlexGroup--justifyContentSpaceBetween wuiFlexGroup--directionRow"
+>
+  <div
+    class="wuiFlexItem wuiFlexItem--flexGrowZero"
+  />
+  <div
+    class="wuiFlexItem wuiFlexItem--flexGrowZero"
+  >
+    <nav
+      aria-label="aria-label"
+      class="wuiPagination testClass1 testClass2"
+      data-test-subj="test subject string"
+    >
+      <button
+        aria-label="Previous page, 1"
+        class="wuiButtonIcon wuiButtonIcon--text"
+        data-test-subj="pagination-button-previous"
+        type="button"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+      </button>
+      <ul
+        aria-label="aria-label"
+        class="wuiPagination__list"
+      >
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-label="Page 1 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-0"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                1
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-current="true"
+            aria-label="Page 2 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiButtonEmpty-isDisabled wuiPaginationButton wuiPaginationButton-isActive wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-1"
+            disabled=""
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                2
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-label="Page 3 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-2"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                3
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-label="Page 4 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-3"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                4
+              </span>
+            </span>
+          </button>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-label="Page 5 of 5"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-4"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                5
+              </span>
+            </span>
+          </button>
+        </li>
+      </ul>
+      <button
+        aria-label="Next page, 3"
+        class="wuiButtonIcon wuiButtonIcon--text"
+        data-test-subj="pagination-button-next"
+        type="button"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </button>
+    </nav>
+  </div>
+</div>
+`;

@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFlexGroup is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <h2>
+    My Child
+  </h2>
+</div>
+`;
+
+exports[`WuiFlexGroup props alignItems baseline is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--alignItemsBaseline wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props alignItems center is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props alignItems flexEnd is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--alignItemsFlexEnd wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props alignItems flexStart is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--alignItemsFlexStart wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props alignItems stretch is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props component div is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props component span is rendered 1`] = `
+<span
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props direction column is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionColumn wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props direction columnReverse is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionColumnReverse wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props direction row is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props direction rowReverse is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRowReverse wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props gutterSize l is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props gutterSize m is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterMedium wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props gutterSize none is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props gutterSize s is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterSmall wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props gutterSize xl is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterExtraLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props gutterSize xs is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterExtraSmall wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props justifyContent center is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--justifyContentCenter wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props justifyContent flexEnd is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--justifyContentFlexEnd wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props justifyContent flexStart is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props justifyContent spaceAround is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--justifyContentSpaceAround wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props justifyContent spaceBetween is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--justifyContentSpaceBetween wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props justifyContent spaceEvenly is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--justifyContentSpaceEvenly wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props responsive false is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow"
+/>
+`;
+
+exports[`WuiFlexGroup props responsive true is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props wrap false is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+/>
+`;
+
+exports[`WuiFlexGroup props wrap true is rendered 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive wuiFlexGroup--wrap"
+/>
+`;

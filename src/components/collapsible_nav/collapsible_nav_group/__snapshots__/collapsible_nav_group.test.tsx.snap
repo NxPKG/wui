@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCollapsibleNavGroup is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiCollapsibleNavGroup testClass1 testClass2"
+  data-test-subj="test subject string"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props background dark is rendered 1`] = `
+<div
+  class="wuiCollapsibleNavGroup wuiCollapsibleNavGroup--dark"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props background light is rendered 1`] = `
+<div
+  class="wuiCollapsibleNavGroup wuiCollapsibleNavGroup--light"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props background none is rendered 1`] = `
+<div
+  class="wuiCollapsibleNavGroup"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props iconProps renders data-test-subj 1`] = `
+<div
+  class="wuiCollapsibleNavGroup wuiCollapsibleNavGroup--withHeading"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__heading"
+  >
+    <div
+      class="wuiFlexGroup wuiFlexGroup--gutterMedium wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow"
+    >
+      <div
+        class="wuiFlexItem wuiFlexItem--flexGrowZero"
+      >
+        <div
+          data-test-subj="DTS"
+          data-wuiicon-type="bolt"
+        />
+      </div>
+      <div
+        class="wuiFlexItem"
+      >
+        <h3
+          class="wuiTitle wuiTitle--xxsmall wuiCollapsibleNavGroup__title"
+          id="id__title"
+        >
+          Title
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props iconSize is rendered 1`] = `
+<div
+  class="wuiCollapsibleNavGroup wuiCollapsibleNavGroup--withHeading"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__heading"
+  >
+    <div
+      class="wuiFlexGroup wuiFlexGroup--gutterMedium wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow"
+    >
+      <div
+        class="wuiFlexItem wuiFlexItem--flexGrowZero"
+      >
+        <div
+          data-wuiicon-type="bolt"
+        />
+      </div>
+      <div
+        class="wuiFlexItem"
+      >
+        <h3
+          class="wuiTitle wuiTitle--xxsmall wuiCollapsibleNavGroup__title"
+          id="id__title"
+        >
+          Title
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props iconType is rendered 1`] = `
+<div
+  class="wuiCollapsibleNavGroup wuiCollapsibleNavGroup--withHeading"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__heading"
+  >
+    <div
+      class="wuiFlexGroup wuiFlexGroup--gutterMedium wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow"
+    >
+      <div
+        class="wuiFlexItem wuiFlexItem--flexGrowZero"
+      >
+        <div
+          data-wuiicon-type="bolt"
+        />
+      </div>
+      <div
+        class="wuiFlexItem"
+      >
+        <h3
+          class="wuiTitle wuiTitle--xxsmall wuiCollapsibleNavGroup__title"
+          id="id__title"
+        >
+          Title
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props title is rendered 1`] = `
+<div
+  class="wuiCollapsibleNavGroup wuiCollapsibleNavGroup--withHeading"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__heading"
+  >
+    <div
+      class="wuiFlexGroup wuiFlexGroup--gutterMedium wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow"
+    >
+      <div
+        class="wuiFlexItem"
+      >
+        <h3
+          class="wuiTitle wuiTitle--xxsmall wuiCollapsibleNavGroup__title"
+          id="id__title"
+        >
+          Title
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props titleElement can change the rendered element to h2 1`] = `
+<div
+  class="wuiCollapsibleNavGroup wuiCollapsibleNavGroup--withHeading"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__heading"
+  >
+    <div
+      class="wuiFlexGroup wuiFlexGroup--gutterMedium wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow"
+    >
+      <div
+        class="wuiFlexItem"
+      >
+        <h2
+          class="wuiTitle wuiTitle--xxsmall wuiCollapsibleNavGroup__title"
+          id="id__title"
+        >
+          Title
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup props titleSize can be larger 1`] = `
+<div
+  class="wuiCollapsibleNavGroup"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup throws a warning if iconType is passed without a title 1`] = `
+<div
+  class="wuiCollapsibleNavGroup"
+  id="id"
+>
+  <div
+    class="wuiCollapsibleNavGroup__children"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNavGroup when isCollapsible is true will render an accordion 1`] = `
+<div
+  class="wuiAccordion wuiCollapsibleNavGroup wuiCollapsibleNavGroup--withHeading"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="id"
+      aria-expanded="false"
+      class="wuiAccordion__button wuiAccordion__buttonReverse wuiCollapsibleNavGroup__heading"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      >
+        <div
+          class="wuiFlexGroup wuiFlexGroup--gutterMedium wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow"
+        >
+          <div
+            class="wuiFlexItem"
+          >
+            <h3
+              class="wuiTitle wuiTitle--xxsmall wuiCollapsibleNavGroup__title"
+              id="id__title"
+            >
+              Title
+            </h3>
+          </div>
+        </div>
+      </span>
+    </button>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="id"
+  >
+    <div>
+      <div
+        class=""
+      >
+        <div
+          class="wuiCollapsibleNavGroup__children"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

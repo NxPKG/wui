@@ -1,0 +1,608 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFormRow behavior onBlur is called in child 1`] = `
+<WuiFormRow
+  describedByIds={Array []}
+  display="row"
+  fullWidth={false}
+  hasChildLabel={true}
+  hasEmptyLabelSpace={false}
+  label={
+    <span>
+      Label
+    </span>
+  }
+  labelType="label"
+>
+  <div
+    className="wuiFormRow"
+    id="generated-id-row"
+  >
+    <div
+      className="wuiFormRow__labelWrapper"
+    >
+      <WuiFormLabel
+        className="wuiFormRow__label"
+        htmlFor="generated-id"
+        isFocused={false}
+        type="label"
+      >
+        <label
+          className="wuiFormLabel wuiFormRow__label"
+          htmlFor="generated-id"
+        >
+          <span>
+            Label
+          </span>
+        </label>
+      </WuiFormLabel>
+    </div>
+    <div
+      className="wuiFormRow__fieldWrapper"
+    >
+      <input
+        id="generated-id"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      />
+    </div>
+  </div>
+</WuiFormRow>
+`;
+
+exports[`WuiFormRow behavior onBlur works in parent even if not in child 1`] = `
+<WuiFormRow
+  describedByIds={Array []}
+  display="row"
+  fullWidth={false}
+  hasChildLabel={true}
+  hasEmptyLabelSpace={false}
+  label={
+    <span>
+      Label
+    </span>
+  }
+  labelType="label"
+>
+  <div
+    className="wuiFormRow"
+    id="generated-id-row"
+  >
+    <div
+      className="wuiFormRow__labelWrapper"
+    >
+      <WuiFormLabel
+        className="wuiFormRow__label"
+        htmlFor="generated-id"
+        isFocused={false}
+        type="label"
+      >
+        <label
+          className="wuiFormLabel wuiFormRow__label"
+          htmlFor="generated-id"
+        >
+          <span>
+            Label
+          </span>
+        </label>
+      </WuiFormLabel>
+    </div>
+    <div
+      className="wuiFormRow__fieldWrapper"
+    >
+      <input
+        id="generated-id"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      />
+    </div>
+  </div>
+</WuiFormRow>
+`;
+
+exports[`WuiFormRow behavior onFocus is called in child 1`] = `
+<WuiFormRow
+  describedByIds={Array []}
+  display="row"
+  fullWidth={false}
+  hasChildLabel={true}
+  hasEmptyLabelSpace={false}
+  label={
+    <span>
+      Label
+    </span>
+  }
+  labelType="label"
+>
+  <div
+    className="wuiFormRow"
+    id="generated-id-row"
+  >
+    <div
+      className="wuiFormRow__labelWrapper"
+    >
+      <WuiFormLabel
+        className="wuiFormRow__label"
+        htmlFor="generated-id"
+        isFocused={true}
+        type="label"
+      >
+        <label
+          className="wuiFormLabel wuiFormRow__label wuiFormLabel-isFocused"
+          htmlFor="generated-id"
+        >
+          <span>
+            Label
+          </span>
+        </label>
+      </WuiFormLabel>
+    </div>
+    <div
+      className="wuiFormRow__fieldWrapper"
+    >
+      <input
+        id="generated-id"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      />
+    </div>
+  </div>
+</WuiFormRow>
+`;
+
+exports[`WuiFormRow behavior onFocus works in parent even if not in child 1`] = `
+<WuiFormRow
+  describedByIds={Array []}
+  display="row"
+  fullWidth={false}
+  hasChildLabel={true}
+  hasEmptyLabelSpace={false}
+  label={
+    <span>
+      Label
+    </span>
+  }
+  labelType="label"
+>
+  <div
+    className="wuiFormRow"
+    id="generated-id-row"
+  >
+    <div
+      className="wuiFormRow__labelWrapper"
+    >
+      <WuiFormLabel
+        className="wuiFormRow__label"
+        htmlFor="generated-id"
+        isFocused={true}
+        type="label"
+      >
+        <label
+          className="wuiFormLabel wuiFormRow__label wuiFormLabel-isFocused"
+          htmlFor="generated-id"
+        >
+          <span>
+            Label
+          </span>
+        </label>
+      </WuiFormLabel>
+    </div>
+    <div
+      className="wuiFormRow__fieldWrapper"
+    >
+      <input
+        id="generated-id"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      />
+    </div>
+  </div>
+</WuiFormRow>
+`;
+
+exports[`WuiFormRow is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiFormRow testClass1 testClass2"
+  data-test-subj="test subject string"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props compressed is rendered 1`] = `
+<div
+  class="wuiFormRow wuiFormRow--compressed"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props describedByIds is rendered 1`] = `
+<div
+  className="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    className="wuiFormRow__fieldWrapper"
+  >
+    <input
+      aria-describedby="generated-id-additional"
+      id="generated-id"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props display type center is rendered 1`] = `
+<div
+  class="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper wuiFormRow__fieldWrapperDisplayOnly"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props display type centerCompressed is rendered 1`] = `
+<div
+  class="wuiFormRow wuiFormRow--compressed"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper wuiFormRow__fieldWrapperDisplayOnly"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props display type columnCompressed is rendered 1`] = `
+<div
+  class="wuiFormRow wuiFormRow--compressed wuiFormRow--horizontal"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props display type columnCompressedSwitch is rendered 1`] = `
+<div
+  class="wuiFormRow wuiFormRow--compressed wuiFormRow--horizontal wuiFormRow--hasSwitch"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props display type row is rendered 1`] = `
+<div
+  class="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props display type rowCompressed is rendered 1`] = `
+<div
+  class="wuiFormRow wuiFormRow--compressed"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props displayOnly is rendered 1`] = `
+<div
+  class="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper wuiFormRow__fieldWrapperDisplayOnly"
+  >
+    <span
+      id="generated-id"
+    >
+      just some text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props error as array is rendered 1`] = `
+<div
+  class="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      aria-describedby="generated-id-error-0 generated-id-error-1"
+      id="generated-id"
+    />
+    <div
+      aria-live="polite"
+      class="wuiFormErrorText wuiFormRow__text"
+      id="generated-id-error-0"
+    >
+      Error
+    </div>
+    <div
+      aria-live="polite"
+      class="wuiFormErrorText wuiFormRow__text"
+      id="generated-id-error-1"
+    >
+      Error2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props error as string is rendered 1`] = `
+<div
+  class="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      aria-describedby="generated-id-error-0"
+      id="generated-id"
+    />
+    <div
+      aria-live="polite"
+      class="wuiFormErrorText wuiFormRow__text"
+      id="generated-id-error-0"
+    >
+      Error
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props error is not rendered if isInvalid is false 1`] = `
+<div
+  class="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props fullWidth is rendered 1`] = `
+<div
+  class="wuiFormRow wuiFormRow--fullWidth"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props hasEmptyLabelSpace is rendered 1`] = `
+<div
+  class="wuiFormRow wuiFormRow--hasEmptyLabelSpace"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props helpText is rendered 1`] = `
+<div
+  class="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      aria-describedby="generated-id-help"
+      id="generated-id"
+    />
+    <div
+      class="wuiFormHelpText wuiFormRow__text"
+      id="generated-id-help"
+    >
+      <span>
+        This is help text.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props id is rendered 1`] = `
+<div
+  class="wuiFormRow"
+  id="id-row"
+>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props isInvalid is rendered 1`] = `
+<div
+  class="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    class="wuiFormRow__labelWrapper"
+  >
+    <label
+      aria-invalid="true"
+      class="wuiFormLabel wuiFormRow__label wuiFormLabel-isInvalid"
+      for="generated-id"
+    >
+      label
+    </label>
+  </div>
+  <div
+    class="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props label append is rendered 1`] = `
+<div
+  className="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    className="wuiFormRow__labelWrapper"
+  >
+    <WuiFormLabel
+      className="wuiFormRow__label"
+      htmlFor="generated-id"
+      isFocused={false}
+      type="label"
+    >
+      label
+    </WuiFormLabel>
+     
+    append
+  </div>
+  <div
+    className="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props label is rendered 1`] = `
+<div
+  className="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    className="wuiFormRow__labelWrapper"
+  >
+    <WuiFormLabel
+      className="wuiFormRow__label"
+      htmlFor="generated-id"
+      isFocused={false}
+      type="label"
+    >
+      label
+    </WuiFormLabel>
+  </div>
+  <div
+    className="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiFormRow props label renders as a legend and subsquently a fieldset wrapper 1`] = `
+<fieldset
+  className="wuiFormRow"
+  id="generated-id-row"
+>
+  <div
+    className="wuiFormRow__labelWrapper"
+  >
+    <WuiFormLabel
+      className="wuiFormRow__label"
+      type="legend"
+    >
+      label
+    </WuiFormLabel>
+  </div>
+  <div
+    className="wuiFormRow__fieldWrapper"
+  >
+    <input
+      id="generated-id"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    />
+  </div>
+</fieldset>
+`;

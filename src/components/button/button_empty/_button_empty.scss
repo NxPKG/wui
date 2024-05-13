@@ -1,0 +1,104 @@
+/**
+ * 1. We don't want any of the animations that come inherited from the mixin.
+ *    These should act like normal links instead.
+ * 2. Change the easing, quickness to not bounce so lighter backgrounds don't flash
+ */
+.wuiButtonEmpty {
+  @include wuiButton;
+
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  // sass-lint:disable-block no-important
+  transform: none !important; /* 1 */
+  animation: none !important; /* 1 */
+  transition-timing-function: ease-in; /* 2 */
+  transition-duration: $wuiAnimSpeedFast; /* 2 */
+
+  .wuiButtonEmpty__content {
+    padding: 0 $wuiSizeS;
+  }
+
+  .wuiButtonEmpty__text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &.wuiButtonEmpty--small {
+    height: $wuiButtonHeightSmall;
+  }
+
+  &.wuiButtonEmpty--xSmall {
+    height: $wuiSizeL;
+    font-size: $wuiFontSizeS;
+  }
+
+  &:disabled {
+    @include wuiButtonContentDisabled;
+
+    color: $wuiButtonColorDisabledText;
+
+    &:focus {
+      background-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.wuiButtonEmpty--flushLeft,
+.wuiButtonEmpty--flushRight,
+.wuiButtonEmpty--flushBoth {
+  .wuiButtonEmpty__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wuiButtonEmpty--flushLeft {
+  margin-right: $wuiSizeS;
+}
+
+.wuiButtonEmpty--flushRight {
+  margin-left: $wuiSizeS;
+}
+
+// Modifier naming and colors.
+$wuiButtonEmptyTypes: (
+  primary: $wuiColorPrimary,
+  danger: $wuiColorDanger,
+  disabled: $wuiButtonColorDisabledText,
+  ghost: $wuiColorGhost,
+  text: $wuiTextColor,
+);
+
+// Create button modifiers based upon the map.
+@each $name, $color in $wuiButtonEmptyTypes {
+  .wuiButtonEmpty--#{$name} {
+    @if ($name == 'ghost') {
+      // Ghost is unique and ALWAYS sits against a dark background.
+      color: $color;
+    } @else if ($name == 'text') {
+      // The default color is lighter than the normal text color, make the it the text color
+      color: $wuiTextColor;
+    } @else {
+      // Other colors need to check their contrast against the page background color.
+      color: makeHighContrastColor($color, $wuiColorEmptyShade);
+    }
+
+    &:focus {
+      background-color: transparentize($color, .9);
+    }
+
+    &:hover {
+      @if ($name == 'disabled') {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+

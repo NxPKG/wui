@@ -1,0 +1,109 @@
+.wuiAccordion__triggerWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.wuiAccordion__button {
+  @include wuiFontSize;
+  text-align: left;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &:focus {
+    .wuiAccordion__iconWrapper {
+      @include wuiAccordionIconFocus;
+    }
+  }
+}
+
+.wuiAccordion__buttonReverse {
+  // Puts the arrow on the right
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  .wuiAccordion__iconWrapper {
+    @include wuiAccordionIconMargin(right);
+  }
+}
+
+.wuiAccordion__iconWrapper {
+  @include size($wuiSize);
+  @include wuiAccordionIconMargin;
+  border-radius: $wuiBorderRadius;
+  flex-shrink: 0;
+
+  // Nested to override WuiIcon
+  .wuiAccordion__icon {
+    vertical-align: top;
+    transition: transform $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+  }
+
+  .wuiAccordion__icon-isOpen {
+    transform: rotate(90deg);
+  }
+}
+
+.wuiAccordion__iconButton {
+  @include wuiAccordionIconMargin(right);
+
+  &:focus {
+    @include wuiAccordionIconFocus;
+  }
+}
+
+.wuiAccordion__optionalAction {
+  flex-shrink: 0;
+}
+
+.wuiAccordion__childWrapper {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translatez(0);
+  // sass-lint:disable-block indentation
+  transition:
+    height $wuiAnimSpeedNormal $wuiAnimSlightResistance,
+    opacity $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+}
+
+$paddingSizes: (
+  xs: $wuiSizeXS,
+  s: $wuiSizeS,
+  m: $wuiSize,
+  l: $wuiSizeL,
+  xl: $wuiSizeXL,
+);
+
+// Create button modifiers based upon the map.
+@each $name, $size in $paddingSizes {
+  .wuiAccordion__padding--#{$name} {
+    padding: $size;
+  }
+}
+
+.wuiAccordion.wuiAccordion-isOpen {
+  .wuiAccordion__childWrapper {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.wuiAccordion__children-isLoading {
+  line-height: $wuiLineHeight;
+  display: flex;
+  align-items: center;
+
+  .wuiAccordion__spinner {
+    margin-right: $wuiSizeXS;
+  }
+}

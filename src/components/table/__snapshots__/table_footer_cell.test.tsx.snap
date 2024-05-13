@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTableFooterCell align defaults to left 1`] = `
+<td
+  class="wuiTableFooterCell"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`WuiTableFooterCell align renders center when specified 1`] = `
+<td
+  class="wuiTableFooterCell"
+>
+  <div
+    class="wuiTableCellContent wuiTableCellContent--alignCenter"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`WuiTableFooterCell align renders right when specified 1`] = `
+<td
+  class="wuiTableFooterCell"
+>
+  <div
+    class="wuiTableCellContent wuiTableCellContent--alignRight"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    />
+  </div>
+</td>
+`;
+
+exports[`WuiTableFooterCell is rendered 1`] = `
+<td
+  aria-label="aria-label"
+  class="wuiTableFooterCell testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiTableCellContent testClass1 testClass2"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      children
+    </span>
+  </div>
+</td>
+`;
+
+exports[`WuiTableFooterCell width and style accepts style attribute 1`] = `
+<td
+  class="wuiTableFooterCell"
+  style="width:20%"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      Test
+    </span>
+  </div>
+</td>
+`;
+
+exports[`WuiTableFooterCell width and style accepts width attribute 1`] = `
+<td
+  class="wuiTableFooterCell"
+  style="width:10%"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      Test
+    </span>
+  </div>
+</td>
+`;
+
+exports[`WuiTableFooterCell width and style accepts width attribute as number 1`] = `
+<td
+  class="wuiTableFooterCell"
+  style="width:100px"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      Test
+    </span>
+  </div>
+</td>
+`;
+
+exports[`WuiTableFooterCell width and style resolves style and width attribute 1`] = `
+<td
+  class="wuiTableFooterCell"
+  style="width:10%"
+>
+  <div
+    class="wuiTableCellContent"
+  >
+    <span
+      class="wuiTableCellContent__text"
+    >
+      Test
+    </span>
+  </div>
+</td>
+`;

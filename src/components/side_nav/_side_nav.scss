@@ -1,0 +1,71 @@
+// These mobile children are hidden in everything but mobile view.
+.wuiSideNav__mobileToggle {
+  display: none;
+  border-bottom: $wuiBorderThin;
+  padding: $wuiSize $wuiSizeL;
+  width: 100%;
+  text-align: left;
+
+  /**
+   * 1. This toggle also works with WUI link, but we need the outline
+   *    that comes with the focus state.
+   */
+  &:focus {
+    outline: none;
+  }
+}
+
+.wuiSideNav__mobileIcon {
+  fill: $wuiColorPrimary;
+}
+
+.wuiSideNav__mobileWrap {
+  display: flex;
+}
+
+.wuiSideNav__mobileTitle {
+  flex-grow: 1;
+  color: $wuiColorPrimary;
+}
+
+.wuiSideNav__hideButton {
+  width: $wuiSizeL;
+  height: $wuiSizeL;
+  border-radius: $wuiBorderRadius;
+  border: $wuiBorderThin;
+  background: $wuiColorEmptyShade;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  right: -$wuiSizeXXL;
+  top: $wuiSizeXL;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  /**
+   * 1. Animation doesn't work against height. Need max-height instead.
+   *    We set a value larger than what is needed to fake "auto".
+   */
+  .wuiSideNav-isOpenMobile {
+    .wuiSideNav__content {
+      visibility: visible;
+      opacity: 1;
+      margin: $wuiSizeL;
+      max-height: 5000px; /* 1 */
+      transition: all $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+    }
+  }
+
+  .wuiSideNav__mobileToggle {
+    display: block;
+  }
+
+  .wuiSideNav__content {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    margin: 0 $wuiSizeL;
+  }
+}

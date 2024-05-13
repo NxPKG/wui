@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiStepNumber is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiStepNumber testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiStepNumber props has titleSize is rendered 1`] = `
+<div
+  class="wuiStepNumber"
+>
+  1
+</div>
+`;
+
+exports[`WuiStepNumber props isHollow is rendered 1`] = `
+<div
+  class="wuiStepNumber wuiStepNumber-isHollow"
+/>
+`;
+
+exports[`WuiStepNumber props status complete is rendered 1`] = `
+<div
+  class="wuiStepNumber wuiStepNumber--complete"
+>
+  <div
+    aria-label="complete"
+    class="wuiStepNumber__icon"
+    data-wuiicon-type="check"
+  />
+</div>
+`;
+
+exports[`WuiStepNumber props status danger is rendered 1`] = `
+<div
+  class="wuiStepNumber wuiStepNumber--danger"
+>
+  <div
+    aria-label="has errors"
+    class="wuiStepNumber__icon"
+    data-wuiicon-type="cross"
+  />
+</div>
+`;
+
+exports[`WuiStepNumber props status disabled is rendered 1`] = `
+<div
+  class="wuiStepNumber wuiStepNumber--disabled"
+>
+  1
+</div>
+`;
+
+exports[`WuiStepNumber props status incomplete is rendered 1`] = `
+<div
+  class="wuiStepNumber wuiStepNumber--incomplete"
+>
+  1
+</div>
+`;
+
+exports[`WuiStepNumber props status warning is rendered 1`] = `
+<div
+  class="wuiStepNumber wuiStepNumber--warning"
+>
+  <div
+    aria-label="has warnings"
+    class="wuiStepNumber__icon"
+    data-wuiicon-type="alert"
+  />
+</div>
+`;

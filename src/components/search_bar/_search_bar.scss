@@ -1,0 +1,10 @@
+.wuiSearchBar__searchHolder {
+  min-width: $wuiFormMaxWidth / 2;
+}
+
+@include wuiBreakpoint('m', 'l', 'xl') {
+  .wuiSearchBar__filtersHolder {
+    // Helps with flex-wrapping
+    max-width: calc(100% - #{$wuiSize});
+  }
+}

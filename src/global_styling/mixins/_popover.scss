@@ -1,0 +1,22 @@
+@mixin wuiPopoverTitle {
+  @include wuiTitle('xxs');
+  padding: $wuiSizeM;
+  text-transform: uppercase;
+  border-bottom: $wuiBorderThin;
+
+  // Subtract 1px from the border radius since it's inside another container that also has the border radius
+  // -- makes for better rounded corners
+  border-top-left-radius: $wuiBorderRadius - 1px;
+  border-top-right-radius: $wuiBorderRadius - 1px;
+}
+
+@mixin wuiPopoverFooter {
+  @include wuiFontSizeS;
+  padding: $wuiSizeM;
+  border-top: $wuiBorderThin;
+
+  // Subtract 1px from the border radius since it's inside another container that also has the border radius
+  // -- makes for better rounded corners
+  border-bottom-left-radius: $wuiBorderRadius - 1px;
+  border-bottom-right-radius: $wuiBorderRadius - 1px;
+}

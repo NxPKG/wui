@@ -1,0 +1,10 @@
+@mixin wuiSuperDatePickerText {
+  @include wuiFormControlText;
+  display: block;
+  width: 100%;
+  padding: 0 $wuiSizeS;
+  line-height: $wuiFormControlLayoutGroupInputHeight;
+  height: $wuiFormControlLayoutGroupInputHeight;
+  word-break: break-all;
+  transition: background $wuiAnimSpeedFast ease-in;
+}

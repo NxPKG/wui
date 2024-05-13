@@ -1,0 +1,8 @@
+@import '../text/_variables';
+
+.wuiEmptyPrompt {
+  max-width: $wuiTextConstrainedMaxWidth;
+  text-align: center;
+  padding: $wuiSizeL;
+  margin: auto;
+}

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSelectable is rendered 1`] = `
+<div
+  class="wuiSelectable testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiSelectable props allowExclusions 1`] = `
+<div
+  class="wuiSelectable"
+/>
+`;
+
+exports[`WuiSelectable props height can be forced 1`] = `
+<div
+  class="wuiSelectable"
+/>
+`;
+
+exports[`WuiSelectable props height can be full 1`] = `
+<div
+  class="wuiSelectable wuiSelectable-fullHeight"
+/>
+`;
+
+exports[`WuiSelectable props isLoading 1`] = `
+<div
+  class="wuiSelectable"
+/>
+`;
+
+exports[`WuiSelectable props listProps 1`] = `
+<div
+  class="wuiSelectable"
+/>
+`;
+
+exports[`WuiSelectable props renderOption 1`] = `
+<div
+  class="wuiSelectable"
+/>
+`;
+
+exports[`WuiSelectable props searchable 1`] = `
+<div
+  class="wuiSelectable"
+/>
+`;
+
+exports[`WuiSelectable props singleSelection 1`] = `
+<div
+  class="wuiSelectable"
+/>
+`;

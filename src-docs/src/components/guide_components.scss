@@ -1,0 +1,304 @@
+@import '../../../src/global_styling/mixins/helpers';
+
+$guideSideNavWidth: 240px;
+$guideZLevelHighest: $wuiZLevel9 + 1000;
+
+.guideBody {
+  background: linear-gradient(90deg, $wuiPageBackgroundColor 50%, $wuiColorEmptyShade 50%);
+
+  &--overflowHidden {
+    overflow: hidden;
+  }
+}
+
+@include wuiHeaderAffordForFixed;
+
+.wuiBody--headerIsFixed {
+  .guideSideNav {
+    top: $wuiHeaderHeightCompensation;
+  }
+}
+
+.wuiBody--headerIsFixed--double {
+  @include wuiHeaderAffordForFixed($wuiHeaderHeightCompensation * 2);
+
+  .guideSideNav {
+    top: $wuiHeaderHeightCompensation * 2;
+  }
+
+  .wuiHeader:not(.wuiHeader--fixed) {
+    // Force headers below the full screen.
+    // This shouldn't be necessary in consuming applications because headers should always be at the top of the page
+    z-index: 0;
+  }
+}
+
+.guidePage {
+  padding: 0;
+}
+
+.guideSideNav {
+  width: $guideSideNavWidth;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+
+  .guideSideNav__identity {
+    border-bottom: $wuiBorderThin;
+    padding: $wuiSize;
+  }
+
+  .guideSideNav__theme {
+    font-size: $wuiFontSizeS;
+    color: $wuiColorDarkShade;
+  }
+
+  .guideSideNav__content {
+    @include wuiScrollBar;
+
+    width: $guideSideNavWidth;
+    padding: $wuiSize;
+    position: absolute;
+    bottom: 0;
+    top: 132px;
+    overflow-y: auto;
+  }
+}
+
+.guideSideNav__item {
+  // Hate to do this, but it's the only way to get the badge to display correctly
+  .wuiSideNavItemButton__label {
+    // By using the `icon` display of WuiSideNavItem, it will continue to:
+    // a) truncate properly
+    // b) not underline the badge when selected
+    // But it shows to the left of the label instead of right, so we have to shift the order of the label
+    order: -1;
+  }
+
+  .guideSideNav__newBadge {
+    margin-left: $wuiSizeXS;
+    margin-right: $wuiSizeXS;
+  }
+
+  // Shift the margin on the badge when selected and the dropdown arrow no longer shows
+  .wuiSideNavItemButton-isSelected .guideSideNav__newBadge {
+    margin-right: 0;
+  }
+}
+
+.guideSideNav__item--inSearch {
+  color: $wuiColorDarkShade;
+}
+
+.guidePageContent {
+  flex: 1 1 auto;
+  padding: $wuiSize $wuiSizeXL;
+  min-height: 100vh;
+  background-color: $wuiColorEmptyShade;
+  border-left: $wuiBorderThin;
+  max-width: 1000px;
+  margin-left: 240px;
+}
+
+.guideDemo__highlightLayout {
+  .wuiPageBody {
+    min-height: 460px;
+  }
+
+  div {
+    background: transparentize($wuiColorPrimary, .9);
+  }
+}
+
+.guideDemo__highlightSpacer {
+  .wuiSpacer {
+    background: transparentize($wuiColorPrimary, .9);
+  }
+}
+
+.guideDemo__highlightGrid {
+  .wuiFlexItem {
+    background: transparentize($wuiColorPrimary, .9);
+    padding: 16px;
+  }
+}
+
+.guideDemo__highlightGridWrap {
+  .wuiFlexItem div {
+    background: transparentize($wuiColorPrimary, .9);
+    padding: 16px;
+  }
+}
+
+// sass-lint:disable no-important
+.guideDemo__textLines {
+  background-image: linear-gradient($wuiFocusBackgroundColor 1px, transparent 1px) !important;
+  background-size: 100% 8px !important;
+  background-position-y: 2px;
+}
+
+// sass-lint:disable no-important
+.guideDemo__textLines--s {
+  background-image: linear-gradient($wuiFocusBackgroundColor 1px, transparent 1px) !important;
+  background-size: 100% 7px !important;
+  background-position-y: -2px;
+}
+
+.guideDemo__color {
+  padding: $wuiSizeS;
+  color: $wuiColorEmptyShade;
+  font-size: $wuiFontSizeS;
+  margin-top: $wuiSizeS;
+  line-height: 1.5;
+  height: 64px;
+
+  .guideDemo__colorHex {
+    font-size: $wuiFontSize;
+  }
+}
+
+
+.guideDemo__size {
+  background: $wuiTextColor;
+  display: inline-block;
+}
+
+.guideDemo__sizeText {
+  line-height: 1.5;
+}
+
+.guideDemo__sizeGrid {
+  font-size: $wuiFontSizeS;
+}
+
+.guideDemo__ghostBackground {
+  @if (lightness($wuiTextColor) < 50) {
+    background: $wuiColorDarkestShade;
+  }
+}
+
+.guideDemo__icon {
+  text-align: center;
+
+  svg,
+  img {
+    margin-bottom: $wuiSizeS;
+  }
+}
+
+.dpTest__purpleCal {
+  background: $wuiColorVis3;
+}
+
+.dpTest__purpleInput {
+  outline: solid 2px $wuiColorVis3;
+}
+
+.dpTest__purpleDay {
+  background: $wuiColorVis3;
+}
+
+.dpTest__purplePopper {
+  outline: solid 2px $wuiColorVis3;
+}
+
+.guideOptionsPopover {
+  width: $wuiSize * 16;
+}
+
+.guideCharts__customLegend {
+  font-size: $wuiFontSizeXS;
+  position: absolute;
+  width: 93px;
+  right: 0;
+  bottom: 0;
+  padding: $wuiSizeXS;
+}
+
+.guideCharts__customLegendLine {
+  display: inline-block;
+  width: $wuiSize;
+  height: $wuiSizeM / 2;
+  background-color: currentColor;
+  vertical-align: middle;
+  margin-right: $wuiSizeS;
+}
+
+.guideCharts__customLegendLine--thin {
+  height: 1px;
+}
+
+.guideFullScreenOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.wuiDataGridRowCell--favoriteFranchise {
+  background: transparentize($color: #800080, $amount: .95) !important;
+}
+
+.wuiDataGridHeaderCell--favoriteFranchise {
+  background: transparentize($color: #800080, $amount: .9) !important;
+}
+
+.wuiTreeView__nodeInnerExample {
+  color: $wuiColorDanger;
+  font-weight: $wuiFontWeightBold;
+}
+
+.wuiSelectableTemplateSitewide__optionMeta--PINK {
+  font-weight: $wuiFontWeightMedium;
+  color: $wuiColorAccentText;
+}
+
+@import '../views/guidelines/index';
+@import 'guide_section/index';
+@import 'guide_rule/index';
+
+@include wuiBreakpoint('xs', 's') {
+  .guidePage {
+    display: block; // Fixes IE
+  }
+
+  .guideBody {
+    background: none;
+  }
+
+  .guideSideNav {
+    position: static;
+    width: auto;
+
+    // This is a temporary hack till we fix how classes pass into form controls
+    .wuiFormControlLayout,
+    input[type='search'] {
+      max-width: 100%;
+    }
+
+    .guideSideNav__content {
+      position: relative;
+      width: auto;
+      top: auto;
+      bottom: auto;
+      padding: 0;
+      overflow-y: hidden;
+    }
+
+    .guideSideNav__identity {
+      position: relative;
+      width: auto;
+    }
+
+    .guideSideNav__mobileToggle {
+      background: $wuiColorPrimary;
+      color: $wuiColorEmptyShade !important;
+    }
+  }
+
+  .guidePageContent {
+    margin-left: 0;
+    width: 100%;
+  }
+}

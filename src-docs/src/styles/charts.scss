@@ -1,0 +1,400 @@
+/* Charts
+ *
+ * NOTICE: This file reproduces and adapts code of @elastic/charts@20.0.0
+ * used for the documentation of @wazuh/wui library.
+ * file: @elastic/charts/dist/theme
+*/
+
+.echChartStatus {
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -100000;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.echChartBackground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.echChart {
+  position: relative;
+  display: flex;
+  height: 100%;
+
+  &--column {
+    flex-direction: column;
+  }
+}
+
+.echContainer {
+  flex: 1;
+  position: relative;
+}
+
+.echChartPointerContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.echChartResizer {
+  z-index: -10000000;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.echTooltip {
+  @include wuiToolTipStyle;
+  @include wuiFontSizeXS;
+  padding: 0;
+  transition: opacity $wuiAnimSpeedNormal;
+  pointer-events: none;
+  user-select: none;
+  max-width: 256px;
+
+  &__list {
+    padding: $wuiSizeXS;
+  }
+
+  &__header {
+    @include wuiToolTipTitle;
+    margin-bottom: 0;
+    padding: $wuiSizeXS ($wuiSizeXS * 2);
+  }
+
+  &__item {
+    display: flex;
+    min-width: 1px;
+
+    &--container {
+      display: flex;
+      flex: 1 1 auto;
+      padding: 3px;
+      padding-left: 0;
+      min-width: 1px;
+    }
+
+    &--backgroundColor {
+      position: relative;
+      width: $wuiSizeXS;
+      margin-right: 3px;
+      flex-shrink: 0;
+    }
+
+    &--color {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__label {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    min-width: 1px;
+    flex: 1 1 auto;
+  }
+
+  &__value {
+    font-weight: $wuiFontWeightBold;
+    text-align: right;
+    font-feature-settings: 'tnum';
+    margin-left: $wuiSizeS;
+  }
+
+  &__rowHighlighted {
+    background-color: transparentize($wuiColorGhost, .9);
+  }
+
+  &--hidden {
+    opacity: 0;
+  }
+}
+
+
+[id^='echTooltipPortal'] {
+  pointer-events: none;
+  z-index: 10000000;
+}
+
+[id^='echAnchor'] {
+  position: absolute;
+  pointer-events: none;
+}
+
+.echTooltipPortal__invisible {
+  position: fixed;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+.echIcon {
+  flex-shrink: 0; // Ensures it never scales down below it's intended size
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+
+  svg {
+    transform: translate(0, 0); // Hack to fix Firefox "softness"
+  }
+
+  &:focus {
+    opacity: 1; // We often hide icons on hover. Make sure they appear on focus.
+    background: $wuiFocusBackgroundColor;
+  }
+}
+
+
+$echLegendMaxWidth: 200px;
+$echLegendRowGap: 8px;
+$echLegendColumnGap: 24px;
+
+.echLegend {
+  &--top,
+  &--bottom {
+    .echLegendList {
+      // sass-lint:disable-block mixins-before-declarations
+      display: grid;
+      grid-column-gap: $echLegendColumnGap;
+      grid-row-gap: $echLegendRowGap;
+      margin-top: $echLegendRowGap;
+      margin-bottom: $echLegendRowGap;
+
+      @include internetExplorerOnly {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &--left,
+  &--right {
+    .echLegendList {
+      flex-direction: column;
+    }
+  }
+
+  &--top,
+  &--left {
+    order: 0;
+  }
+
+  &--bottom,
+  &--right {
+    order: 1;
+  }
+
+  &--debug {
+    background: #F00; // sass-lint:disable-line no-color-literals
+    position: relative;
+  }
+
+  .echLegendListContainer {
+    @include wuiYScrollWithShadows;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+$legendItemVerticalPadding: $echLegendRowGap / 2;
+
+.echLegendItem {
+  color: $wuiTextColor;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  user-select: none;
+  align-items: center;
+  width: 100%;
+
+  &:not(&--hidden) {
+    .echLegendItem__color--changable {
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    background-color: #E7F0F7; // sass-lint:disable-line no-color-literals
+  }
+
+  &__action {
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: $wuiSizeXS;
+  }
+
+  &__color {
+    margin-right: $wuiSizeXS;
+  }
+
+  &__visibility {
+    margin-right: $wuiSizeXS;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__label {
+    @include wuiFontSizeXS;
+    @include wuiTextTruncate;
+    flex: 1 1 auto;
+
+    &--clickable {
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__extra {
+    @include wuiFontSizeXS;
+    text-align: right;
+    flex: 0 0 auto;
+    margin-left: $wuiSizeXS;
+    font-feature-settings: 'tnum';
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &--right,
+  &--left {
+    margin-top: $legendItemVerticalPadding;
+    margin-bottom: $legendItemVerticalPadding;
+  }
+
+  @include internetExplorerOnly {
+    &--bottom,
+    &--top {
+      width: $echLegendMaxWidth;
+      margin-right: $wuiSizeL;
+    }
+
+    margin-top: $legendItemVerticalPadding; // sass-lint:disable-line declarations-before-nesting
+    margin-bottom: $legendItemVerticalPadding; // sass-lint:disable-line declarations-before-nesting
+  }
+
+  &--hidden {
+    color: $wuiColorDarkShade;
+  }
+}
+
+
+.echReactiveChart_unavailable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  @include wuiFontSizeXS; // sass-lint:disable-line mixins-before-declarations
+  color: $wuiColorDarkShade;
+}
+
+.echHighlighter {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.echHighlighterOverlay__fill {
+  fill: transparentize($wuiColorGhost, .8);
+}
+
+.echHighlighterOverlay__stroke {
+  stroke: transparentize($wuiColorGhost, .8);
+}
+
+.echHighlighter__mask {
+  fill: transparentize($wuiColorEmptyShade, .5);
+}
+
+.echCrosshair,
+.echCrosshair__band,
+.echCrosshair__line {
+  position: absolute;
+  pointer-events: none;
+}
+
+.echCrosshair__line {
+  z-index: $wuiZLevel8;
+}
+
+.echBrushTool {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.echAnnotation {
+  pointer-events: none;
+  position: absolute;
+  user-select: none;
+  font-size: $wuiFontSizeXS;
+  font-weight: $wuiFontWeightBold;
+}
+
+.echAnnotation__tooltip {
+  @include wuiToolTipStyle;
+  @include wuiFontSizeXS;
+  padding: 0;
+  transition: opacity $wuiAnimSpeedNormal;
+  pointer-events: none;
+  user-select: none;
+  max-width: 256px;
+}
+
+.echAnnotation__header {
+  @include wuiToolTipTitle;
+  padding: $wuiSizeXS ($wuiSizeXS * 2);
+}
+
+.echAnnotation__details {
+  padding: $wuiSizeXS ($wuiSizeXS * 2);
+}
+
+.echCanvasRenderer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+}

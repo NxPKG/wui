@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders WuiColorStopThumb 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiColorStopPopover testClass1 testClass2"
+  style="left:0%"
+>
+  <div
+    class="wuiPopover__anchor wuiColorStopPopover__anchor"
+  >
+    <button
+      aria-disabled="false"
+      aria-label="Press the Enter key to modify this stop. Press Escape to focus the group"
+      aria-valuemax="24"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="wuiRangeThumb wuiColorStopThumb"
+      data-test-subj="wuiColorStopThumb"
+      role="slider"
+      style="background:rgb(255,0,0)"
+      tabindex="-1"
+      title="Click to edit, drag to reposition"
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders disabled WuiColorStopThumb 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiColorStopPopover testClass1 testClass2"
+  style="left:0%"
+>
+  <div
+    class="wuiPopover__anchor wuiColorStopPopover__anchor"
+  >
+    <button
+      aria-disabled="true"
+      aria-label="Press the Enter key to modify this stop. Press Escape to focus the group"
+      aria-valuemax="24"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="wuiRangeThumb wuiColorStopThumb"
+      data-test-subj="wuiColorStopThumb"
+      disabled=""
+      role="slider"
+      style="background:rgb(255,0,0)"
+      tabindex="-1"
+      title="Click to edit, drag to reposition"
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders picker-only WuiColorStopThumb 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiColorStopPopover testClass1 testClass2"
+  style="left:0%"
+>
+  <div
+    class="wuiPopover__anchor wuiColorStopPopover__anchor"
+  >
+    <button
+      aria-disabled="false"
+      aria-label="Press the Enter key to modify this stop. Press Escape to focus the group"
+      aria-valuemax="24"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="wuiRangeThumb wuiColorStopThumb"
+      data-test-subj="wuiColorStopThumb"
+      role="slider"
+      style="background:rgb(255,0,0)"
+      tabindex="-1"
+      title="Click to edit, drag to reposition"
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders readOnly WuiColorStopThumb 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiColorStopPopover testClass1 testClass2"
+  style="left:0%"
+>
+  <div
+    class="wuiPopover__anchor wuiColorStopPopover__anchor"
+  >
+    <button
+      aria-disabled="false"
+      aria-label="Press the Enter key to modify this stop. Press Escape to focus the group"
+      aria-valuemax="24"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="wuiRangeThumb wuiColorStopThumb"
+      data-test-subj="wuiColorStopThumb"
+      role="slider"
+      style="background:rgb(255,0,0)"
+      tabindex="-1"
+      title="Click to edit, drag to reposition"
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders swatch-only WuiColorStopThumb 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiColorStopPopover testClass1 testClass2"
+  style="left:0%"
+>
+  <div
+    class="wuiPopover__anchor wuiColorStopPopover__anchor"
+  >
+    <button
+      aria-disabled="false"
+      aria-label="Press the Enter key to modify this stop. Press Escape to focus the group"
+      aria-valuemax="24"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="wuiRangeThumb wuiColorStopThumb"
+      data-test-subj="wuiColorStopThumb"
+      role="slider"
+      style="background:rgb(255,0,0)"
+      tabindex="-1"
+      title="Click to edit, drag to reposition"
+      type="button"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,56 @@
+.wuiPopover__panel {
+  .wuiPopover__panelArrow {
+    &:before {
+      filter: blur($wuiSizeXS - 1px);
+      opacity: .2;
+    }
+
+    $arrowShadowCompensation: $wuiSizeXS;
+
+    &.wuiPopover__panelArrow--top {
+      &:before {
+        bottom: -$wuiPopoverArrowSize;
+        border-top-color: $wuiShadowColor;
+        clip-path: polygon(#{-$arrowShadowCompensation} 0, #{$wuiPopoverArrowSize * 2 + $arrowShadowCompensation} 0, #{$wuiPopoverArrowSize * 2 + $arrowShadowCompensation} #{$wuiPopoverArrowSize + $arrowShadowCompensation}, #{-$arrowShadowCompensation} #{$wuiPopoverArrowSize + $arrowShadowCompensation});
+      }
+
+      &:after {
+        bottom: -$wuiPopoverArrowSize + 1;
+      }
+    }
+
+    &.wuiPopover__panelArrow--right {
+      &:before {
+        border-right-color: $wuiShadowColor;
+        clip-path: polygon(#{-$arrowShadowCompensation} #{-$arrowShadowCompensation}, $wuiPopoverArrowSize #{-$arrowShadowCompensation}, $wuiPopoverArrowSize #{$wuiPopoverArrowSize * 2 + $arrowShadowCompensation}, #{-$arrowShadowCompensation} #{$wuiPopoverArrowSize * 2 + $arrowShadowCompensation});
+      }
+
+      &:after {
+        left: -$wuiPopoverArrowSize + 1;
+      }
+    }
+
+    &.wuiPopover__panelArrow--bottom {
+      &:before {
+        border-bottom-color: $wuiShadowColor;
+        clip-path: polygon(#{-$arrowShadowCompensation} #{-$arrowShadowCompensation}, #{$wuiPopoverArrowSize * 2 + $arrowShadowCompensation} #{-$arrowShadowCompensation}, #{$wuiPopoverArrowSize * 2 + $arrowShadowCompensation} $wuiPopoverArrowSize, #{-$arrowShadowCompensation} $wuiPopoverArrowSize);
+      }
+
+      &:after {
+        top: -$wuiPopoverArrowSize + 1;
+      }
+    }
+
+    &.wuiPopover__panelArrow--left {
+      &:before {
+        right: -$wuiPopoverArrowSize;
+        border-left-color: $wuiShadowColor;
+        clip-path: polygon(0 #{-$arrowShadowCompensation}, #{$wuiPopoverArrowSize + $arrowShadowCompensation} #{-$arrowShadowCompensation}, #{$wuiPopoverArrowSize + $arrowShadowCompensation} #{$wuiPopoverArrowSize * 2 + $arrowShadowCompensation}, 0 #{$wuiPopoverArrowSize * 2 + $arrowShadowCompensation});
+      }
+
+      &:after {
+        right: -$wuiPopoverArrowSize + 1;
+      }
+    }
+  }
+}

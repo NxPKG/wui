@@ -1,0 +1,40 @@
+.wuiHeaderAlert {
+  min-width: 300px;
+  position: relative;
+  margin-bottom: $wuiSizeL;
+  padding: 0 $wuiSizeS $wuiSizeL;
+  border-bottom: $wuiBorderThin;
+  border-top: none;
+
+  .wuiHeaderAlert__dismiss {
+    opacity: 0;
+    position: absolute;
+    right: $wuiSize - 4px;
+    top: $wuiSize - 4px;
+    transition: opacity $wuiAnimSpeedNormal ease-in;
+  }
+
+  &:hover .wuiHeaderAlert__dismiss,
+  .wuiHeaderAlert__dismiss:focus {
+    opacity: 1;
+  }
+
+  .wuiHeaderAlert__title {
+    @include wuiTitle('xs');
+    margin-bottom: $wuiSizeS;
+  }
+
+  .wuiHeaderAlert__text {
+    @include wuiFontSizeS;
+    margin-bottom: $wuiSize;
+  }
+
+  .wuiHeaderAlert__action {
+    @include wuiFontSizeS;
+  }
+
+  .wuiHeaderAlert__date {
+    @include wuiFontSizeXS;
+    color: $wuiColorDarkShade;
+  }
+}

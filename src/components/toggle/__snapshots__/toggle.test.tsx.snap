@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiToggle is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiToggle testClass1 testClass2"
+>
+  <input
+    aria-label="Is toggle on?"
+    class="wuiToggle__input"
+    data-test-subj="test subject string"
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`WuiToggle props checked is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiToggle wuiToggle--checked testClass1 testClass2"
+>
+  <input
+    aria-label="Is toggle on?"
+    checked=""
+    class="wuiToggle__input"
+    data-test-subj="test subject string"
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`WuiToggle props isDisabled is rendered 1`] = `
+<div
+  class="wuiToggle"
+>
+  <input
+    aria-label="Is toggle on?"
+    class="wuiToggle__input"
+    disabled=""
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`WuiToggle props onChange is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiToggle testClass1 testClass2"
+>
+  <input
+    aria-label="Is toggle on?"
+    class="wuiToggle__input"
+    data-test-subj="test subject string"
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`WuiToggle props type is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiToggle testClass1 testClass2"
+>
+  <input
+    aria-label="Is toggle on?"
+    class="wuiToggle__input"
+    data-test-subj="test subject string"
+    type="radio"
+  />
+</div>
+`;

@@ -1,0 +1,212 @@
+.wuiDescriptionList {
+  // sass-lint:disable-block nesting-depth
+
+  &.wuiDescriptionList--row {
+
+    .wuiDescriptionList__title {
+      @include wuiTitle('xs');
+      line-height: $wuiLineHeight;
+      margin-top: $wuiSize;
+
+      // Make sure the first <dt> doesn't get a margin.
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    .wuiDescriptionList__description {
+      @include wuiFontSizeS;
+    }
+
+    // Lists can be aligned.
+    &.wuiDescriptionList--center {
+      text-align: center;
+    }
+
+    // Reversed makes the description larger than the title
+    &.wuiDescriptionList--reverse {
+      .wuiDescriptionList__title {
+        @include wuiText;
+        @include wuiFontSizeS;
+      }
+
+      .wuiDescriptionList__description {
+        @include wuiTitle('xs');
+      }
+    }
+
+    // Compressed gets smaller fonts.
+    &.wuiDescriptionList--compressed {
+
+      .wuiDescriptionList__title {
+        @include wuiTitle('xxs');
+        line-height: $wuiLineHeight;
+      }
+
+      .wuiDescriptionList__description {
+        @include wuiFontSizeS;
+      }
+
+      &.wuiDescriptionList--reverse {
+        .wuiDescriptionList__title {
+          @include wuiText;
+          @include wuiFontSizeS;
+        }
+
+        .wuiDescriptionList__description {
+          @include wuiTitle('xxs');
+          line-height: $wuiLineHeight;
+        }
+      }
+    }
+  }
+
+
+  &.wuiDescriptionList--column,
+  &.wuiDescriptionList--responsiveColumn {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    > * {
+      margin-top: $wuiSize;
+    }
+
+    // First two items don't have margin
+    > *:first-child,
+    > :nth-child(2) {
+      margin-top: 0;
+    }
+
+    .wuiDescriptionList__title {
+      @include wuiTitle('xs');
+      line-height: $wuiLineHeight;
+      width: 50%; // Flex-basis doesn't work in IE with padding
+      padding-right: $wuiSizeS;
+    }
+
+    .wuiDescriptionList__description {
+      @include wuiFontSize;
+      width: 50%; // Flex-basis doesn't work in IE with padding
+      padding-left: $wuiSizeS;
+    }
+
+    // Align the title to smash against the description.
+    &.wuiDescriptionList--center {
+      .wuiDescriptionList__title {
+        text-align: right;
+      }
+    }
+
+    &.wuiDescriptionList--reverse {
+      .wuiDescriptionList__title {
+        @include wuiText;
+        @include wuiFontSize;
+      }
+
+      .wuiDescriptionList__description {
+        @include wuiTitle('xs');
+        line-height: $wuiLineHeight;
+      }
+    }
+
+    &.wuiDescriptionList--compressed {
+      .wuiDescriptionList__title {
+        @include wuiTitle('xxs');
+        line-height: $wuiLineHeight;
+      }
+
+      .wuiDescriptionList__description {
+        @include wuiFontSizeS;
+      }
+
+      &.wuiDescriptionList--reverse {
+        .wuiDescriptionList__title {
+          @include wuiText;
+          @include wuiFontSizeS;
+        }
+
+        .wuiDescriptionList__description {
+          @include wuiTitle('xxs');
+          line-height: $wuiLineHeight;
+        }
+      }
+    }
+  }
+
+  &.wuiDescriptionList--responsiveColumn {
+    @include wuiBreakpoint('xs', 's') {
+      display: block;
+
+      .wuiDescriptionList__title,
+      .wuiDescriptionList__description {
+        width:  100%;
+        padding: 0;
+      }
+
+      .wuiDescriptionList__description {
+        @include wuiFontSizeS;
+        margin-top: 0;
+      }
+
+      &.wuiDescriptionList--center {
+        .wuiDescriptionList__title,
+        .wuiDescriptionList__description {
+          text-align: center;
+        }
+      }
+
+      &.wuiDescriptionList--reverse {
+        .wuiDescriptionList__title {
+          @include wuiFontSizeS;
+        }
+
+        .wuiDescriptionList__description {
+          @include wuiTitle('xs');
+        }
+      }
+    }
+  }
+
+  &.wuiDescriptionList--inline {
+
+    .wuiDescriptionList__title {
+      @include wuiFontSizeS;
+      display: inline;
+      border-radius: $wuiBorderRadius;
+      font-weight: $wuiFontWeightRegular;
+      background: $wuiColorLightestShade;
+      border: $wuiBorderThin;
+      padding:  0 $wuiSizeXS;
+      margin: 0 $wuiSizeXS;
+
+      // Make sure the first <dt> doesn't get a margin.
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+
+    .wuiDescriptionList__description {
+      @include wuiFontSizeS;
+      display: inline;
+      word-break: break-all;
+    }
+
+    // Compressed when inline is even smaller.
+    &.wuiDescriptionList--compressed {
+
+      .wuiDescriptionList__title {
+        @include wuiFontSizeXS;
+      }
+
+      .wuiDescriptionList__description {
+        @include wuiFontSizeXS;
+      }
+    }
+
+    &.wuiDescriptionList--center {
+      text-align: center;
+    }
+  }
+
+}

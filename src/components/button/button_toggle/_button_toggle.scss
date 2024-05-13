@@ -1,0 +1,74 @@
+
+.wuiButtonToggle__wrapper {
+  display: inline-block;
+
+  // Transform the whole thing so that the button doesn't
+  // steal pointer events from input
+  &:not(.wuiButtonToggle--isDisabled) {
+    transition: transform $wuiAnimSpeedNormal $wuiAnimSlightBounce;
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+
+    &:focus {
+      animation: wuiButtonActive $wuiAnimSpeedNormal $wuiAnimSlightBounce;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}
+
+.wuiButtonToggle {
+  @include wuiButtonToggleStates {
+    text-decoration: underline;
+  }
+
+  &.wuiButtonToggle--isIconOnly {
+    min-width: 0;
+
+    .wuiButton__content {
+      padding: 0 $wuiSizeS;
+    }
+
+    .wuiButton__text:empty {
+      display: none;
+    }
+  }
+
+  &.wuiButtonToggle--isEmpty {
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+// Modifier naming and colors.
+$wuiButtonToggleTypes: (
+  primary: $wuiColorPrimary,
+  secondary: $wuiColorSecondary,
+  warning: $wuiColorWarning,
+  danger: $wuiColorDanger,
+  ghost: $wuiColorGhost, // Ghost is special, and does not care about theming.
+  text: $wuiColorDarkShade, // Reserved for special use cases
+);
+
+// Add hover states based on input state
+@each $name, $color in $wuiButtonToggleTypes {
+  .wuiButtonToggle[class*='#{$name}'] {
+    @include wuiButtonToggleStates {
+      background-color: transparentize($color, .9);
+    }
+
+    // Not using the full button class here as it's targeting a different component,
+    // instead we know what the modifier is, so just look for that somewhere in the classNames
+    &[class*='fill'] {
+      @include wuiButtonToggleStates {
+        background-color: darken($color, 5%);
+        border-color: darken($color, 5%);
+      }
+    }
+  }
+}

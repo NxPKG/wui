@@ -1,0 +1,553 @@
+/*
+ * Copyright 2022 Wazuh Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * NOTICE: THIS FILE HAS BEEN MODIFIED BY WAZUH INC UNDER COMPLIANCE WITH THE APACHE 2.0 LICENSE FROM THE ORIGINAL WORK
+ * OF THE COMPANY Elasticsearch B.V.
+ *
+ * THE FOLLOWING IS THE COPYRIGHT OF THE ORIGINAL DOCUMENT:
+ *
+ * Licensed to Elasticsearch B.V. under one or more contributor
+ * license agreements. See the NOTICE file distributed with
+ * this work for additional information regarding copyright
+ * ownership. Elasticsearch B.V. licenses this file to you under
+ * the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+import React, {
+  Component,
+  FunctionComponent,
+  JSXElementConstructor,
+  memo,
+  ReactNode,
+  createRef,
+  HTMLAttributes,
+  KeyboardEvent,
+  ReactChild,
+  MutableRefObject,
+  FocusEvent,
+} from 'react';
+import classNames from 'classnames';
+import tabbable from 'tabbable';
+import { WuiPopover } from '../popover';
+import { CommonProps } from '../common';
+import { WuiScreenReaderOnly } from '../accessibility';
+import { WuiI18n } from '../i18n';
+import { WuiButtonIcon } from '../button';
+import { WuiDataGridPopoverContent } from './data_grid_types';
+import { WuiMutationObserver } from '../observer/mutation_observer';
+import { DataGridContext } from './data_grid_context';
+import { WuiFocusTrap } from '../focus_trap';
+import { keys } from '../../services';
+
+export interface WuiDataGridCellValueElementProps {
+  /**
+   * index of the row being rendered, 0 represents the first row. This index always includes
+   * pagination offset, meaning the first rowIndex in a grid is `pagination.pageIndex * pagination.pageSize`
+   * so take care if you need to adjust the rowIndex to fit your data
+   */
+  rowIndex: number;
+  /**
+   * id of the column being rendered, the value comes from the #WuiDataGridColumn `id`
+   */
+  columnId: string;
+  /**
+   * callback function to set custom props & attributes on the cell's wrapping `div` element;
+   * it's best to wrap calls to `setCellProps` in a `useEffect` hook
+   */
+  setCellProps: (props: CommonProps & HTMLAttributes<HTMLDivElement>) => void;
+  /**
+   * whether or not the cell is expandable, comes from the #WuiDataGridColumn `isExpandable` which defaults to `true`
+   */
+  isExpandable: boolean;
+  /**
+   * whether or not the cell is expanded
+   */
+  isExpanded: boolean;
+  /**
+   * when rendering the cell, `isDetails` is false; when the cell is expanded, `renderCellValue` is called again to render into the details popover and `isDetails` is true
+   */
+  isDetails: boolean;
+}
+
+export interface WuiDataGridCellProps {
+  rowIndex: number;
+  visibleRowIndex: number;
+  colIndex: number;
+  columnId: string;
+  columnType?: string | null;
+  width?: number;
+  isFocused: boolean;
+  onCellFocus: Function;
+  interactiveCellId: string;
+  isExpandable: boolean;
+  className?: string;
+  popoverContent: WuiDataGridPopoverContent;
+  renderCellValue:
+    | JSXElementConstructor<WuiDataGridCellValueElementProps>
+    | ((props: WuiDataGridCellValueElementProps) => ReactNode);
+}
+
+interface WuiDataGridCellState {
+  cellProps: CommonProps & HTMLAttributes<HTMLDivElement>;
+  popoverIsOpen: boolean; // is expansion popover open
+  isEntered: boolean; // enables focus trap for non-expandable cells with multiple interactive elements
+  disableCellTabIndex: boolean; // disables tabIndex on the wrapping cell, used for focus management of a single interactive child
+}
+
+export type WuiDataGridCellValueProps = Omit<
+  WuiDataGridCellProps,
+  'width' | 'isFocused' | 'interactiveCellId' | 'onCellFocus' | 'popoverContent'
+>;
+
+const WuiDataGridCellContent: FunctionComponent<WuiDataGridCellValueProps & {
+  setCellProps: WuiDataGridCellValueElementProps['setCellProps'];
+  isExpanded: boolean;
+}> = memo(props => {
+  const { renderCellValue, ...rest } = props;
+
+  // React is more permissible than the TS types indicate
+  const CellElement = renderCellValue as JSXElementConstructor<
+    WuiDataGridCellValueElementProps
+  >;
+
+  return (
+    <CellElement isDetails={false} data-test-subj="cell-content" {...rest} />
+  );
+});
+
+export class WuiDataGridCell extends Component<
+  WuiDataGridCellProps,
+  WuiDataGridCellState
+> {
+  cellRef = createRef<HTMLDivElement>();
+  popoverPanelRef: MutableRefObject<HTMLElement | null> = createRef();
+  cellContentsRef: HTMLDivElement | null = null;
+  state: WuiDataGridCellState = {
+    cellProps: {},
+    popoverIsOpen: false,
+    isEntered: false,
+    disableCellTabIndex: false,
+  };
+  unsubscribeCell?: Function = () => {};
+
+  static contextType = DataGridContext;
+
+  getInteractables = () => {
+    const tabbingRef = this.cellContentsRef;
+
+    if (tabbingRef) {
+      return tabbingRef.querySelectorAll<HTMLElement>(
+        '[data-datagrid-interactable=true]'
+      );
+    }
+
+    return [];
+  };
+
+  updateFocus = () => {
+    const cell = this.cellRef.current;
+    const { isFocused } = this.props;
+
+    if (cell && isFocused) {
+      // only update focus if we are not already focused on something in this cell
+      let element: Element | null = document.activeElement;
+      while (element != null && element !== cell) {
+        element = element.parentElement;
+      }
+      const doFocusUpdate = element !== cell;
+
+      if (doFocusUpdate) {
+        const interactables = this.getInteractables();
+        if (this.props.isExpandable === false && interactables.length === 1) {
+          // Only one element can be interacted with
+          interactables[0].focus();
+        } else {
+          cell.focus();
+        }
+      }
+    }
+  };
+
+  componentDidMount() {
+    this.unsubscribeCell = this.context.onFocusUpdate(
+      [this.props.colIndex, this.props.visibleRowIndex],
+      this.updateFocus
+    );
+  }
+
+  componentWillUnmount() {
+    if (this.unsubscribeCell) {
+      this.unsubscribeCell();
+    }
+  }
+
+  componentDidUpdate(prevProps: WuiDataGridCellProps) {
+    const didFocusChange = prevProps.isFocused !== this.props.isFocused;
+
+    if (didFocusChange) {
+      this.updateFocus();
+    }
+  }
+
+  shouldComponentUpdate(
+    nextProps: WuiDataGridCellProps,
+    nextState: WuiDataGridCellState
+  ) {
+    if (nextProps.rowIndex !== this.props.rowIndex) return true;
+    if (nextProps.visibleRowIndex !== this.props.visibleRowIndex) return true;
+    if (nextProps.colIndex !== this.props.colIndex) return true;
+    if (nextProps.columnId !== this.props.columnId) return true;
+    if (nextProps.columnType !== this.props.columnType) return true;
+    if (nextProps.width !== this.props.width) return true;
+    if (nextProps.renderCellValue !== this.props.renderCellValue) return true;
+    if (nextProps.onCellFocus !== this.props.onCellFocus) return true;
+    if (nextProps.isFocused !== this.props.isFocused) return true;
+    if (nextProps.interactiveCellId !== this.props.interactiveCellId)
+      return true;
+    if (nextProps.popoverContent !== this.props.popoverContent) return true;
+
+    if (nextState.cellProps !== this.state.cellProps) return true;
+    if (nextState.popoverIsOpen !== this.state.popoverIsOpen) return true;
+    if (nextState.isEntered !== this.state.isEntered) return true;
+    if (nextState.disableCellTabIndex !== this.state.disableCellTabIndex)
+      return true;
+
+    return false;
+  }
+
+  setCellProps = (cellProps: HTMLAttributes<HTMLDivElement>) => {
+    this.setState({ cellProps });
+  };
+
+  setCellContentsRef = (ref: HTMLDivElement | null) => {
+    this.cellContentsRef = ref;
+    this.preventTabbing();
+  };
+
+  onFocus = (e: FocusEvent<HTMLDivElement>) => {
+    // only perform this logic when the event's originating element (e.target) is
+    // the wrapping element with the onFocus logic
+    // reasons:
+    //  * the outcome is only meaningful when the focus shifts to the wrapping element
+    //  * if the cell children include portalled content React will bubble the focus
+    //      event up, which can trigger the focus() call below, causing focus lock fighting
+    if (this.cellRef.current === e.target) {
+      const {
+        onCellFocus,
+        colIndex,
+        visibleRowIndex,
+        isExpandable,
+      } = this.props;
+      onCellFocus([colIndex, visibleRowIndex]);
+
+      const interactables = this.getInteractables();
+      if (interactables.length === 1 && isExpandable === false) {
+        interactables[0].focus();
+        this.setState({ disableCellTabIndex: true });
+      }
+    }
+  };
+
+  onBlur = () => {
+    this.setState({ disableCellTabIndex: false });
+  };
+
+  preventTabbing = () => {
+    if (this.cellContentsRef) {
+      const tabbables = tabbable(this.cellContentsRef);
+      for (let i = 0; i < tabbables.length; i++) {
+        const element = tabbables[i];
+        element.setAttribute('tabIndex', '-1');
+        element.setAttribute('data-datagrid-interactable', 'true');
+      }
+    }
+  };
+
+  enableTabbing = () => {
+    if (this.cellContentsRef) {
+      const interactables = this.getInteractables();
+      for (let i = 0; i < interactables.length; i++) {
+        const element = interactables[i];
+        element.removeAttribute('tabIndex');
+      }
+    }
+  };
+
+  render() {
+    const {
+      width,
+      isFocused,
+      isExpandable,
+      popoverContent: PopoverContent,
+      interactiveCellId,
+      columnType,
+      onCellFocus,
+      className,
+      ...rest
+    } = this.props;
+    const { colIndex, rowIndex } = rest;
+
+    const cellClasses = classNames(
+      'wuiDataGridRowCell',
+      {
+        [`wuiDataGridRowCell--${columnType}`]: columnType,
+      },
+      className
+    );
+
+    const cellProps = {
+      ...this.state.cellProps,
+      'data-test-subj': classNames(
+        'dataGridRowCell',
+        this.state.cellProps['data-test-subj']
+      ),
+      className: classNames(cellClasses, this.state.cellProps.className),
+    };
+
+    const widthStyle = width != null ? { width: `${width}px` } : {};
+    if (cellProps.hasOwnProperty('style')) {
+      cellProps.style = { ...cellProps.style, ...widthStyle };
+    } else {
+      cellProps.style = widthStyle;
+    }
+
+    const handleCellKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+      if (isExpandable) {
+        switch (event.key) {
+          case keys.ENTER:
+          case keys.F2:
+            event.preventDefault();
+            this.setState({ popoverIsOpen: true });
+            break;
+        }
+      } else {
+        if (
+          event.key === keys.ENTER ||
+          event.key === keys.F2 ||
+          event.key === keys.ESCAPE
+        ) {
+          const interactables = this.getInteractables();
+          if (interactables.length >= 2) {
+            switch (event.key) {
+              case keys.ENTER:
+                // `Enter` only activates the trap
+                if (this.state.isEntered === false) {
+                  this.enableTabbing();
+                  this.setState({ isEntered: true });
+
+                  // result of this keypress is focus shifts to the first interactive element
+                  // and then the browser fires the onClick event because that's how [Enter] works
+                  // so we need to prevent that default action otherwise entering the trap triggers the first element
+                  event.preventDefault();
+                }
+                break;
+              case keys.F2:
+                // toggle interactives' focus trap
+                this.setState(({ isEntered }) => {
+                  if (isEntered) {
+                    this.preventTabbing();
+                  } else {
+                    this.enableTabbing();
+                  }
+                  return { isEntered: !isEntered };
+                });
+                break;
+              case keys.ESCAPE:
+                // `Escape` only de-activates the trap
+                this.preventTabbing();
+                if (this.state.isEntered === true) {
+                  this.setState({ isEntered: false });
+                }
+                break;
+            }
+          }
+        }
+      }
+    };
+
+    const cellContentProps = {
+      ...rest,
+      setCellProps: this.setCellProps,
+      columnType: columnType,
+      isExpandable,
+      isExpanded: this.state.popoverIsOpen,
+      isDetails: false,
+    };
+
+    const buttonIconClasses = classNames(
+      'wuiDataGridRowCell__expandButtonIcon',
+      {
+        'wuiDataGridRowCell__expandButtonIcon-isActive': this.state
+          .popoverIsOpen,
+      }
+    );
+
+    const buttonClasses = classNames('wuiDataGridRowCell__expandButton', {
+      'wuiDataGridRowCell__expandButton-isActive': this.state.popoverIsOpen,
+    });
+
+    const expandButton = (
+      <WuiI18n
+        token="wuiDataGridCell.expandButtonTitle"
+        default="Click or hit enter to interact with cell content">
+        {(expandButtonTitle: string) => (
+          <WuiButtonIcon
+            className={buttonIconClasses}
+            color="text"
+            iconSize="s"
+            iconType="expandMini"
+            aria-hidden
+            onClick={() =>
+              this.setState(({ popoverIsOpen }) => ({
+                popoverIsOpen: !popoverIsOpen,
+              }))
+            }
+            title={expandButtonTitle}
+          />
+        )}
+      </WuiI18n>
+    );
+
+    const screenReaderPosition = (
+      <WuiScreenReaderOnly>
+        <p>
+          <WuiI18n
+            tokens={['wuiDataGridCell.row', 'wuiDataGridCell.column']}
+            defaults={['Row', 'Column']}>
+            {([row, column]: ReactChild[]) => (
+              <span>
+                {row}: {rowIndex + 1}, {column}: {colIndex + 1}:
+              </span>
+            )}
+          </WuiI18n>
+        </p>
+      </WuiScreenReaderOnly>
+    );
+
+    let anchorContent = (
+      <WuiFocusTrap
+        disabled={!this.state.isEntered}
+        autoFocus={true}
+        onDeactivation={() => {
+          this.setState({ isEntered: false }, this.preventTabbing);
+        }}
+        clickOutsideDisables={true}>
+        <div className="wuiDataGridRowCell__expandFlex">
+          <WuiMutationObserver
+            observerOptions={{ subtree: true, childList: true }}
+            onMutation={this.preventTabbing}>
+            {mutationRef => {
+              return (
+                <div
+                  ref={mutationRef}
+                  className="wuiDataGridRowCell__expandContent">
+                  {screenReaderPosition}
+                  <div
+                    ref={this.setCellContentsRef}
+                    className="wuiDataGridRowCell__truncate">
+                    <WuiDataGridCellContent {...cellContentProps} />
+                  </div>
+                </div>
+              );
+            }}
+          </WuiMutationObserver>
+        </div>
+      </WuiFocusTrap>
+    );
+
+    if (isExpandable) {
+      anchorContent = (
+        <div className="wuiDataGridRowCell__expandFlex">
+          <WuiMutationObserver
+            observerOptions={{ subtree: true, childList: true }}
+            onMutation={this.preventTabbing}>
+            {mutationRef => {
+              return (
+                <div
+                  ref={mutationRef}
+                  className="wuiDataGridRowCell__expandContent">
+                  {screenReaderPosition}
+                  <div
+                    ref={this.setCellContentsRef}
+                    className="wuiDataGridRowCell__truncate">
+                    <WuiDataGridCellContent {...cellContentProps} />
+                  </div>
+                </div>
+              );
+            }}
+          </WuiMutationObserver>
+          <div className={buttonClasses}>{expandButton}</div>
+        </div>
+      );
+    }
+
+    let innerContent = anchorContent;
+    if (isExpandable) {
+      const CellElement = rest.renderCellValue as JSXElementConstructor<
+        WuiDataGridCellValueElementProps
+      >;
+      const popoverContent = (
+        <PopoverContent cellContentsElement={this.cellContentsRef!}>
+          <CellElement {...cellContentProps} isDetails={true} />
+        </PopoverContent>
+      );
+
+      innerContent = (
+        <div className="wuiDataGridRowCell__content">
+          <WuiPopover
+            hasArrow={false}
+            anchorClassName="wuiDataGridRowCell__expand"
+            button={anchorContent}
+            isOpen={this.state.popoverIsOpen}
+            panelRef={ref => (this.popoverPanelRef.current = ref)}
+            ownFocus
+            panelClassName="wuiDataGridRowCell__popover"
+            zIndex={8001}
+            display="block"
+            closePopover={() => this.setState({ popoverIsOpen: false })}
+            onKeyDown={event => {
+              if (event.key === keys.F2 || event.key === keys.ESCAPE) {
+                event.preventDefault();
+                event.stopPropagation();
+                this.setState({ popoverIsOpen: false });
+              }
+            }}
+            onTrapDeactivation={this.updateFocus}>
+            {popoverContent}
+          </WuiPopover>
+        </div>
+      );
+    }
+
+    return (
+      <div
+        role="gridcell"
+        tabIndex={isFocused && !this.state.disableCellTabIndex ? 0 : -1}
+        ref={this.cellRef}
+        {...cellProps}
+        data-test-subj="dataGridRowCell"
+        onKeyDown={handleCellKeyDown}
+        onFocus={this.onFocus}
+        onBlur={this.onBlur}>
+        {innerContent}
+      </div>
+    );
+  }
+}

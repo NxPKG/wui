@@ -1,0 +1,21 @@
+.wuiCardSelect {
+  // Option select button that expands to sides and bottom
+  @include wuiCardBottomNodePosition;
+  font-weight: $wuiFontWeightBold;
+
+  // Create button modifiers based upon the map.
+  @each $name, $color in $wuiCardSelectButtonBackgrounds {
+    &--#{$name}:enabled {
+      background-color: $color;
+
+      // Custom success text color since it doesn't exist on WuiButtonEmpty
+      @if ($name == 'success') {
+        color: makeHighContrastColor($wuiColorSuccess, $color);
+      }
+    }
+  }
+
+  &:disabled {
+    background-color: $wuiPageBackgroundColor;
+  }
+}

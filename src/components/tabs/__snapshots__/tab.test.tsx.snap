@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTab Props is disabled 1`] = `
+<button
+  aria-selected="false"
+  class="wuiTab wuiTab-isDisabled"
+  disabled=""
+  role="tab"
+  type="button"
+>
+  <span
+    class="wuiTab__content"
+  >
+    Click Me
+  </span>
+</button>
+`;
+
+exports[`WuiTab renders anchor 1`] = `
+<a
+  aria-label="aria-label"
+  aria-selected="false"
+  class="wuiTab testClass1 testClass2"
+  data-test-subj="test subject string"
+  href="/baz/bing"
+  rel="noreferrer"
+  role="tab"
+>
+  <span
+    class="wuiTab__content"
+  >
+    children
+  </span>
+</a>
+`;
+
+exports[`WuiTab renders button 1`] = `
+<button
+  aria-label="aria-label"
+  aria-selected="false"
+  class="wuiTab testClass1 testClass2"
+  data-test-subj="test subject string"
+  role="tab"
+  type="button"
+>
+  <span
+    class="wuiTab__content"
+  >
+    children
+  </span>
+</button>
+`;
+
+exports[`WuiTab renders isSelected 1`] = `
+<button
+  aria-label="aria-label"
+  aria-selected="true"
+  class="wuiTab testClass1 testClass2 wuiTab-isSelected"
+  data-test-subj="test subject string"
+  role="tab"
+  type="button"
+>
+  <span
+    class="wuiTab__content"
+  >
+    children
+  </span>
+</button>
+`;

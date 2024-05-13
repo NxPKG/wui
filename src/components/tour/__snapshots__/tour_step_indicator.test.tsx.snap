@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTourStepIndicator can be complete 1`] = `
+<li
+  aria-label="aria-label"
+  class="wuiTourStepIndicator wuiTourStepIndicator--complete testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    aria-label="complete"
+    class="wuiStepNumber__icon"
+    color="subdued"
+    data-wuiicon-type="dot"
+  />
+</li>
+`;
+
+exports[`WuiTourStepIndicator can be incomplete 1`] = `
+<li
+  aria-label="aria-label"
+  class="wuiTourStepIndicator wuiTourStepIndicator--incomplete testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    aria-label="incomplete"
+    class="wuiStepNumber__icon"
+    color="subdued"
+    data-wuiicon-type="dot"
+  />
+</li>
+`;
+
+exports[`WuiTourStepIndicator is rendered 1`] = `
+<li
+  aria-label="aria-label"
+  class="wuiTourStepIndicator wuiTourStepIndicator--active testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    aria-current="step"
+    aria-label="active"
+    class="wuiStepNumber__icon"
+    color="secondary"
+    data-wuiicon-type="dot"
+  />
+</li>
+`;

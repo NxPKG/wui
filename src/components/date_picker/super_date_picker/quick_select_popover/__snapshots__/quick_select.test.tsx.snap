@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiQuickSelect is rendered 1`] = `
+<fieldset>
+  <WuiI18n
+    default="Quick select a time range"
+    token="wuiQuickSelect.legendText"
+  >
+    <Component />
+  </WuiI18n>
+  <WuiFlexGroup
+    alignItems="center"
+    gutterSize="s"
+    justifyContent="spaceBetween"
+    responsive={false}
+  >
+    <WuiFlexItem
+      grow={false}
+    >
+      <WuiI18n
+        default="Quick select"
+        token="wuiQuickSelect.quickSelectTitle"
+      >
+        <Component />
+      </WuiI18n>
+    </WuiFlexItem>
+    <WuiFlexItem
+      grow={false}
+    >
+      <WuiFlexGroup
+        alignItems="center"
+        gutterSize="s"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Previous time window"
+            token="wuiQuickSelect.previousLabel"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Next time window"
+            token="wuiQuickSelect.nextLabel"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiFlexItem>
+  </WuiFlexGroup>
+  <WuiSpacer
+    size="s"
+  />
+  <WuiFlexGroup
+    gutterSize="s"
+    responsive={false}
+  >
+    <WuiFlexItem>
+      <WuiI18n
+        default="Time tense"
+        token="wuiQuickSelect.tenseLabel"
+      >
+        <Component />
+      </WuiI18n>
+    </WuiFlexItem>
+    <WuiFlexItem>
+      <WuiI18n
+        default="Time value"
+        token="wuiQuickSelect.valueLabel"
+      >
+        <Component />
+      </WuiI18n>
+    </WuiFlexItem>
+    <WuiFlexItem>
+      <WuiI18n
+        default="Time unit"
+        token="wuiQuickSelect.unitLabel"
+      >
+        <Component />
+      </WuiI18n>
+    </WuiFlexItem>
+    <WuiFlexItem
+      grow={false}
+    >
+      <WuiButton
+        aria-describedby="htmlId htmlId"
+        className="wuiQuickSelect__applyButton"
+        disabled={false}
+        onClick={[Function]}
+        size="s"
+      >
+        <WuiI18n
+          default="Apply"
+          token="wuiQuickSelect.applyButton"
+        />
+      </WuiButton>
+    </WuiFlexItem>
+  </WuiFlexGroup>
+  <WuiHorizontalRule
+    margin="s"
+  />
+  <WuiScreenReaderOnly>
+    <p
+      id="htmlId"
+    >
+      <WuiI18n
+        default="Currently set to {timeTense} {timeValue} {timeUnit}."
+        token="wuiQuickSelect.fullDescription"
+        values={
+          Object {
+            "timeTense": "last",
+            "timeUnit": "minutes",
+            "timeValue": 15,
+          }
+        }
+      />
+    </p>
+  </WuiScreenReaderOnly>
+</fieldset>
+`;
+
+exports[`WuiQuickSelect prevQuickSelect 1`] = `
+<fieldset>
+  <WuiI18n
+    default="Quick select a time range"
+    token="wuiQuickSelect.legendText"
+  >
+    <Component />
+  </WuiI18n>
+  <WuiFlexGroup
+    alignItems="center"
+    gutterSize="s"
+    justifyContent="spaceBetween"
+    responsive={false}
+  >
+    <WuiFlexItem
+      grow={false}
+    >
+      <WuiI18n
+        default="Quick select"
+        token="wuiQuickSelect.quickSelectTitle"
+      >
+        <Component />
+      </WuiI18n>
+    </WuiFlexItem>
+    <WuiFlexItem
+      grow={false}
+    >
+      <WuiFlexGroup
+        alignItems="center"
+        gutterSize="s"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Previous time window"
+            token="wuiQuickSelect.previousLabel"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Next time window"
+            token="wuiQuickSelect.nextLabel"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiFlexItem>
+  </WuiFlexGroup>
+  <WuiSpacer
+    size="s"
+  />
+  <WuiFlexGroup
+    gutterSize="s"
+    responsive={false}
+  >
+    <WuiFlexItem>
+      <WuiI18n
+        default="Time tense"
+        token="wuiQuickSelect.tenseLabel"
+      >
+        <Component />
+      </WuiI18n>
+    </WuiFlexItem>
+    <WuiFlexItem>
+      <WuiI18n
+        default="Time value"
+        token="wuiQuickSelect.valueLabel"
+      >
+        <Component />
+      </WuiI18n>
+    </WuiFlexItem>
+    <WuiFlexItem>
+      <WuiI18n
+        default="Time unit"
+        token="wuiQuickSelect.unitLabel"
+      >
+        <Component />
+      </WuiI18n>
+    </WuiFlexItem>
+    <WuiFlexItem
+      grow={false}
+    >
+      <WuiButton
+        aria-describedby="htmlId htmlId"
+        className="wuiQuickSelect__applyButton"
+        disabled={false}
+        onClick={[Function]}
+        size="s"
+      >
+        <WuiI18n
+          default="Apply"
+          token="wuiQuickSelect.applyButton"
+        />
+      </WuiButton>
+    </WuiFlexItem>
+  </WuiFlexGroup>
+  <WuiHorizontalRule
+    margin="s"
+  />
+  <WuiScreenReaderOnly>
+    <p
+      id="htmlId"
+    >
+      <WuiI18n
+        default="Currently set to {timeTense} {timeValue} {timeUnit}."
+        token="wuiQuickSelect.fullDescription"
+        values={
+          Object {
+            "timeTense": "Next",
+            "timeUnit": "months",
+            "timeValue": 32,
+          }
+        }
+      />
+    </p>
+  </WuiScreenReaderOnly>
+</fieldset>
+`;

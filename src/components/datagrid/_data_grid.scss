@@ -1,0 +1,119 @@
+.wuiDataGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  height: 100%;
+}
+
+.wuiDataGrid--fullScreen {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $wuiZModal;
+  background: $wuiColorEmptyShade;
+
+  .wuiDataGrid__pagination {
+    padding-bottom: $wuiSizeXS;
+    background: $wuiColorLightestShade;
+    border-top: $wuiBorderThin;
+  }
+
+  .wuiDataGrid__verticalScroll .wuiDataGridRow {
+    will-change: transform;
+  }
+}
+
+.wuiDataGrid__content {
+  @include wuiScrollBar;
+
+  height: 100%;
+  overflow: auto;
+  font-feature-settings: 'tnum' 1; // Tabular numbers
+  scroll-padding: 0;
+  max-width: 100%;
+  width: 100%;
+  z-index: 2; // Sits above the pagination below it, but below the controls above it
+}
+
+.wuiDataGrid__controls {
+  background: $wuiPageBackgroundColor;
+  position: relative;
+  z-index: 3; // Needs to sit above the content blow that sits below it
+  border: $wuiBorderThin;
+  padding: $wuiSizeXS;
+  flex-grow: 0;
+
+  > * {
+    margin-left: $wuiSizeXS / 2;
+  }
+}
+
+.wuiDataGrid__controlBtn {
+  border-radius: $wuiBorderRadius;
+
+  &:focus {
+    background: shadeOrTint($wuiColorLightestShade, 10%, 10%);
+  }
+}
+
+.wuiDataGrid__controlBtn--active,
+.wuiDataGrid__controlBtn--active:focus {
+  font-weight: $wuiFontWeightSemiBold;
+  color: $wuiColorFullShade;
+}
+
+@include wuiDataGridStyles(bordersNone) {
+  .wuiDataGrid__controls {
+    border: none;
+    background: $wuiColorEmptyShade;
+  }
+}
+
+@include wuiDataGridStyles(bordersHorizontal) {
+  .wuiDataGrid__controls {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background: $wuiColorEmptyShade;
+  }
+}
+
+.wuiDataGrid__pagination {
+
+  padding-top: $wuiSizeXS;
+  flex-grow: 0;
+}
+
+.wuiDataGrid__verticalScroll {
+  flex-grow: 1;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.wuiDataGrid__overflow {
+  overflow-y: hidden;
+  height: 100%;
+  background: $wuiColorEmptyShade;
+}
+
+// This is used to remove extra scrollbars on the body when fullscreen is enabled
+.wuiDataGrid__restrictBody {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.wuiDataGrid__controlScroll {
+  @include wuiYScrollWithShadows;
+  max-height: $wuiDataGridPopoverMaxHeight;
+  padding: $wuiSizeS;
+  margin: -$wuiSizeS; // Offset against the panel to make the scrollbar flush scrollbars
+}
+
+.wuiDataGrid__focusWrap {
+  height: 100%;
+}

@@ -1,0 +1,25 @@
+.wuiRangeHighlight {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: calc(50% - #{($wuiRangeHighlightHeight / 2)});
+  overflow: hidden;
+
+  &__progress {
+    height: $wuiRangeHighlightHeight;
+    border-radius: $wuiRangeHighlightHeight;
+    background-color: $wuiRangeTrackColor;
+
+    &--hasFocus {
+      background-color: $wuiColorPrimary;
+    }
+  }
+
+  &--hasTicks {
+    top: ($wuiFormControlHeight / 4) - ($wuiRangeHighlightHeight / 2);
+  }
+
+  &--hasTicks.wuiRangeHighlight--compressed {
+    top: ($wuiFormControlCompressedHeight / 4) - ($wuiRangeHighlightHeight / 2);
+  }
+}

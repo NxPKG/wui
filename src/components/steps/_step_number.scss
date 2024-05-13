@@ -1,0 +1,48 @@
+.wuiStepNumber {
+  @include createStepsNumber;
+
+  .wuiStepNumber__icon {
+    position: relative;
+    top: -2px;
+  }
+
+  &--small {
+    @include createStepsNumber($wuiStepNumberSmallSize, $wuiFontSizeXS);
+
+    .wuiStepNumber__icon {
+      top: -1px;
+    }
+  }
+
+  &--complete {
+    // Thicken the checkmark but adding a slight stroke.
+    .wuiStepNumber__icon {
+      stroke: currentColor;
+      stroke-width: .5px;
+    }
+  }
+
+  &.wuiStepNumber-isHollow {
+    background-color: transparent;
+    border: 2px solid $wuiColorPrimary;
+  }
+
+  // Create modifiers based upon the map
+  @each $name, $color in $wuiStepStatusColorsToFade {
+    &--#{$name} {
+      $backgroundColor: $color;
+      @if (saturation($color) > 0%) {
+        $backgroundColor: tintOrShade($color, 90%, 70%);
+      }
+
+      $textColor: makeHighContrastColor($color, $backgroundColor);
+
+      color: $textColor;
+      background-color: $backgroundColor;
+
+      &.wuiStepNumber-isHollow {
+        border-color: $color;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFormLabel is rendered 1`] = `
+<label
+  aria-label="aria-label"
+  class="wuiFormLabel testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiFormLabel props isFocused is rendered 1`] = `
+<label
+  class="wuiFormLabel wuiFormLabel-isFocused"
+/>
+`;
+
+exports[`WuiFormLabel props isInvalid is rendered 1`] = `
+<label
+  class="wuiFormLabel wuiFormLabel-isInvalid"
+/>
+`;
+
+exports[`WuiFormLabel props type can be changed to legend 1`] = `
+<legend
+  class="wuiFormLabel"
+/>
+`;

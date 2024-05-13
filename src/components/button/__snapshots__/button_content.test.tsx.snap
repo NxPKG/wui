@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiButtonContent is rendered 1`] = `
+<span
+  aria-label="aria-label"
+  class="wuiButtonContent testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <span />
+</span>
+`;
+
+exports[`WuiButtonContent props children is rendered 1`] = `
+<span
+  class="wuiButtonContent"
+>
+  <span>
+    Content
+  </span>
+</span>
+`;
+
+exports[`WuiButtonContent props iconSide is rendered 1`] = `
+<span
+  class="wuiButtonContent wuiButtonContent--iconRight"
+>
+  <div
+    class="wuiButtonContent__icon"
+    data-wuiicon-type="bolt"
+  />
+  <span />
+</span>
+`;
+
+exports[`WuiButtonContent props iconType is rendered 1`] = `
+<span
+  class="wuiButtonContent"
+>
+  <div
+    class="wuiButtonContent__icon"
+    data-wuiicon-type="bolt"
+  />
+  <span />
+</span>
+`;
+
+exports[`WuiButtonContent props isLoading is rendered 1`] = `
+<span
+  class="wuiButtonContent"
+>
+  <span
+    class="wuiLoadingSpinner wuiLoadingSpinner--medium wuiButtonContent__spinner"
+  />
+  <span />
+</span>
+`;
+
+exports[`WuiButtonContent props isLoading replaces iconType with spinner 1`] = `
+<span
+  class="wuiButtonContent"
+>
+  <span
+    class="wuiLoadingSpinner wuiLoadingSpinner--medium wuiButtonContent__spinner"
+  />
+  <span />
+</span>
+`;
+
+exports[`WuiButtonContent props textProps is rendered 1`] = `
+<span
+  class="wuiButtonContent"
+>
+  <span
+    aria-label="aria-label"
+    class="testClass1 testClass2"
+    data-test-subj="test subject string"
+  />
+</span>
+`;

@@ -1,0 +1,174 @@
+.wuiListGroupItem {
+  padding: 0;
+  border-radius: $wuiBorderRadius;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: background-color $wuiAnimSpeedFast;
+  position: relative;
+
+  &.wuiListGroupItem-isActive,
+  &.wuiListGroupItem-isClickable:hover {
+    background-color: $wuiListGroupItemHoverBackground;
+  }
+
+  // Can't be grouped with above or else IE will ignore the whole group
+  &.wuiListGroupItem-isClickable:focus-within {
+    background-color: $wuiListGroupItemHoverBackground;
+  }
+
+  &.wuiListGroupItem--ghost {
+    &.wuiListGroupItem-isClickable:hover {
+      background-color: $wuiListGroupItemHoverBackgroundGhost;
+    }
+
+    // Can't be grouped with above or else IE will ignore the whole group
+    &.wuiListGroupItem-isClickable:focus-within {
+      background-color: $wuiListGroupItemHoverBackgroundGhost;
+    }
+  }
+
+  &.wuiListGroupItem-isClickable:hover .wuiListGroupItem__button,
+  .wuiListGroupItem__button:hover,
+  .wuiListGroupItem__button:focus {
+    text-decoration: underline;
+  }
+
+  // Style all disabled list items whether or not they are links or buttons
+  &.wuiListGroupItem-isDisabled,
+  &.wuiListGroupItem-isDisabled:hover,
+  &.wuiListGroupItem-isDisabled:focus,
+  &.wuiListGroupItem-isDisabled .wuiListGroupItem__button:hover,
+  &.wuiListGroupItem-isDisabled .wuiListGroupItem__button:focus {
+    color: $wuiButtonColorDisabled;
+    cursor: not-allowed;
+    background-color: transparent;
+    text-decoration: none;
+  }
+}
+
+// IE doesn't support :focus-within
+@include internetExplorerOnly {
+  .wuiListGroupItem__button:hover,
+  .wuiListGroupItem__button:focus {
+    background-color: $wuiListGroupItemHoverBackground;
+    border-radius: $wuiBorderRadius;
+
+    .wuiListGroupItem--ghost .wuiListGroupItem__button:hover,
+    .wuiListGroupItem--ghost .wuiListGroupItem__button:focus {
+      background-color: $wuiListGroupItemHoverBackgroundGhost;
+    }
+  }
+}
+
+.wuiListGroupItem__text,
+.wuiListGroupItem__button {
+  line-height: $wuiSizeL;
+  padding: $wuiSizeXS $wuiSizeS;
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto; // The flex-shrink and flex-basis values are needed for IE11
+  text-align: left;
+  max-width: 100%;
+  font-weight: inherit;
+
+  .wuiListGroupItem-hasExtraAction & {
+    max-width: calc(100% - #{$wuiSizeXL});
+  }
+
+  @each $colorName, $color in $wuiListGroupItemColorTypes {
+    .wuiListGroupItem--#{$colorName} &:not(:disabled) {
+      color: $color;
+    }
+  }
+
+  .wuiListGroupItem-isActive:not(.wuiListGroupItem--ghost) & {
+    color: $wuiTextColor;
+  }
+}
+
+.wuiListGroupItem__label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wuiListGroupItem__extraAction {
+  opacity: 0;
+  margin-right: $wuiSizeS;
+  transition: opacity $wuiAnimSpeedFast;
+
+  .wuiListGroupItem:not(.wuiListGroupItem-isDisabled):focus &,
+  .wuiListGroupItem:not(.wuiListGroupItem-isDisabled):hover &,
+  &.wuiListGroupItem__extraAction-alwaysShow,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.wuiListGroupItem__icon {
+  margin-right: $wuiSizeM;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+// Font sizes
+@each $sizeName, $fontSize in $wuiListGroupItemSizeTypes {
+  .wuiListGroupItem--#{$sizeName} {
+    font-size: $fontSize;
+  }
+}
+
+.wuiListGroupItem--xSmall,
+.wuiListGroupItem--small {
+  font-weight: $wuiFontWeightMedium;
+  letter-spacing: 0;
+}
+
+.wuiListGroupItem--xSmall {
+  .wuiListGroupItem__button,
+  .wuiListGroupItem__text {
+    line-height: $wuiSize;
+  }
+}
+
+.wuiListGroupItem--large {
+  .wuiListGroupItem__button,
+  .wuiListGroupItem__text {
+    line-height: $wuiSizeXL;
+  }
+}
+
+.wuiListGroupItem--wrapText {
+  .wuiListGroupItem__button,
+  .wuiListGroupItem__text {
+    width: 100%;
+    word-break: break-word;
+  }
+
+  .wuiListGroupItem__label {
+    white-space: inherit;
+  }
+}
+
+// Layout alts from wuiListGroup
+
+.wuiListGroup-flush .wuiListGroupItem {
+  border-radius: 0;
+}
+
+.wuiListGroup-bordered .wuiListGroupItem {
+  &:first-child {
+    border-top-left-radius: $wuiBorderRadius;
+    border-top-right-radius: $wuiBorderRadius;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: $wuiBorderRadius;
+    border-bottom-right-radius: $wuiBorderRadius;
+  }
+}
+
+.wuiListGroupItem__tooltip {
+  width: 100%;
+}

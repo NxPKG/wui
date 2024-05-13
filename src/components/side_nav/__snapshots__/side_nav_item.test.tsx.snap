@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSideNavItem href is rendered 1`] = `
+<div
+  class="wuiSideNavItem wuiSideNavItem--root"
+>
+  <a
+    class="wuiSideNavItemButton wuiSideNavItemButton--isClickable"
+    href="#"
+    rel="noreferrer"
+  >
+    <span
+      class="wuiSideNavItemButton__content"
+    >
+      <span
+        class="wuiSideNavItemButton__label"
+      >
+        <button />
+      </span>
+    </span>
+  </a>
+</div>
+`;
+
+exports[`WuiSideNavItem href is rendered with rel 1`] = `
+<div
+  class="wuiSideNavItem wuiSideNavItem--root"
+>
+  <a
+    class="wuiSideNavItemButton wuiSideNavItemButton--isClickable"
+    href="#"
+    rel="noopener noreferrer"
+  >
+    <span
+      class="wuiSideNavItemButton__content"
+    >
+      <span
+        class="wuiSideNavItemButton__label"
+      >
+        <button />
+      </span>
+    </span>
+  </a>
+</div>
+`;
+
+exports[`WuiSideNavItem is rendered 1`] = `
+<div
+  class="wuiSideNavItem wuiSideNavItem--root"
+>
+  <div
+    class="wuiSideNavItemButton"
+  >
+    <span
+      class="wuiSideNavItemButton__content"
+    >
+      <span
+        class="wuiSideNavItemButton__label"
+      >
+        <button
+          aria-label="aria-label"
+          class="testClass1 testClass2"
+          data-test-subj="test subject string"
+        />
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiSideNavItem isSelected defaults to false 1`] = `
+<div
+  class="wuiSideNavItem wuiSideNavItem--root"
+>
+  <div
+    class="wuiSideNavItemButton"
+  >
+    <span
+      class="wuiSideNavItemButton__content"
+    >
+      <span
+        class="wuiSideNavItemButton__label"
+      >
+        <button />
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiSideNavItem isSelected is rendered when specified as true 1`] = `
+<div
+  class="wuiSideNavItem wuiSideNavItem--root"
+>
+  <div
+    class="wuiSideNavItemButton wuiSideNavItemButton-isSelected"
+  >
+    <span
+      class="wuiSideNavItemButton__content"
+    >
+      <span
+        class="wuiSideNavItemButton__label"
+      >
+        <button />
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiSideNavItem preserves child's classes 1`] = `
+<div
+  class="wuiSideNavItem wuiSideNavItem--root"
+>
+  <div
+    class="wuiSideNavItemButton"
+  >
+    <span
+      class="wuiSideNavItemButton__content"
+    >
+      <span
+        class="wuiSideNavItemButton__label"
+      >
+        <button
+          class="test"
+        />
+      </span>
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,234 @@
+.wuiControlBar {
+  background: $wuiControlBarBackground;
+  color: $wuiControlBarText;
+  display: flex;
+  flex-direction: column;
+  // This large box shadow helps prevent a flicker of dark
+  // background when the content is shown and hidden
+  box-shadow: inset 0 $wuiControlBarInitialHeight 0 $wuiControlBarBackground, inset 0 600rem 0 $wuiPageBackgroundColor;
+  bottom: 0;
+  transform: translateY(0);
+  height: $wuiControlBarInitialHeight;
+  max-height: $wuiControlBarMaxHeight;
+
+  &--fixed {
+    position: fixed;
+    z-index: $wuiZMask;
+  }
+
+  &--absolute {
+    position: absolute;
+    z-index: $wuiZLevel1;
+  }
+
+  &--relative {
+    position: relative;
+  }
+
+  &-isOpen {
+    animation-duration: $wuiAnimSpeedNormal;
+    animation-timing-function: $wuiAnimSlightResistance;
+    animation-fill-mode: forwards;
+  }
+
+  &-isOpen.wuiControlBar--large {
+    animation-name: wuiControlBarOpenPanelLarge;
+    height: $wuiControlBarMaxHeight;
+    bottom: map-get($wuiControlBarHeights, 'l') * -1;
+  }
+
+  &-isOpen.wuiControlBar--medium {
+    animation-name: wuiControlBarOpenPanelMedium;
+    height: map-get($wuiControlBarHeights, 'm');
+    bottom: map-get($wuiControlBarHeights, 'm') * -1;
+  }
+
+  &-isOpen.wuiControlBar--small {
+    animation-name: wuiControlBarOpenPanelSmall;
+    height: map-get($wuiControlBarHeights, 's');
+    bottom: map-get($wuiControlBarHeights, 's') * -1;
+  }
+}
+
+.wuiControlBar__controls {
+  height: $wuiControlBarInitialHeight;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden; // Ensures the movement of buttons in :focus don't cause scrollbars
+  overflow-x: auto;
+  padding: 0 $wuiSizeM;
+}
+
+.wuiControlBar__content {
+  @include wuiScrollBar;
+  overflow-y: auto;
+  width: 100%;
+  height: calc(100% - #{$wuiControlBarInitialHeight});
+  background-color: $wuiPageBackgroundColor;
+  animation-name: wuiControlBarShowContent;
+  animation-duration: $wuiAnimSpeedSlow;
+  animation-iteration-count: 1;
+  animation-timing-function: $wuiAnimSlightResistance;
+  color: $wuiColorDarkestShade;
+}
+
+// CONTROL TYPES
+
+.wuiControlBar__icon {
+  flex-shrink: 0;
+  margin-left: $wuiSizeS;
+  margin-right: $wuiSizeS;
+}
+
+.wuiControlBar__buttonIcon {
+  flex-shrink: 0;
+  min-width: $wuiControlBarInitialHeight;
+  min-height: $wuiControlBarInitialHeight;
+}
+
+.wuiControlBar__button {
+  flex-shrink: 0;
+  border-radius: $wuiBorderRadius / 2;
+  margin-left: $wuiSizeXS;
+  font-size: $wuiFontSizeS;
+
+  &:enabled:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  &:last-child {
+    margin-right: $wuiSizeXS;
+  }
+}
+
+.wuiControlBar__breadcrumbs {
+  .wuiBreadcrumb:not(.wuiBreadcrumb--last) {
+    color: makeHighContrastColor($wuiTextSubduedColor, $wuiControlBarBackground);
+  }
+
+  .wuiBreadcrumbSeparator {
+    background: $wuiControlBarBorderColor;
+  }
+}
+
+.wuiControlBar__spacer {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.wuiControlBar__divider {
+  flex-shrink: 0;
+  height: 100%;
+  width: 1px;
+  background-color: $wuiControlBarBorderColor;
+}
+
+.wuiControlBar__text {
+  @include wuiTextTruncate;
+  @include wuiFontSizeS;
+  padding: 0 $wuiSizeS;
+  color: $wuiControlBarText;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.wuiControlBar__tab {
+  @include wuiTextTruncate;
+  @include wuiFontSizeS;
+  color: $wuiControlBarText;
+  padding: 0 $wuiSize;
+  text-align: center;
+  height: 100%;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &.wuiControlBar__tab--active {
+    background-color: $wuiPageBackgroundColor;
+    box-shadow: inset 0 4px 0 makeHighContrastColor($wuiColorPrimary, $wuiColorLightestShade);
+    color: makeHighContrastColor($wuiColorPrimary, $wuiColorLightestShade);
+  }
+}
+
+@each $colorName, $colorValue in $wuiButtonTypes {
+  .wuiControlBar__controls {
+    .wuiLink.wuiLink--#{$colorName} {
+      color: makeHighContrastColor($colorValue, $wuiControlBarBackground);
+
+      &:hover {
+        color: tintOrShade($colorValue, 30%, 30%);
+      }
+    }
+
+    .wuiLink.wuiLink--text {
+      color: $wuiColorGhost;
+    }
+
+    .wuiControlBar__button.wuiButton--#{$colorName}:enabled {
+      box-shadow: none;
+    }
+
+    .wuiControlBar__button.wuiButton--#{$colorName}:enabled:not(.wuiButton--fill) {
+      color: makeHighContrastColor($colorValue, $wuiControlBarBackground);
+      border-color: makeHighContrastColor($colorValue, $wuiControlBarBackground);
+    }
+
+    .wuiButtonIcon--#{$colorName} {
+      color: makeHighContrastColor($colorValue, $wuiControlBarBackground);
+    }
+  }
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiControlBar:not(.wuiControlBar--showOnMobile) {
+    display: none;
+  }
+}
+
+@keyframes wuiControlBarOpenPanelLarge {
+  0% {
+    // Accounts for the initial height offset from the top
+    transform: translateY(calc((#{$wuiControlBarInitialHeight} * 3) * -1));
+  }
+
+  100% {
+    transform: translateY(map-get($wuiControlBarHeights, 'l') * -1);
+  }
+}
+
+@keyframes wuiControlBarOpenPanelMedium {
+  0% {
+    transform: translateY(-$wuiControlBarInitialHeight);
+  }
+
+  100% {
+    transform: translateY(map-get($wuiControlBarHeights, 'm') * -1);
+  }
+}
+
+@keyframes wuiControlBarOpenPanelSmall {
+  0% {
+    transform: translateY(-$wuiControlBarInitialHeight);
+  }
+
+  100% {
+    transform: translateY(map-get($wuiControlBarHeights, 's') * -1);
+  }
+}
+
+@keyframes wuiControlBarShowContent {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,131 @@
+.wuiComboBox {
+  @include wuiFormControlSize(auto, $includeAlternates: true);
+  position: relative;
+
+  /**
+   * 1. Allow pills to truncate their text with an ellipsis.
+   * 2. Don't allow pills to overlap with the caret, loading icon or clear button.
+   * 3. The height on combo can be larger than normal text inputs.
+   */
+
+  &--compressed,
+  .wuiFormControlLayout {
+    height: auto;
+  }
+
+  .wuiComboBox__inputWrap {
+    @include wuiFormControlStyle($includeStates: false, $includeSizes: true);
+    @include wuiFormControlWithIcon($isIconOptional: true);
+    @include wuiFormControlSize(auto, $includeAlternates: true);
+    padding: $wuiSizeXS $wuiSizeS;
+    display: flex; /* 1 */
+
+    // sass-lint:disable-block mixins-before-declarations
+    // to override the padding added above
+    @include wuiFormControlLayoutPadding(1); /* 2 */
+
+    .wuiComboBoxPill {
+      $inputMinWidth: $wuiSize;
+
+      // Ensure the input doesn't drop to the next line when the WuiBadge has a very long text
+      // Overrides the default WuiBadge max-width that is 100%
+      max-width: calc(100% - #{$wuiSizeXS * .5} - #{$inputMinWidth});
+    }
+
+    &:not(.wuiComboBox__inputWrap--noWrap) {
+      padding-top: $wuiSizeXS;
+      padding-bottom: $wuiSizeXS;
+      padding-left: $wuiSizeXS;
+      height: auto;  /* 3 */
+      flex-wrap: wrap; /* 1 */
+      align-content: flex-start;
+
+      &:hover {
+        cursor: text;
+      }
+    }
+
+    &.wuiComboBox__inputWrap-isClearable {
+      @include wuiFormControlLayoutPadding(2); /* 2 */
+    }
+
+    &.wuiComboBox__inputWrap-isLoading {
+      @include wuiFormControlLayoutPadding(2); /* 2 */
+    }
+
+    &.wuiComboBox__inputWrap-isLoading.wuiComboBox__inputWrap-isClearable {
+      @include wuiFormControlLayoutPadding(3); /* 2 */
+    }
+  }
+
+  /**
+   * 1. Force field height to match other field heights.
+   * 2. Force input height to expand to fill this element.
+   * 3. Reset appearance on Safari.
+   * 4. Fix react-input-autosize appearance.
+   * 5. Prevent a lot of input from causing the react-input-autosize to overflow the container.
+   */
+  .wuiComboBox__input {
+    // sass-lint:disable-block no-important
+    display: inline-flex !important; /* 1 */
+    height: $wuiSizeXL; /* 2 */
+    overflow: hidden; /* 5 */
+
+    > input {
+      @include wuiFont;
+      appearance: none; /* 3 */
+      padding: 0;
+      border: none;
+      background: transparent;
+      font-size: $wuiFontSizeS;
+      color: $wuiTextColor;
+      margin: $wuiSizeXS;
+      line-height: $wuiLineHeight; /* 4 */
+    }
+  }
+
+  &.wuiComboBox-isOpen {
+    .wuiComboBox__inputWrap {
+      @include wuiFormControlFocusStyle;
+
+      &--compressed {
+        @include wuiFormControlFocusStyle($borderOnly: true);
+      }
+    }
+  }
+
+  &.wuiComboBox-isInvalid {
+    .wuiComboBox__inputWrap {
+      @include wuiFormControlInvalidStyle;
+    }
+  }
+
+  &.wuiComboBox-isDisabled {
+    .wuiComboBox__inputWrap {
+      @include wuiFormControlDisabledStyle;
+    }
+  }
+
+  &.wuiComboBox--compressed {
+    .wuiComboBox__inputWrap {
+      line-height: $wuiFormControlCompressedHeight; /* 2 */
+      padding-top: 0;
+      padding-bottom: 0;
+
+      // sass-lint:disable-block mixins-before-declarations
+      @include wuiFormControlLayoutPadding(1, $compressed: true); /* 2 */
+
+      &.wuiComboBox__inputWrap-isClearable {
+        @include wuiFormControlLayoutPadding(2, $compressed: true); /* 2 */
+      }
+
+      &.wuiComboBox__inputWrap-isLoading {
+        @include wuiFormControlLayoutPadding(2, $compressed: true); /* 2 */
+      }
+
+      &.wuiComboBox__inputWrap-isLoading.wuiComboBox__inputWrap-isClearable {
+        @include wuiFormControlLayoutPadding(3, $compressed: true); /* 2 */
+      }
+    }
+  }
+}

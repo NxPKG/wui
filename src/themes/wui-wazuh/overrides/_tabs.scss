@@ -1,0 +1,24 @@
+// Fixed heights ensure proper alignment with pixel grid
+
+.wuiTab {
+  font-weight: $wuiFontWeightMedium;
+  height: $wuiSizeXXL + $wuiSizeS;
+  border-radius: $wuiSizeS $wuiSizeS 0 0;
+
+  &.wuiTab-isSelected {
+
+    &::after {
+      background-color: transparent;
+    }
+  }
+}
+
+.wuiTabs--small .wuiTab {
+  height: $wuiSizeXXL;
+  border-radius: $wuiSizeXS $wuiSizeXS 0 0;
+}
+
+.wuiTabs--large .wuiTab {
+  @include fontSize($wuiTabFontSizeL);
+  height: $wuiSizeXXL + $wuiSizeS;
+}

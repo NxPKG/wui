@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DefaultItemAction render - button 1`] = `
+<WuiToolTip
+  content="action 1"
+  delay="long"
+  position="top"
+>
+  <WuiButtonEmpty
+    color="primary"
+    flush="right"
+    isDisabled={false}
+    onClick={[Function]}
+    size="s"
+  >
+    action1
+  </WuiButtonEmpty>
+</WuiToolTip>
+`;
+
+exports[`DefaultItemAction render - default button 1`] = `
+<WuiToolTip
+  content="action 1"
+  delay="long"
+  position="top"
+>
+  <WuiButtonEmpty
+    color="primary"
+    flush="right"
+    isDisabled={false}
+    onClick={[Function]}
+    size="s"
+  >
+    action1
+  </WuiButtonEmpty>
+</WuiToolTip>
+`;
+
+exports[`DefaultItemAction render - icon 1`] = `
+<WuiToolTip
+  content="action 1"
+  delay="long"
+  position="top"
+>
+  <WuiButtonIcon
+    aria-labelledby="random_id"
+    color="primary"
+    iconType="trash"
+    isDisabled={false}
+    onClick={[Function]}
+  />
+  <WuiScreenReaderOnly>
+    <span
+      id="random_id"
+    >
+      <span>
+        action1
+      </span>
+    </span>
+  </WuiScreenReaderOnly>
+</WuiToolTip>
+`;
+
+exports[`DefaultItemAction render - name 1`] = `
+<WuiToolTip
+  content="action 1"
+  delay="long"
+  position="top"
+>
+  <WuiButtonEmpty
+    color="primary"
+    flush="right"
+    isDisabled={false}
+    onClick={[Function]}
+    size="s"
+  >
+    <span>
+      xyz
+    </span>
+  </WuiButtonEmpty>
+</WuiToolTip>
+`;

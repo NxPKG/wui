@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCheckboxGroup (mocked checkbox) disabled is rendered 1`] = `
+<div>
+  <wui_checkbox
+    checked=""
+    class="wuiCheckboxGroup__item"
+    disabled=""
+    id="1"
+    label="wazuh"
+  />
+  <wui_checkbox
+    class="wuiCheckboxGroup__item"
+    disabled=""
+    id="2"
+    label="wazuh"
+  />
+</div>
+`;
+
+exports[`WuiCheckboxGroup (mocked checkbox) idToSelectedMap is rendered 1`] = `
+<div>
+  <wui_checkbox
+    checked=""
+    class="wuiCheckboxGroup__item"
+    id="1"
+    label="wazuh"
+  />
+  <wui_checkbox
+    class="wuiCheckboxGroup__item"
+    id="2"
+    label="wazuh"
+  />
+</div>
+`;
+
+exports[`WuiCheckboxGroup (mocked checkbox) individual disabled is rendered 1`] = `
+<div>
+  <wui_checkbox
+    checked=""
+    class="wuiCheckboxGroup__item"
+    disabled=""
+    id="1"
+    label="wazuh"
+  />
+  <wui_checkbox
+    class="wuiCheckboxGroup__item"
+    id="2"
+    label="wazuh"
+  />
+</div>
+`;
+
+exports[`WuiCheckboxGroup (mocked checkbox) is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiCheckboxGroup (mocked checkbox) legend is rendered 1`] = `
+<fieldset>
+  <legend
+    class="wuiFormLegend"
+  >
+    A legend
+  </legend>
+</fieldset>
+`;
+
+exports[`WuiCheckboxGroup (mocked checkbox) options are rendered 1`] = `
+<div>
+  <wui_checkbox
+    class="wuiCheckboxGroup__item"
+    id="1"
+    label="wazuh"
+  />
+  <wui_checkbox
+    class="wuiCheckboxGroup__item"
+    id="2"
+    label="wazuh"
+  />
+</div>
+`;

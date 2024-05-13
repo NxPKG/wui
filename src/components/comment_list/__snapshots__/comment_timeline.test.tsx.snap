@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCommentTimeline is rendered 1`] = `
+<div
+  class="wuiCommentTimeline testClass1 testClass2"
+>
+  <div
+    class="wuiCommentTimeline__content"
+  >
+    <div
+      class="wuiCommentTimeline__icon--default wuiCommentTimeline__icon--regular"
+    >
+      <div
+        data-wuiicon-type="user"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCommentTimeline props timelineIcon is rendered 1`] = `
+<div
+  class="wuiCommentTimeline"
+>
+  <div
+    class="wuiCommentTimeline__content"
+  >
+    <div
+      class="wuiCommentTimeline__icon--regular"
+    >
+      <div
+        aria-label="Mario"
+        class="wuiAvatar wuiAvatar--l wuiAvatar--user"
+        style="background-image:none;background-color:#f1d86f;color:#000000"
+        title="Mario"
+      >
+        <span
+          aria-hidden="true"
+        >
+          M
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCommentTimeline props type is rendered 1`] = `
+<div
+  class="wuiCommentTimeline"
+>
+  <div
+    class="wuiCommentTimeline__content"
+  >
+    <div
+      class="wuiCommentTimeline__icon--default wuiCommentTimeline__icon--update"
+    >
+      <div
+        data-wuiicon-type="dot"
+      />
+    </div>
+  </div>
+</div>
+`;

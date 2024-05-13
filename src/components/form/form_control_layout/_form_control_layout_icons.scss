@@ -1,0 +1,33 @@
+.wuiFormControlLayoutIcons {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: $wuiFormControlPadding;
+  display: flex;
+  align-items: center;
+
+  > * + * {
+    margin-left: $wuiFormControlPadding / 2;
+  }
+
+  .wuiFormControlLayout--compressed & {
+    left: $wuiFormControlCompressedPadding;
+  }
+}
+
+.wuiFormControlLayoutIcons--right {
+  left: auto;
+  right: $wuiFormControlPadding;
+
+  .wuiFormControlLayout--compressed & {
+    left: auto;
+    right: $wuiFormControlCompressedPadding;
+  }
+}
+
+// If the control is disabled, change the color of the icons
+*:disabled + .wuiFormControlLayoutIcons {
+  cursor: not-allowed;
+  color: $wuiFormControlDisabledColor;
+}

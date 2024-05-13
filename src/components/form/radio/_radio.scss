@@ -1,0 +1,85 @@
+.wuiRadio {
+  position: relative;
+
+  .wuiRadio__input {
+    @include wuiScreenReaderOnly;
+
+    ~ .wuiRadio__label {
+      display: inline-block;
+      padding-left: ($wuiRadioSize * 1.5);
+      line-height: $wuiSizeL;
+      font-size: $wuiFontSizeS;
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    + .wuiRadio__circle {
+      @include wuiCustomControl($type: 'round', $size: $wuiRadioSize);
+
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: (($wuiSizeL - $wuiRadioSize) / 2) - 1px;
+    }
+
+    &:checked {
+      + .wuiRadio__circle {
+        @include wuiCustomControlSelected($type: 'dot');
+      }
+    }
+
+    &[disabled] {
+      //sass-lint:disable no-important
+      cursor: not-allowed !important;
+
+      ~ .wuiRadio__label {
+        color: $wuiFormControlDisabledColor;
+        cursor: not-allowed !important;
+      }
+
+      + .wuiRadio__circle {
+        @include wuiCustomControlDisabled;
+      }
+    }
+
+    &:checked[disabled] {
+      + .wuiRadio__circle {
+        @include wuiCustomControlDisabled($type: 'dot');
+      }
+    }
+
+    &:focus,
+    &:active:not(:disabled) {
+      + .wuiRadio__circle {
+        @include wuiCustomControlFocused;
+      }
+    }
+  }
+
+  /**
+   * 1. Float above the visual radio and match its dimension, so that when users try to click it
+   *    they actually click this input.
+   */
+
+  &.wuiRadio--inList,
+  &.wuiRadio--noLabel {
+    min-height: $wuiRadioSize;
+    min-width: $wuiRadioSize;
+
+    .wuiRadio__circle {
+      top: 0;
+    }
+
+    .wuiRadio__input {
+      @include size($wuiRadioSize); /* 1 */
+
+      position: absolute; /* 1 */
+      opacity: 0; /* 1 */
+      z-index: 1; /* 1 */
+      margin: 0; /* 1 */
+      left: 0; /* 1 */
+      cursor: pointer;
+    }
+  }
+}

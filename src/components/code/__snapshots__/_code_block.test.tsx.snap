@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCodeBlockImpl block highlights javascript code, adding "js" class 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code js hljs javascript"
+    />
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlockImpl block renders a pre block tag 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge testClass1 testClass2"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      aria-label="aria-label"
+      class="wuiCodeBlock__code"
+      data-test-subj="test subject string"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlockImpl block renders a pre block tag with a css class modifier 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge testClass1 testClass2"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePre"
+  >
+    <code
+      aria-label="aria-label"
+      class="wuiCodeBlock__code"
+      data-test-subj="test subject string"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlockImpl block renders with transparent background 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge wuiCodeBlock--transparentBackground"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    />
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlockImpl inline highlights javascript code, adding "js" class 1`] = `
+<span
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge wuiCodeBlock--inline"
+>
+  <code
+    class="wuiCodeBlock__code js hljs javascript"
+  />
+</span>
+`;
+
+exports[`WuiCodeBlockImpl inline renders an inline code tag 1`] = `
+<span
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge wuiCodeBlock--inline testClass1 testClass2"
+>
+  <code
+    aria-label="aria-label"
+    class="wuiCodeBlock__code"
+    data-test-subj="test subject string"
+  >
+    var some = 'code';
+console.log(some);
+  </code>
+</span>
+`;
+
+exports[`WuiCodeBlockImpl inline renders with transparent background 1`] = `
+<span
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge wuiCodeBlock--transparentBackground wuiCodeBlock--inline"
+>
+  <code
+    class="wuiCodeBlock__code"
+  />
+</span>
+`;

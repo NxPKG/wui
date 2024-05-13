@@ -1,0 +1,14 @@
+.wuiSuperUpdateButton {
+  // Just wide enough for all 3 states
+  min-width: $wuiSuperDatePickerButtonWidth;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiSuperUpdateButton {
+    min-width: 0;
+
+    .wuiSuperUpdateButton__text {
+      display: none;
+    }
+  }
+}

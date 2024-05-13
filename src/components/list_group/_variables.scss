@@ -1,0 +1,21 @@
+$wuiListGroupItemHoverBackground: transparentize($wuiColorLightShade, .75);
+$wuiListGroupItemHoverBackgroundGhost: transparentize($wuiColorGhost, .9);
+
+$wuiListGroupGutterTypes: (
+  gutterSmall: $wuiSizeS,
+  gutterMedium: $wuiSize,
+);
+
+$wuiListGroupItemColorTypes: (
+  primary: $wuiColorPrimaryText,
+  text: $wuiTextColor,
+  subdued: $wuiTextSubduedColor,
+  ghost: $wuiColorGhost,
+);
+
+$wuiListGroupItemSizeTypes: (
+  xSmall: $wuiFontSizeXS,
+  small: $wuiFontSizeS,
+  medium: $wuiFontSize,
+  large: $wuiFontSizeL,
+);

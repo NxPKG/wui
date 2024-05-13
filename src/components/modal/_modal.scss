@@ -1,0 +1,160 @@
+/**
+ * 1. Fix IE overflow issue (min-height) by adding a separate wrapper for the
+ *    flex display. https://github.com/philipwalton/flexbugs#flexbug-3
+ * 2. IE has trouble with min-widths on flex elements. Use the pixel value
+ *    from our forms since that's usually the smallest we want them.
+ */
+
+.wuiModal {
+  border: $wuiBorderThin;
+  // This mixin overwrites some of the border above
+  @include wuiBottomShadowLarge($adjustBorders: true); // sass-lint:disable-line mixins-before-declarations
+  display: flex; /* 1 */
+
+  position: relative;
+  background-color: $wuiColorEmptyShade;
+  border-radius: $wuiBorderRadius;
+  z-index: $wuiZModal;
+  min-width: $wuiFormMaxWidth;
+  animation: wuiModal $wuiAnimSpeedSlow $wuiAnimSlightBounce;
+
+  .wuiModal__flex { /* 1 */
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 75vh; // We overflow the modal body based off this
+    overflow: hidden; // Ensure long, non-breaking text doesn't expand beyond the modal bounds
+  }
+}
+
+.wuiModal--maxWidth-default {
+  max-width: map-get($wuiBreakpoints, 'm');
+}
+
+.wuiModal--confirmation {
+  min-width: $wuiFormMaxWidth;
+}
+
+.wuiModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $wuiSizeL $wuiSizeXXL $wuiSize $wuiSizeL;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.wuiModalHeader__title {
+  @include wuiTitle('m');
+}
+
+.wuiModalBody {
+  flex-grow: 1;
+  overflow: hidden;
+  // The below fixes scroll on Chrome and Safari
+  display: flex;
+  flex-direction: column;
+
+  .wuiModalBody__overflow {
+    @include wuiYScrollWithShadows;
+    padding: $wuiSizeS $wuiSizeL;
+  }
+}
+
+.wuiModalFooter {
+  display: flex;
+  justify-content: flex-end;
+  padding: $wuiSize $wuiSizeL $wuiSizeL;
+  flex-grow: 0;
+  flex-shrink: 0; // ensure the height of the footer is based off its contents and doesn't squish
+
+  > * + * {
+    margin-left: $wuiSize;
+  }
+}
+
+// If a body doesn't exist, remove some extra padding from footer
+.wuiModalHeader + .wuiModalFooter {
+  padding-top: $wuiSizeS;
+}
+
+// If a footer doesn't exist (body is the last element) add padding to the bottom
+.wuiModalBody:last-of-type .wuiModalBody__overflow {
+  padding-bottom: $wuiSizeL;
+}
+
+
+// The actual size of the X button in pixels is a bit fuzzy because of all the
+// button padding so there is some pixel pushing here.
+.wuiModal__closeIcon {
+  background-color: transparentize($wuiColorEmptyShade, .1);
+  position: absolute;
+  right: $wuiSizeXS;
+  top: $wuiSizeXS;
+  z-index: 3;
+}
+
+@keyframes wuiModal {
+  0% {
+    opacity: 0;
+    transform: translateY($wuiSizeXL);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// On mobile we fix modals as a takeover.
+@include wuiBreakpoint('xs', 's') {
+  .wuiModal {
+    // sass-lint:disable-block no-important
+    position: fixed;
+    width: 100vw !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 0;
+    border: none;
+
+    &.wuiModal--confirmation {
+      @include wuiBottomShadowLarge($wuiShadowColorLarge, $reverse: true);
+      top: auto;
+    }
+
+    .wuiModal__flex { /* 1 */
+      max-height: 100vh;
+    }
+  }
+
+  .wuiModalHeader {
+    width: 100vw;
+  }
+
+  .wuiModalFooter {
+    background: $wuiColorLightestShade;
+    padding: $wuiSizeM $wuiSizeL !important; // sass-lint:disable-line no-important
+    width: 100vw;
+    justify-content: stretch;
+
+    > * {
+      flex: 1;
+
+      + * {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .wuiModalBody {
+    width: 100vw;
+
+    .wuiModalBody__overflow {
+      padding-bottom: $wuiSizeL;
+    }
+  }
+}

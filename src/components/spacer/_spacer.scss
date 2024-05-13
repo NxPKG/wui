@@ -1,0 +1,14 @@
+$spacerSizes: (
+  xs: $wuiSizeXS,
+  s: $wuiSizeS,
+  m: $wuiSize,
+  l: $wuiSizeL,
+  xl: $wuiSizeXL,
+  xxl: $wuiSizeXXL,
+);
+
+@each $name, $size in $spacerSizes {
+  .wuiSpacer--#{$name} {
+    height: $size;
+  }
+}

@@ -1,0 +1,4 @@
+.wuiResizablePanel {
+  @include wuiScrollBar;
+  overflow-y: auto;
+}

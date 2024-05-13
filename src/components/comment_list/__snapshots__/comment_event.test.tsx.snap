@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCommentEvent is rendered 1`] = `
+<figure
+  class="wuiCommentEvent wuiCommentEvent--regular testClass1 testClass2"
+>
+  <figcaption
+    class="wuiCommentEvent__header"
+  >
+    <div
+      class="wuiCommentEvent__headerData"
+    >
+      <div
+        class="wuiCommentEvent__headerUsername"
+      >
+        someuser
+      </div>
+      <div
+        class="wuiCommentEvent__headerEvent"
+      />
+    </div>
+  </figcaption>
+</figure>
+`;
+
+exports[`WuiCommentEvent props event is rendered 1`] = `
+<figure
+  class="wuiCommentEvent wuiCommentEvent--regular"
+>
+  <figcaption
+    class="wuiCommentEvent__header"
+  >
+    <div
+      class="wuiCommentEvent__headerData"
+    >
+      <div
+        class="wuiCommentEvent__headerUsername"
+      >
+        someuser
+      </div>
+      <div
+        class="wuiCommentEvent__headerEvent"
+      >
+        commented
+      </div>
+    </div>
+  </figcaption>
+</figure>
+`;
+
+exports[`WuiCommentEvent props timestamp is rendered 1`] = `
+<figure
+  class="wuiCommentEvent wuiCommentEvent--regular"
+>
+  <figcaption
+    class="wuiCommentEvent__header"
+  >
+    <div
+      class="wuiCommentEvent__headerData"
+    >
+      <div
+        class="wuiCommentEvent__headerUsername"
+      >
+        someuser
+      </div>
+      <div
+        class="wuiCommentEvent__headerEvent"
+      />
+      <div
+        class="wuiCommentEvent__headerTimestamp"
+      >
+        <time>
+          21 days ago
+        </time>
+      </div>
+    </div>
+  </figcaption>
+</figure>
+`;
+
+exports[`WuiCommentEvent props type is rendered 1`] = `
+<div
+  class="wuiCommentEvent wuiCommentEvent--update"
+>
+  <div
+    class="wuiCommentEvent__header"
+  >
+    <div
+      class="wuiCommentEvent__headerData"
+    >
+      <div
+        class="wuiCommentEvent__headerUsername"
+      >
+        someuser
+      </div>
+      <div
+        class="wuiCommentEvent__headerEvent"
+      />
+    </div>
+  </div>
+</div>
+`;

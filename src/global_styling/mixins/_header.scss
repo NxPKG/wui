@@ -1,0 +1,16 @@
+@import '../variables/header';
+
+@mixin wuiHeaderAffordForFixed($headerHeight: $wuiHeaderHeightCompensation) {
+  // The `&` allows for grouping inside another specific body class.
+  // When not applied inside of another selector, it simply renders with the single class
+  &.wuiBody--headerIsFixed {
+    padding-top: $headerHeight;
+
+    // When the WuiHeader is fixed, we need to account for it in the position of the flyout
+    .wuiFlyout,
+    .wuiCollapsibleNav {
+      top: $headerHeight;
+      height: calc(100% - #{$headerHeight});
+    }
+  }
+}

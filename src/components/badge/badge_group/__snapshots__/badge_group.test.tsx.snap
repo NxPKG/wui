@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiBadgeGroup gutterSize none is rendered 1`] = `
+<div
+  class="wuiBadgeGroup"
+/>
+`;
+
+exports[`WuiBadgeGroup gutterSize s is rendered 1`] = `
+<div
+  class="wuiBadgeGroup wuiBadgeGroup--gutterSmall"
+/>
+`;
+
+exports[`WuiBadgeGroup gutterSize xs is rendered 1`] = `
+<div
+  class="wuiBadgeGroup wuiBadgeGroup--gutterExtraSmall"
+/>
+`;
+
+exports[`WuiBadgeGroup is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiBadgeGroup wuiBadgeGroup--gutterExtraSmall testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiBadgeGroup__item"
+  >
+    <span
+      class="wuiBadge wuiBadge--iconLeft"
+      style="background-color:#d3dae6;color:#000"
+    >
+      <span
+        class="wuiBadge__content"
+      >
+        <span
+          class="wuiBadge__text"
+        >
+          Content
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;

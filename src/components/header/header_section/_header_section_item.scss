@@ -1,0 +1,102 @@
+// Header items are the small icon links that pop up menus.
+
+.wuiHeaderSectionItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: $wuiSize;
+    bottom: 0;
+    background: $wuiBorderColor;
+    left: 0;
+  }
+
+  &.wuiHeaderSectionItem--grow {
+    flex-grow: 1;
+  }
+}
+
+.wuiHeaderSectionItem__button {
+  position: relative; // For positioning the notification
+  height: $wuiHeaderChildSize;
+  min-width: $wuiHeaderChildSize;
+  text-align: center;
+  font-size: 0; // aligns icons better vertically
+
+  &:hover {
+    background: $wuiColorLightestShade;
+  }
+
+  &:focus {
+    background: $wuiFocusBackgroundColor;
+  }
+}
+
+.wuiHeaderSectionItem--borderLeft {
+  &:after {
+    left: 0;
+    width: 1px;
+  }
+}
+
+.wuiHeaderSectionItem--borderRight {
+  &:after {
+    width: 1px;
+    left: auto;
+    right: 0;
+  }
+}
+
+// SET FOR DEPRECATION: 2/21/20
+// The `wuiHeaderNotification` class was needed to be manually applied
+// Now notifications can be automatically added to the buttons via props
+.wuiHeaderNotification,
+.wuiHeaderSectionItemButton__notification {
+  position: absolute;
+}
+
+.wuiHeaderSectionItemButton__notification--badge {
+  top: 9%;
+  right: 9%;
+  box-shadow: 0 0 0 1px $wuiHeaderBackgroundColor;
+}
+
+.wuiHeaderSectionItemButton__notification--dot {
+  top: 0;
+  right: 0;
+  stroke: $wuiHeaderBackgroundColor;
+}
+
+@include wuiBreakpoint('xs') {
+  .wuiHeaderSectionItem,
+  .wuiHeaderSectionItem__button {
+    min-width: $wuiHeaderChildSize * .75;
+  }
+
+  .wuiHeaderSectionItem--borderLeft,
+  .wuiHeaderSectionItem--borderRight {
+    &:after {
+      display: none;
+    }
+  }
+
+  // On small screens just show a small dot indicating there are notifications
+  .wuiHeaderNotification,
+  .wuiHeaderSectionItemButton__notification--badge {
+    @include size($wuiSizeS);
+    top: 20%;
+    min-width: 0;
+    border-radius: $wuiSizeS;
+    color: $wuiColorAccent;
+    overflow: hidden;
+  }
+
+  // Using specificty to override the default icon size
+  .wuiHeaderSectionItemButton__notification.wuiHeaderSectionItemButton__notification--dot {
+    @include size($wuiSize);
+    top: 9%;
+  }
+}

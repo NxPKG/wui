@@ -1,0 +1,8 @@
+.wuiComboBoxPlaceholder {
+  position: absolute;
+  pointer-events: none;
+  padding: 0 $wuiSizeXS;
+  line-height: $wuiSizeXL;
+  color: $wuiColorMediumShade;
+  margin-bottom: 0 !important; // sass-lint:disable-line no-important
+}

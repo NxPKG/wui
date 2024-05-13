@@ -1,0 +1,50 @@
+@import '../../global_styling/functions/index';
+
+// Core
+$wuiColorPrimary: #1BA9F5;
+$wuiColorSecondary: #7DE2D1;
+$wuiColorAccent: #F990C0;
+$wuiColorHighlight: #2E2D25;
+
+// These colors stay the same no matter the theme
+$wuiColorGhost: #FFF;
+$wuiColorInk: #000;
+
+// Status
+$wuiColorSuccess: $wuiColorSecondary;
+$wuiColorWarning: #FFCE7A;
+$wuiColorDanger: #F66;
+
+// Grays
+$wuiColorEmptyShade: #1D1E24;
+$wuiColorLightestShade: #25262E;
+$wuiColorLightShade: #343741;
+$wuiColorMediumShade: #535966;
+$wuiColorDarkShade: #98A2B3;
+$wuiColorDarkestShade: #D4DAE5;
+$wuiColorFullShade: #FFF;
+
+// Variations from core
+$wuiTextColor: #DFE5EF;
+$wuiLinkColor: $wuiColorPrimary;
+$wuiFocusBackgroundColor: #232635;
+$wuiShadowColor: #000;
+$wuiShadowColorLarge: #000;
+$wuiPageBackgroundColor: shade($wuiColorLightestShade, 30%);
+$wuiTextSubduedColor: makeHighContrastColor($wuiColorMediumShade);
+$wuiTitleColor: $wuiTextColor;
+
+// Contrasty text variants
+$wuiColorPrimaryText: makeHighContrastColor($wuiColorPrimary);
+$wuiColorSecondaryText: makeHighContrastColor($wuiColorSecondary);
+$wuiColorAccentText: makeHighContrastColor($wuiColorAccent);
+$wuiColorWarningText: makeHighContrastColor($wuiColorWarning);
+$wuiColorDangerText: makeHighContrastColor($wuiColorDanger, $wuiColorLightShade);
+$wuiColorSuccessText: $wuiColorSecondaryText;
+
+// Charts
+$wuiColorChartLines: $wuiColorLightShade;
+$wuiColorChartBand: tint($wuiColorLightestShade, 2.5%);
+
+$wuiWazuhLogoPrimaryColor: #FFF;
+$wuiWazuhLogoSecondaryColor: #007AFF;

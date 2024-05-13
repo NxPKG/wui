@@ -1,0 +1,6 @@
+@function wuiLoadingSpinnerBorderColors(
+  $main: $wuiColorLightShade,
+  $highlight: $wuiColorPrimary
+) {
+  @return $highlight $main $main $main;
+}

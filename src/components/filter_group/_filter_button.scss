@@ -1,0 +1,61 @@
+.wuiFilterButton {
+  background-color: $wuiFormBackgroundColor;
+  height: $wuiFormControlHeight;
+  width: auto;
+  border: 1px solid $wuiFormBorderColor;
+  border-right: none;
+  font-size: $wuiFontSizeS;
+
+  &:disabled {
+    color: $wuiButtonColorDisabledText;
+    pointer-events: none;
+
+    .wuiFilterButton__notification {
+      opacity: .5;
+    }
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    // Remove underline from whole button so notifications don't get the underline
+    text-decoration: none;
+
+    .wuiFilterButton__textShift {
+      // Add put it only on the actual text part
+      text-decoration: underline;
+    }
+  }
+}
+
+.wuiFilterButton-hasActiveFilters {
+  font-weight: $wuiFontWeightBold;
+}
+
+.wuiFilterButton--hasIcon .wuiButtonEmpty__content {
+  justify-content: space-between;
+}
+
+.wuiFilterButton--withNext + .wuiFilterButton {
+  margin-left: $wuiSizeXS * -1;
+  border-left: none;
+}
+
+.wuiFilterButton-isSelected {
+  background-color: $wuiColorLightestShade;
+}
+
+.wuiFilterButton__text-hasNotification {
+  display: flex;
+  align-items: center;
+}
+
+.wuiFilterButton__notification {
+  margin-left: $wuiSizeS;
+  vertical-align: text-bottom;
+}
+
+.wuiFilterButton__textShift {
+  @include wuiTextShift;
+  @include wuiTextTruncate;
+  min-width: $wuiSize * 3;
+}

@@ -1,0 +1,506 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTabbedContent behavior when selected tab state isn't controlled by the owner, select the first tab by default 1`] = `
+<div>
+  <div
+    class="wuiTabs"
+    role="tablist"
+  >
+    <button
+      aria-controls="42"
+      aria-selected="true"
+      class="wuiTab wuiTab-isSelected"
+      id="es"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        Wazuhsearch
+      </span>
+    </button>
+    <button
+      aria-controls="42"
+      aria-selected="false"
+      class="wuiTab"
+      data-test-subj="wazuhTab"
+      id="wazuh"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        <strong>
+          Wazuh
+        </strong>
+      </span>
+    </button>
+  </div>
+  <div
+    aria-labelledby="es"
+    id="42"
+    role="tabpanel"
+  >
+    <p>
+      Wazuhsearch content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiTabbedContent behavior when uncontrolled, the selected tab should update if it receives new content 1`] = `
+<WuiTabbedContent
+  autoFocus="initial"
+  tabs={
+    Array [
+      Object {
+        "content": <p>
+          Wazuhsearch content
+        </p>,
+        "id": "es",
+        "name": "Wazuhsearch",
+      },
+      Object {
+        "content": <p>
+          updated Wazuh content
+        </p>,
+        "data-test-subj": "wazuhTab",
+        "id": "wazuh",
+        "name": <strong>
+          Wazuh
+        </strong>,
+      },
+    ]
+  }
+>
+  <div>
+    <WuiTabs
+      onFocus={[Function]}
+    >
+      <div
+        className="wuiTabs"
+        onFocus={[Function]}
+        role="tablist"
+      >
+        <WuiTab
+          aria-controls="42"
+          id="es"
+          isSelected={false}
+          key="es"
+          onClick={[Function]}
+        >
+          <button
+            aria-controls="42"
+            aria-selected={false}
+            className="wuiTab"
+            disabled={false}
+            id="es"
+            onClick={[Function]}
+            role="tab"
+            type="button"
+          >
+            <span
+              className="wuiTab__content"
+            >
+              Wazuhsearch
+            </span>
+          </button>
+        </WuiTab>
+        <WuiTab
+          aria-controls="42"
+          data-test-subj="wazuhTab"
+          id="wazuh"
+          isSelected={true}
+          key="wazuh"
+          onClick={[Function]}
+        >
+          <button
+            aria-controls="42"
+            aria-selected={true}
+            className="wuiTab wuiTab-isSelected"
+            data-test-subj="wazuhTab"
+            disabled={false}
+            id="wazuh"
+            onClick={[Function]}
+            role="tab"
+            type="button"
+          >
+            <span
+              className="wuiTab__content"
+            >
+              <strong>
+                Wazuh
+              </strong>
+            </span>
+          </button>
+        </WuiTab>
+      </div>
+    </WuiTabs>
+    <div
+      aria-labelledby="wazuh"
+      id="42"
+      role="tabpanel"
+    >
+      <p>
+        updated Wazuh content
+      </p>
+    </div>
+  </div>
+</WuiTabbedContent>
+`;
+
+exports[`WuiTabbedContent is rendered with required props and tabs 1`] = `
+<div
+  aria-label="aria-label"
+  class="testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiTabs"
+    role="tablist"
+  >
+    <button
+      aria-controls="42"
+      aria-selected="true"
+      class="wuiTab wuiTab-isSelected"
+      id="es"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        Wazuhsearch
+      </span>
+    </button>
+    <button
+      aria-controls="42"
+      aria-selected="false"
+      class="wuiTab"
+      data-test-subj="wazuhTab"
+      id="wazuh"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        <strong>
+          Wazuh
+        </strong>
+      </span>
+    </button>
+  </div>
+  <div
+    aria-labelledby="es"
+    id="42"
+    role="tabpanel"
+  >
+    <p>
+      Wazuhsearch content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiTabbedContent props autoFocus initial is rendered 1`] = `
+<div>
+  <div
+    class="wuiTabs"
+    role="tablist"
+  >
+    <button
+      aria-controls="42"
+      aria-selected="true"
+      class="wuiTab wuiTab-isSelected"
+      id="es"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        Wazuhsearch
+      </span>
+    </button>
+    <button
+      aria-controls="42"
+      aria-selected="false"
+      class="wuiTab"
+      data-test-subj="wazuhTab"
+      id="wazuh"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        <strong>
+          Wazuh
+        </strong>
+      </span>
+    </button>
+  </div>
+  <div
+    aria-labelledby="es"
+    id="42"
+    role="tabpanel"
+  >
+    <p>
+      Wazuhsearch content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiTabbedContent props autoFocus selected is rendered 1`] = `
+<div>
+  <div
+    class="wuiTabs"
+    role="tablist"
+  >
+    <button
+      aria-controls="42"
+      aria-selected="true"
+      class="wuiTab wuiTab-isSelected"
+      id="es"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        Wazuhsearch
+      </span>
+    </button>
+    <button
+      aria-controls="42"
+      aria-selected="false"
+      class="wuiTab"
+      data-test-subj="wazuhTab"
+      id="wazuh"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        <strong>
+          Wazuh
+        </strong>
+      </span>
+    </button>
+  </div>
+  <div
+    aria-labelledby="es"
+    id="42"
+    role="tabpanel"
+  >
+    <p>
+      Wazuhsearch content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiTabbedContent props display can be condensed 1`] = `
+<div>
+  <div
+    class="wuiTabs wuiTabs--condensed"
+    role="tablist"
+  >
+    <button
+      aria-controls="42"
+      aria-selected="true"
+      class="wuiTab wuiTab-isSelected"
+      id="es"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        Wazuhsearch
+      </span>
+    </button>
+    <button
+      aria-controls="42"
+      aria-selected="false"
+      class="wuiTab"
+      data-test-subj="wazuhTab"
+      id="wazuh"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        <strong>
+          Wazuh
+        </strong>
+      </span>
+    </button>
+  </div>
+  <div
+    aria-labelledby="es"
+    id="42"
+    role="tabpanel"
+  >
+    <p>
+      Wazuhsearch content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiTabbedContent props initialSelectedTab renders a selected tab 1`] = `
+<div>
+  <div
+    class="wuiTabs"
+    role="tablist"
+  >
+    <button
+      aria-controls="42"
+      aria-selected="false"
+      class="wuiTab"
+      id="es"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        Wazuhsearch
+      </span>
+    </button>
+    <button
+      aria-controls="42"
+      aria-selected="true"
+      class="wuiTab wuiTab-isSelected"
+      data-test-subj="wazuhTab"
+      id="wazuh"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        <strong>
+          Wazuh
+        </strong>
+      </span>
+    </button>
+  </div>
+  <div
+    aria-labelledby="wazuh"
+    id="42"
+    role="tabpanel"
+  >
+    <p>
+      Wazuh content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiTabbedContent props selectedTab renders a selected tab 1`] = `
+<div>
+  <div
+    class="wuiTabs"
+    role="tablist"
+  >
+    <button
+      aria-controls="42"
+      aria-selected="false"
+      class="wuiTab"
+      id="es"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        Wazuhsearch
+      </span>
+    </button>
+    <button
+      aria-controls="42"
+      aria-selected="true"
+      class="wuiTab wuiTab-isSelected"
+      data-test-subj="wazuhTab"
+      id="wazuh"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        <strong>
+          Wazuh
+        </strong>
+      </span>
+    </button>
+  </div>
+  <div
+    aria-labelledby="wazuh"
+    id="42"
+    role="tabpanel"
+  >
+    <p>
+      Wazuh content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WuiTabbedContent props size can be small 1`] = `
+<div>
+  <div
+    class="wuiTabs wuiTabs--small"
+    role="tablist"
+  >
+    <button
+      aria-controls="42"
+      aria-selected="true"
+      class="wuiTab wuiTab-isSelected"
+      id="es"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        Wazuhsearch
+      </span>
+    </button>
+    <button
+      aria-controls="42"
+      aria-selected="false"
+      class="wuiTab"
+      data-test-subj="wazuhTab"
+      id="wazuh"
+      role="tab"
+      type="button"
+    >
+      <span
+        class="wuiTab__content"
+      >
+        <strong>
+          Wazuh
+        </strong>
+      </span>
+    </button>
+  </div>
+  <div
+    aria-labelledby="es"
+    id="42"
+    role="tabpanel"
+  >
+    <p>
+      Wazuhsearch content
+    </p>
+  </div>
+</div>
+`;

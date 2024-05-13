@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHue accepts a hex value 1`] = `
+Array [
+  <label
+    class="wuiScreenReaderOnly"
+    for="undefined-hue"
+  >
+    Select the HSV color mode 'hue' value
+  </label>,
+  <p
+    aria-live="polite"
+    class="wuiScreenReaderOnly"
+  >
+    #00FFFF
+  </p>,
+  <div
+    class="wuiHue testClass1 testClass2"
+  >
+    <input
+      aria-label="aria-label"
+      class="wuiHue__range"
+      data-test-subj="test subject string"
+      id="undefined-hue"
+      max="359"
+      min="0"
+      step="1"
+      type="range"
+      value="180"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiHue accepts a hue value 1`] = `
+Array [
+  <label
+    class="wuiScreenReaderOnly"
+    for="undefined-hue"
+  >
+    Select the HSV color mode 'hue' value
+  </label>,
+  <p
+    aria-live="polite"
+    class="wuiScreenReaderOnly"
+  />,
+  <div
+    class="wuiHue testClass1 testClass2"
+  >
+    <input
+      aria-label="aria-label"
+      class="wuiHue__range"
+      data-test-subj="test subject string"
+      id="undefined-hue"
+      max="359"
+      min="0"
+      step="1"
+      type="range"
+      value="180"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiHue is rendered 1`] = `
+Array [
+  <label
+    class="wuiScreenReaderOnly"
+    for="undefined-hue"
+  >
+    Select the HSV color mode 'hue' value
+  </label>,
+  <p
+    aria-live="polite"
+    class="wuiScreenReaderOnly"
+  />,
+  <div
+    class="wuiHue testClass1 testClass2"
+  >
+    <input
+      aria-label="aria-label"
+      class="wuiHue__range"
+      data-test-subj="test subject string"
+      id="undefined-hue"
+      max="359"
+      min="0"
+      step="1"
+      type="range"
+      value="1"
+    />
+  </div>,
+]
+`;

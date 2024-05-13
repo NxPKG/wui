@@ -1,0 +1,9 @@
+// Colors
+$wuiFocusRingColor: rgba($wuiColorPrimary, .3) !default;
+$wuiFocusRingAnimStartColor: rgba($wuiColorPrimary, 0) !default;
+$wuiFocusRingAnimStartSize: 6px !default;
+$wuiFocusRingAnimStartSizeLarge: 10px !default;
+
+// Sizing
+$wuiFocusRingSizeLarge: $wuiSizeXS !default;
+$wuiFocusRingSize: $wuiFocusRingSizeLarge * .75 !default;

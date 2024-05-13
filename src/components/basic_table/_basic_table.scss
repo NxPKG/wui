@@ -1,0 +1,44 @@
+.wuiBasicTable {
+
+  &-loading {
+    position: relative;
+
+    tbody {
+      overflow: hidden;
+    }
+
+    tbody:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: $wuiBorderWidthThick;
+      background-color: $wuiColorPrimary;
+      animation: wuiBasicTableLoading 1000ms linear;
+      animation-iteration-count: infinite;
+    }
+
+  }
+}
+
+
+@keyframes wuiBasicTableLoading {
+  from {
+    left: 0;
+    width: 0;
+  }
+
+  20% {
+    left: 0;
+    width: 40%;
+  }
+
+  80% {
+    left: 60%;
+    width: 40%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}

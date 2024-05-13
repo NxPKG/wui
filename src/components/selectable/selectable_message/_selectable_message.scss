@@ -1,0 +1,18 @@
+/**
+  * 1. Prevent really long input from overflowing the container.
+  */
+.wuiSelectableMessage {
+  padding: $wuiSizeS;
+  text-align: center;
+  word-wrap: break-word; /* 1 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wuiSelectableMessage--bordered {
+  // Match border from selectable_list
+  overflow: hidden;
+  border: $wuiBorderThin;
+  border-radius: $wuiBorderRadius;
+}

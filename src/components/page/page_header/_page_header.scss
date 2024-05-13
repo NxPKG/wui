@@ -1,0 +1,18 @@
+.wuiPageHeader {
+  margin-bottom: $wuiSize;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiPageHeader {
+    padding: $wuiSize 0;
+    margin-bottom: 0;
+  }
+
+  .wuiPageHeader--responsive {
+    flex-direction: column;
+  }
+}

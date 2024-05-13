@@ -1,0 +1,6 @@
+$wuiColorPickerValueRange0: rgba(255, 255, 255, 1);
+$wuiColorPickerValueRange1: rgba(255, 255, 255, 0);
+$wuiColorPickerSaturationRange0: rgba(0, 0, 0, 1);
+$wuiColorPickerSaturationRange1: rgba(0, 0, 0, 0);
+$wuiColorPickerIndicatorSize: $wuiSizeM;
+$wuiColorPickerWidth: ($wuiSizeL * 5) + ($wuiSizeS * 4); // 5 columns of swatches + margins + border

@@ -1,0 +1,204 @@
+/*
+ * Copyright 2022 Wazuh Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * NOTICE: THIS FILE HAS BEEN MODIFIED BY WAZUH INC UNDER COMPLIANCE WITH THE APACHE 2.0 LICENSE FROM THE ORIGINAL WORK
+ * OF THE COMPANY Elasticsearch B.V.
+ *
+ * THE FOLLOWING IS THE COPYRIGHT OF THE ORIGINAL DOCUMENT:
+ *
+ * Licensed to Elasticsearch B.V. under one or more contributor
+ * license agreements. See the NOTICE file distributed with
+ * this work for additional information regarding copyright
+ * ownership. Elasticsearch B.V. licenses this file to you under
+ * the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+import React, { FunctionComponent, useEffect, useRef, useState } from 'react';
+import classnames from 'classnames';
+import { keys } from '../../services';
+import tabbable from 'tabbable';
+import {
+  WuiDataGridControlColumn,
+  WuiDataGridFocusedCell,
+} from './data_grid_types';
+import { WuiDataGridDataRowProps } from './data_grid_data_row';
+
+export interface WuiDataGridControlHeaderRowProps {
+  index: number;
+  controlColumn: WuiDataGridControlColumn;
+  focusedCell?: WuiDataGridFocusedCell;
+  setFocusedCell: WuiDataGridDataRowProps['onCellFocus'];
+  headerIsInteractive: boolean;
+  className?: string;
+}
+
+export const WuiDataGridControlHeaderCell: FunctionComponent<WuiDataGridControlHeaderRowProps> = props => {
+  const {
+    controlColumn,
+    index,
+    focusedCell,
+    setFocusedCell,
+    headerIsInteractive,
+    className,
+  } = props;
+
+  const { headerCellRender: HeaderCellRender, width, id } = controlColumn;
+
+  const classes = classnames('wuiDataGridHeaderCell', className);
+
+  const headerRef = useRef<HTMLDivElement>(null);
+  const isFocused =
+    focusedCell != null && focusedCell[0] === index && focusedCell[1] === -1;
+  const [isCellEntered, setIsCellEntered] = useState(false);
+
+  useEffect(() => {
+    if (headerRef.current) {
+      function enableInteractives() {
+        const interactiveElements = headerRef.current!.querySelectorAll(
+          '[data-wuigrid-tab-managed]'
+        );
+        for (let i = 0; i < interactiveElements.length; i++) {
+          interactiveElements[i].setAttribute('tabIndex', '0');
+        }
+      }
+
+      function disableInteractives() {
+        const tababbles = tabbable(headerRef.current!);
+        if (tababbles.length > 1) {
+          console.warn(
+            `WuiDataGridHeaderCell expects at most 1 tabbable element, ${tababbles.length} found instead`
+          );
+        }
+        for (let i = 0; i < tababbles.length; i++) {
+          const element = tababbles[i];
+          element.setAttribute('data-wuigrid-tab-managed', 'true');
+          element.setAttribute('tabIndex', '-1');
+        }
+      }
+
+      if (isCellEntered) {
+        enableInteractives();
+        const tabbables = tabbable(headerRef.current!);
+        if (tabbables.length > 0) {
+          tabbables[0].focus();
+        }
+      } else {
+        disableInteractives();
+      }
+    }
+  }, [isCellEntered]);
+
+  useEffect(() => {
+    if (headerRef.current) {
+      if (isFocused) {
+        const interactives = headerRef.current.querySelectorAll(
+          '[data-wuigrid-tab-managed]'
+        );
+        if (interactives.length === 1) {
+          setIsCellEntered(true);
+        } else {
+          headerRef.current.focus();
+        }
+      } else {
+        setIsCellEntered(false);
+      }
+
+      // focusin bubbles while focus does not, and this needs to react to children gaining focus
+      function onFocusIn(e: FocusEvent) {
+        if (headerIsInteractive === false) {
+          // header is not interactive, avoid focusing
+          requestAnimationFrame(() => headerRef.current!.blur());
+          e.preventDefault();
+          return false;
+        } else {
+          // take the focus
+          setFocusedCell([index, -1]);
+        }
+      }
+
+      // focusout bubbles while blur does not, and this needs to react to the children losing focus
+      function onFocusOut() {
+        // wait for the next element to receive focus, then update interactives' state
+        requestAnimationFrame(() => {
+          if (headerRef.current) {
+            if (headerRef.current.contains(document.activeElement) === false) {
+              setIsCellEntered(false);
+            }
+          }
+        });
+      }
+
+      function onKeyUp(event: KeyboardEvent) {
+        switch (event.key) {
+          case keys.ENTER: {
+            event.preventDefault();
+            setIsCellEntered(true);
+            break;
+          }
+          case keys.ESCAPE: {
+            event.preventDefault();
+            // move focus to cell
+            setIsCellEntered(false);
+            headerRef.current!.focus();
+            break;
+          }
+          case keys.F2: {
+            event.preventDefault();
+            if (document.activeElement === headerRef.current) {
+              // move focus into cell's interactives
+              setIsCellEntered(true);
+            } else {
+              // move focus to cell
+              setIsCellEntered(false);
+              headerRef.current!.focus();
+            }
+            break;
+          }
+        }
+      }
+
+      const headerNode = headerRef.current;
+      // @ts-ignore-next line TS doesn't have focusin
+      headerNode.addEventListener('focusin', onFocusIn);
+      headerNode.addEventListener('focusout', onFocusOut);
+      headerNode.addEventListener('keyup', onKeyUp);
+      return () => {
+        // @ts-ignore-next line TS doesn't have focusin
+        headerNode.removeEventListener('focusin', onFocusIn);
+        headerNode.removeEventListener('focusout', onFocusOut);
+        headerNode.removeEventListener('keyup', onKeyUp);
+      };
+    }
+  }, [headerIsInteractive, isFocused, setIsCellEntered, setFocusedCell, index]);
+
+  return (
+    <div
+      role="columnheader"
+      ref={headerRef}
+      tabIndex={isFocused ? 0 : -1}
+      className={classes}
+      data-test-subj={`dataGridHeaderCell-${id}`}
+      style={width != null ? { width: `${width}px` } : {}}>
+      <div className="wuiDataGridHeaderCell__content">
+        <HeaderCellRender />
+      </div>
+    </div>
+  );
+};

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHeaderLogo is rendered 1`] = `
+<a
+  aria-label="aria-label"
+  class="wuiHeaderLogo testClass1 testClass2"
+  data-test-subj="test subject string"
+  rel="noreferrer"
+>
+  <div
+    aria-label="Wazuh"
+    class="wuiHeaderLogo__icon"
+    data-wuiicon-type="logoWazuh"
+  />
+</a>
+`;
+
+exports[`WuiHeaderLogo renders href 1`] = `
+<a
+  class="wuiHeaderLogo"
+  href="#"
+  rel="noreferrer"
+>
+  <div
+    aria-label="Wazuh"
+    class="wuiHeaderLogo__icon"
+    data-wuiicon-type="logoWazuh"
+  />
+</a>
+`;
+
+exports[`WuiHeaderLogo renders href with rel 1`] = `
+<a
+  class="wuiHeaderLogo"
+  href="#"
+  rel="noreferrer"
+>
+  <div
+    aria-label="Wazuh"
+    class="wuiHeaderLogo__icon"
+    data-wuiicon-type="logoWazuh"
+  />
+</a>
+`;
+
+exports[`WuiHeaderLogo renders optional props 1`] = `
+<a
+  class="wuiHeaderLogo"
+  rel="noreferrer"
+  style="color:red"
+>
+  <div
+    aria-label="Moby Dick"
+    class="wuiHeaderLogo__icon"
+    data-wuiicon-type="alert"
+  />
+</a>
+`;

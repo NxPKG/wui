@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFilterSelectItem is rendered 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiFilterSelectItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  role="option"
+  type="button"
+>
+  <span
+    class="wuiFlexGroup wuiFlexGroup--gutterSmall wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow"
+  >
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <div
+        data-wuiicon-type="empty"
+      />
+    </div>
+    <span
+      class="wuiFlexItem wuiFilterSelectItem__content"
+    />
+  </span>
+</button>
+`;

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFormControlLayoutDelimited is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiFormControlLayout wuiFormControlLayoutDelimited testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <span
+      class="wuiFormControlLayoutDelimited__input"
+    >
+      start
+    </span>
+    <div
+      class="wuiText wuiText--small wuiFormControlLayoutDelimited__delimeter"
+    >
+      <div
+        class="wuiTextColor wuiTextColor--subdued"
+      >
+        →
+      </div>
+    </div>
+    <span
+      class="wuiFormControlLayoutDelimited__input"
+    >
+      end
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayoutDelimited props delimiter is rendered as a node 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayoutDelimited"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <span
+      class="wuiFormControlLayoutDelimited__input"
+    >
+      start
+    </span>
+    <div
+      class="wuiText wuiText--small wuiFormControlLayoutDelimited__delimeter"
+    >
+      <div
+        class="wuiTextColor wuiTextColor--subdued"
+      >
+        <div
+          data-wuiicon-type="alert"
+        />
+      </div>
+    </div>
+    <span
+      class="wuiFormControlLayoutDelimited__input"
+    >
+      end
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayoutDelimited props delimiter is rendered as a string 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayoutDelimited"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <span
+      class="wuiFormControlLayoutDelimited__input"
+    >
+      start
+    </span>
+    <div
+      class="wuiText wuiText--small wuiFormControlLayoutDelimited__delimeter"
+    >
+      <div
+        class="wuiTextColor wuiTextColor--subdued"
+      >
+        +
+      </div>
+    </div>
+    <span
+      class="wuiFormControlLayoutDelimited__input"
+    >
+      end
+    </span>
+  </div>
+</div>
+`;

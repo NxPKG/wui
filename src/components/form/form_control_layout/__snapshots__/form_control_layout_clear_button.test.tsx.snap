@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFormControlLayoutClearButton is rendered 1`] = `
+<button
+  aria-label="Clear input"
+  class="wuiFormControlLayoutClearButton customClass"
+  data-test-subj="clearButton"
+  type="button"
+>
+  <div
+    class="wuiFormControlLayoutClearButton__icon"
+    data-wuiicon-type="cross"
+  />
+</button>
+`;

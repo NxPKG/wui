@@ -1,0 +1,534 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiBreadcrumbs is rendered 1`] = `
+<nav
+  aria-label="aria-label"
+  class="wuiBreadcrumbs testClass1 testClass2 wuiBreadcrumbs--truncate"
+  data-test-subj="test subject string"
+>
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb customClass"
+    data-test-subj="breadcrumbsAnimals"
+    href="#"
+    rel="noreferrer"
+  >
+    Animals
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Metazoans
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiBreadcrumb wuiBreadcrumb--collapsed"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button
+        aria-label="Show collapsed breadcrumbs"
+        class="wuiLink wuiLink--subdued wuiBreadcrumb__collapsedLink"
+        title="Show collapsed breadcrumbs"
+        type="button"
+      >
+        … 
+        <div
+          data-wuiicon-type="arrowDown"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <button
+    class="wuiLink wuiLink--subdued wuiBreadcrumb"
+    type="button"
+  >
+    Reptiles
+  </button>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb wuiBreadcrumb--truncate"
+    href="#"
+    rel="noreferrer"
+  >
+    Boa constrictor
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="page"
+    class="wuiBreadcrumb wuiBreadcrumb--last"
+  >
+    Edit
+  </span>
+</nav>
+`;
+
+exports[`WuiBreadcrumbs props max doesn't break when max exceeds the number of breadcrumbs 1`] = `
+<nav
+  aria-label="breadcrumb"
+  class="wuiBreadcrumbs wuiBreadcrumbs--truncate"
+>
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb customClass"
+    data-test-subj="breadcrumbsAnimals"
+    href="#"
+    rel="noreferrer"
+  >
+    Animals
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Metazoans
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Chordates
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb wuiBreadcrumb--truncate"
+  >
+    Nebulosa subspecies is also a real mouthful, especially for creatures without mouths
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Tetrapods
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <button
+    class="wuiLink wuiLink--subdued wuiBreadcrumb"
+    type="button"
+  >
+    Reptiles
+  </button>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb wuiBreadcrumb--truncate"
+    href="#"
+    rel="noreferrer"
+  >
+    Boa constrictor
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="page"
+    class="wuiBreadcrumb wuiBreadcrumb--last"
+  >
+    Edit
+  </span>
+</nav>
+`;
+
+exports[`WuiBreadcrumbs props max renders 1 item 1`] = `
+<nav
+  aria-label="breadcrumb"
+  class="wuiBreadcrumbs wuiBreadcrumbs--truncate"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiBreadcrumb wuiBreadcrumb--collapsed"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button
+        aria-label="Show collapsed breadcrumbs"
+        class="wuiLink wuiLink--subdued wuiBreadcrumb__collapsedLink"
+        title="Show collapsed breadcrumbs"
+        type="button"
+      >
+        … 
+        <div
+          data-wuiicon-type="arrowDown"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="page"
+    class="wuiBreadcrumb wuiBreadcrumb--last"
+  >
+    Edit
+  </span>
+</nav>
+`;
+
+exports[`WuiBreadcrumbs props max renders all items with null 1`] = `
+<nav
+  aria-label="breadcrumb"
+  class="wuiBreadcrumbs wuiBreadcrumbs--truncate"
+>
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb customClass"
+    data-test-subj="breadcrumbsAnimals"
+    href="#"
+    rel="noreferrer"
+  >
+    Animals
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Metazoans
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Chordates
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb wuiBreadcrumb--truncate"
+  >
+    Nebulosa subspecies is also a real mouthful, especially for creatures without mouths
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Tetrapods
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <button
+    class="wuiLink wuiLink--subdued wuiBreadcrumb"
+    type="button"
+  >
+    Reptiles
+  </button>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb wuiBreadcrumb--truncate"
+    href="#"
+    rel="noreferrer"
+  >
+    Boa constrictor
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="page"
+    class="wuiBreadcrumb wuiBreadcrumb--last"
+  >
+    Edit
+  </span>
+</nav>
+`;
+
+exports[`WuiBreadcrumbs props responsive is rendered 1`] = `
+<nav
+  aria-label="breadcrumb"
+  class="wuiBreadcrumbs wuiBreadcrumbs--truncate"
+>
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb customClass"
+    data-test-subj="breadcrumbsAnimals"
+    href="#"
+    rel="noreferrer"
+  >
+    Animals
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Metazoans
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiBreadcrumb wuiBreadcrumb--collapsed"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button
+        aria-label="Show collapsed breadcrumbs"
+        class="wuiLink wuiLink--subdued wuiBreadcrumb__collapsedLink"
+        title="Show collapsed breadcrumbs"
+        type="button"
+      >
+        … 
+        <div
+          data-wuiicon-type="arrowDown"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <button
+    class="wuiLink wuiLink--subdued wuiBreadcrumb"
+    type="button"
+  >
+    Reptiles
+  </button>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb wuiBreadcrumb--truncate"
+    href="#"
+    rel="noreferrer"
+  >
+    Boa constrictor
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="page"
+    class="wuiBreadcrumb wuiBreadcrumb--last"
+  >
+    Edit
+  </span>
+</nav>
+`;
+
+exports[`WuiBreadcrumbs props responsive is rendered as false 1`] = `
+<nav
+  aria-label="breadcrumb"
+  class="wuiBreadcrumbs wuiBreadcrumbs--truncate"
+>
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb customClass"
+    data-test-subj="breadcrumbsAnimals"
+    href="#"
+    rel="noreferrer"
+  >
+    Animals
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Metazoans
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiBreadcrumb wuiBreadcrumb--collapsed"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button
+        aria-label="Show collapsed breadcrumbs"
+        class="wuiLink wuiLink--subdued wuiBreadcrumb__collapsedLink"
+        title="Show collapsed breadcrumbs"
+        type="button"
+      >
+        … 
+        <div
+          data-wuiicon-type="arrowDown"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <button
+    class="wuiLink wuiLink--subdued wuiBreadcrumb"
+    type="button"
+  >
+    Reptiles
+  </button>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb wuiBreadcrumb--truncate"
+    href="#"
+    rel="noreferrer"
+  >
+    Boa constrictor
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="page"
+    class="wuiBreadcrumb wuiBreadcrumb--last"
+  >
+    Edit
+  </span>
+</nav>
+`;
+
+exports[`WuiBreadcrumbs props responsive is rendered with custom breakpoints 1`] = `
+<nav
+  aria-label="breadcrumb"
+  class="wuiBreadcrumbs wuiBreadcrumbs--truncate"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiBreadcrumb wuiBreadcrumb--collapsed"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button
+        aria-label="Show collapsed breadcrumbs"
+        class="wuiLink wuiLink--subdued wuiBreadcrumb__collapsedLink"
+        title="Show collapsed breadcrumbs"
+        type="button"
+      >
+        … 
+        <div
+          data-wuiicon-type="arrowDown"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="page"
+    class="wuiBreadcrumb wuiBreadcrumb--last"
+  >
+    Edit
+  </span>
+</nav>
+`;
+
+exports[`WuiBreadcrumbs props truncate as false is rendered 1`] = `
+<nav
+  aria-label="breadcrumb"
+  class="wuiBreadcrumbs"
+>
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb customClass"
+    data-test-subj="breadcrumbsAnimals"
+    href="#"
+    rel="noreferrer"
+  >
+    Animals
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="false"
+    class="wuiBreadcrumb"
+  >
+    Metazoans
+  </span>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiBreadcrumb wuiBreadcrumb--collapsed"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button
+        aria-label="Show collapsed breadcrumbs"
+        class="wuiLink wuiLink--subdued wuiBreadcrumb__collapsedLink"
+        title="Show collapsed breadcrumbs"
+        type="button"
+      >
+        … 
+        <div
+          data-wuiicon-type="arrowDown"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <button
+    class="wuiLink wuiLink--subdued wuiBreadcrumb"
+    type="button"
+  >
+    Reptiles
+  </button>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <a
+    class="wuiLink wuiLink--subdued wuiBreadcrumb wuiBreadcrumb--truncate"
+    href="#"
+    rel="noreferrer"
+  >
+    Boa constrictor
+  </a>
+  <div
+    class="wuiBreadcrumbSeparator"
+  />
+  <span
+    aria-current="page"
+    class="wuiBreadcrumb wuiBreadcrumb--last"
+  >
+    Edit
+  </span>
+</nav>
+`;

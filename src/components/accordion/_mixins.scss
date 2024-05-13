@@ -1,0 +1,14 @@
+@mixin wuiAccordionIconFocus {
+  @include wuiFocusRing;
+  color: $wuiColorPrimary;
+}
+
+@mixin wuiAccordionIconMargin($align: left) {
+  @if $align == left {
+    margin-left: $wuiSizeXS;
+    margin-right: $wuiSizeS;
+  } @else {
+    margin-left: $wuiSizeS;
+    margin-right: $wuiSizeXS;
+  }
+}

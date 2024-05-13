@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHeaderLinks gutterSize l is rendered 1`] = `
+<nav
+  aria-label="App menu"
+  class="wuiHeaderLinks"
+>
+  <div
+    class="wuiHeaderLinks__list wuiHeaderLinks__list--gutterL"
+  />
+</nav>
+`;
+
+exports[`WuiHeaderLinks gutterSize m is rendered 1`] = `
+<nav
+  aria-label="App menu"
+  class="wuiHeaderLinks"
+>
+  <div
+    class="wuiHeaderLinks__list wuiHeaderLinks__list--gutterM"
+  />
+</nav>
+`;
+
+exports[`WuiHeaderLinks gutterSize s is rendered 1`] = `
+<nav
+  aria-label="App menu"
+  class="wuiHeaderLinks"
+>
+  <div
+    class="wuiHeaderLinks__list wuiHeaderLinks__list--gutterS"
+  />
+</nav>
+`;
+
+exports[`WuiHeaderLinks gutterSize xs is rendered 1`] = `
+<nav
+  aria-label="App menu"
+  class="wuiHeaderLinks"
+>
+  <div
+    class="wuiHeaderLinks__list wuiHeaderLinks__list--gutterXS"
+  />
+</nav>
+`;
+
+exports[`WuiHeaderLinks is rendered 1`] = `
+<nav
+  aria-label="aria-label"
+  class="wuiHeaderLinks testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiHeaderLinks__list wuiHeaderLinks__list--gutterS"
+  />
+</nav>
+`;
+
+exports[`WuiHeaderLinks popover props is never rendered with "none" 1`] = `
+<nav
+  aria-label="App menu"
+  class="wuiHeaderLinks"
+>
+  <div
+    class="wuiHeaderLinks__list wuiHeaderLinks__list--gutterS"
+  />
+</nav>
+`;
+
+exports[`WuiHeaderLinks popover props is rendered 1`] = `
+<nav
+  aria-label="App menu"
+  class="wuiHeaderLinks"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownRight"
+  >
+    <div
+      class="wuiPopover__anchor customAnchorClass"
+    >
+      <button
+        aria-label="Open menu"
+        class="wuiHeaderSectionItem__button customButtonClass"
+        type="button"
+      >
+        <div
+          data-wuiicon-type="bolt"
+        />
+      </button>
+    </div>
+  </div>
+</nav>
+`;

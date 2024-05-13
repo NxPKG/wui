@@ -1,0 +1,11 @@
+/**
+ * 1. Force each title to be the same height as an option, so that the virtualized scroll logic
+ *    works.
+ */
+.wuiComboBoxTitle {
+  font-size: $wuiFontSizeXS;
+  padding: ($wuiSizeXS + $wuiSizeS - 1px) $wuiSizeS $wuiSizeXS; /* 1 */
+  width: 100%;
+  font-weight: $wuiFontWeightBold;
+  color: $wuiColorFullShade;
+}

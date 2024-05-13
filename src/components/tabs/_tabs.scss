@@ -1,0 +1,136 @@
+.wuiTabs {
+  @include wuiScrollBar;
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden; // don't scroll vertically when scrolling horizontally
+  position: relative;
+
+  // Changing height of scrollbar so it sits flush with border
+  // sass-lint:disable no-vendor-prefixes
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  &:not(.wuiTabs--condensed)::before {
+    background-color: $wuiColorLightShade;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.wuiTab {
+  @include fontSize($wuiTabFontSize);
+  color: $wuiTextColor;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: $wuiLineHeight;
+  padding: $wuiSizeM $wuiSize;
+  position: relative;
+  transition: color $wuiAnimSpeedNormal $wuiAnimSlightResistance, background-color $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+
+  &:hover:not(.wuiTab-isSelected) {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    background-color: $wuiFocusBackgroundColor;
+    text-decoration: underline;
+
+    &::before {
+      background-color: $wuiColorLightShade;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &.wuiTab-isDisabled {
+    color: $wuiColorMediumShade;
+
+    &:hover {
+      color: $wuiColorMediumShade;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+  }
+
+  &.wuiTab-isSelected {
+    color: $wuiColorPrimary;
+    cursor: default;
+
+    &::after {
+      animation: wuiTab $wuiAnimSpeedFast $wuiAnimSlightResistance;
+      background-color: $wuiColorPrimary;
+      bottom: 0;
+      content: ' ';
+      height: $wuiBorderWidthThick;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  // Small Tabs Group Modifier
+
+  .wuiTabs--small & {
+    @include fontSize($wuiTabFontSizeS);
+    padding: $wuiSizeS;
+  }
+
+  // Condensed Tabs Group Modifier
+
+  .wuiTabs--condensed & {
+    font-weight: $wuiFontWeightSemiBold;
+    padding: $wuiSizeS $wuiSizeXS;
+
+    &:focus {
+      background-color: $wuiFocusBackgroundColor;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &-isSelected {
+      text-decoration: none;
+    }
+
+    & + .wuiTab {
+      margin-left: $wuiSize;
+    }
+  }
+
+  // Expand Tabs Group Modifier
+
+  .wuiTabs--expand & {
+    flex-basis: 0%;
+    flex-grow: 1;
+  }
+}
+
+.wuiTab__content {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform: translateY(0);
+  transition: transform $wuiAnimSpeedFast $wuiAnimSlightBounce;
+  white-space: nowrap;
+}
+
+@keyframes wuiTab {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}

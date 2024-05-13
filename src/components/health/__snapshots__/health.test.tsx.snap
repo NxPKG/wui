@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHealth is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiHealth testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiFlexGroup wuiFlexGroup--gutterExtraSmall wuiFlexGroup--alignItemsCenter wuiFlexGroup--directionRow"
+  >
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <div
+        data-wuiicon-type="dot"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,36 @@
+.wuiFormRow--compressed .wuiSuperDatePicker {
+  $leftSideRadiusSmall: $wuiFormControlCompressedBorderRadius 0 0 $wuiFormControlCompressedBorderRadius;
+  $rightSideRadiusSmall: 0 $wuiFormControlCompressedBorderRadius $wuiFormControlCompressedBorderRadius 0;
+
+  height: 32px;
+  border-radius: $wuiBorderRadiusSmall;
+
+  .wuiFormControlLayout__prepend:first-child {
+    border-radius: $leftSideRadiusSmall;
+
+    [class*='wuiButton'] {
+      border-radius: $leftSideRadiusSmall;
+    }
+  }
+
+  .wuiFormControlLayout__append:last-child {
+    border-radius: $rightSideRadiusSmall;
+
+    [class*='wuiButton'] {
+      border-radius: $rightSideRadiusSmall;
+    }
+  }
+
+  .wuiFormControlLayout__childrenWrapper:nth-child(2) [class*='wuiField'],
+  .wuiFormControlLayout__childrenWrapper:nth-child(3) [class*='wuiField'] {
+    border-radius: 0;
+  }
+
+  .wuiFormControlLayout__childrenWrapper:first-child [class*='wuiField'] {
+    border-radius: $leftSideRadiusSmall;
+  }
+
+  .wuiFormControlLayout__childrenWrapper:last-child [class*='wuiField'] {
+    border-radius: $rightSideRadiusSmall;
+  }
+}

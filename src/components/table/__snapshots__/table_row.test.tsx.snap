@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`isSelected renders true when specified 1`] = `
+<tr
+  class="wuiTableRow wuiTableRow-isSelected"
+>
+  <td
+    class="wuiTableRowCell"
+  >
+    <div
+      class="wuiTableCellContent"
+    >
+      <span
+        class="wuiTableCellContent__text"
+      />
+    </div>
+  </td>
+</tr>
+`;
+
+exports[`renders WuiTableRow 1`] = `
+<tr
+  aria-label="aria-label"
+  class="wuiTableRow testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <td
+    class="wuiTableRowCell"
+  >
+    <div
+      class="wuiTableCellContent"
+    >
+      <span
+        class="wuiTableCellContent__text"
+      >
+        hi
+      </span>
+    </div>
+  </td>
+</tr>
+`;

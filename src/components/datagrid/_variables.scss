@@ -1,0 +1,7 @@
+$wuiDataGridColumnResizerWidth: 3px; // Odd number because it straddles a border
+$wuiDataGridPopoverMaxHeight: $wuiSize * 25;
+
+$wuiDataGridCellPaddingS: $wuiSizeXS;
+$wuiDataGridCellPaddingM: $wuiSizeM / 2;
+$wuiDataGridCellPaddingL: $wuiSizeS;
+$wuiDataGridVerticalBorder: solid 1px tintOrShade($wuiBorderColor, 60%, 30%);

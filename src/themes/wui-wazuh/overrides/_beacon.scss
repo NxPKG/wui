@@ -1,0 +1,18 @@
+.wuiBeacon {
+  position: relative;
+  background-color: $wuiColorVis2;
+  border-radius: 50%;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px $wuiColorVis2;
+  }
+}

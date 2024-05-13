@@ -1,0 +1,138 @@
+/**
+ * 1. Fix for IE where the image correctly resizes in width but doesn't collapse its height
+      (https://github.com/philipwalton/flexbugs/issues/75#issuecomment-134702421)
+ */
+
+// Main <figure> that wraps images.
+.wuiImage {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  min-height: 1px; /* 1 */
+  line-height: 0; // Fixes cropping when image is resized by forcing its height to be determined by the image not line-height
+
+  &.wuiImage--hasShadow {
+    .wuiImage__img {
+      @include wuiBottomShadowMedium;
+    }
+  }
+
+  .wuiImage__button {
+    cursor: pointer;
+
+    // transition the shadow
+    transition: all $wuiAnimSpeedFast $wuiAnimSlightResistance;
+
+    &:focus  {
+      outline: 2px solid $wuiFocusRingColor;
+    }
+
+    &:hover .wuiImage__icon {
+      visibility: visible;
+      fill-opacity: 1;
+    }
+  }
+
+  &.wuiImage--allowFullScreen {
+    &:hover .wuiImage__caption {
+      text-decoration: underline;
+    }
+
+    &:not(.wuiImage--hasShadow) .wuiImage__button:hover,
+    &:not(.wuiImage--hasShadow) .wuiImage__button:focus {
+      @include wuiBottomShadowMedium;
+    }
+
+    &.wuiImage--hasShadow .wuiImage__button:hover,
+    &.wuiImage--hasShadow .wuiImage__button:focus {
+      @include wuiBottomShadow;
+    }
+  }
+
+  // These sizes are mostly suggestions. Don't look too hard for meaning in their values.
+  &.wuiImage--small {
+    width: convertToRem(120px);
+  }
+
+  &.wuiImage--medium {
+    width: convertToRem(200px);
+  }
+
+  &.wuiImage--large {
+    width: convertToRem(360px);
+  }
+
+  &.wuiImage--xlarge {
+    width: convertToRem(600px);
+  }
+
+  &.wuiImage--fullWidth {
+    width: 100%;
+  }
+}
+
+// The image itself is full width within the container.
+.wuiImage__img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.wuiImage__caption {
+  @include wuiFontSizeS;
+  text-align: center;
+}
+
+.wuiImage__icon {
+  visibility: hidden;
+  fill-opacity: 0;
+  position: absolute;
+  right: $wuiSize;
+  top: $wuiSize;
+  transition: fill-opacity $wuiAnimSpeedSlow $wuiAnimSlightResistance;
+  cursor: pointer;
+}
+
+// The FullScreen image that optionally pops up on click.
+.wuiImage-isFullScreen {
+  position: relative;
+  max-height: 80vh;
+  max-width: 80vw;
+  animation: wuiImageFullScreen $wuiAnimSpeedExtraSlow $wuiAnimSlightBounce;
+
+  &:hover {
+    .wuiImage__button {
+      @include wuiBottomShadow;
+    }
+
+    .wuiImage__caption {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: $wuiSize;
+    top: $wuiSize;
+  }
+
+  &__img {
+    max-height: 80vh;
+    max-width: 80vw;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all $wuiAnimSpeedFast $wuiAnimSlightResistance;
+  }
+}
+
+@keyframes wuiImageFullScreen {
+  0% {
+    opacity: 0;
+    transform: translateY($wuiSizeXL * 2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

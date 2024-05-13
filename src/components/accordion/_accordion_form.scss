@@ -1,0 +1,40 @@
+.wuiAccordionForm__extraAction {
+  opacity: 0;
+  transition: opacity $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.wuiAccordionForm__title {
+  display: inline-block;
+}
+
+.wuiAccordionForm__button {
+  padding: $wuiSize $wuiSize $wuiSize 0;
+
+  &:hover {
+    text-decoration: none;
+
+    .wuiAccordionForm__title {
+      text-decoration: underline;
+    }
+  }
+}
+
+.wuiAccordionForm {
+  border-top: $wuiBorderThin;
+  border-bottom: $wuiBorderThin;
+
+  & + .wuiAccordionForm {
+    border-top: none;
+  }
+
+  &:hover {
+    .wuiAccordionForm__extraAction {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

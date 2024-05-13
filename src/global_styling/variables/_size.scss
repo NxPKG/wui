@@ -1,0 +1,13 @@
+$wuiSize:     16px !default;
+
+$wuiSizeXS:   $wuiSize * .25 !default;
+$wuiSizeS:    $wuiSize * .5 !default;
+$wuiSizeM:    $wuiSize * .75 !default;
+$wuiSizeL:    $wuiSize * 1.5 !default;
+$wuiSizeXL:   $wuiSize * 2 !default;
+$wuiSizeXXL:  $wuiSize * 2.5 !default;
+
+$wuiButtonMinWidth: $wuiSize * 7 !default;
+
+$wuiScrollBar: $wuiSize !default;
+$wuiScrollBarCorner: $wuiSizeS * .75 !default;

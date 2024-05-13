@@ -1,0 +1,15 @@
+/**
+ * 1. Prevent side bar width from changing when content width changes.
+ */
+.wuiPageSideBar {
+  min-width: $wuiSize * 12; /* 1 */
+  flex: 0 1 0%; /* 1 */
+  margin-right: $wuiSizeL;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiPageSideBar {
+    width: 100%;
+  }
+}
+

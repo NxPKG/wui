@@ -1,0 +1,31 @@
+.wuiBetaBadge {
+  display: inline-block;
+  padding: 0 $wuiSize;
+  border-radius: $wuiSizeL;
+  box-shadow: inset 0 0 0 1px $wuiBorderColor;
+  vertical-align: super; // if displayed inline with text
+
+  font-size: $wuiFontSizeXS;
+  font-weight: $wuiFontWeightBold;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  line-height: $wuiSizeL;
+  text-align: center;
+  white-space: nowrap;
+  cursor: default;
+
+  &:focus {
+    @include wuiFocusRing;
+  }
+}
+
+// When it's just an icon, make it a circle
+.wuiBetaBadge--iconOnly {
+  padding: 0;
+  width: $wuiSizeL;
+
+  .wuiBetaBadge__icon {
+    position: relative;
+    margin-top: -1px;
+  }
+}

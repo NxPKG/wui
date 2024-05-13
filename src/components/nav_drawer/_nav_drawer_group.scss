@@ -1,0 +1,56 @@
+.wuiNavDrawerGroup__item {
+  .wuiListGroupItem__label {
+    transition: all $wuiAnimSpeedExtraFast;
+  }
+
+  .wuiListGroupItem__button {
+    color: inherit; // Force color to inherit from regular text color in case it's an anchor tag
+
+    &:focus {
+      background-color: $wuiFocusBackgroundColor;
+    }
+  }
+
+  .wuiListGroupItem__icon {
+    max-width: $wuiSize;
+    white-space: nowrap;
+  }
+}
+
+// Default icon will simulate an avatar but with coloring specific to
+.wuiNavDrawerGroup__itemDefaultIcon {
+  @include innerBorder('dark', 50%, .05);
+  @include size($wuiSize);
+  line-height: $wuiSize;
+  font-size: $wuiSizeM;
+  flex-shrink: 0; // Ensures it never scales down below its intended size
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  overflow: visible;
+  font-weight: $wuiFontWeightMedium; // Explicitly state so it doesn't get overridden by inheritance
+  border-radius: 50%;
+
+  &:after {
+    top: -$wuiSizeXS;
+    left: -$wuiSizeXS;
+    right: -$wuiSizeXS;
+    bottom: -$wuiSizeXS;
+  }
+}
+
+.wuiNavDrawerMenu {
+  .wuiListGroupItem:not(:first-of-type) {
+    margin-top: 0;
+  }
+
+  .wuiListGroupItem-isActive:not(.wuiListGroupItem--ghost) .wuiListGroupItem__button,
+  .wuiAccordion__button__isActive {
+    box-shadow: 3px 0 0 inset $wuiColorPrimary;
+  }
+
+  .wuiAccordion__button > span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,88 @@
+.wuiFormControlLayoutDelimited {
+  // Match just the regular drop shadow of inputs
+  @include wuiFormControlDefaultShadow;
+  display: flex;
+  align-items: stretch;
+  padding: 1px; /* 1 */
+
+  > .wuiFormControlLayout__childrenWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  // Target when the wuiFormControlLayout is compressed without specifying the full class name in case it ever changes
+  &[class*='--compressed'] {
+    @include wuiFormControlDefaultShadow($borderOnly: true);
+    border-radius: $wuiBorderRadius / 2;
+
+    .wuiFormControlLayoutDelimited__input {
+      height: 100%;
+      padding-top: 0; // Fixes IE
+      padding-bottom: 0; // Fixes IE
+      padding-left: $wuiFormControlCompressedPadding;
+      padding-right: $wuiFormControlCompressedPadding;
+    }
+
+    .wuiFormControlLayoutIcons {
+      padding-left: $wuiFormControlCompressedPadding;
+      padding-right: $wuiFormControlCompressedPadding;
+    }
+  }
+
+  // Target when the wuiFormControlLayout is fullWidth without specifying the full class name in case it ever changes
+  &[class*='--fullWidth'] .wuiFormControlLayout__childrenWrapper,
+  &[class*='--fullWidth'] input {
+    width: 100%;
+    max-width: none;
+  }
+
+  // Target when the wuiFormControlLayout is disabled without specifying the full class name in case it ever changes
+  &[class*='-isDisabled'] {
+    @include wuiFormControlDisabledStyle;
+  }
+
+  // Target when the wuiFormControlLayout is readOnly without specifying the full class name in case it ever changes
+  &[class*='--readOnly'] {
+    @include wuiFormControlReadOnlyStyle;
+
+    input {
+      background-color: transparent; // Ensures the input and layout don't double up on background color
+    }
+  }
+
+  .wuiFormControlLayoutIcons {
+    // Absolutely positioning the icons doesn't work because they
+    // overlay only one of controls making the layout unbalanced
+    position: static; // Overrider absolute
+    padding-left: $wuiFormControlPadding;
+    padding-right: $wuiFormControlPadding;
+    flex-shrink: 0; // Fixes IE
+
+    &:not(.wuiFormControlLayoutIcons--right) {
+      order: -1;
+    }
+  }
+}
+
+.wuiFormControlLayoutDelimited__input {
+  // sass-lint:disable-block no-important
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  text-align: center;
+  height: 100%;
+  min-width: 0; // Fixes FF
+
+  .wuiFormControlLayoutDelimited[class*='--compressed'] & {
+    max-width: none;
+  }
+}
+
+.wuiFormControlLayoutDelimited__delimeter {
+  // sass-lint:disable-block no-important
+  background-color: transparent !important; // Override .wuiFormControlLayout--group > .wuiFormLabel
+  line-height: 1 !important; // Override WuiText line-height
+  flex: 0 0 auto;
+  padding-left: $wuiFormControlPadding / 2;
+  padding-right: $wuiFormControlPadding / 2;
+}

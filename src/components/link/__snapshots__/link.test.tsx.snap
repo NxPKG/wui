@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiLink accent is rendered 1`] = `
+<button
+  class="wuiLink wuiLink--accent"
+  type="button"
+/>
+`;
+
+exports[`WuiLink button respects the type property 1`] = `
+<button
+  class="wuiLink wuiLink--primary"
+  type="submit"
+/>
+`;
+
+exports[`WuiLink danger is rendered 1`] = `
+<button
+  class="wuiLink wuiLink--danger"
+  type="button"
+/>
+`;
+
+exports[`WuiLink ghost is rendered 1`] = `
+<button
+  class="wuiLink wuiLink--ghost"
+  type="button"
+/>
+`;
+
+exports[`WuiLink if href is not specified, it renders a button of type=button 1`] = `
+<button
+  class="wuiLink wuiLink--primary"
+  type="button"
+/>
+`;
+
+exports[`WuiLink it is an external link 1`] = `
+<a
+  class="wuiLink wuiLink--primary"
+  href="/baz/bing"
+  rel="noreferrer"
+>
+  <div
+    aria-label="External link"
+    class="wuiLink__externalIcon"
+    data-wuiicon-type="popout"
+  />
+</a>
+`;
+
+exports[`WuiLink it passes the default props through 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiLink wuiLink--primary testClass1 testClass2"
+  data-test-subj="test subject string"
+  type="button"
+/>
+`;
+
+exports[`WuiLink it supports both href and onClick 1`] = `
+<a
+  class="wuiLink wuiLink--primary"
+  href="/imalink"
+  rel="noreferrer"
+/>
+`;
+
+exports[`WuiLink primary is rendered 1`] = `
+<button
+  class="wuiLink wuiLink--primary"
+  type="button"
+/>
+`;
+
+exports[`WuiLink secondary is rendered 1`] = `
+<button
+  class="wuiLink wuiLink--secondary"
+  type="button"
+/>
+`;
+
+exports[`WuiLink subdued is rendered 1`] = `
+<button
+  class="wuiLink wuiLink--subdued"
+  type="button"
+/>
+`;
+
+exports[`WuiLink supports children 1`] = `
+<a
+  class="wuiLink wuiLink--primary"
+  href="#"
+  rel="noreferrer"
+>
+  <span>
+    Hiya!!!
+  </span>
+</a>
+`;
+
+exports[`WuiLink supports disabled 1`] = `
+<button
+  class="wuiLink wuiLink-disabled"
+  disabled=""
+  type="button"
+/>
+`;
+
+exports[`WuiLink supports href 1`] = `
+<a
+  class="wuiLink wuiLink--primary"
+  href="/baz/bing"
+  rel="noreferrer"
+/>
+`;
+
+exports[`WuiLink supports rel 1`] = `
+<a
+  class="wuiLink wuiLink--primary"
+  href="hoi"
+  rel="noreferrer stylesheet"
+/>
+`;
+
+exports[`WuiLink supports target 1`] = `
+<a
+  class="wuiLink wuiLink--primary"
+  href="#"
+  rel="noreferrer"
+  target="_parent"
+/>
+`;
+
+exports[`WuiLink text is rendered 1`] = `
+<button
+  class="wuiLink wuiLink--text"
+  type="button"
+/>
+`;
+
+exports[`WuiLink warning is rendered 1`] = `
+<button
+  class="wuiLink wuiLink--warning"
+  type="button"
+/>
+`;

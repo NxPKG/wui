@@ -1,0 +1,51 @@
+@include wuiPanel($selector: '.wuiCheckableCard');
+
+.wuiCheckableCard {
+  transition: border-color $wuiAnimSpeedNormal ease-in;
+  overflow: hidden; // Hides background color inside panel rounded corners
+
+  &:not(.wuiCheckableCard-isDisabled) {
+    &.wuiCheckableCard-isChecked {
+      border-color: $wuiColorPrimary;
+    }
+
+    &:focus-within {
+      @include wuiFocusRing;
+    }
+  }
+}
+
+.wuiCheckableCard__row {
+  display: flex;
+  align-items: stretch;
+}
+
+.wuiCheckableCard__control {
+  display: flex;
+  flex: 0 0 $wuiSizeXXL;
+  justify-content: center;
+  align-items: center;
+  background-color: map-get($wuiCardSelectButtonBackgrounds, 'text');
+  transition: background-color $wuiAnimSpeedNormal ease-in;
+
+  .wuiCheckableCard-isChecked & {
+    background-color: map-get($wuiCardSelectButtonBackgrounds, 'primary');
+  }
+}
+
+.wuiCheckableCard__label {
+  flex-grow: 1;
+  font-size: $wuiFontSize;
+  line-height: $wuiSizeL;
+  padding: $wuiSizeS $wuiSizeS $wuiSizeS $wuiSize;
+  cursor: pointer;
+}
+
+.wuiCheckableCard__label-isDisabled {
+  color: $wuiFormControlDisabledColor;
+  cursor: not-allowed;
+}
+
+.wuiCheckableCard__children {
+  padding:  0 $wuiSizeS $wuiSizeS $wuiSize;
+}

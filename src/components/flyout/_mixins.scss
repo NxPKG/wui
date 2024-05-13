@@ -1,0 +1,18 @@
+
+@mixin wuiFlyout {
+  border-left: $wuiFlyoutBorder;
+  // The mixin augments the above
+  // sass-lint:disable mixins-before-declarations
+  @include wuiBottomShadowLarge($adjustBorders: true);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: $wuiZFlyout;
+  background: $wuiColorEmptyShade;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  clip-path: polygon(-20% 0, 100% 0, 100% 100%, -20% 100%);
+}

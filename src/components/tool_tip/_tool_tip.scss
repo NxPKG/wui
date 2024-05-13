@@ -1,0 +1,117 @@
+/*
+ * 1. Shift arrow 1px more than half its size to account for border radius
+ */
+
+.wuiToolTip {
+  @include wuiToolTipStyle;
+  @include wuiToolTipAnimation('top');
+  position: absolute;
+  opacity: 0;
+
+  // Custom sizing
+  $arrowSize: $wuiSizeM;
+  $arrowPlusSize: (($arrowSize/2) + 1px) * -1; /* 1 */
+  $arrowMinusSize: (($arrowSize/2) - 1px) * -1; /* 1 */
+
+  .wuiToolTip__arrow {
+    content: '';
+    position: absolute;
+    transform-origin: center;
+    border-radius: 2px;
+    background-color: $wuiTooltipBackgroundColor;
+    width: $arrowSize;
+    height: $arrowSize;
+
+    transform: translateY($arrowPlusSize) rotateZ(45deg); /* 1 */
+  }
+
+  // Positions the arrow and animates in from the same side.
+  &.wuiToolTip--right {
+    animation-name: wuiToolTipRight;
+
+    .wuiToolTip__arrow {
+      transform: translateX($arrowMinusSize) rotateZ(45deg); /* 1 */
+    }
+  }
+
+  &.wuiToolTip--bottom {
+    animation-name: wuiToolTipBottom;
+
+    .wuiToolTip__arrow {
+      transform: translateY($arrowMinusSize) rotateZ(45deg); /* 1 */
+    }
+  }
+
+  &.wuiToolTip--left {
+    animation-name: wuiToolTipLeft;
+
+    .wuiToolTip__arrow {
+      transform: translateX($arrowPlusSize) rotateZ(45deg); /* 1 */
+    }
+  }
+
+  .wuiToolTip__title {
+    @include wuiToolTipTitle;
+  }
+}
+
+.wuiToolTipAnchor {
+  display: inline-block;
+
+  // disabled elements don't fire mouse events which means leaving a disabled element
+  // wouldn't trigger the onMouseOut and hide the tooltip; disabling pointer events
+  // on disabled elements means any mouse events remain handled by parent elements
+  // https://jakearchibald.com/2017/events-and-disabled-form-fields/
+  *[disabled] {
+    pointer-events: none;
+  }
+}
+
+// Keyframes to animate in the tooltip.
+@keyframes wuiToolTipTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-$wuiSize);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wuiToolTipBottom {
+  0% {
+    opacity: 0;
+    transform: translateY($wuiSize);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wuiToolTipLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-$wuiSize);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wuiToolTipRight {
+  0% {
+    opacity: 0;
+    transform: translateX($wuiSize);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

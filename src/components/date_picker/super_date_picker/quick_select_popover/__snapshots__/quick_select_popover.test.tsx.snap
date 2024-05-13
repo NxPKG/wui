@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiQuickSelectPopover is rendered 1`] = `
+<WuiPopover
+  anchorClassName="wuiQuickSelectPopover__anchor"
+  anchorPosition="downLeft"
+  button={
+    <WuiButtonEmpty
+      aria-label="Date quick select"
+      className="wuiFormControlLayout__prepend"
+      data-test-subj="superDatePickerToggleQuickMenuButton"
+      iconSide="right"
+      iconType="arrowDown"
+      isDisabled={false}
+      onClick={[Function]}
+      size="xs"
+      textProps={
+        Object {
+          "className": "wuiQuickSelectPopover__buttonText",
+        }
+      }
+    >
+      <WuiIcon
+        type="calendar"
+      />
+    </WuiButtonEmpty>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="QuickSelectPopover"
+  isOpen={false}
+  ownFocus={true}
+  panelPaddingSize="m"
+>
+  <div
+    className="wuiQuickSelectPopover__content"
+    data-test-subj="superDatePickerQuickMenu"
+  >
+    <WuiQuickSelect
+      applyTime={[Function]}
+      end="now"
+      start="now-15m"
+    />
+    <WuiCommonlyUsedTimeRanges
+      applyTime={[Function]}
+      commonlyUsedRanges={
+        Array [
+          Object {
+            "end": "now/d",
+            "label": "Today",
+            "start": "now/d",
+          },
+        ]
+      }
+    />
+    <WuiRecentlyUsed
+      applyTime={[Function]}
+      commonlyUsedRanges={
+        Array [
+          Object {
+            "end": "now/d",
+            "label": "Today",
+            "start": "now/d",
+          },
+        ]
+      }
+      dateFormat="MMM D, YYYY @ HH:mm:ss.SSS"
+      recentlyUsedRanges={
+        Array [
+          Object {
+            "end": "now/d",
+            "label": "Today",
+            "start": "now/d",
+          },
+        ]
+      }
+    />
+    <WuiRefreshInterval
+      applyRefreshInterval={[Function]}
+      isPaused={true}
+      refreshInterval={0}
+    />
+  </div>
+</WuiPopover>
+`;
+
+exports[`WuiQuickSelectPopover isAutoRefreshOnly 1`] = `
+<WuiPopover
+  anchorClassName="wuiQuickSelectPopover__anchor"
+  anchorPosition="downLeft"
+  button={
+    <WuiButtonEmpty
+      aria-label="Date quick select"
+      className="wuiFormControlLayout__prepend"
+      data-test-subj="superDatePickerToggleQuickMenuButton"
+      iconSide="right"
+      iconType="arrowDown"
+      isDisabled={false}
+      onClick={[Function]}
+      size="xs"
+      textProps={
+        Object {
+          "className": "wuiQuickSelectPopover__buttonText",
+        }
+      }
+    >
+      <WuiIcon
+        type="clock"
+      />
+    </WuiButtonEmpty>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="QuickSelectPopover"
+  isOpen={false}
+  ownFocus={true}
+  panelPaddingSize="m"
+>
+  <div
+    className="wuiQuickSelectPopover__content"
+    data-test-subj="superDatePickerQuickMenu"
+  >
+    <WuiRefreshInterval
+      applyRefreshInterval={[Function]}
+      isPaused={true}
+      refreshInterval={0}
+    />
+  </div>
+</WuiPopover>
+`;

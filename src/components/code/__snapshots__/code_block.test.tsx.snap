@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCodeBlock dynamic content updates DOM when input changes 1`] = `
+"<div>
+  <div class=\\"wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge\\">
+    <pre class=\\"wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap\\">
+      <code class=\\"wuiCodeBlock__code javascript hljs\\">
+        <span class=\\"hljs-keyword\\">const</span>value =
+        <span class=\\"hljs-string\\">'State 1'</span>
+      </code>
+    </pre>
+  </div>
+</div>"
+`;
+
+exports[`WuiCodeBlock dynamic content updates DOM when input changes 2`] = `
+"<div>
+  <div class=\\"wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge\\">
+    <pre class=\\"wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap\\">
+      <code class=\\"wuiCodeBlock__code javascript hljs\\">
+        <span class=\\"hljs-keyword\\">const</span>value =
+        <span class=\\"hljs-string\\">'State 2'</span>
+      </code>
+    </pre>
+  </div>
+</div>"
+`;
+
+exports[`WuiCodeBlock props fontSize l is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontLarge wuiCodeBlock--paddingLarge"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock props fontSize m is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontMedium wuiCodeBlock--paddingLarge"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock props fontSize s is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock props isCopyable is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge wuiCodeBlock--hasControls"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+  <div
+    class="wuiCodeBlock__controls"
+  >
+    <div
+      class="wuiCodeBlock__copyButton"
+    >
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Copy"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="copy"
+          />
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCodeBlock props language is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code html hljs xml"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock props overflowHeight is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge wuiCodeBlock--hasControls"
+  style="max-height: 200px;"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+    style="max-height: 200px;"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+  <div
+    class="wuiCodeBlock__controls"
+  >
+    <button
+      aria-label="Expand"
+      class="wuiButtonIcon wuiButtonIcon--text wuiCodeBlock__fullScreenButton"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="fullScreen"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`WuiCodeBlock props paddingSize l is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock props paddingSize m is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingMedium"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock props paddingSize none is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock props paddingSize s is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingSmall"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock props transparentBackground is rendered 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge wuiCodeBlock--transparentBackground"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      class="wuiCodeBlock__code"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`WuiCodeBlock renders a code block 1`] = `
+<div
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge testClass1 testClass2"
+>
+  <pre
+    class="wuiCodeBlock__pre wuiCodeBlock__pre--whiteSpacePreWrap"
+  >
+    <code
+      aria-label="aria-label"
+      class="wuiCodeBlock__code"
+      data-test-subj="test subject string"
+    >
+      var some = 'code';
+console.log(some);
+    </code>
+  </pre>
+</div>
+`;

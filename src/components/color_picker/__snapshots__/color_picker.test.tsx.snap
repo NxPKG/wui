@@ -1,0 +1,970 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders WuiColorPicker 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,238,221)"
+        >
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                type="text"
+                value="#FFEEDD"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders WuiColorPicker with a clearable input 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,238,221)"
+        >
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                type="text"
+                value="#FFEEDD"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <button
+            aria-label="Clear input"
+            class="wuiFormControlLayoutClearButton"
+            type="button"
+          >
+            <div
+              class="wuiFormControlLayoutClearButton__icon"
+              data-wuiicon-type="cross"
+            />
+          </button>
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders WuiColorPicker with a color swatch when color is defined 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,255,255)"
+        >
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                type="text"
+                value="#FFFFFF"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders WuiColorPicker with a custom placeholder 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div>
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                placeholder="Auto"
+                type="text"
+                value=""
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="stopSlash"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders WuiColorPicker with an empty swatch when color is "" 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div>
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                placeholder="Transparent"
+                type="text"
+                value=""
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="stopSlash"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders WuiColorPicker with an empty swatch when color is null 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div>
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                placeholder="Transparent"
+                type="text"
+                value=""
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="stopSlash"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders a WuiColorPicker with a prepend and append 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout wuiFormControlLayout--group"
+    >
+      <label
+        class="wuiFormLabel wuiFormControlLayout__prepend"
+      >
+        prepend
+      </label>
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,238,221)"
+        >
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiColorPicker__input--inGroup wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                type="text"
+                value="#FFEEDD"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+      <label
+        class="wuiFormLabel wuiFormControlLayout__append"
+      >
+        append
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders a WuiColorPicker with an alpha range selector 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,238,221)"
+        >
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                type="text"
+                value="#FFEEDD"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders compressed WuiColorPicker 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout wuiFormControlLayout--compressed"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,238,221)"
+        >
+          <div
+            class="wuiFormControlLayout wuiFormControlLayout--compressed"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon wuiFieldText--compressed"
+                data-test-subj="colorPickerAnchor"
+                type="text"
+                value="#FFEEDD"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders disabled WuiColorPicker 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,238,221)"
+        >
+          <div
+            class="wuiFormControlLayout"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                disabled=""
+                type="text"
+                value="#FFEEDD"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders fullWidth WuiColorPicker 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,238,221)"
+        >
+          <div
+            class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon wuiFieldText--fullWidth"
+                data-test-subj="colorPickerAnchor"
+                type="text"
+                value="#FFEEDD"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders inline WuiColorPicker 1`] = `
+<div
+  class="wuiColorPicker testClass1 testClass2"
+>
+  <div>
+    <div
+      aria-activedescendant="undefined-saturationIndicator"
+      aria-describedby="undefined-saturationDescription"
+      aria-roledescription="HSV color mode saturation and value selection"
+      class="wuiSaturation"
+      data-test-subj="wuiSaturation"
+      role="application"
+      style="background:hsl(30, 100%, 50%)"
+      tabindex="0"
+    >
+      <p
+        class="wuiScreenReaderOnly"
+      >
+        Use the arrow keys to navigate the square color gradient. The coordinates resulting from each key press will be used to calculate HSV color mode 'saturation' and 'value' numbers, in the range of 0 to 1. Left and right decrease and increase (respectively) the 'saturation' value. Up and down decrease and increase (respectively) the 'value' value.
+      </p>
+      <p
+        aria-live="polite"
+        class="wuiScreenReaderOnly"
+      >
+        #ffeedd
+      </p>
+      <div
+        class="wuiSaturation__lightness"
+      >
+        <div
+          class="wuiSaturation__saturation"
+        />
+      </div>
+      <div
+        class="wuiSaturation__indicator"
+        id="undefined-saturationIndicator"
+        style="left:0;top:0"
+      />
+    </div>
+    <label
+      class="wuiScreenReaderOnly"
+      for="undefined-hue"
+    >
+      Select the HSV color mode 'hue' value
+    </label>
+    <p
+      aria-live="polite"
+      class="wuiScreenReaderOnly"
+    >
+      #ffeedd
+    </p>
+    <div
+      class="wuiHue"
+    >
+      <input
+        class="wuiHue__range"
+        id="undefined-hue"
+        max="359"
+        min="0"
+        step="1"
+        type="range"
+        value="30"
+      />
+    </div>
+  </div>
+  <div
+    class="wuiFlexGroup wuiFlexGroup--gutterSmall wuiFlexGroup--directionRow wuiFlexGroup--wrap"
+    role="listbox"
+  >
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #54B399 as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(84,179,153)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #6092C0 as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(96,146,192)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #D36086 as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(211,96,134)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #9170B8 as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(145,112,184)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #CA8EAE as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(202,142,174)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #D6BF57 as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(214,191,87)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #B9A888 as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(185,168,136)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #DA8B45 as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(218,139,69)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #AA6556 as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(170,101,86)"
+        type="button"
+      />
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <button
+        aria-label="Select #E7664C as the color"
+        class="wuiColorPickerSwatch wuiColorPicker__swatchSelect"
+        role="option"
+        style="background:rgb(231,102,76)"
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders readOnly WuiColorPicker 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiColorPicker__popoverAnchor"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div
+      class="wuiFormControlLayout wuiFormControlLayout--readOnly"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <div
+          style="color:rgb(255,238,221)"
+        >
+          <div
+            class="wuiFormControlLayout wuiFormControlLayout--readOnly"
+          >
+            <div
+              class="wuiFormControlLayout__childrenWrapper"
+            >
+              <input
+                aria-label="Press the down key to open a popover containing color options"
+                autocomplete="off"
+                class="wuiFieldText wuiColorPicker__input wuiFieldText--withIcon"
+                data-test-subj="colorPickerAnchor"
+                readonly=""
+                type="text"
+                value="#FFEEDD"
+              />
+              <div
+                class="wuiFormControlLayoutIcons"
+              >
+                <span
+                  class="wuiFormControlLayoutCustomIcon"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="wuiFormControlLayoutCustomIcon__icon"
+                    data-wuiicon-type="swatchInput"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

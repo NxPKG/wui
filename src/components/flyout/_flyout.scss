@@ -1,0 +1,80 @@
+.wuiFlyout {
+  @include wuiFlyout;
+  animation: wuiFlyout $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+}
+
+// The actual size of the X button in pixels is a bit fuzzy because of all the
+// button padding so there is some pixel pushing here.
+.wuiFlyout__closeButton {
+  background-color: transparentize($wuiColorEmptyShade, .1);
+  position: absolute;
+  right: $wuiSizeL - 7px;
+  top: $wuiSizeL - 7px;
+  z-index: 3;
+}
+
+/**
+ * 1. Calculating the minimum width based on the screen takeover breakpoint
+ */
+$flyoutSizes: (
+  'small': (
+    min: round(map-get($wuiBreakpoints, 'm') * .5), /* 1 */
+    width: 25vw,
+    max: round(map-get($wuiBreakpoints, 's') * .7),
+  ),
+  'medium': (
+    // Calculated for forms plus padding
+    min: $wuiFormMaxWidth + ($wuiSizeM * 2),
+    width: 50vw,
+    max: map-get($wuiBreakpoints, 'm'),
+  ),
+  'large': (
+    min:  round(map-get($wuiBreakpoints, 'm') * .9), /* 1 */
+    width: 75vw,
+    max: map-get($wuiBreakpoints, 'l'),
+  )
+);
+
+@each $name, $sizing in $flyoutSizes {
+  .wuiFlyout--#{$name} {
+    min-width: map-get($sizing, min);
+    width: map-get($sizing, width);
+
+    &.wuiFlyout--maxWidth-default {
+      max-width: map-get($sizing, max);
+    }
+  }
+}
+
+@keyframes wuiFlyout {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  75% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/**
+ * 1. Only small flyouts should NOT takeover the entire screen
+ * 2. If a custom maxWidth is set, we need to override it.
+ */
+@include wuiBreakpoint('xs', 's') {
+  // sass-lint:disable-block no-important
+  .wuiFlyout:not(.wuiFlyout--small) {  /* 1 */
+    left: 0;
+    min-width: 0;
+    width: auto;
+    border-left: none;
+    max-width: 100vw !important; /* 2 */
+  }
+
+  .wuiFlyout--small {
+    width: 90vw; // ensure that it's only partially showing the main content
+    min-width: 0; /* 1 */
+    max-width: map-get(map-get($flyoutSizes, 'small'), 'max');
+  }
+}

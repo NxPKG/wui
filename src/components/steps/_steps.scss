@@ -1,0 +1,71 @@
+/**
+ * 1. Ensure that the step number vertically aligns with the title text
+ */
+
+.wuiStep {
+  // sass-lint:disable indentation
+  // Create border on all but the last step
+  &:not(:last-of-type) {
+    background-image: linear-gradient(
+                        to right,
+                        transparent 0,
+                        transparent ($wuiSize - 1),
+                        $wuiBorderColor ($wuiSize - 1),
+                        $wuiBorderColor ($wuiSize + 1),
+                        transparent ($wuiSize + 1),
+                        transparent 100%
+                      );
+    background-repeat: no-repeat;
+    background-position: left $wuiSizeXXL;
+  }
+
+  &--small {
+    &:not(:last-of-type) {
+      background-position: left -#{$wuiSizeXS} top $wuiSizeXL;
+    }
+
+    .wuiStep__content {
+      // Align the content's contents with the title
+      padding-left: ($wuiStepNumberSmallSize / 2) + $wuiStepNumberMargin;
+
+      // Align content border to horizontal center of step number
+      margin-left: ($wuiStepNumberSmallSize / 2);
+    }
+  }
+}
+
+.wuiStep__titleWrapper {
+  display: flex;
+}
+
+.wuiStep__circle {
+  flex-shrink: 0;
+  margin-right: $wuiStepNumberMargin;
+  vertical-align: top; /* 1 */
+
+  &[class*='complete'],
+  &[class*='warning'],
+  &[class*='danger'] {
+    animation: wuiGrow $wuiAnimSpeedFast $wuiAnimSlightBounce;
+  }
+
+  &[class*='incomplete'] {
+    border-color: $wuiColorPrimary;
+    animation: none;
+  }
+}
+
+.wuiStep__title {
+  font-weight: $wuiFontWeightMedium;
+}
+
+.wuiStep__content {
+  padding: $wuiSize $wuiSize $wuiSizeXL;
+  margin: $wuiSizeS 0;
+
+  // Align the content's contents with the title
+  padding-left: ($wuiStepNumberSize / 2) + $wuiStepNumberMargin;
+
+  // Align content border to horizontal center of step number
+  margin-left: ($wuiStepNumberSize / 2);
+}

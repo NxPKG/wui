@@ -1,0 +1,239 @@
+// This should only be used for .wuiText, therefore it's not included in a separate mixin file
+
+@mixin wuiScaleText($baseFontSize) {
+  $baseLineHeightMultiplier: $baseFontSize / 2;
+  line-height: convertToRem($baseLineHeightMultiplier * 3);
+
+  p,
+  ul,
+  ol,
+  dl,
+  blockquote,
+  img,
+  pre {
+    margin-bottom: convertToRem($baseLineHeightMultiplier * 3);
+  }
+
+  ul,
+  ol {
+    margin-left: convertToRem($baseLineHeightMultiplier * 3);
+  }
+
+  blockquote {
+    padding:  convertToRem($baseFontSize * 1.5);
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 4));
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: convertToRem($baseLineHeightMultiplier * 1);
+  }
+
+  dd + dt {
+    margin-top: convertToRem($baseLineHeightMultiplier * 2);
+  }
+
+  * + h2,
+  * + h3,
+  * + h4,
+  * + h5,
+  * + h6 {
+    margin-top: convertToRem($baseLineHeightMultiplier * 4);
+  }
+
+  h1 {
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 1));
+    line-height: convertToRem($baseLineHeightMultiplier * 6);
+  }
+
+  h2 {
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 2));
+    line-height: convertToRem($baseLineHeightMultiplier * 5);
+  }
+
+  h3 {
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 3));
+    line-height: convertToRem($baseLineHeightMultiplier * 4);
+  }
+
+  h4,
+  dt,
+  .wui-definitionListReverse dd {
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 5)); // skip level 4 on purpose
+    line-height: convertToRem($baseLineHeightMultiplier * 3);
+  }
+
+  .wui-definitionListReverse dt {
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 7));
+    color: $wuiTextColor;
+  }
+
+  h5 {
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 6));
+    line-height: convertToRem($baseLineHeightMultiplier * 2);
+  }
+
+  h6 {
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 7));
+    line-height: convertToRem($baseLineHeightMultiplier * 2);
+  }
+
+  small {
+    font-size: convertToRem($baseFontSize * nth($wuiTextScale, 6));
+  }
+
+  pre {
+    padding: $baseLineHeightMultiplier * 2;
+  }
+
+  code {
+    // Setting the font size in rem's ensure it doesn't compound
+    // the 90% set by wuiCodeBlock
+    font-size: convertToRem($baseFontSize * .9);
+  }
+}
+
+.wuiText {
+  @include wuiText;
+  @include wuiFontSize;
+  // The wuiText mixin forces a color. Since wuiText is usually a child
+  // of other styling concerns, we should inherit their coloring. The default
+  // coloring will likely coming from the reset.scss anyway.
+  color: inherit;
+
+  // Style anchors that don't have a class. This prevents overwriting "buttons"
+  // and other stylized elements passed in.
+  a:not([class]) {
+    color: $wuiLinkColor;
+
+    &:hover {
+      color: darken($wuiLinkColor, 10%);
+      text-decoration: underline;
+    }
+
+    &:focus {
+      text-decoration: underline;
+      outline: solid 3px transparentize($wuiLinkColor, .9);
+      background-color: transparentize($wuiLinkColor, .9);
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  blockquote {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Georgia, Times, Times New Roman, serif;
+    font-style: italic;
+    letter-spacing: normal;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 50%;
+      right: 0;
+      transform: translateX(-50%);
+      background: $wuiColorDarkShade;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+
+  h1 {
+    @include wuiTitle('l');
+  }
+
+  h2 {
+    @include wuiTitle('m');
+  }
+
+  h3 {
+    @include wuiTitle('s');
+  }
+
+  h4,
+  dt {
+    @include wuiTitle('xs');
+  }
+
+  h5 {
+    @include wuiTitle('xxs');
+  }
+
+  h6 {
+    @include wuiTitle('xxxs');
+    text-transform: uppercase;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    background: $wuiCodeBlockBackgroundColor;
+    color: $wuiCodeBlockColor;
+  }
+
+  pre,
+  pre code {
+    display: block;
+  }
+
+  // unset font-size from wuiCodeBlock so it doesn't doubly add 90%
+
+  code {
+    @include wuiCodeFont;
+    display: inline-block; // ensures background stretches the full line-height
+    font-weight: $wuiFontWeightRegular;
+  }
+
+  @include wuiScaleText($wuiFontSize);
+
+  &.wuiText--constrainedWidth {
+    max-width: $wuiTextConstrainedMaxWidth;
+    // If the max-width is way too short of the width of the container,
+    // at least make it 2/3 of its parent
+    min-width: 75%;
+  }
+
+  > :last-child,
+  .wuiTextColor > :last-child {
+    margin-bottom: 0 !important; // sass-lint:disable-line no-important
+  }
+}
+
+.wuiText--small {
+  @include fontSize($wuiFontSizeS);
+  @include wuiScaleText($wuiFontSizeS);
+}
+
+.wuiText--extraSmall {
+  @include fontSize($wuiFontSizeXS);
+  @include wuiScaleText($wuiFontSizeXS);
+}

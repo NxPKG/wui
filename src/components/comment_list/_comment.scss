@@ -1,0 +1,38 @@
+.wuiComment {
+  font-size: $wuiFontSizeS;
+  display: flex;
+  padding-bottom: $wuiSize;
+  min-height: $wuiSize * 3.5;
+
+  .wuiCommentEvent {
+    flex-grow: 1;
+  }
+
+  .wuiCommentTimeline {
+    position: relative;
+    flex-grow: 0;
+    margin-right: $wuiSize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: $wuiSizeXXL / 2;
+      top: $wuiSizeL;
+      width: $wuiSizeXS / 2;
+      background-color: $wuiColorLightShade;
+      height: calc(100% + #{$wuiSizeL});
+    }
+  }
+}
+
+.wuiComment:last-of-type {
+  .wuiCommentTimeline {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.wuiComment--update:not(.wuiComment--hasBody) {
+  align-items: center;
+}

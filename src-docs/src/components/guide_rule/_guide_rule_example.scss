@@ -1,0 +1,58 @@
+/**
+  * 1. Ensure that the borders of the captions line up across the whole example row
+  *    1b. even if the caption spans multiple lines
+  */
+
+.guideRule__example {
+  .guideRule__example__panel {
+    border-bottom: 2px solid;
+    margin-bottom: $wuiSizeS;
+    flex-grow: 1; /* 1 */
+
+    &:not(.wuiPanel) {
+      padding-bottom: $wuiSize; // only change the bottom padding if it's not an wuiPanel
+    }
+  }
+
+  pre {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .guideRule__caption {
+    @include wuiFontSizeS;
+    max-height: $wuiFontSizeS * $wuiLineHeight; /* 1 */
+    overflow-y: visible; /* 1 */
+  }
+
+  // Coloring
+  &.guideRule__example--do {
+    .guideRule__example__panel {
+      border-bottom-color: $wuiColorSuccess;
+    }
+
+    .guideRule__caption {
+      color: $wuiColorSuccessText;
+    }
+  }
+
+  &.guideRule__example--dont {
+    .guideRule__example__panel {
+      border-bottom-color: $wuiColorDanger;
+    }
+
+    .guideRule__caption {
+      color: $wuiColorDanger;
+    }
+  }
+
+  &.guideRule__example--frame {
+    .guideRule__example__panel {
+      padding: $wuiSizeL;
+      background-color: $wuiColorLightestShade;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}

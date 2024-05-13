@@ -1,0 +1,138 @@
+.wuiButtonGroup {
+  max-width: 100%;
+  display: flex;
+}
+
+.wuiButtonGroup__fieldset {
+  display: inline-block;
+  max-width: 100%;
+
+  &--fullWidth {
+    display: block;
+  }
+}
+
+.wuiButtonGroup--fullWidth {
+  .wuiButtonGroup__toggle {
+    flex: 1;
+  }
+}
+
+.wuiButtonGroup__toggle {
+  margin-left: -1px;
+  z-index: 1;
+
+  // DO NOT Transform
+  // sass-lint:disable-block no-important
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+
+  &[class*='checked'] {
+    z-index: 2; // Raise it above the simply bordered versions for crisper lines
+
+    // add a slight divider if two selected items are next to each other
+    + [class*='checked'] {
+      box-shadow: -1px 0 0 transparentize($wuiColorEmptyShade, .9);
+    }
+  }
+
+  .wuiButtonGroup__button {
+    border-radius: 0;
+    width: 100%;
+
+    // DO NOT Transform
+    // sass-lint:disable-block no-important
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
+
+    // always the same border color unless it's selected
+    &:not([class*='fill']) {
+      border-color: $wuiButtonToggleBorderColor;
+    }
+
+    // don't colorize the shadows
+    &:enabled {
+      @include wuiSlightShadow;
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
+
+    .wuiButtonGroup__button {
+      border-top-left-radius: $wuiBorderRadius;
+      border-bottom-left-radius: $wuiBorderRadius;
+    }
+  }
+
+  &:last-child .wuiButtonGroup__button {
+    border-top-right-radius: $wuiBorderRadius;
+    border-bottom-right-radius: $wuiBorderRadius;
+  }
+
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiButtonGroup__fieldset {
+    display: block;
+  }
+
+  .wuiButtonGroup__toggle {
+    flex: 1;
+    min-width: 0;
+
+    .wuiButtonGroup__button {
+      min-width: 0;
+    }
+  }
+}
+
+.wuiButtonGroup--compressed {
+  border: 1px solid $wuiFormBorderColor;
+  border-radius: $wuiFormControlCompressedBorderRadius;
+  background-color: $wuiFormBackgroundColor;
+
+  .wuiButtonGroup__button {
+    height: $wuiFormControlCompressedHeight - 2px;
+    // sass-lint:disable-block no-important
+    box-shadow: none !important;
+    font-size: $wuiFontSizeS;
+    min-width: 0;
+    border: none;
+    border-radius: $wuiBorderRadius;
+    // Offset the background color from the border by 2px
+    // by clipping background to before the padding starts
+    padding: 2px;
+    background-clip: content-box;
+
+    &:not(.wuiButtonGroup__button--selected):not(:disabled) {
+      color: $wuiColorDarkShade;
+    }
+
+    .wuiButton__content {
+      padding-left: $wuiSizeS;
+      padding-right: $wuiSizeS;
+    }
+  }
+
+  .wuiButtonGroup__toggle {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .wuiButtonToggle__input:enabled:hover + .wuiButtonGroup__button,
+  .wuiButtonToggle__input:enabled:focus + .wuiButtonGroup__button {
+    background-color: transparentize($wuiFormInputGroupLabelBackground, .5);
+  }
+
+  .wuiButtonToggle__input:enabled:focus + .wuiButtonGroup__button {
+    outline: 2px solid $wuiFocusRingColor;
+  }
+
+  .wuiButtonGroup__button--selected {
+    font-weight: $wuiFontWeightSemiBold;
+    background-color: $wuiFormInputGroupLabelBackground;
+  }
+}

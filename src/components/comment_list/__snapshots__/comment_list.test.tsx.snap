@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCommentList is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiCommentList testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiComment"
+  >
+    <div
+      class="wuiCommentTimeline"
+    >
+      <div
+        class="wuiCommentTimeline__content"
+      >
+        <div
+          class="wuiCommentTimeline__icon--default wuiCommentTimeline__icon--regular"
+        >
+          <div
+            data-wuiicon-type="user"
+          />
+        </div>
+      </div>
+    </div>
+    <figure
+      class="wuiCommentEvent wuiCommentEvent--regular"
+    >
+      <figcaption
+        class="wuiCommentEvent__header"
+      >
+        <div
+          class="wuiCommentEvent__headerData"
+        >
+          <div
+            class="wuiCommentEvent__headerUsername"
+          >
+            janed
+          </div>
+          <div
+            class="wuiCommentEvent__headerEvent"
+          />
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+`;

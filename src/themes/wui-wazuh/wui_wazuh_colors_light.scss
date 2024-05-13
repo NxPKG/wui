@@ -1,0 +1,50 @@
+// This extra import allows any variables that are created via functions to work when loaded into JS
+@import '../../global_styling/variables/colors';
+
+// Core
+$wuiColorPrimary: #256BD1;
+$wuiColorSecondary: #2DA4AA;
+$wuiColorAccent: #FEDD0B;
+
+// Status
+$wuiColorSuccess: $wuiColorSecondary;
+$wuiColorWarning: #FF7A2F;
+$wuiColorDanger: #BD271E;
+
+// Grays
+$wuiColorEmptyShade: #FFF;
+$wuiColorLightestShade: #EBF2FB;
+$wuiColorLightShade: #B7C6D7;
+$wuiColorMediumShade: #657C97;
+$wuiColorDarkShade: #545F73;
+$wuiColorDarkestShade: #292929;
+$wuiColorFullShade: #000;
+
+// Backgrounds
+$wuiPageBackgroundColor: tint($wuiColorLightestShade, 50%);
+$wuiColorHighlight: tint($wuiColorWarning, 90%);
+
+// Variations from core
+$wuiTextColor: $wuiColorDarkestShade;
+$wuiTitleColor: $wuiTextColor;
+$wuiTextSubduedColor: makeHighContrastColor($wuiColorMediumShade);
+$wuiColorDisabled: shade($wuiTextColor, 70%);
+
+$wuiColorPrimaryText: makeHighContrastColor($wuiColorPrimary);
+$wuiColorSecondaryText: makeHighContrastColor($wuiColorSecondary);
+$wuiColorAccentText: makeHighContrastColor($wuiColorAccent);
+$wuiColorWarningText: makeHighContrastColor($wuiColorWarning);
+$wuiColorDangerText: makeHighContrastColor($wuiColorDanger);
+$wuiColorDisabledText: makeDisabledContrastColor($wuiColorDisabled);
+$wuiColorSuccessText: $wuiColorSecondaryText;
+$wuiLinkColor: $wuiColorPrimaryText;
+
+// Charts
+$wuiColorChartLines: $wuiColorLightShade;
+$wuiColorChartBand: tint($wuiColorLightestShade, 2.5%);
+
+// Focus border
+$wuiFocusBorderColor: $wuiColorPrimary;
+
+$wuiWazuhLogoPrimaryColor: #000;
+$wuiWazuhLogoSecondaryColor: #007AFF;

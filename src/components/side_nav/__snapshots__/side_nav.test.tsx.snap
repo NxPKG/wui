@@ -1,0 +1,575 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSideNav is rendered 1`] = `
+<nav
+  aria-label="aria-label"
+  class="wuiSideNav testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <button
+    class="wuiSideNav__mobileToggle wuiLink"
+    type="button"
+  >
+    <span
+      class="wuiSideNav__mobileWrap"
+    >
+      <span
+        class="wuiSideNav__mobileTitle"
+      />
+      <div
+        aria-hidden="true"
+        class="wuiSideNav__mobileIcon"
+        data-wuiicon-type="apps"
+      />
+    </span>
+  </button>
+  <div
+    class="wuiSideNav__content"
+  />
+</nav>
+`;
+
+exports[`WuiSideNav props isOpenOnMobile defaults to false 1`] = `
+<nav
+  class="wuiSideNav"
+>
+  <button
+    class="wuiSideNav__mobileToggle wuiLink"
+    type="button"
+  >
+    <span
+      class="wuiSideNav__mobileWrap"
+    >
+      <span
+        class="wuiSideNav__mobileTitle"
+      />
+      <div
+        aria-hidden="true"
+        class="wuiSideNav__mobileIcon"
+        data-wuiicon-type="apps"
+      />
+    </span>
+  </button>
+  <div
+    class="wuiSideNav__content"
+  />
+</nav>
+`;
+
+exports[`WuiSideNav props isOpenOnMobile is rendered when specified as true 1`] = `
+<nav
+  class="wuiSideNav wuiSideNav-isOpenMobile"
+>
+  <button
+    class="wuiSideNav__mobileToggle wuiLink"
+    type="button"
+  >
+    <span
+      class="wuiSideNav__mobileWrap"
+    >
+      <span
+        class="wuiSideNav__mobileTitle"
+      />
+      <div
+        aria-hidden="true"
+        class="wuiSideNav__mobileIcon"
+        data-wuiicon-type="apps"
+      />
+    </span>
+  </button>
+  <div
+    class="wuiSideNav__content"
+  />
+</nav>
+`;
+
+exports[`WuiSideNav props items is rendered 1`] = `
+<nav
+  class="wuiSideNav"
+>
+  <button
+    class="wuiSideNav__mobileToggle wuiLink"
+    type="button"
+  >
+    <span
+      class="wuiSideNav__mobileWrap"
+    >
+      <span
+        class="wuiSideNav__mobileTitle"
+      />
+      <div
+        aria-hidden="true"
+        class="wuiSideNav__mobileIcon"
+        data-wuiicon-type="apps"
+      />
+    </span>
+  </button>
+  <div
+    class="wuiSideNav__content"
+  >
+    <div
+      class="wuiSideNavItem wuiSideNavItem--root wuiSideNavItem--hasChildItems"
+    >
+      <div
+        class="wuiSideNavItemButton"
+      >
+        <span
+          class="wuiSideNavItemButton__content"
+        >
+          <span
+            class="wuiSideNavItemButton__label"
+          >
+            A
+          </span>
+        </span>
+      </div>
+      <div
+        class="wuiSideNavItem__items"
+      >
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk"
+        >
+          <div
+            class="wuiSideNavItemButton"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                B
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk"
+        >
+          <div
+            class="wuiSideNavItemButton"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                C
+              </span>
+              <div
+                color="subdued"
+                data-wuiicon-type="arrowDown"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`WuiSideNav props items renders items having { forceOpen: true } in open state, and automatically opens parent items 1`] = `
+<nav
+  class="wuiSideNav"
+>
+  <button
+    class="wuiSideNav__mobileToggle wuiLink"
+    type="button"
+  >
+    <span
+      class="wuiSideNav__mobileWrap"
+    >
+      <span
+        class="wuiSideNav__mobileTitle"
+      />
+      <div
+        aria-hidden="true"
+        class="wuiSideNav__mobileIcon"
+        data-wuiicon-type="apps"
+      />
+    </span>
+  </button>
+  <div
+    class="wuiSideNav__content"
+  >
+    <div
+      class="wuiSideNavItem wuiSideNavItem--root wuiSideNavItem--hasChildItems"
+    >
+      <div
+        class="wuiSideNavItemButton"
+      >
+        <span
+          class="wuiSideNavItemButton__content"
+        >
+          <span
+            class="wuiSideNavItemButton__label"
+          >
+            A
+          </span>
+        </span>
+      </div>
+      <div
+        class="wuiSideNavItem__items"
+      >
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk"
+        >
+          <div
+            class="wuiSideNavItemButton"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                B
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk wuiSideNavItem--hasChildItems"
+        >
+          <div
+            class="wuiSideNavItemButton wuiSideNavItemButton-isOpen"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                C
+              </span>
+            </span>
+          </div>
+          <div
+            class="wuiSideNavItem__items"
+          >
+            <div
+              class="wuiSideNavItem wuiSideNavItem--branch wuiSideNavItem--hasChildItems"
+            >
+              <div
+                class="wuiSideNavItemButton wuiSideNavItemButton-isOpen"
+              >
+                <span
+                  class="wuiSideNavItemButton__content"
+                >
+                  <span
+                    class="wuiSideNavItemButton__label"
+                  >
+                    D
+                  </span>
+                </span>
+              </div>
+              <div
+                class="wuiSideNavItem__items"
+              >
+                <div
+                  class="wuiSideNavItem wuiSideNavItem--branch"
+                >
+                  <div
+                    class="wuiSideNavItemButton"
+                  >
+                    <span
+                      class="wuiSideNavItemButton__content"
+                    >
+                      <span
+                        class="wuiSideNavItemButton__label"
+                      >
+                        E
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`WuiSideNav props items renders items using a specified callback 1`] = `
+<nav
+  class="wuiSideNav"
+>
+  <button
+    class="wuiSideNav__mobileToggle wuiLink"
+    type="button"
+  >
+    <span
+      class="wuiSideNav__mobileWrap"
+    >
+      <span
+        class="wuiSideNav__mobileTitle"
+      />
+      <div
+        aria-hidden="true"
+        class="wuiSideNav__mobileIcon"
+        data-wuiicon-type="apps"
+      />
+    </span>
+  </button>
+  <div
+    class="wuiSideNav__content"
+  >
+    <div
+      class="wuiSideNavItem wuiSideNavItem--root wuiSideNavItem--hasChildItems"
+    >
+      <a
+        class="wuiSideNavItemButton wuiSideNavItemButton--isClickable"
+        data-test-id="my-custom-element"
+        href="http://www.wazuh.com"
+      >
+        <span
+          class="wuiSideNavItemButton__content"
+        >
+          <span
+            class="wuiSideNavItemButton__label"
+          >
+            A
+          </span>
+        </span>
+      </a>
+      <div
+        class="wuiSideNavItem__items"
+      >
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk"
+        >
+          <a
+            class="wuiSideNavItemButton"
+            data-test-id="my-custom-element"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                B
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`WuiSideNav props items renders items which are links 1`] = `
+<nav
+  class="wuiSideNav"
+>
+  <button
+    class="wuiSideNav__mobileToggle wuiLink"
+    type="button"
+  >
+    <span
+      class="wuiSideNav__mobileWrap"
+    >
+      <span
+        class="wuiSideNav__mobileTitle"
+      />
+      <div
+        aria-hidden="true"
+        class="wuiSideNav__mobileIcon"
+        data-wuiicon-type="apps"
+      />
+    </span>
+  </button>
+  <div
+    class="wuiSideNav__content"
+  >
+    <div
+      class="wuiSideNavItem wuiSideNavItem--root wuiSideNavItem--hasChildItems"
+    >
+      <a
+        class="wuiSideNavItemButton wuiSideNavItemButton--isClickable"
+        href="http://www.wazuh.com"
+        rel="noreferrer"
+      >
+        <span
+          class="wuiSideNavItemButton__content"
+        >
+          <span
+            class="wuiSideNavItemButton__label"
+          >
+            A
+          </span>
+        </span>
+      </a>
+      <div
+        class="wuiSideNavItem__items"
+      >
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk"
+        >
+          <div
+            class="wuiSideNavItemButton"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                B
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk"
+        >
+          <div
+            class="wuiSideNavItemButton"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                C
+              </span>
+              <div
+                color="subdued"
+                data-wuiicon-type="arrowDown"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`WuiSideNav props items renders selected item and automatically opens parent items 1`] = `
+<nav
+  class="wuiSideNav"
+>
+  <button
+    class="wuiSideNav__mobileToggle wuiLink"
+    type="button"
+  >
+    <span
+      class="wuiSideNav__mobileWrap"
+    >
+      <span
+        class="wuiSideNav__mobileTitle"
+      />
+      <div
+        aria-hidden="true"
+        class="wuiSideNav__mobileIcon"
+        data-wuiicon-type="apps"
+      />
+    </span>
+  </button>
+  <div
+    class="wuiSideNav__content"
+  >
+    <div
+      class="wuiSideNavItem wuiSideNavItem--root wuiSideNavItem--hasChildItems"
+    >
+      <div
+        class="wuiSideNavItemButton"
+      >
+        <span
+          class="wuiSideNavItemButton__content"
+        >
+          <span
+            class="wuiSideNavItemButton__label"
+          >
+            A
+          </span>
+        </span>
+      </div>
+      <div
+        class="wuiSideNavItem__items"
+      >
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk"
+        >
+          <div
+            class="wuiSideNavItemButton"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                B
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="wuiSideNavItem wuiSideNavItem--trunk wuiSideNavItem--hasChildItems"
+        >
+          <div
+            class="wuiSideNavItemButton wuiSideNavItemButton-isOpen"
+          >
+            <span
+              class="wuiSideNavItemButton__content"
+            >
+              <span
+                class="wuiSideNavItemButton__label"
+              >
+                C
+              </span>
+            </span>
+          </div>
+          <div
+            class="wuiSideNavItem__items"
+          >
+            <div
+              class="wuiSideNavItem wuiSideNavItem--branch"
+            >
+              <div
+                class="wuiSideNavItemButton wuiSideNavItemButton-isSelected"
+              >
+                <span
+                  class="wuiSideNavItemButton__content"
+                >
+                  <span
+                    class="wuiSideNavItemButton__label"
+                  >
+                    D
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div
+              class="wuiSideNavItem wuiSideNavItem--branch"
+            >
+              <div
+                class="wuiSideNavItemButton"
+              >
+                <span
+                  class="wuiSideNavItemButton__content"
+                >
+                  <span
+                    class="wuiSideNavItemButton__label"
+                  >
+                    E
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

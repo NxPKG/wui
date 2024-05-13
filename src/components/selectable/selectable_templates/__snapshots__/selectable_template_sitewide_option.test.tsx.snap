@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSelectableTemplateSitewideOptions different configurations are formatted with wuiSelectableTemplateSitewideFormatOptions() 1`] = `
+Array [
+  Object {
+    "append": <WuiAvatar
+      name="Default Space"
+      size="s"
+      type="space"
+    />,
+    "aria-label": "aria-label",
+    "avatar": Object {
+      "name": "Default Space",
+    },
+    "className": "wuiSelectableTemplateSitewide__listItem testClass1 testClass2",
+    "data-test-subj": "test subject string",
+    "key": "Basic data application",
+    "label": "Basic data application",
+    "meta": Array [
+      Object {
+        "text": "Application",
+        "type": "application",
+      },
+    ],
+    "prepend": undefined,
+    "title": "Basic data application • Application",
+    "url": "welcome-dashboards",
+  },
+  Object {
+    "append": undefined,
+    "className": "wuiSelectableTemplateSitewide__listItem",
+    "icon": Object {
+      "type": "user",
+    },
+    "key": "Platform with deployment highlighted",
+    "label": "Platform with deployment highlighted",
+    "meta": Array [
+      Object {
+        "text": "Account",
+        "type": "platform",
+      },
+      Object {
+        "highlightSearchString": true,
+        "text": "personal-databoard",
+        "type": "deployment",
+      },
+    ],
+    "prepend": <WuiIcon
+      color="subdued"
+      size="l"
+      type="user"
+    />,
+    "title": "Platform with deployment highlighted • Account, personal-databoard",
+  },
+  Object {
+    "append": undefined,
+    "className": "wuiSelectableTemplateSitewide__listItem",
+    "icon": Object {
+      "color": "accent",
+      "type": "alert",
+    },
+    "key": "Other metas",
+    "label": "Other metas",
+    "meta": Array [
+      Object {
+        "text": "Article",
+        "type": "article",
+      },
+      Object {
+        "text": "Case",
+        "type": "case",
+      },
+      Object {
+        "text": "Text",
+      },
+      Object {
+        "text": "I have a custom type",
+        "type": "PINK",
+      },
+    ],
+    "prepend": <WuiIcon
+      color="accent"
+      size="l"
+      type="alert"
+    />,
+    "searchableLabel": "Totally custom with pink metadata",
+    "title": "Other metas • Article, Case, Text, I have a custom type",
+  },
+]
+`;
+
+exports[`WuiSelectableTemplateSitewideOptions different configurations are rendered with wuiSelectableTemplateSitewideRenderOptions() 1`] = `
+<React.Fragment>
+  <WuiHighlight
+    className="wuiSelectableTemplateSitewide__listItemTitle"
+    search=""
+  >
+    Basic data application
+  </WuiHighlight>
+  <span
+    className="wuiSelectableTemplateSitewide__optionMetasList"
+  >
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--application wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="application"
+    >
+      Application
+    </WuiHighlight>
+  </span>
+</React.Fragment>
+`;
+
+exports[`WuiSelectableTemplateSitewideOptions different configurations are rendered with wuiSelectableTemplateSitewideRenderOptions() 2`] = `
+<React.Fragment>
+  <WuiHighlight
+    className="wuiSelectableTemplateSitewide__listItemTitle"
+    search=""
+  >
+    Platform with deployment highlighted
+  </WuiHighlight>
+  <span
+    className="wuiSelectableTemplateSitewide__optionMetasList"
+  >
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--platform wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="platform"
+    >
+      Account
+    </WuiHighlight>
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--deployment wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="deployment"
+    >
+      personal-databoard
+    </WuiHighlight>
+  </span>
+</React.Fragment>
+`;
+
+exports[`WuiSelectableTemplateSitewideOptions different configurations are rendered with wuiSelectableTemplateSitewideRenderOptions() 3`] = `
+<React.Fragment>
+  <WuiHighlight
+    className="wuiSelectableTemplateSitewide__listItemTitle"
+    search=""
+  >
+    Other metas
+  </WuiHighlight>
+  <span
+    className="wuiSelectableTemplateSitewide__optionMetasList"
+  >
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--article wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="article"
+    >
+      Article
+    </WuiHighlight>
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--case wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="case"
+    >
+      Case
+    </WuiHighlight>
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+    >
+      Text
+    </WuiHighlight>
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--PINK wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="PINK"
+    >
+      I have a custom type
+    </WuiHighlight>
+  </span>
+</React.Fragment>
+`;
+
+exports[`WuiSelectableTemplateSitewideOptions different configurations are rendered with wuiSelectableTemplateSitewideRenderOptions() and search text 1`] = `
+<React.Fragment>
+  <WuiHighlight
+    className="wuiSelectableTemplateSitewide__listItemTitle"
+    search="data"
+  >
+    Basic data application
+  </WuiHighlight>
+  <span
+    className="wuiSelectableTemplateSitewide__optionMetasList"
+  >
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--application wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="application"
+    >
+      Application
+    </WuiHighlight>
+  </span>
+</React.Fragment>
+`;
+
+exports[`WuiSelectableTemplateSitewideOptions different configurations are rendered with wuiSelectableTemplateSitewideRenderOptions() and search text 2`] = `
+<React.Fragment>
+  <WuiHighlight
+    className="wuiSelectableTemplateSitewide__listItemTitle"
+    search="data"
+  >
+    Platform with deployment highlighted
+  </WuiHighlight>
+  <span
+    className="wuiSelectableTemplateSitewide__optionMetasList"
+  >
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--platform wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="platform"
+    >
+      Account
+    </WuiHighlight>
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--deployment wuiSelectableTemplateSitewide__optionMeta"
+      search="data"
+      type="deployment"
+    >
+      personal-databoard
+    </WuiHighlight>
+  </span>
+</React.Fragment>
+`;
+
+exports[`WuiSelectableTemplateSitewideOptions different configurations are rendered with wuiSelectableTemplateSitewideRenderOptions() and search text 3`] = `
+<React.Fragment>
+  <WuiHighlight
+    className="wuiSelectableTemplateSitewide__listItemTitle"
+    search="data"
+  >
+    Other metas
+  </WuiHighlight>
+  <span
+    className="wuiSelectableTemplateSitewide__optionMetasList"
+  >
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--article wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="article"
+    >
+      Article
+    </WuiHighlight>
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--case wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="case"
+    >
+      Case
+    </WuiHighlight>
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+    >
+      Text
+    </WuiHighlight>
+    <WuiHighlight
+      className="wuiSelectableTemplateSitewide__optionMeta--PINK wuiSelectableTemplateSitewide__optionMeta"
+      search=""
+      type="PINK"
+    >
+      I have a custom type
+    </WuiHighlight>
+  </span>
+</React.Fragment>
+`;

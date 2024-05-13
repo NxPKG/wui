@@ -1,0 +1,50 @@
+.wuiColorPicker {
+  position: relative;
+  width: $wuiColorPickerWidth;
+}
+
+.wuiColorPicker__popoverAnchor {
+  // Nested needed for specificity of overriding .wuiFieldText
+  .wuiColorPicker__input {
+    @include wuiFormControlWithIcon($isIconOptional: false, $side: 'right');
+
+    &[class*='--compressed'] {
+      @include wuiFormControlWithIcon($isIconOptional: false, $side: 'right', $compressed: true);
+    }
+
+    + .wuiFormControlLayoutIcons {
+      // Override :disabled state, which obscures the selected color
+      color: inherit;
+    }
+  }
+}
+
+// Adds a stroke color for the swatchInput icon. Unlike most WuiIcons it has a stroke in the SVG
+.wuiSwatchInput__stroke {
+  fill: none;
+  stroke: transparentize($wuiColorFullShade, .8);
+}
+
+.wuiColorPicker__popoverPanel--pickerOnly {
+  // Override of WuiPanel padding
+  // sass-lint:disable no-important
+  padding-bottom: 0 !important;
+}
+
+// sass-lint:disable no-important
+.wuiColorPicker__input--inGroup {
+  height: $wuiFormControlLayoutGroupInputHeight !important;
+  box-shadow: none !important;
+  border-radius: 0;
+
+  &.wuiFieldText--compressed {
+    height: $wuiFormControlLayoutGroupInputCompressedHeight !important;
+    border-radius: 0;
+  }
+}
+
+.wuiColorPicker__alphaRange {
+  .wuiRangeInput {
+    min-width: 0;
+  }
+}

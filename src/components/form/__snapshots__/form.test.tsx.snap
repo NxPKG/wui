@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiForm is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiForm testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiForm renders a form element 1`] = `
+<form
+  aria-label="aria-label"
+  class="wuiForm testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiForm renders without error callout when invalidCallout is "none" 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiForm testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;

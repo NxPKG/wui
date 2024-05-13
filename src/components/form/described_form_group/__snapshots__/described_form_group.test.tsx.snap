@@ -1,0 +1,742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiDescribedFormGroup is rendered 1`] = `
+<WuiDescribedFormGroup
+  aria-label="aria-label"
+  className="testClass1 testClass2"
+  data-test-subj="test subject string"
+  description="Test description"
+  title={
+    <h3>
+      Title
+    </h3>
+  }
+>
+  <div
+    aria-label="aria-label"
+    className="wuiDescribedFormGroup testClass1 testClass2"
+    data-test-subj="test subject string"
+    role="group"
+  >
+    <WuiFlexGroup
+      gutterSize="l"
+    >
+      <div
+        className="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+      >
+        <WuiFlexItem>
+          <div
+            className="wuiFlexItem"
+          >
+            <WuiTitle
+              className="wuiDescribedFormGroup__title"
+              size="xs"
+            >
+              <h3
+                className="wuiTitle wuiTitle--xsmall wuiDescribedFormGroup__title"
+              >
+                Title
+              </h3>
+            </WuiTitle>
+            <WuiText
+              className="wuiDescribedFormGroup__description"
+              color="subdued"
+              size="s"
+            >
+              <div
+                className="wuiText wuiText--small wuiDescribedFormGroup__description"
+              >
+                <WuiTextColor
+                  color="subdued"
+                  component="div"
+                >
+                  <div
+                    className="wuiTextColor wuiTextColor--subdued"
+                  >
+                    Test description
+                  </div>
+                </WuiTextColor>
+              </div>
+            </WuiText>
+          </div>
+        </WuiFlexItem>
+        <WuiFlexItem
+          className="wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+        >
+          <div
+            className="wuiFlexItem wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+          >
+            <WuiFormRow
+              describedByIds={Array []}
+              display="row"
+              fullWidth={false}
+              hasChildLabel={true}
+              hasEmptyLabelSpace={false}
+              labelType="label"
+            >
+              <div
+                className="wuiFormRow"
+                id="generated-id-row"
+              >
+                <div
+                  className="wuiFormRow__fieldWrapper"
+                >
+                  <input
+                    id="generated-id"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  />
+                </div>
+              </div>
+            </WuiFormRow>
+          </div>
+        </WuiFlexItem>
+      </div>
+    </WuiFlexGroup>
+  </div>
+</WuiDescribedFormGroup>
+`;
+
+exports[`WuiDescribedFormGroup props description is not rendered when it's not provided 1`] = `
+<WuiDescribedFormGroup
+  aria-label="aria-label"
+  className="testClass1 testClass2"
+  data-test-subj="test subject string"
+  title={
+    <h3>
+      Title
+    </h3>
+  }
+>
+  <div
+    aria-label="aria-label"
+    className="wuiDescribedFormGroup testClass1 testClass2"
+    data-test-subj="test subject string"
+    role="group"
+  >
+    <WuiFlexGroup
+      gutterSize="l"
+    >
+      <div
+        className="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+      >
+        <WuiFlexItem>
+          <div
+            className="wuiFlexItem"
+          >
+            <WuiTitle
+              className="wuiDescribedFormGroup__title"
+              size="xs"
+            >
+              <h3
+                className="wuiTitle wuiTitle--xsmall wuiDescribedFormGroup__title"
+              >
+                Title
+              </h3>
+            </WuiTitle>
+          </div>
+        </WuiFlexItem>
+        <WuiFlexItem
+          className="wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+        >
+          <div
+            className="wuiFlexItem wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+          >
+            <WuiFormRow
+              describedByIds={Array []}
+              display="row"
+              fullWidth={false}
+              hasChildLabel={true}
+              hasEmptyLabelSpace={false}
+              labelType="label"
+            >
+              <div
+                className="wuiFormRow"
+                id="generated-id-row"
+              >
+                <div
+                  className="wuiFormRow__fieldWrapper"
+                >
+                  <input
+                    id="generated-id"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  />
+                </div>
+              </div>
+            </WuiFormRow>
+          </div>
+        </WuiFlexItem>
+      </div>
+    </WuiFlexGroup>
+  </div>
+</WuiDescribedFormGroup>
+`;
+
+exports[`WuiDescribedFormGroup props fullWidth is rendered 1`] = `
+<WuiDescribedFormGroup
+  aria-label="aria-label"
+  className="testClass1 testClass2"
+  data-test-subj="test subject string"
+  description="Test description"
+  fullWidth={true}
+  title={
+    <h3>
+      Title
+    </h3>
+  }
+>
+  <div
+    aria-label="aria-label"
+    className="wuiDescribedFormGroup wuiDescribedFormGroup--fullWidth testClass1 testClass2"
+    data-test-subj="test subject string"
+    role="group"
+  >
+    <WuiFlexGroup
+      gutterSize="l"
+    >
+      <div
+        className="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+      >
+        <WuiFlexItem>
+          <div
+            className="wuiFlexItem"
+          >
+            <WuiTitle
+              className="wuiDescribedFormGroup__title"
+              size="xs"
+            >
+              <h3
+                className="wuiTitle wuiTitle--xsmall wuiDescribedFormGroup__title"
+              >
+                Title
+              </h3>
+            </WuiTitle>
+            <WuiText
+              className="wuiDescribedFormGroup__description"
+              color="subdued"
+              size="s"
+            >
+              <div
+                className="wuiText wuiText--small wuiDescribedFormGroup__description"
+              >
+                <WuiTextColor
+                  color="subdued"
+                  component="div"
+                >
+                  <div
+                    className="wuiTextColor wuiTextColor--subdued"
+                  >
+                    Test description
+                  </div>
+                </WuiTextColor>
+              </div>
+            </WuiText>
+          </div>
+        </WuiFlexItem>
+        <WuiFlexItem
+          className="wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+        >
+          <div
+            className="wuiFlexItem wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+          >
+            <WuiFormRow
+              describedByIds={Array []}
+              display="row"
+              fullWidth={true}
+              hasChildLabel={true}
+              hasEmptyLabelSpace={false}
+              labelType="label"
+            >
+              <div
+                className="wuiFormRow wuiFormRow--fullWidth"
+                id="generated-id-row"
+              >
+                <div
+                  className="wuiFormRow__fieldWrapper"
+                >
+                  <input
+                    id="generated-id"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  />
+                </div>
+              </div>
+            </WuiFormRow>
+          </div>
+        </WuiFlexItem>
+      </div>
+    </WuiFlexGroup>
+  </div>
+</WuiDescribedFormGroup>
+`;
+
+exports[`WuiDescribedFormGroup props gutterSize is rendered 1`] = `
+<WuiDescribedFormGroup
+  aria-label="aria-label"
+  className="testClass1 testClass2"
+  data-test-subj="test subject string"
+  description="Test description"
+  gutterSize="s"
+  title={
+    <h3>
+      Title
+    </h3>
+  }
+>
+  <div
+    aria-label="aria-label"
+    className="wuiDescribedFormGroup testClass1 testClass2"
+    data-test-subj="test subject string"
+    role="group"
+  >
+    <WuiFlexGroup
+      gutterSize="s"
+    >
+      <div
+        className="wuiFlexGroup wuiFlexGroup--gutterSmall wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+      >
+        <WuiFlexItem>
+          <div
+            className="wuiFlexItem"
+          >
+            <WuiTitle
+              className="wuiDescribedFormGroup__title"
+              size="xs"
+            >
+              <h3
+                className="wuiTitle wuiTitle--xsmall wuiDescribedFormGroup__title"
+              >
+                Title
+              </h3>
+            </WuiTitle>
+            <WuiText
+              className="wuiDescribedFormGroup__description"
+              color="subdued"
+              size="s"
+            >
+              <div
+                className="wuiText wuiText--small wuiDescribedFormGroup__description"
+              >
+                <WuiTextColor
+                  color="subdued"
+                  component="div"
+                >
+                  <div
+                    className="wuiTextColor wuiTextColor--subdued"
+                  >
+                    Test description
+                  </div>
+                </WuiTextColor>
+              </div>
+            </WuiText>
+          </div>
+        </WuiFlexItem>
+        <WuiFlexItem
+          className="wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+        >
+          <div
+            className="wuiFlexItem wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+          >
+            <WuiFormRow
+              describedByIds={Array []}
+              display="row"
+              fullWidth={false}
+              hasChildLabel={true}
+              hasEmptyLabelSpace={false}
+              labelType="label"
+            >
+              <div
+                className="wuiFormRow"
+                id="generated-id-row"
+              >
+                <div
+                  className="wuiFormRow__fieldWrapper"
+                >
+                  <input
+                    id="generated-id"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  />
+                </div>
+              </div>
+            </WuiFormRow>
+          </div>
+        </WuiFlexItem>
+      </div>
+    </WuiFlexGroup>
+  </div>
+</WuiDescribedFormGroup>
+`;
+
+exports[`WuiDescribedFormGroup props props for the flex item containers are passed down 1`] = `
+<WuiDescribedFormGroup
+  aria-label="aria-label"
+  className="testClass1 testClass2"
+  data-test-subj="test subject string"
+  description="Test description"
+  descriptionFlexItemProps={
+    Object {
+      "grow": 2,
+    }
+  }
+  fieldFlexItemProps={
+    Object {
+      "component": "section",
+    }
+  }
+  title={
+    <h3>
+      Title
+    </h3>
+  }
+>
+  <div
+    aria-label="aria-label"
+    className="wuiDescribedFormGroup testClass1 testClass2"
+    data-test-subj="test subject string"
+    role="group"
+  >
+    <WuiFlexGroup
+      gutterSize="l"
+    >
+      <div
+        className="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+      >
+        <WuiFlexItem
+          grow={2}
+        >
+          <div
+            className="wuiFlexItem wuiFlexItem--flexGrow2"
+          >
+            <WuiTitle
+              className="wuiDescribedFormGroup__title"
+              size="xs"
+            >
+              <h3
+                className="wuiTitle wuiTitle--xsmall wuiDescribedFormGroup__title"
+              >
+                Title
+              </h3>
+            </WuiTitle>
+            <WuiText
+              className="wuiDescribedFormGroup__description"
+              color="subdued"
+              size="s"
+            >
+              <div
+                className="wuiText wuiText--small wuiDescribedFormGroup__description"
+              >
+                <WuiTextColor
+                  color="subdued"
+                  component="div"
+                >
+                  <div
+                    className="wuiTextColor wuiTextColor--subdued"
+                  >
+                    Test description
+                  </div>
+                </WuiTextColor>
+              </div>
+            </WuiText>
+          </div>
+        </WuiFlexItem>
+        <WuiFlexItem
+          className="wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+          component="section"
+        >
+          <section
+            className="wuiFlexItem wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+          >
+            <WuiFormRow
+              describedByIds={Array []}
+              display="row"
+              fullWidth={false}
+              hasChildLabel={true}
+              hasEmptyLabelSpace={false}
+              labelType="label"
+            >
+              <div
+                className="wuiFormRow"
+                id="generated-id-row"
+              >
+                <div
+                  className="wuiFormRow__fieldWrapper"
+                >
+                  <input
+                    id="generated-id"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  />
+                </div>
+              </div>
+            </WuiFormRow>
+          </section>
+        </WuiFlexItem>
+      </div>
+    </WuiFlexGroup>
+  </div>
+</WuiDescribedFormGroup>
+`;
+
+exports[`WuiDescribedFormGroup props titleSize is rendered 1`] = `
+<WuiDescribedFormGroup
+  aria-label="aria-label"
+  className="testClass1 testClass2"
+  data-test-subj="test subject string"
+  description="Test description"
+  title={
+    <h3>
+      Title
+    </h3>
+  }
+  titleSize="l"
+>
+  <div
+    aria-label="aria-label"
+    className="wuiDescribedFormGroup testClass1 testClass2"
+    data-test-subj="test subject string"
+    role="group"
+  >
+    <WuiFlexGroup
+      gutterSize="l"
+    >
+      <div
+        className="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+      >
+        <WuiFlexItem>
+          <div
+            className="wuiFlexItem"
+          >
+            <WuiTitle
+              className="wuiDescribedFormGroup__title"
+              size="l"
+            >
+              <h3
+                className="wuiTitle wuiTitle--large wuiDescribedFormGroup__title"
+              >
+                Title
+              </h3>
+            </WuiTitle>
+            <WuiText
+              className="wuiDescribedFormGroup__description"
+              color="subdued"
+              size="s"
+            >
+              <div
+                className="wuiText wuiText--small wuiDescribedFormGroup__description"
+              >
+                <WuiTextColor
+                  color="subdued"
+                  component="div"
+                >
+                  <div
+                    className="wuiTextColor wuiTextColor--subdued"
+                  >
+                    Test description
+                  </div>
+                </WuiTextColor>
+              </div>
+            </WuiText>
+          </div>
+        </WuiFlexItem>
+        <WuiFlexItem
+          className="wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--large"
+        >
+          <div
+            className="wuiFlexItem wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--large"
+          >
+            <WuiFormRow
+              describedByIds={Array []}
+              display="row"
+              fullWidth={false}
+              hasChildLabel={true}
+              hasEmptyLabelSpace={false}
+              labelType="label"
+            >
+              <div
+                className="wuiFormRow"
+                id="generated-id-row"
+              >
+                <div
+                  className="wuiFormRow__fieldWrapper"
+                >
+                  <input
+                    id="generated-id"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  />
+                </div>
+              </div>
+            </WuiFormRow>
+          </div>
+        </WuiFlexItem>
+      </div>
+    </WuiFlexGroup>
+  </div>
+</WuiDescribedFormGroup>
+`;
+
+exports[`WuiDescribedFormGroup ties together parts for accessibility 1`] = `
+<WuiDescribedFormGroup
+  aria-label="aria-label"
+  className="testClass1 testClass2"
+  data-test-subj="test subject string"
+  description="Test description"
+  title={
+    <h3>
+      Title
+    </h3>
+  }
+>
+  <div
+    aria-label="aria-label"
+    className="wuiDescribedFormGroup testClass1 testClass2"
+    data-test-subj="test subject string"
+    role="group"
+  >
+    <WuiFlexGroup
+      gutterSize="l"
+    >
+      <div
+        className="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--directionRow wuiFlexGroup--responsive"
+      >
+        <WuiFlexItem>
+          <div
+            className="wuiFlexItem"
+          >
+            <WuiTitle
+              className="wuiDescribedFormGroup__title"
+              size="xs"
+            >
+              <h3
+                className="wuiTitle wuiTitle--xsmall wuiDescribedFormGroup__title"
+              >
+                Title
+              </h3>
+            </WuiTitle>
+            <WuiText
+              className="wuiDescribedFormGroup__description"
+              color="subdued"
+              size="s"
+            >
+              <div
+                className="wuiText wuiText--small wuiDescribedFormGroup__description"
+              >
+                <WuiTextColor
+                  color="subdued"
+                  component="div"
+                >
+                  <div
+                    className="wuiTextColor wuiTextColor--subdued"
+                  >
+                    Test description
+                  </div>
+                </WuiTextColor>
+              </div>
+            </WuiText>
+          </div>
+        </WuiFlexItem>
+        <WuiFlexItem
+          className="wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+        >
+          <div
+            className="wuiFlexItem wuiDescribedFormGroup__fields wuiDescribedFormGroup__fieldPadding--xsmall"
+          >
+            <WuiFormRow
+              describedByIds={Array []}
+              display="row"
+              error={
+                Array [
+                  "Error one",
+                  "Error two",
+                ]
+              }
+              fullWidth={false}
+              hasChildLabel={true}
+              hasEmptyLabelSpace={false}
+              helpText="Help text"
+              isInvalid={true}
+              label="Label"
+              labelType="label"
+            >
+              <div
+                className="wuiFormRow"
+                id="generated-id-row"
+              >
+                <div
+                  className="wuiFormRow__labelWrapper"
+                >
+                  <WuiFormLabel
+                    aria-invalid={true}
+                    className="wuiFormRow__label"
+                    htmlFor="generated-id"
+                    isFocused={false}
+                    isInvalid={true}
+                    type="label"
+                  >
+                    <label
+                      aria-invalid={true}
+                      className="wuiFormLabel wuiFormRow__label wuiFormLabel-isInvalid"
+                      htmlFor="generated-id"
+                    >
+                      Label
+                    </label>
+                  </WuiFormLabel>
+                </div>
+                <div
+                  className="wuiFormRow__fieldWrapper"
+                >
+                  <input
+                    aria-describedby="generated-id-help generated-id-error-0 generated-id-error-1"
+                    id="generated-id"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                  />
+                  <WuiFormErrorText
+                    className="wuiFormRow__text"
+                    id="generated-id-error-0"
+                    key="Error one"
+                  >
+                    <div
+                      aria-live="polite"
+                      className="wuiFormErrorText wuiFormRow__text"
+                      id="generated-id-error-0"
+                    >
+                      Error one
+                    </div>
+                  </WuiFormErrorText>
+                  <WuiFormErrorText
+                    className="wuiFormRow__text"
+                    id="generated-id-error-1"
+                    key="Error two"
+                  >
+                    <div
+                      aria-live="polite"
+                      className="wuiFormErrorText wuiFormRow__text"
+                      id="generated-id-error-1"
+                    >
+                      Error two
+                    </div>
+                  </WuiFormErrorText>
+                  <WuiFormHelpText
+                    className="wuiFormRow__text"
+                    id="generated-id-help"
+                  >
+                    <div
+                      className="wuiFormHelpText wuiFormRow__text"
+                      id="generated-id-help"
+                    >
+                      Help text
+                    </div>
+                  </WuiFormHelpText>
+                </div>
+              </div>
+            </WuiFormRow>
+          </div>
+        </WuiFlexItem>
+      </div>
+    </WuiFlexGroup>
+  </div>
+</WuiDescribedFormGroup>
+`;

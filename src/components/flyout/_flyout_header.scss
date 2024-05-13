@@ -1,0 +1,9 @@
+.wuiFlyoutHeader {
+  flex-grow: 0;
+  padding: $wuiSizeL $wuiSizeXXL 0 $wuiSizeL;
+}
+
+.wuiFlyoutHeader--hasBorder {
+  padding-bottom: $wuiSizeL;
+  border-bottom: $wuiBorderThin;
+}

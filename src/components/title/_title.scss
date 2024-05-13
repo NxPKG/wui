@@ -1,0 +1,33 @@
+.wuiTitle {
+  + .wuiTitle {
+    margin-top: $wuiSizeL;
+  }
+}
+
+.wuiTitle--uppercase {
+  text-transform: uppercase;
+}
+
+.wuiTitle--xxxsmall {
+  @include wuiTitle('xxxs');
+}
+
+.wuiTitle--xxsmall {
+  @include wuiTitle('xxs');
+}
+
+.wuiTitle--xsmall {
+  @include wuiTitle('xs');
+}
+
+.wuiTitle--small {
+  @include wuiTitle('s');
+}
+
+.wuiTitle--medium {
+  @include wuiTitle('m');
+}
+
+.wuiTitle--large {
+  @include wuiTitle('l');
+}

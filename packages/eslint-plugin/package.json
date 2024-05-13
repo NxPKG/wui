@@ -1,0 +1,18 @@
+{
+  "name": "@wazuh/eslint-plugin-wui",
+  "version": "0.0.2",
+  "license": "Apache-2.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/wazuh/wui.git"
+  },
+  "homepage": "https://github.com/wazuh/wui/blob/master/packages/eslint-plugin",
+  "peerDependencies": {
+    "eslint": ">=5, <7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0"
+  }
+}

@@ -1,0 +1,22 @@
+$wuiIconLoadingOpacity: .05;
+
+// Modifier naming and colors.
+$wuiIconColors: (
+  accent: makeGraphicContrastColor($wuiColorAccent),
+  danger: makeGraphicContrastColor($wuiColorDanger),
+  ghost: $wuiColorGhost,
+  primary: makeGraphicContrastColor($wuiColorPrimary),
+  secondary: makeGraphicContrastColor($wuiColorSecondary),
+  success: makeGraphicContrastColor($wuiColorSuccess),
+  subdued: $wuiTextSubduedColor,
+  text: $wuiTextColor,
+  warning: makeGraphicContrastColor($wuiColorWarning),
+);
+
+$wuiIconSizes: (
+  small: $wuiSizeM,
+  medium: $wuiSize,
+  large: $wuiSizeL,
+  xLarge: $wuiSizeXL,
+  xxLarge: $wuiSizeXXL
+);

@@ -1,0 +1,7 @@
+.wuiMarkdownEditorPreview {
+  @include wuiScrollBar;
+  height: 150px;
+  overflow-y: auto;
+  border: $wuiBorderThin;
+  padding: $wuiSizeM;
+}

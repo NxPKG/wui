@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHeaderSectionItemButton is rendered 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiHeaderSectionItem__button testClass1 testClass2"
+  data-test-subj="test subject string"
+  type="button"
+/>
+`;
+
+exports[`WuiHeaderSectionItemButton renders children 1`] = `
+<button
+  class="wuiHeaderSectionItem__button"
+  type="button"
+>
+  <span>
+    Ahoy!
+  </span>
+</button>
+`;
+
+exports[`WuiHeaderSectionItemButton renders notification as a badge 1`] = `
+<button
+  class="wuiHeaderSectionItem__button"
+  type="button"
+>
+  <span
+    class="wuiNotificationBadge wuiHeaderSectionItemButton__notification wuiHeaderSectionItemButton__notification--badge"
+  >
+    1
+  </span>
+</button>
+`;
+
+exports[`WuiHeaderSectionItemButton renders notification as a dot 1`] = `
+<button
+  class="wuiHeaderSectionItem__button"
+  type="button"
+>
+  <div
+    class="wuiHeaderSectionItemButton__notification wuiHeaderSectionItemButton__notification--dot"
+    color="accent"
+    data-wuiicon-type="dot"
+  />
+</button>
+`;
+
+exports[`WuiHeaderSectionItemButton renders notification color 1`] = `
+<button
+  class="wuiHeaderSectionItem__button"
+  type="button"
+>
+  <span
+    class="wuiNotificationBadge wuiNotificationBadge--subdued wuiHeaderSectionItemButton__notification wuiHeaderSectionItemButton__notification--badge"
+  >
+    1
+  </span>
+</button>
+`;

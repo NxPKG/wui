@@ -1,0 +1,16 @@
+.wuiColorPalettePicker {
+  &__itemTitle {
+    @include wuiFontSizeXS;
+  }
+
+  &__itemGradient {
+    border-radius: $wuiBorderRadius;
+    overflow: hidden;
+    height: $wuiSizeS;
+    box-shadow: inset 0 0 0 1px transparentize($wuiColorFullShade, .9);
+  }
+
+  &__itemTitle + &__itemGradient {
+    margin-top: $wuiSizeXS;
+  }
+}

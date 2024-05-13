@@ -1,0 +1,420 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiListGroupItem is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props color ghost is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem--ghost"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props color inherit is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props color primary is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem--primary"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props color subdued is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem--subdued"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props color text is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem--text"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props extraAction is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-hasExtraAction"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+  <button
+    aria-label="label"
+    class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiListGroupItem__extraAction-alwaysShow"
+    type="button"
+  >
+    <div
+      aria-hidden="true"
+      class="wuiButtonIcon__icon"
+      data-wuiicon-type="empty"
+    />
+  </button>
+</li>
+`;
+
+exports[`WuiListGroupItem props href and onClick is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable"
+>
+  <a
+    class="wuiListGroupItem__button"
+    href="#"
+    rel="noreferrer"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title=""
+    />
+  </a>
+</li>
+`;
+
+exports[`WuiListGroupItem props href is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable"
+>
+  <a
+    class="wuiListGroupItem__button"
+    href="#"
+    rel="noreferrer"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </a>
+</li>
+`;
+
+exports[`WuiListGroupItem props href is rendered with rel 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable"
+>
+  <a
+    class="wuiListGroupItem__button"
+    href="#"
+    rel="noreferrer"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </a>
+</li>
+`;
+
+exports[`WuiListGroupItem props icon is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__icon"
+    />
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props iconType is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <div
+      class="wuiListGroupItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props isActive is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isActive"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props isDisabled is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isDisabled"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props onClick is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable"
+>
+  <button
+    class="wuiListGroupItem__button"
+    type="button"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </button>
+</li>
+`;
+
+exports[`WuiListGroupItem props size l is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--large"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props size m is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props size s is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--small"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props size xs is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--xSmall"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem props wrapText is rendered 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem--wrapText"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <span
+      class="wuiListGroupItem__label"
+    >
+      Label
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiListGroupItem renders a disabled button even if provided an href 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isDisabled wuiListGroupItem-isClickable"
+>
+  <button
+    class="wuiListGroupItem__button"
+    disabled=""
+    type="button"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </button>
+</li>
+`;
+
+exports[`WuiListGroupItem renders a disabled button even if provided an href 2`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isDisabled wuiListGroupItem-isClickable"
+>
+  <button
+    class="wuiListGroupItem__button"
+    disabled=""
+    type="button"
+  >
+    <span
+      class="wuiListGroupItem__label"
+      title="Label"
+    >
+      Label
+    </span>
+  </button>
+</li>
+`;
+
+exports[`WuiListGroupItem throws a warning if both iconType and icon are provided but still renders 1`] = `
+<li
+  class="wuiListGroupItem wuiListGroupItem--medium"
+>
+  <span
+    class="wuiListGroupItem__text"
+  >
+    <div
+      class="wuiListGroupItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiListGroupItem__label"
+      title=""
+    />
+  </span>
+</li>
+`;

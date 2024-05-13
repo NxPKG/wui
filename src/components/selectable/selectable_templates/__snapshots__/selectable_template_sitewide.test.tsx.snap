@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSelectableTemplateSitewide is rendered 1`] = `
+<div
+  class="wuiSelectable wuiSelectableTemplateSitewide testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <div
+        class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+      >
+        <div
+          class="wuiFormControlLayout__childrenWrapper"
+        >
+          <input
+            aria-activedescendant=""
+            aria-haspopup="listbox"
+            aria-label="aria-label"
+            autocomplete="off"
+            class="wuiFieldSearch wuiFieldSearch--fullWidth wuiFieldSearch-isClearable wuiSelectableSearch wuiSelectableTemplateSitewide__search"
+            placeholder="Search for anything..."
+            type="search"
+            value=""
+          />
+          <div
+            class="wuiFormControlLayoutIcons"
+          >
+            <span
+              class="wuiFormControlLayoutCustomIcon"
+            >
+              <div
+                aria-hidden="true"
+                class="wuiFormControlLayoutCustomIcon__icon"
+                data-wuiicon-type="search"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSelectableTemplateSitewide props popoverButton is not rendered with popoverButtonBreakpoints xs 1`] = `
+<div
+  class="wuiSelectable wuiSelectableTemplateSitewide"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <div
+        class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+      >
+        <div
+          class="wuiFormControlLayout__childrenWrapper"
+        >
+          <input
+            aria-activedescendant=""
+            aria-haspopup="listbox"
+            aria-label="Filter options"
+            autocomplete="off"
+            class="wuiFieldSearch wuiFieldSearch--fullWidth wuiFieldSearch-isClearable wuiSelectableSearch wuiSelectableTemplateSitewide__search"
+            placeholder="Search for anything..."
+            type="search"
+            value=""
+          />
+          <div
+            class="wuiFormControlLayoutIcons"
+          >
+            <span
+              class="wuiFormControlLayoutCustomIcon"
+            >
+              <div
+                aria-hidden="true"
+                class="wuiFormControlLayoutCustomIcon__icon"
+                data-wuiicon-type="search"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSelectableTemplateSitewide props popoverButton is rendered 1`] = `
+<div
+  class="wuiSelectable wuiSelectableTemplateSitewide"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button>
+        Button
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSelectableTemplateSitewide props popoverButton is rendered with popoverButtonBreakpoints m 1`] = `
+<div
+  class="wuiSelectable wuiSelectableTemplateSitewide"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button>
+        Button
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSelectableTemplateSitewide props popoverFooter is rendered 1`] = `
+<div
+  class="wuiSelectable wuiSelectableTemplateSitewide"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <div
+        class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+      >
+        <div
+          class="wuiFormControlLayout__childrenWrapper"
+        >
+          <input
+            aria-activedescendant=""
+            aria-haspopup="listbox"
+            aria-label="Filter options"
+            autocomplete="off"
+            class="wuiFieldSearch wuiFieldSearch--fullWidth wuiFieldSearch-isClearable wuiSelectableSearch wuiSelectableTemplateSitewide__search"
+            placeholder="Search for anything..."
+            type="search"
+            value=""
+          />
+          <div
+            class="wuiFormControlLayoutIcons"
+          >
+            <span
+              class="wuiFormControlLayoutCustomIcon"
+            >
+              <div
+                aria-hidden="true"
+                class="wuiFormControlLayoutCustomIcon__icon"
+                data-wuiicon-type="search"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSelectableTemplateSitewide props popoverProps is rendered 1`] = `
+<div
+  class="wuiSelectable wuiSelectableTemplateSitewide"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock customPopoverClass"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <div
+        class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+      >
+        <div
+          class="wuiFormControlLayout__childrenWrapper"
+        >
+          <input
+            aria-activedescendant=""
+            aria-haspopup="listbox"
+            aria-label="Filter options"
+            autocomplete="off"
+            class="wuiFieldSearch wuiFieldSearch--fullWidth wuiFieldSearch-isClearable wuiSelectableSearch wuiSelectableTemplateSitewide__search"
+            placeholder="Search for anything..."
+            type="search"
+            value=""
+          />
+          <div
+            class="wuiFormControlLayoutIcons"
+          >
+            <span
+              class="wuiFormControlLayoutCustomIcon"
+            >
+              <div
+                aria-hidden="true"
+                class="wuiFormControlLayoutCustomIcon__icon"
+                data-wuiicon-type="search"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSelectableTemplateSitewide props popoverTitle is rendered 1`] = `
+<div
+  class="wuiSelectable wuiSelectableTemplateSitewide"
+>
+  <div
+    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <div
+        class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+      >
+        <div
+          class="wuiFormControlLayout__childrenWrapper"
+        >
+          <input
+            aria-activedescendant=""
+            aria-haspopup="listbox"
+            aria-label="Filter options"
+            autocomplete="off"
+            class="wuiFieldSearch wuiFieldSearch--fullWidth wuiFieldSearch-isClearable wuiSelectableSearch wuiSelectableTemplateSitewide__search"
+            placeholder="Search for anything..."
+            type="search"
+            value=""
+          />
+          <div
+            class="wuiFormControlLayoutIcons"
+          >
+            <span
+              class="wuiFormControlLayoutCustomIcon"
+            >
+              <div
+                aria-hidden="true"
+                class="wuiFormControlLayoutCustomIcon__icon"
+                data-wuiicon-type="search"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

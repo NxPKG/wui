@@ -1,0 +1,8 @@
+.wuiCallOut {
+  border-left: none;
+  border-radius: $wuiBorderRadiusSmall;
+
+  .wuiCallOutHeader__title {
+    font-weight: $wuiFontWeightMedium;
+  }
+}

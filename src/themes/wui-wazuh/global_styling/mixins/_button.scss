@@ -1,0 +1,37 @@
+@mixin wuiButton {
+  @include wuiButtonBase;
+  @include wuiFont;
+  @include wuiFontSize;
+
+  font-weight: $wuiFontWeightMedium;
+  text-decoration: none;
+  transition: all $wuiAnimSpeedNormal $wuiAnimSlightBounce;
+
+  // sass-lint:disable mixins-before-declarations
+  // focus states should come after all default styles
+  @include wuiButtonFocus;
+
+  &:hover:not(:disabled),
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+// Creates the Wazuh style of button with a transparent background
+@mixin wuiButtonDefaultStyle($color, $transparency: .8) {
+  $percentConversion: $transparency * 100%;
+  // This variable simulates the possibly darkest background the button could be on
+  // Simulates the 20% opaque color on top of the page background color
+  $backgroundColorSimulated: mix($wuiPageBackgroundColor, $color, $percentConversion);
+  // Then we can calculate the darkest text color needed
+  color: makeHighContrastColor($color, $backgroundColorSimulated);
+  // But still use transparency
+  background-color: transparentize($color, $transparency);
+
+  &:enabled {
+    &:hover,
+    &:focus {
+      background-color: transparentize($color, lightOrDarkTheme(.9, .65));
+    }
+  }
+}

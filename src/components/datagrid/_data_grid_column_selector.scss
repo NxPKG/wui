@@ -1,0 +1,29 @@
+.wuiDataGridColumnSelector__item {
+  padding: $wuiSizeXS;
+
+  &-isDragging {
+    @include wuiBottomShadow;
+    background: $wuiColorEmptyShade;
+  }
+}
+
+// Because we only want this to scroll vertically, we need to offset inner wuiFlexGroup negative padding by adding padding
+.wuiDataGridColumnSelector__columnList {
+  @include wuiYScrollWithShadows;
+  max-height: 400px;
+  margin: 0 (-$wuiSizeS);
+}
+
+.wuiDataGridColumnSelector__itemLabel {
+  @include wuiFontSizeXS;
+}
+
+.wuiDataGridColumnSelectorPopover {
+  // Hack because the fixed positions of drag and drop don't work inside of transformed elements
+  // sass-lint:disable-block no-important
+  transform: none !important;
+  transition: none !important;
+  margin-top: -$wuiSizeS;
+  // IE11 needs a min-width
+  min-width: $wuiSize * 12;
+}

@@ -1,0 +1,8 @@
+.guide {
+  background: $wuiPageBackgroundColor;
+}
+
+.guidePageContent {
+  @include wuiBottomShadowFlat;
+  border-left: none;
+}

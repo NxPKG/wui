@@ -1,0 +1,353 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiButton is rendered 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiButton wuiButton--primary testClass1 testClass2"
+  data-test-subj="test subject string"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiButton props color danger is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--danger"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props color ghost is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--ghost"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props color primary is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props color secondary is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--secondary"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props color text is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--text"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props color warning is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--warning"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props contentProps is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary"
+  type="button"
+>
+  <span
+    aria-label="aria-label"
+    class="wuiButtonContent wuiButton__content testClass1 testClass2"
+    data-test-subj="test subject string"
+  >
+    <span
+      class="wuiButton__text"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiButton props fill is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary wuiButton--fill"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props fullWidth is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary wuiButton--fullWidth"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props href secures the rel attribute when the target is _blank 1`] = `
+<a
+  class="wuiButton wuiButton--primary"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</a>
+`;
+
+exports[`WuiButton props iconSide left is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <div
+      class="wuiButtonContent__icon"
+      data-wuiicon-type="user"
+    />
+    <span
+      class="wuiButton__text"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiButton props iconSide right is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButton__content"
+  >
+    <div
+      class="wuiButtonContent__icon"
+      data-wuiicon-type="user"
+    />
+    <span
+      class="wuiButton__text"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiButton props iconType is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <div
+      class="wuiButtonContent__icon"
+      data-wuiicon-type="user"
+    />
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props isDisabled is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary wuiButton-isDisabled"
+  disabled=""
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props isDisabled renders a button even when href is defined 1`] = `
+<button
+  class="wuiButton wuiButton--primary wuiButton-isDisabled"
+  disabled=""
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props isDisabled renders if passed as disabled 1`] = `
+<button
+  class="wuiButton wuiButton--primary wuiButton-isDisabled"
+  disabled=""
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props isLoading is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary wuiButton-isDisabled"
+  disabled=""
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiLoadingSpinner wuiLoadingSpinner--medium wuiButtonContent__spinner"
+    />
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props size m is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props size s is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary wuiButton--small"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      class="wuiButton__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiButton props textProps is rendered 1`] = `
+<button
+  class="wuiButton wuiButton--primary"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButton__content"
+  >
+    <span
+      aria-label="aria-label"
+      class="wuiButton__text testClass1 testClass2"
+      data-test-subj="test subject string"
+    >
+      Content
+    </span>
+  </span>
+</button>
+`;

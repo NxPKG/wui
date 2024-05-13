@@ -1,0 +1,568 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiStat is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiStat wuiStat--leftAligned testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props accent is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title wuiStat__title--accent"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props center is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--centerAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props danger is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title wuiStat__title--danger"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props default is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props hexcode colors are rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+    style="color:#EB1919"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props l is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props left is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props loading is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiStat wuiStat--leftAligned testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title wuiStat__title-isLoading"
+  >
+    --
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    Statistic is loading
+  </p>
+</div>
+`;
+
+exports[`WuiStat props m is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--medium wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props primary is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title wuiStat__title--primary"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props render with custom description element 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <div
+      aria-hidden="true"
+    >
+      <div>
+        description
+      </div>
+    </div>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+    style="color:#EB1919"
+  >
+    title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props render with custom title element 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <div
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+  >
+    <div>
+      title
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiStat props right is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--rightAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props s is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--small wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props secondary is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title wuiStat__title--secondary"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props subdued is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title wuiStat__title--subdued"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props title and description are reversed 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--large wuiStat__title"
+  >
+    title
+  </p>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    title description
+  </p>
+</div>
+`;
+
+exports[`WuiStat props xs is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--xsmall wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props xxs is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--xxsmall wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;
+
+exports[`WuiStat props xxxs is rendered 1`] = `
+<div
+  class="wuiStat wuiStat--leftAligned"
+>
+  <div
+    class="wuiText wuiText--small wuiStat__description"
+  >
+    <p
+      aria-hidden="true"
+    >
+      description
+    </p>
+  </div>
+  <p
+    aria-hidden="true"
+    class="wuiTitle wuiTitle--xxxsmall wuiStat__title"
+  >
+    title
+  </p>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    description title
+  </p>
+</div>
+`;

@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiConfirmModal renders WuiConfirmModal 1`] = `
+Array [
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="0"
+  />,
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="1"
+  />,
+  <div
+    data-focus-lock-disabled="false"
+  >
+    <div
+      aria-label="aria-label"
+      class="wuiModal wuiModal--maxWidth-default wuiModal--confirmation testClass1 testClass2"
+      data-test-subj="test subject string"
+      tabindex="0"
+    >
+      <button
+        aria-label="Closes this modal window"
+        class="wuiButtonIcon wuiButtonIcon--text wuiModal__closeIcon"
+        type="button"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="cross"
+        />
+      </button>
+      <div
+        class="wuiModal__flex"
+      >
+        <div
+          class="wuiModalHeader"
+        >
+          <div
+            class="wuiModalHeader__title"
+            data-test-subj="confirmModalTitleText"
+          >
+            A confirmation modal
+          </div>
+        </div>
+        <div
+          class="wuiModalBody"
+        >
+          <div
+            class="wuiModalBody__overflow"
+          >
+            <div
+              class="wuiText wuiText--medium"
+              data-test-subj="confirmModalBodyText"
+            >
+              <p>
+                This is a confirmation modal example
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wuiModalFooter"
+        >
+          <button
+            class="wuiButtonEmpty wuiButtonEmpty--primary"
+            data-test-subj="confirmModalCancelButton"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                Cancel Button Text
+              </span>
+            </span>
+          </button>
+          <button
+            class="wuiButton wuiButton--primary wuiButton--fill"
+            data-test-subj="confirmModalConfirmButton"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButton__content"
+            >
+              <span
+                class="wuiButton__text"
+              >
+                Confirm Button Text
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="0"
+  />,
+]
+`;
+
+exports[`WuiConfirmModal renders WuiConfirmModal without WuiModalBody, if empty 1`] = `
+Array [
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="0"
+  />,
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="1"
+  />,
+  <div
+    data-focus-lock-disabled="false"
+  >
+    <div
+      aria-label="aria-label"
+      class="wuiModal wuiModal--maxWidth-default wuiModal--confirmation testClass1 testClass2"
+      data-test-subj="test subject string"
+      tabindex="0"
+    >
+      <button
+        aria-label="Closes this modal window"
+        class="wuiButtonIcon wuiButtonIcon--text wuiModal__closeIcon"
+        type="button"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="cross"
+        />
+      </button>
+      <div
+        class="wuiModal__flex"
+      >
+        <div
+          class="wuiModalHeader"
+        >
+          <div
+            class="wuiModalHeader__title"
+            data-test-subj="confirmModalTitleText"
+          >
+            A confirmation modal
+          </div>
+        </div>
+        <div
+          class="wuiModalFooter"
+        >
+          <button
+            class="wuiButtonEmpty wuiButtonEmpty--primary"
+            data-test-subj="confirmModalCancelButton"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                Cancel Button Text
+              </span>
+            </span>
+          </button>
+          <button
+            class="wuiButton wuiButton--primary wuiButton--fill"
+            data-test-subj="confirmModalConfirmButton"
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButton__content"
+            >
+              <span
+                class="wuiButton__text"
+              >
+                Confirm Button Text
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    data-focus-guard="true"
+    style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+    tabindex="0"
+  />,
+]
+`;

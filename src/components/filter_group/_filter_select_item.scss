@@ -1,0 +1,57 @@
+.wuiFilterSelectItem {
+  @include wuiFontSizeS;
+
+  padding: $wuiSizeXS $wuiSizeM;
+  display: block; // Necessary to make sure it doesn't force the whole popover to be too wide
+  width: 100%;
+  text-align: left;
+  color: $wuiTextColor;
+  border-bottom: $wuiBorderThin;
+  border-color: darken($wuiColorLightestShade, 2%);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:focus,
+  &-isFocused {
+    cursor: pointer;
+    color: $wuiColorPrimary;
+    background-color: $wuiFocusBackgroundColor;
+  }
+
+  &[disabled] {
+    color: $wuiColorMediumShade;
+    cursor: not-allowed;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.wuiFilterSelectItem__content {
+  @include wuiTextTruncate;
+}
+
+
+.wuiFilterSelect__items {
+  @include wuiScrollBar;
+
+  overflow-y: auto;
+  max-height: $wuiSize * 30;
+}
+
+.wuiFilterSelect__note {
+  height: $wuiSize * 4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wuiFilterSelect__noteContent {
+  color: $wuiColorDarkShade;
+  font-size: $wuiFontSizeS;
+}

@@ -1,0 +1,18 @@
+.wuiRangeLabel {
+  &--min,
+  &--max {
+    font-size: $wuiFontSizeXS;
+  }
+
+  &--min {
+    margin-right: $wuiSizeS;
+  }
+
+  &--max {
+    margin-left: $wuiSizeS;
+  }
+
+  &--isDisabled {
+    opacity: $wuiRangeDisabledOpacity;
+  }
+}

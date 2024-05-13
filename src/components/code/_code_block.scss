@@ -1,0 +1,283 @@
+.wuiCodeBlock {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  background: $wuiCodeBlockBackgroundColor;
+  color: $wuiCodeBlockColor;
+
+  .wuiCodeBlock__pre {
+    @include wuiScrollBar;
+    height: 100%;
+    overflow: auto;
+    display: block;
+  }
+
+  .wuiCodeBlock__pre--whiteSpacePre {
+    white-space: pre;
+  }
+
+  .wuiCodeBlock__pre--whiteSpacePreWrap {
+    white-space: pre-wrap;
+  }
+
+  .wuiCodeBlock__code {
+    @include wuiCodeFont;
+    display: block;
+    line-height: $wuiLineHeight;
+    font-weight: $wuiFontWeightRegular;
+    font-size: inherit;
+  }
+
+  .wuiCodeBlock__controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .wuiCodeBlock__fullScreenButton + .wuiCodeBlock__copyButton {
+    margin-top: $wuiSizeXS;
+  }
+
+  &.wuiCodeBlock-isFullScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .wuiCodeBlock__pre {
+      // sass-lint:disable-block no-important
+      padding: $wuiSizeXL !important;
+    }
+
+    .wuiCodeBlock__controls {
+      top: $wuiSizeXS;
+      right: $wuiSizeXS;
+    }
+  }
+
+  &.wuiCodeBlock--fontSmall {
+    font-size: $wuiFontSizeXS;
+  }
+
+  &.wuiCodeBlock--fontMedium {
+    font-size: $wuiFontSizeS;
+  }
+
+  &.wuiCodeBlock--fontLarge {
+    font-size: $wuiFontSize;
+  }
+
+  // Storing for re-use the sizing of controls plus extra padding
+  $controlsPadding: $wuiSizeL + $wuiSizeXS;
+
+  &.wuiCodeBlock--hasControls .wuiCodeBlock__pre--whiteSpacePreWrap {
+    padding-right: $controlsPadding;
+  }
+
+  &.wuiCodeBlock--hasControls .wuiCodeBlock__pre--whiteSpacePre {
+    margin-right: $controlsPadding;
+  }
+
+  // Small padding
+  &.wuiCodeBlock--paddingSmall {
+    .wuiCodeBlock__pre {
+      padding: $wuiSizeS;
+    }
+
+    .wuiCodeBlock__controls {
+      top: $wuiSizeS;
+      right: $wuiSizeS;
+    }
+
+    &.wuiCodeBlock--hasControls .wuiCodeBlock__pre--whiteSpacePreWrap {
+      padding-right: $wuiSizeS + $controlsPadding;
+    }
+
+    &.wuiCodeBlock--hasControls .wuiCodeBlock__pre--whiteSpacePre {
+      margin-right: $wuiSizeS + $controlsPadding;
+    }
+  }
+
+  // Medium padding
+  &.wuiCodeBlock--paddingMedium {
+    .wuiCodeBlock__pre {
+      padding: $wuiSize;
+    }
+
+    .wuiCodeBlock__controls {
+      top: $wuiSize;
+      right: $wuiSize;
+    }
+
+    &.wuiCodeBlock--hasControls .wuiCodeBlock__pre--whiteSpacePreWrap {
+      padding-right: $wuiSize + $controlsPadding;
+    }
+
+    &.wuiCodeBlock--hasControls .wuiCodeBlock__pre--whiteSpacePre {
+      margin-right: $wuiSize + $controlsPadding;
+    }
+  }
+
+  // Large padding
+  &.wuiCodeBlock--paddingLarge {
+    .wuiCodeBlock__pre {
+      padding: $wuiSizeL;
+    }
+
+    .wuiCodeBlock__controls {
+      top: $wuiSizeL;
+      right: $wuiSizeL;
+    }
+
+    &.wuiCodeBlock--hasControls .wuiCodeBlock__pre--whiteSpacePreWrap {
+      padding-right: $wuiSizeL + $controlsPadding;
+    }
+
+    &.wuiCodeBlock--hasControls .wuiCodeBlock__pre--whiteSpacePre {
+      margin-right: $wuiSizeL + $controlsPadding;
+    }
+  }
+
+  /*
+   * 1. Size the code against the text its embedded within.
+   */
+  &.wuiCodeBlock--inline {
+    display: inline-block;
+    white-space: pre;
+    color: $wuiTextColor;
+    font-size: 90%; /* 1 */
+    padding: 0 $wuiSizeS;
+    background: $wuiCodeBlockBackgroundColor;
+
+    .wuiCodeBlock__pre {
+      padding: 0 $wuiSizeXS;
+    }
+
+    .wuiCodeBlock__code {
+      display: inline;
+      white-space: normal;
+    }
+  }
+
+  &.wuiCodeBlock--transparentBackground {
+    background: transparent;
+  }
+
+  .hljs > *::selection {
+    // Only change the color if the variable IS a color
+    // or else no highlight color shows up at all
+    @if type-of($wuiCodeBlockSelectedBackgroundColor) == color {
+      background-color: $wuiCodeBlockSelectedBackgroundColor;
+    }
+  }
+
+  .hljs-comment,
+  .hljs-quote {
+    color: $wuiCodeBlockCommentColor;
+    font-style: italic;
+  }
+
+  .hljs-selector-tag {
+    color: $wuiCodeBlockSelectorTagColor;
+    font-weight: bold;
+  }
+
+  .hljs-string,
+  .hljs-subst,
+  .hljs-doctag {
+    color: $wuiCodeBlockStringColor;
+  }
+
+  .hljs-number,
+  .hljs-literal,
+  .hljs-regexp,
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-tag .hljs-attr {
+    color: $wuiCodeBlockNumberColor;
+  }
+
+  .hljs-keyword {
+    color: $wuiCodeBlockKeywordColor;
+  }
+
+  .hljs-function > .hljs-title {
+    color: $wuiCodeBlockFunctionTitleColor;
+  }
+
+  .hljs-tag {
+    color: $wuiCodeBlockTagColor;
+  }
+
+  .hljs-name {
+    color: $wuiCodeBlockNameColor;
+  }
+
+  .hljs-type,
+  .hljs-class .hljs-title {
+    color: $wuiCodeBlockTypeColor;
+  }
+
+  .hljs-attribute {
+    color: $wuiCodeBlockAttributeColor;
+  }
+
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-built_in,
+  .hljs-builtin-name,
+  .hljs-link {
+    color: $wuiCodeBlockSymbolColor;
+  }
+
+  .hljs-params {
+    color: $wuiCodeBlockParamsColor;
+  }
+
+  .hljs-meta {
+    color: $wuiCodeBlockMetaColor;
+  }
+
+  .hljs-title {
+    color: $wuiCodeBlockTitleColor;
+  }
+
+  .hljs-section {
+    color: $wuiCodeBlockSectionColor;
+  }
+
+  .hljs-addition,
+  .hljs-deletion {
+    padding-left: $wuiSizeXS;
+    margin-left: -$wuiSizeXS;
+  }
+
+  .hljs-addition {
+    box-shadow: -$wuiSizeXS 0 $wuiCodeBlockAdditionColor;
+  }
+
+  .hljs-deletion {
+    box-shadow: -$wuiSizeXS 0 $wuiCodeBlockDeletionColor;
+  }
+
+  .hljs-selector-class {
+    color: $wuiCodeBlockSelectorClassColor;
+  }
+
+  .hljs-selector-id {
+    color: $wuiCodeBlockSelectorIdColor;
+  }
+
+  .hljs-emphasis {
+    font-style: italic;
+  }
+
+  .hljs-strong {
+    font-weight: bold;
+  }
+
+  .hljs-link {
+    text-decoration: underline;
+  }
+}

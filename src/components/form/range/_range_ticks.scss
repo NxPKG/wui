@@ -1,0 +1,53 @@
+.wuiRangeTicks {
+  position: absolute;
+  left: ($wuiRangeThumbWidth / 2);
+  right: ($wuiRangeThumbWidth / 2);
+  top: $wuiSizeS;
+  display: flex;
+}
+
+.wuiRangeTick {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  font-size: $wuiFontSizeXS;
+  position: relative;
+  padding-top: $wuiSize;
+
+  &::before {
+    @include size($wuiSizeXS);
+
+    content: '';
+    background-color: $wuiColorDarkShade;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - #{($wuiSizeXS/2)});
+  }
+
+  &--isCustom {
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  &:enabled:hover,
+  &:focus,
+  &--selected {
+    color: $wuiColorPrimary;
+  }
+
+  &--selected {
+    font-weight: $wuiFontWeightMedium;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.wuiRangeTicks--compressed {
+  top: $wuiSizeS - 2px;
+
+  .wuiRangeTick {
+    padding-top: $wuiSize - 2px;
+  }
+}

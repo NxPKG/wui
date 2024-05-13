@@ -1,0 +1,178 @@
+// Because of the animations and positioning involved, this code gets pretty
+// repetitive. What you generally need to know if you work in here is that
+// the positioning of the popovers (and the arrows attached to them)
+// is handled through absolute positioning and then animated through the use
+// of transforms.
+
+.wuiPopover {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.wuiPopover__anchor {
+  display: inline-block;
+}
+
+.wuiPopover--displayBlock {
+  display: block;
+
+  .wuiPopover__anchor {
+    display: block;
+  }
+}
+
+/**
+ * 1. Can expand further, but it looks weird if it's smaller than the originating button.
+ * 2. Animation happens on the panel.
+ * 3. Make sure the panel stays within the window.
+ */
+.wuiPopover__panel {
+  // Ignore linting for legibility of transition property, and the mixin performs an overwrite
+  // sass-lint:disable-block indentation, mixins-before-declarations
+  position: absolute;
+  min-width: $wuiButtonMinWidth; /* 1 */
+  max-width: calc(100vw - #{$wuiSizeXL}); /* 3 */
+  backface-visibility: hidden;
+  pointer-events: none;
+  transition: /* 2 */
+    opacity $wuiAnimSlightBounce $wuiAnimSpeedSlow,
+    visibility $wuiAnimSlightBounce $wuiAnimSpeedSlow,
+    transform $wuiAnimSlightBounce ($wuiAnimSpeedSlow + 100ms);
+  opacity: 0; /* 2 */
+  visibility: hidden; /* 2 */
+  transform: translateY(0) translateX(0) translateZ(0); /* 2 */
+  @include wuiBottomShadow($adjustBorders: true);
+
+  &.wuiPopover__panel-isOpen {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .wuiPopover__panelArrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    // This fakes a border on the arrow.
+    &:before {
+      position: absolute;
+      content: '';
+      height: 0;
+      width: 0;
+    }
+
+    // This part of the arrow matches the panel.
+    &:after {
+      position: absolute;
+      content: '';
+      height: 0;
+      width: 0;
+    }
+
+    &.wuiPopover__panelArrow--top {
+      &:before {
+        bottom: -$wuiPopoverArrowSize + 2;
+        border-left: $wuiPopoverArrowSize solid transparent;
+        border-right: $wuiPopoverArrowSize solid transparent;
+        border-top: $wuiPopoverArrowSize solid $wuiBorderColor;
+      }
+
+      &:after {
+        bottom: -$wuiPopoverArrowSize + 3;
+        border-left: $wuiPopoverArrowSize solid transparent;
+        border-right: $wuiPopoverArrowSize solid transparent;
+        border-top: $wuiPopoverArrowSize solid $wuiColorEmptyShade;
+      }
+    }
+
+    &.wuiPopover__panelArrow--right {
+      &:before {
+        left: -$wuiPopoverArrowSize;
+        top: 50%;
+        border-top: $wuiPopoverArrowSize solid transparent;
+        border-bottom: $wuiPopoverArrowSize solid transparent;
+        border-right: $wuiPopoverArrowSize solid $wuiBorderColor;
+      }
+
+      &:after {
+        left: -$wuiPopoverArrowSize + 1;
+        top: 50%;
+        border-top: $wuiPopoverArrowSize solid transparent;
+        border-bottom: $wuiPopoverArrowSize solid transparent;
+        border-right: $wuiPopoverArrowSize solid $wuiColorEmptyShade;
+      }
+    }
+
+    &.wuiPopover__panelArrow--bottom {
+      &:before {
+        top: -$wuiPopoverArrowSize;
+        border-left: $wuiPopoverArrowSize solid transparent;
+        border-right: $wuiPopoverArrowSize solid transparent;
+        border-bottom: $wuiPopoverArrowSize solid $wuiBorderColor;
+      }
+
+      &:after {
+        top: -$wuiPopoverArrowSize + 1;
+        border-left: $wuiPopoverArrowSize solid transparent;
+        border-right: $wuiPopoverArrowSize solid transparent;
+        border-bottom: $wuiPopoverArrowSize solid $wuiColorEmptyShade;
+      }
+    }
+
+    &.wuiPopover__panelArrow--left {
+      &:before {
+        right: -$wuiPopoverArrowSize + 1;
+        top: 50%;
+        border-top: $wuiPopoverArrowSize solid transparent;
+        border-bottom: $wuiPopoverArrowSize solid transparent;
+        border-left: $wuiPopoverArrowSize solid $wuiBorderColor;
+      }
+
+      &:after {
+        right: -$wuiPopoverArrowSize + 2;
+        top: 50%;
+        border-top: $wuiPopoverArrowSize solid transparent;
+        border-bottom: $wuiPopoverArrowSize solid transparent;
+        border-left: $wuiPopoverArrowSize solid $wuiColorEmptyShade;
+      }
+    }
+  }
+
+
+  &.wuiPopover__panel-noArrow .wuiPopover__panelArrow {
+    display: none;
+  }
+
+  &.wuiPopover__panel-isAttached.wuiPopover__panel--bottom {
+    border-top-color: transparentize($wuiBorderColor, .2);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  &.wuiPopover__panel-isAttached.wuiPopover__panel--top {
+    @include wuiBottomShadowFlat;
+
+    border-bottom-color: transparentize($wuiBorderColor, .2);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.wuiPopover__panel.wuiPopover__panel-isOpen.wuiPopover__panel--top {
+  transform: translateY($wuiPopoverTranslateDistance) translateZ(0);
+}
+
+.wuiPopover__panel.wuiPopover__panel-isOpen.wuiPopover__panel--bottom {
+  transform: translateY(-$wuiPopoverTranslateDistance) translateZ(0);
+}
+
+.wuiPopover__panel.wuiPopover__panel-isOpen.wuiPopover__panel--left {
+  transform: translateX($wuiPopoverTranslateDistance) translateZ(0);
+}
+
+.wuiPopover__panel.wuiPopover__panel-isOpen.wuiPopover__panel--right {
+  transform: translateX(-$wuiPopoverTranslateDistance) translateZ(0);
+}

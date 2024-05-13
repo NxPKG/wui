@@ -1,0 +1,27 @@
+.wuiPagination {
+  display: flex;
+  align-items: center;
+
+  &__compressedText {
+    display: inline-flex;
+    align-items: center;
+
+    > *:first-child {
+      margin-right: $wuiSizeXS;
+    }
+
+    > *:last-child {
+      margin-left: $wuiSizeXS;
+    }
+  }
+}
+
+.wuiPagination__list {
+  display: flex;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiPagination__list {
+    display: none;
+  }
+}

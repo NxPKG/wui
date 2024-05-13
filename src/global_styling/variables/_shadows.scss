@@ -1,0 +1,4 @@
+// Shadows
+// Transparency only affects the use of variable this outside of the shadow mixins (borders)
+$wuiShadowColor: $wuiColorMediumShade !default;
+$wuiShadowColorLarge: shade(saturate($wuiColorMediumShade, 25%), 50%) !default;

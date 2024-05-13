@@ -1,0 +1,196 @@
+.wuiTableRowCell__mobileHeader {
+  // Don't display by default unless table is responsive
+  display: none;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiTableRowCell--hideForMobile { // must come last to override any special cases
+    // sass-lint:disable-block no-important
+    display: none !important;
+  }
+}
+
+@include wuiBreakpoint('m', 'l', 'xl') {
+  .wuiTableRowCell--hideForDesktop { // must come last to override any special cases
+    // sass-lint:disable-block no-important
+    display: none !important;
+  }
+}
+
+@include wuiBreakpoint('xs', 's') {
+
+  .wuiTable.wuiTable--responsive {
+    // Not allowing compressed styles in mobile view (for now)
+
+    thead {
+      display: none; // Use mobile versions of selecting and filtering instead
+    }
+
+    tfoot {
+      display: none; // Not supporting responsive footer content
+    }
+
+    // Make each row a Panel
+    @include wuiPanel($selector: '.wuiTableRow');
+
+    .wuiTableRowCell__mobileHeader {
+      // Always truncate
+      @include wuiTextTruncate;
+      @include fontSize($wuiFontSize * .6875);
+
+      display: block;
+      color: $wuiColorDarkShade;
+      padding: $wuiSizeS;
+      padding-bottom: 0;
+      margin-bottom: -$wuiSizeS; // pull up cell content closer
+      min-height: $wuiSizeL; // aligns contents of cells if header doesn't exist
+
+      // Remove min-height of cell header if it's the only cell
+      .wuiTableRowCell:only-child & {
+        min-height: 0;
+      }
+    }
+
+    .wuiTableRowCell--enlargeForMobile {
+      @include wuiFontSize;
+    }
+
+    .wuiTableRowCell--isMobileFullWidth {
+      width: 100%;
+
+      .wuiTableCellContent--alignCenter {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    .wuiTableRow {
+      display: flex;
+      flex-wrap: wrap;
+      padding: $wuiTableCellContentPadding;
+      margin-bottom: $wuiTableCellContentPadding;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &.wuiTableRow-isExpandable,
+      &.wuiTableRow-hasActions {
+        @include wuiTableActionsBackgroundMobile;
+        padding-right: $wuiSizeXXL;
+        position: relative;
+      }
+
+      &.wuiTableRow-isExpandable .wuiTableRowCell--isExpander,
+      &.wuiTableRow-hasActions .wuiTableRowCell--hasActions {
+        min-width: 0;
+        width: $wuiSizeL;
+        position: absolute;
+        top: $wuiTableCellContentPadding + (($wuiTableCellContentPadding * $wuiLineHeight) - $wuiTableCellContentPadding) + $wuiSizeXS; // same as row padding-top + cell padding + 1/2 line height
+        right: $wuiTableCellContentPadding;
+
+        &::before {
+          display: none; // Don't display table headers
+        }
+
+        .wuiTableCellContent {
+          flex-direction: column;
+          padding: 0;
+
+          .wuiLink {
+            padding: $wuiSizeXS;
+          }
+        }
+      }
+
+      &.wuiTableRow-hasActions.wuiTableRow-isExpandable {
+        .wuiTableRowCell--isExpander {
+          top: auto;
+          bottom: $wuiSize; // same as row padding-bottom
+        }
+      }
+
+      &.wuiTableRow-isSelectable {
+        padding-left: $wuiTableCellCheckboxWidth + ($wuiTableCellContentPadding / 2);
+        position: relative;
+
+        .wuiTableRowCellCheckbox {
+          position: absolute;
+          left: $wuiTableCellContentPadding / 2;
+          top: $wuiSizeS;
+        }
+      }
+
+      // override hover & selected colors
+      &.wuiTableRow-isSelected {
+        &,
+        &:hover,
+        + .wuiTableRow.wuiTableRow-isExpandedRow,
+        &:hover + .wuiTableRow.wuiTableRow-isExpandedRow .wuiTableRowCell {
+          background-color: $wuiTableSelectedColor;
+        }
+      }
+
+      &.wuiTableRow-isExpandedRow {
+        @include wuiTableActionsBackgroundMobile;
+        @include wuiBottomShadowSmall;
+        margin-top: -$wuiTableCellContentPadding * 2;
+        position: relative;
+        z-index: 2; // on top of its parent/previous row
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-left: $wuiSizeS; // override selectable as the padding is already applied via the contents
+
+        &:hover {
+          background-color: $wuiColorEmptyShade; // keep white background to cover triggering row's border
+        }
+
+        .wuiTableRowCell {
+          width: calc(100% - #{$wuiSizeXXL});
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .wuiTableRowCell {
+      display: block; /* IE requires block to grow and wrap. */
+      min-width: 50%;
+      border: none;
+    }
+
+    .wuiTableRowCellCheckbox {
+      border: none;
+    }
+
+    // never show hidden items and always show hover items on mobile,
+    .wuiTableRow-hasActions .wuiTableCellContent--showOnHover {
+      > * {
+        margin-left: 0;
+      }
+
+      .expandedItemActions__completelyHide {
+        display: none;
+      }
+
+      .wuiTableCellContent__hoverItem {
+        opacity: 1;
+        filter: none;
+        margin-left: 0;
+        margin-bottom: $wuiSizeS;
+      }
+    }
+
+    // force all content back to left side
+    .wuiTableCellContent--alignRight {
+      justify-content: flex-start;
+    }
+
+    .wuiTableCellContent--alignCenter {
+      justify-content: flex-start;
+    }
+  }
+}

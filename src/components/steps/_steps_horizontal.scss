@@ -1,0 +1,136 @@
+@mixin makeLineProgress {
+  height: 2px;
+  background-color: $wuiColorPrimary;
+}
+
+/**
+ * 1. Ensure the connecting lines stays behind the number
+ * 2. Make each step the same width
+ * 3. Make the content of each step align to the top, even if the steps are of varying heights,
+ *    e.g. due to some of their titles wrapping to multiple lines
+ */
+
+.wuiStepsHorizontal {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+  background: transparentize($wuiColorLightestShade, .5);
+}
+
+// Button containing item
+.wuiStepHorizontal {
+  flex-grow: 1; /* 2 */
+  flex-basis: 0%; /* 2 */
+  padding: $wuiSizeL $wuiSize $wuiSize;
+  display: flex; /* 3 */
+  flex-direction: column; /* 3 */
+  align-items: center; /* 3 */
+  justify-content: flex-start; /* 3 */
+  cursor: pointer;
+  position: relative;
+
+  // focus & hover state
+  &:focus:not(.wuiStepHorizontal-isDisabled),
+  &:hover:not(.wuiStepHorizontal-isDisabled) {
+    .wuiStepHorizontal__number {
+      @include wuiFocusRing(large);
+
+      // sass-lint:disable-block indentation
+      transition: background-color $wuiAnimSpeedNormal $wuiAnimSlightResistance,
+                  color $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+    }
+
+    .wuiStepHorizontal__title {
+      text-decoration: underline;
+    }
+  }
+
+  // disabled state
+  &.wuiStepHorizontal-isDisabled {
+    cursor: not-allowed;
+  }
+
+  // create the connecting lines
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    top: $wuiSizeL + ($wuiStepNumberSize / 2);
+    background-color: $wuiColorLightShade;
+    z-index: $wuiZLevel0; /* 1 */
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  // Remove the respective lines if the first or last child
+  &:first-of-type::before {
+    display: none;
+  }
+
+  &:last-of-type::after {
+    display: none;
+  }
+}
+
+.wuiStepHorizontal__number {
+  position: relative; /* 1 */
+  z-index: $wuiZLevel0 + 1; /* 1 */
+  transition: all $wuiAnimSpeedFast ease-in-out;
+}
+
+.wuiStepHorizontal__title {
+  @include wuiTitle('xs');
+  margin-top: $wuiSizeS;
+  font-weight: $wuiFontWeightRegular;
+  text-align: center;
+  max-width: 100%; // IE Fix for wrapping text
+
+  .wuiStepHorizontal-isDisabled & {
+    color: $wuiColorDarkShade;
+  }
+}
+
+// Complete state
+.wuiStepHorizontal-isComplete {
+  &::before,
+  &::after {
+    @include makeLineProgress;
+  }
+}
+
+// Selected state
+.wuiStepHorizontal-isSelected {
+  .wuiStepHorizontal__number:not([class*='danger']):not([class*='warning']) {
+    @include wuiSlightShadow(desaturate($wuiColorPrimary, 20%));
+  }
+
+  &::before {
+    @include makeLineProgress;
+  }
+}
+
+// RESPONSIVE
+@include wuiBreakpoint('xs', 's') {
+  .wuiStepHorizontal {
+    // reduce top padding and shift lines
+    padding-top: $wuiSize;
+
+    &:before,
+    &:after {
+      top: $wuiSize + $wuiStepNumberSize / 2;
+    }
+  }
+
+  // hide titles
+  .wuiStepHorizontal__title {
+    display: none;
+  }
+}

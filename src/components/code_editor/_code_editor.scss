@@ -1,0 +1,39 @@
+.wuiCodeEditorWrapper {
+  position: relative;
+
+  .ace_hidden-cursors {
+    opacity: 0;
+  }
+
+  &.wuiCodeEditorWrapper-isEditing {
+    .ace_hidden-cursors {
+      opacity: 1;
+    }
+  }
+}
+
+.wuiCodeEditorKeyboardHint {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: transparentize($wuiColorGhost, .3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+
+  &:focus {
+    opacity: 1;
+    border: 2px solid $wuiColorPrimary;
+    z-index: $wuiZLevel1;
+  }
+
+  &.wuiCodeEditorKeyboardHint-isInactive {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.wuiRangeLevels {
+  display: flex;
+  justify-content: stretch;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: ($wuiFormControlHeight / 2) + 2px;
+
+  &--hasTicks {
+    top: ($wuiFormControlHeight / 4) + 2px;
+  }
+
+  &--compressed {
+    top: ($wuiFormControlCompressedHeight / 2) + 2px;
+
+    &.wuiRangeLevels--hasTicks {
+      top: ($wuiFormControlCompressedHeight / 4) + 2px;
+    }
+  }
+}
+
+.wuiRangeLevel {
+  display: block;
+  height: 6px;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+// Modifier naming and colors.
+$wuiRangeLevelColors: (
+  primary: $wuiColorPrimary,
+  success: $wuiColorSuccess,
+  warning: $wuiColorWarning,
+  danger: $wuiColorDanger,
+);
+
+// Create level modifiers based upon the map.
+@each $name, $color in $wuiRangeLevelColors {
+  .wuiRangeLevel--#{$name} {
+    background-color: transparentize($color, .7);
+  }
+}

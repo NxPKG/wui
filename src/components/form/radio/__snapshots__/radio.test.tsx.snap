@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiRadio is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiRadio wuiRadio--noLabel testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <input
+    class="wuiRadio__input"
+    id="id"
+    type="radio"
+  />
+  <div
+    class="wuiRadio__circle"
+  />
+</div>
+`;
+
+exports[`WuiRadio props checked is rendered 1`] = `
+<div
+  class="wuiRadio wuiRadio--noLabel"
+>
+  <input
+    checked=""
+    class="wuiRadio__input"
+    id="id"
+    type="radio"
+  />
+  <div
+    class="wuiRadio__circle"
+  />
+</div>
+`;
+
+exports[`WuiRadio props disabled is rendered 1`] = `
+<div
+  class="wuiRadio wuiRadio--noLabel"
+>
+  <input
+    class="wuiRadio__input"
+    disabled=""
+    id="id"
+    type="radio"
+  />
+  <div
+    class="wuiRadio__circle"
+  />
+</div>
+`;
+
+exports[`WuiRadio props label is rendered 1`] = `
+<div
+  class="wuiRadio"
+>
+  <input
+    class="wuiRadio__input"
+    id="id"
+    type="radio"
+  />
+  <div
+    class="wuiRadio__circle"
+  />
+  <label
+    class="wuiRadio__label"
+    for="id"
+  >
+    <span>
+      Label
+    </span>
+  </label>
+</div>
+`;
+
+exports[`WuiRadio props value is rendered 1`] = `
+<div
+  class="wuiRadio wuiRadio--noLabel"
+>
+  <input
+    class="wuiRadio__input"
+    id="id"
+    type="radio"
+    value="bobbins"
+  />
+  <div
+    class="wuiRadio__circle"
+  />
+</div>
+`;

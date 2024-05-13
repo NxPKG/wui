@@ -1,0 +1,4607 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiBasicTable cellProps renders cells with custom props from a callback 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            className="customRowClass"
+            data-test-subj="cell-1-name"
+            key="_data_column_name_0_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            onClick={[Function]}
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            className="customRowClass"
+            data-test-subj="cell-2-name"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            onClick={[Function]}
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            className="customRowClass"
+            data-test-subj="cell-3-name"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            onClick={[Function]}
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable cellProps renders rows with custom props from an object 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            className="customClass"
+            data-test-subj="cell"
+            key="_data_column_name_0_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            onClick={[Function]}
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            className="customClass"
+            data-test-subj="cell"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            onClick={[Function]}
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            className="customClass"
+            data-test-subj="cell"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            onClick={[Function]}
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable empty is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  className="wuiBasicTable testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 0,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody>
+        <WuiTableRow>
+          <WuiTableRowCell
+            align="center"
+            colSpan={1}
+            isMobileFullWidth={true}
+          >
+            No items found
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable empty renders a node as a custom message 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 0,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody>
+        <WuiTableRow>
+          <WuiTableRowCell
+            align="center"
+            colSpan={1}
+            isMobileFullWidth={true}
+          >
+            <p>
+              no items, click 
+              <a
+                href=""
+              >
+                here
+              </a>
+               to make some
+            </p>
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable empty renders a string as a custom message 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 0,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody>
+        <WuiTableRow>
+          <WuiTableRowCell
+            align="center"
+            colSpan={1}
+            isMobileFullWidth={true}
+          >
+            where my items at?
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable footers do not render without a column footer definition 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_id_1"
+          key="_data_h_id_1"
+        >
+          ID
+        </WuiTableHeaderCell>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_age_2"
+          key="_data_h_age_2"
+        >
+          Age
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_id_1_1"
+            mobileOptions={
+              Object {
+                "header": "ID",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            1
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_age_1_2"
+            mobileOptions={
+              Object {
+                "header": "Age",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            20
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_id_2_1"
+            mobileOptions={
+              Object {
+                "header": "ID",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            2
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_age_2_2"
+            mobileOptions={
+              Object {
+                "header": "Age",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            21
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_id_3_1"
+            mobileOptions={
+              Object {
+                "header": "ID",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            3
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_age_3_2"
+            mobileOptions={
+              Object {
+                "header": "Age",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            22
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable footers render with pagination, selection, sorting, and footer 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_name_0",
+                  "name": "Name",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCellCheckbox
+          key="_selection_column_h"
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiTableHeaderCellCheckbox>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_name_0"
+          onSort={[Function]}
+        >
+          Name
+        </WuiTableHeaderCell>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_id_1"
+          key="_data_h_id_1"
+        >
+          ID
+        </WuiTableHeaderCell>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_age_2"
+          key="_data_h_age_2"
+        >
+          Age
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_1"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_id_1_1"
+            mobileOptions={
+              Object {
+                "header": "ID",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            1
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_age_1_2"
+            mobileOptions={
+              Object {
+                "header": "Age",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            20
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_2"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_id_2_1"
+            mobileOptions={
+              Object {
+                "header": "ID",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            2
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_age_2_2"
+            mobileOptions={
+              Object {
+                "header": "Age",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            21
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_3"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_id_3_1"
+            mobileOptions={
+              Object {
+                "header": "ID",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            3
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_age_3_2"
+            mobileOptions={
+              Object {
+                "header": "Age",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            22
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+      <WuiTableFooter>
+        <WuiTableFooterCell
+          key="_selection_column_f"
+        />
+        <WuiTableFooterCell
+          key="footer_name_0"
+        >
+          <strong>
+            Name
+          </strong>
+        </WuiTableFooterCell>
+        <WuiTableFooterCell
+          key="footer_id_1"
+        >
+          ID
+        </WuiTableFooterCell>
+        <WuiTableFooterCell
+          key="footer_age_2"
+        >
+          <strong>
+            sum:
+            63
+            <br />
+            total items:
+            5
+          </strong>
+        </WuiTableFooterCell>
+      </WuiTableFooter>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable itemIdToExpandedRowMap renders an expanded row 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          aria-owns="row_1_expansion"
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          id="row_1_expansion"
+          isExpandedRow={true}
+        >
+          <WuiTableRowCell
+            colSpan={1}
+            textOnly={false}
+          >
+            <div>
+              Expanded row
+            </div>
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable rowProps renders rows with custom props from a callback 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiKeyboardAccessible>
+          <WuiTableRow
+            className="customRowClass"
+            data-test-subj="row-1"
+            isSelected={false}
+            onClick={[Function]}
+          >
+            <WuiTableRowCell
+              align="left"
+              key="_data_column_name_0_0"
+              mobileOptions={
+                Object {
+                  "header": "Name",
+                  "render": undefined,
+                }
+              }
+              setScopeRow={false}
+              textOnly={true}
+            >
+              name1
+            </WuiTableRowCell>
+          </WuiTableRow>
+        </WuiKeyboardAccessible>
+        <WuiKeyboardAccessible>
+          <WuiTableRow
+            className="customRowClass"
+            data-test-subj="row-2"
+            isSelected={false}
+            onClick={[Function]}
+          >
+            <WuiTableRowCell
+              align="left"
+              key="_data_column_name_1_0"
+              mobileOptions={
+                Object {
+                  "header": "Name",
+                  "render": undefined,
+                }
+              }
+              setScopeRow={false}
+              textOnly={true}
+            >
+              name2
+            </WuiTableRowCell>
+          </WuiTableRow>
+        </WuiKeyboardAccessible>
+        <WuiKeyboardAccessible>
+          <WuiTableRow
+            className="customRowClass"
+            data-test-subj="row-3"
+            isSelected={false}
+            onClick={[Function]}
+          >
+            <WuiTableRowCell
+              align="left"
+              key="_data_column_name_2_0"
+              mobileOptions={
+                Object {
+                  "header": "Name",
+                  "render": undefined,
+                }
+              }
+              setScopeRow={false}
+              textOnly={true}
+            >
+              name3
+            </WuiTableRowCell>
+          </WuiTableRow>
+        </WuiKeyboardAccessible>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable rowProps renders rows with custom props from an object 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiKeyboardAccessible>
+          <WuiTableRow
+            className="customClass"
+            data-test-subj="row"
+            isSelected={false}
+            onClick={[Function]}
+          >
+            <WuiTableRowCell
+              align="left"
+              key="_data_column_name_0_0"
+              mobileOptions={
+                Object {
+                  "header": "Name",
+                  "render": undefined,
+                }
+              }
+              setScopeRow={false}
+              textOnly={true}
+            >
+              name1
+            </WuiTableRowCell>
+          </WuiTableRow>
+        </WuiKeyboardAccessible>
+        <WuiKeyboardAccessible>
+          <WuiTableRow
+            className="customClass"
+            data-test-subj="row"
+            isSelected={false}
+            onClick={[Function]}
+          >
+            <WuiTableRowCell
+              align="left"
+              key="_data_column_name_1_0"
+              mobileOptions={
+                Object {
+                  "header": "Name",
+                  "render": undefined,
+                }
+              }
+              setScopeRow={false}
+              textOnly={true}
+            >
+              name2
+            </WuiTableRowCell>
+          </WuiTableRow>
+        </WuiKeyboardAccessible>
+        <WuiKeyboardAccessible>
+          <WuiTableRow
+            className="customClass"
+            data-test-subj="row"
+            isSelected={false}
+            onClick={[Function]}
+          >
+            <WuiTableRowCell
+              align="left"
+              key="_data_column_name_2_0"
+              mobileOptions={
+                Object {
+                  "header": "Name",
+                  "render": undefined,
+                }
+              }
+              setScopeRow={false}
+              textOnly={true}
+            >
+              name3
+            </WuiTableRowCell>
+          </WuiTableRow>
+        </WuiKeyboardAccessible>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable with initial selection 1`] = `
+<WuiBasicTable
+  columns={
+    Array [
+      Object {
+        "description": "description",
+        "field": "name",
+        "name": "Name",
+      },
+    ]
+  }
+  itemId="id"
+  items={
+    Array [
+      Object {
+        "id": "1",
+        "name": "name1",
+      },
+      Object {
+        "id": "2",
+        "name": "name2",
+      },
+      Object {
+        "id": "3",
+        "name": "name3",
+      },
+    ]
+  }
+  noItemsMessage="No items found"
+  responsive={true}
+  selection={
+    Object {
+      "initialSelected": Array [
+        Object {
+          "id": "1",
+          "name": "name1",
+        },
+      ],
+      "onSelectionChange": [Function],
+    }
+  }
+  tableLayout="fixed"
+>
+  <div
+    className="wuiBasicTable"
+  >
+    <div>
+      <WuiTableHeaderMobile>
+        <div
+          className="wuiTableHeaderMobile"
+        >
+          <WuiFlexGroup
+            alignItems="baseline"
+            justifyContent="spaceBetween"
+            responsive={false}
+          >
+            <div
+              className="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--alignItemsBaseline wuiFlexGroup--justifyContentSpaceBetween wuiFlexGroup--directionRow"
+            >
+              <WuiFlexItem
+                grow={false}
+              >
+                <div
+                  className="wuiFlexItem wuiFlexItem--flexGrowZero"
+                >
+                  <WuiI18n
+                    default="Select all rows"
+                    token="wuiBasicTable.selectAllRows"
+                  >
+                    <WuiCheckbox
+                      aria-label="Select all rows"
+                      checked={false}
+                      compressed={false}
+                      disabled={false}
+                      id="_selection_column-checkbox_generated-id"
+                      indeterminate={false}
+                      label="Select all rows"
+                      onChange={[Function]}
+                    >
+                      <div
+                        className="wuiCheckbox"
+                      >
+                        <input
+                          aria-label="Select all rows"
+                          checked={false}
+                          className="wuiCheckbox__input"
+                          disabled={false}
+                          id="_selection_column-checkbox_generated-id"
+                          onChange={[Function]}
+                          type="checkbox"
+                        />
+                        <div
+                          className="wuiCheckbox__square"
+                        />
+                        <label
+                          className="wuiCheckbox__label"
+                          htmlFor="_selection_column-checkbox_generated-id"
+                        >
+                          Select all rows
+                        </label>
+                      </div>
+                    </WuiCheckbox>
+                  </WuiI18n>
+                </div>
+              </WuiFlexItem>
+              <WuiFlexItem
+                grow={false}
+              >
+                <div
+                  className="wuiFlexItem wuiFlexItem--flexGrowZero"
+                />
+              </WuiFlexItem>
+            </div>
+          </WuiFlexGroup>
+        </div>
+      </WuiTableHeaderMobile>
+      <WuiTable
+        id="generated-id"
+        responsive={true}
+        tableLayout="fixed"
+      >
+        <table
+          className="wuiTable wuiTable--responsive"
+          id="generated-id"
+          tabIndex={-1}
+        >
+          <WuiScreenReaderOnly>
+            <caption
+              className="wuiScreenReaderOnly wuiTableCaption"
+            >
+              <WuiDelayRender
+                delay={500}
+              />
+            </caption>
+          </WuiScreenReaderOnly>
+          <WuiTableHeader>
+            <thead>
+              <tr>
+                <WuiTableHeaderCellCheckbox
+                  key="_selection_column_h"
+                >
+                  <th
+                    className="wuiTableHeaderCellCheckbox"
+                    scope="col"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <div
+                      className="wuiTableCellContent"
+                    >
+                      <WuiI18n
+                        default="Select all rows"
+                        token="wuiBasicTable.selectAllRows"
+                      >
+                        <WuiCheckbox
+                          aria-label="Select all rows"
+                          checked={false}
+                          compressed={false}
+                          data-test-subj="checkboxSelectAll"
+                          disabled={false}
+                          id="_selection_column-checkbox_generated-id"
+                          indeterminate={false}
+                          label={null}
+                          onChange={[Function]}
+                          type="inList"
+                        >
+                          <div
+                            className="wuiCheckbox wuiCheckbox--inList wuiCheckbox--noLabel"
+                          >
+                            <input
+                              aria-label="Select all rows"
+                              checked={false}
+                              className="wuiCheckbox__input"
+                              data-test-subj="checkboxSelectAll"
+                              disabled={false}
+                              id="_selection_column-checkbox_generated-id"
+                              onChange={[Function]}
+                              type="checkbox"
+                            />
+                            <div
+                              className="wuiCheckbox__square"
+                            />
+                          </div>
+                        </WuiCheckbox>
+                      </WuiI18n>
+                    </div>
+                  </th>
+                </WuiTableHeaderCellCheckbox>
+                <WuiTableHeaderCell
+                  align="left"
+                  data-test-subj="tableHeaderCell_name_0"
+                  key="_data_h_name_0"
+                >
+                  <th
+                    className="wuiTableHeaderCell"
+                    data-test-subj="tableHeaderCell_name_0"
+                    role="columnheader"
+                    scope="col"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <div
+                      className="wuiTableCellContent"
+                    >
+                      <WuiInnerText>
+                        <span
+                          className="wuiTableCellContent__text"
+                          title="Name"
+                        >
+                          Name
+                        </span>
+                      </WuiInnerText>
+                    </div>
+                  </th>
+                </WuiTableHeaderCell>
+              </tr>
+            </thead>
+          </WuiTableHeader>
+          <WuiTableBody
+            bodyRef={[Function]}
+          >
+            <tbody>
+              <WuiTableRow
+                isSelectable={true}
+                isSelected={true}
+              >
+                <tr
+                  className="wuiTableRow wuiTableRow-isSelectable wuiTableRow-isSelected"
+                >
+                  <WuiTableRowCellCheckbox
+                    key="_selection_column_1"
+                  >
+                    <td
+                      className="wuiTableRowCellCheckbox"
+                    >
+                      <div
+                        className="wuiTableCellContent"
+                      >
+                        <WuiI18n
+                          default="Select this row"
+                          token="wuiBasicTable.selectThisRow"
+                        >
+                          <WuiCheckbox
+                            aria-label="Select this row"
+                            checked={true}
+                            compressed={false}
+                            data-test-subj="checkboxSelectRow-1"
+                            disabled={false}
+                            id="_selection_column_1-checkbox"
+                            indeterminate={false}
+                            onChange={[Function]}
+                            title="Select this row"
+                            type="inList"
+                          >
+                            <div
+                              className="wuiCheckbox wuiCheckbox--inList wuiCheckbox--noLabel"
+                            >
+                              <input
+                                aria-label="Select this row"
+                                checked={true}
+                                className="wuiCheckbox__input"
+                                data-test-subj="checkboxSelectRow-1"
+                                disabled={false}
+                                id="_selection_column_1-checkbox"
+                                onChange={[Function]}
+                                title="Select this row"
+                                type="checkbox"
+                              />
+                              <div
+                                className="wuiCheckbox__square"
+                              />
+                            </div>
+                          </WuiCheckbox>
+                        </WuiI18n>
+                      </div>
+                    </td>
+                  </WuiTableRowCellCheckbox>
+                  <WuiTableRowCell
+                    align="left"
+                    key="_data_column_name_1_0"
+                    mobileOptions={
+                      Object {
+                        "header": "Name",
+                        "render": undefined,
+                      }
+                    }
+                    setScopeRow={false}
+                    textOnly={true}
+                  >
+                    <td
+                      className="wuiTableRowCell"
+                      style={
+                        Object {
+                          "width": undefined,
+                        }
+                      }
+                    >
+                      <div
+                        className="wuiTableRowCell__mobileHeader wuiTableRowCell--hideForDesktop"
+                      >
+                        Name
+                      </div>
+                      <div
+                        className="wuiTableCellContent"
+                      >
+                        <span
+                          className="wuiTableCellContent__text"
+                        >
+                          name1
+                        </span>
+                      </div>
+                    </td>
+                  </WuiTableRowCell>
+                </tr>
+              </WuiTableRow>
+              <WuiTableRow
+                isSelectable={true}
+                isSelected={false}
+              >
+                <tr
+                  className="wuiTableRow wuiTableRow-isSelectable"
+                >
+                  <WuiTableRowCellCheckbox
+                    key="_selection_column_2"
+                  >
+                    <td
+                      className="wuiTableRowCellCheckbox"
+                    >
+                      <div
+                        className="wuiTableCellContent"
+                      >
+                        <WuiI18n
+                          default="Select this row"
+                          token="wuiBasicTable.selectThisRow"
+                        >
+                          <WuiCheckbox
+                            aria-label="Select this row"
+                            checked={false}
+                            compressed={false}
+                            data-test-subj="checkboxSelectRow-2"
+                            disabled={false}
+                            id="_selection_column_2-checkbox"
+                            indeterminate={false}
+                            onChange={[Function]}
+                            title="Select this row"
+                            type="inList"
+                          >
+                            <div
+                              className="wuiCheckbox wuiCheckbox--inList wuiCheckbox--noLabel"
+                            >
+                              <input
+                                aria-label="Select this row"
+                                checked={false}
+                                className="wuiCheckbox__input"
+                                data-test-subj="checkboxSelectRow-2"
+                                disabled={false}
+                                id="_selection_column_2-checkbox"
+                                onChange={[Function]}
+                                title="Select this row"
+                                type="checkbox"
+                              />
+                              <div
+                                className="wuiCheckbox__square"
+                              />
+                            </div>
+                          </WuiCheckbox>
+                        </WuiI18n>
+                      </div>
+                    </td>
+                  </WuiTableRowCellCheckbox>
+                  <WuiTableRowCell
+                    align="left"
+                    key="_data_column_name_2_0"
+                    mobileOptions={
+                      Object {
+                        "header": "Name",
+                        "render": undefined,
+                      }
+                    }
+                    setScopeRow={false}
+                    textOnly={true}
+                  >
+                    <td
+                      className="wuiTableRowCell"
+                      style={
+                        Object {
+                          "width": undefined,
+                        }
+                      }
+                    >
+                      <div
+                        className="wuiTableRowCell__mobileHeader wuiTableRowCell--hideForDesktop"
+                      >
+                        Name
+                      </div>
+                      <div
+                        className="wuiTableCellContent"
+                      >
+                        <span
+                          className="wuiTableCellContent__text"
+                        >
+                          name2
+                        </span>
+                      </div>
+                    </td>
+                  </WuiTableRowCell>
+                </tr>
+              </WuiTableRow>
+              <WuiTableRow
+                isSelectable={true}
+                isSelected={false}
+              >
+                <tr
+                  className="wuiTableRow wuiTableRow-isSelectable"
+                >
+                  <WuiTableRowCellCheckbox
+                    key="_selection_column_3"
+                  >
+                    <td
+                      className="wuiTableRowCellCheckbox"
+                    >
+                      <div
+                        className="wuiTableCellContent"
+                      >
+                        <WuiI18n
+                          default="Select this row"
+                          token="wuiBasicTable.selectThisRow"
+                        >
+                          <WuiCheckbox
+                            aria-label="Select this row"
+                            checked={false}
+                            compressed={false}
+                            data-test-subj="checkboxSelectRow-3"
+                            disabled={false}
+                            id="_selection_column_3-checkbox"
+                            indeterminate={false}
+                            onChange={[Function]}
+                            title="Select this row"
+                            type="inList"
+                          >
+                            <div
+                              className="wuiCheckbox wuiCheckbox--inList wuiCheckbox--noLabel"
+                            >
+                              <input
+                                aria-label="Select this row"
+                                checked={false}
+                                className="wuiCheckbox__input"
+                                data-test-subj="checkboxSelectRow-3"
+                                disabled={false}
+                                id="_selection_column_3-checkbox"
+                                onChange={[Function]}
+                                title="Select this row"
+                                type="checkbox"
+                              />
+                              <div
+                                className="wuiCheckbox__square"
+                              />
+                            </div>
+                          </WuiCheckbox>
+                        </WuiI18n>
+                      </div>
+                    </td>
+                  </WuiTableRowCellCheckbox>
+                  <WuiTableRowCell
+                    align="left"
+                    key="_data_column_name_3_0"
+                    mobileOptions={
+                      Object {
+                        "header": "Name",
+                        "render": undefined,
+                      }
+                    }
+                    setScopeRow={false}
+                    textOnly={true}
+                  >
+                    <td
+                      className="wuiTableRowCell"
+                      style={
+                        Object {
+                          "width": undefined,
+                        }
+                      }
+                    >
+                      <div
+                        className="wuiTableRowCell__mobileHeader wuiTableRowCell--hideForDesktop"
+                      >
+                        Name
+                      </div>
+                      <div
+                        className="wuiTableCellContent"
+                      >
+                        <span
+                          className="wuiTableCellContent__text"
+                        >
+                          name3
+                        </span>
+                      </div>
+                    </td>
+                  </WuiTableRowCell>
+                </tr>
+              </WuiTableRow>
+            </tbody>
+          </WuiTableBody>
+        </table>
+      </WuiTable>
+    </div>
+  </div>
+</WuiBasicTable>
+`;
+
+exports[`WuiBasicTable with multiple record actions with custom availability 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 4,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+        <WuiTableHeaderCell
+          align="right"
+          key="_actions_h_1"
+        >
+          Actions
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          hasActions={true}
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_1_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "description": "copy",
+                    "icon": "copy",
+                    "isPrimary": true,
+                    "name": "Copy",
+                    "onClick": [Function],
+                    "type": "icon",
+                  },
+                  Object {
+                    "description": "delete",
+                    "icon": "trash",
+                    "isPrimary": true,
+                    "name": "Delete",
+                    "onClick": [Function],
+                    "type": "icon",
+                  },
+                  Object {
+                    "name": "All actions",
+                    "render": [Function],
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "1",
+                  "name": "name1",
+                }
+              }
+              itemId="1"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          hasActions={true}
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_2_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "available": [Function],
+                    "description": "edit",
+                    "icon": "pencil",
+                    "isPrimary": true,
+                    "name": "Edit",
+                    "onClick": [Function],
+                    "type": "icon",
+                  },
+                  Object {
+                    "description": "copy",
+                    "icon": "copy",
+                    "isPrimary": true,
+                    "name": "Copy",
+                    "onClick": [Function],
+                    "type": "icon",
+                  },
+                  Object {
+                    "name": "All actions",
+                    "render": [Function],
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "2",
+                  "name": "name2",
+                }
+              }
+              itemId="2"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          hasActions={true}
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_3_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "description": "copy",
+                    "icon": "copy",
+                    "isPrimary": true,
+                    "name": "Copy",
+                    "onClick": [Function],
+                    "type": "icon",
+                  },
+                  Object {
+                    "description": "delete",
+                    "icon": "trash",
+                    "isPrimary": true,
+                    "name": "Delete",
+                    "onClick": [Function],
+                    "type": "icon",
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "3",
+                  "name": "name3",
+                }
+              }
+              itemId="3"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          hasActions={true}
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_4_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_4_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "available": [Function],
+                    "description": "edit",
+                    "icon": "pencil",
+                    "isPrimary": true,
+                    "name": "Edit",
+                    "onClick": [Function],
+                    "type": "icon",
+                  },
+                  Object {
+                    "description": "copy",
+                    "icon": "copy",
+                    "isPrimary": true,
+                    "name": "Copy",
+                    "onClick": [Function],
+                    "type": "icon",
+                  },
+                  Object {
+                    "name": "All actions",
+                    "render": [Function],
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "4",
+                  "name": "name3",
+                }
+              }
+              itemId="4"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable with pagination - 2nd page 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 2,
+                  "page": 2,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_4_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 1,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_0_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination and error 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody>
+        <WuiTableRow>
+          <WuiTableRowCell
+            align="center"
+            colSpan={1}
+            isMobileFullWidth={true}
+          >
+            <WuiIcon
+              color="danger"
+              type="minusInCircle"
+            />
+             
+            no can do
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable with pagination and selection 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCellCheckbox
+          key="_selection_column_h"
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiTableHeaderCellCheckbox>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_1"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_2"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_3"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination, hiding the per page options 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_0_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "hidePerPageOptions": true,
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination, selection and sorting 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_name_0",
+                  "name": "Name",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCellCheckbox
+          key="_selection_column_h"
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiTableHeaderCellCheckbox>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_name_0"
+          onSort={[Function]}
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_1"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_2"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_3"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination, selection, sorting and a single record action 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_name_0",
+                  "name": "Name",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCellCheckbox
+          key="_selection_column_h"
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiTableHeaderCellCheckbox>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_name_0"
+          onSort={[Function]}
+        >
+          Name
+        </WuiTableHeaderCell>
+        <WuiTableHeaderCell
+          align="right"
+          key="_actions_h_1"
+        >
+          Actions
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          hasActions={true}
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_1"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_1_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "description": "edit",
+                    "name": "Edit",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "1",
+                  "name": "name1",
+                }
+              }
+              itemId="1"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          hasActions={true}
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_2"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_2_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "description": "edit",
+                    "name": "Edit",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "2",
+                  "name": "name2",
+                }
+              }
+              itemId="2"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          hasActions={true}
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_3"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_3_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "description": "edit",
+                    "name": "Edit",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "3",
+                  "name": "name3",
+                }
+              }
+              itemId="3"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination, selection, sorting and column dataType 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_count_0",
+                  "name": "Count",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCellCheckbox
+          key="_selection_column_h"
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiTableHeaderCellCheckbox>
+        <WuiTableHeaderCell
+          align="right"
+          data-test-subj="tableHeaderCell_count_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_count_0"
+          onSort={[Function]}
+        >
+          Count
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_1"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="right"
+            key="_data_column_count_1_0"
+            mobileOptions={
+              Object {
+                "header": "Count",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_2"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="right"
+            key="_data_column_count_2_0"
+            mobileOptions={
+              Object {
+                "header": "Count",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_3"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="right"
+            key="_data_column_count_3_0"
+            mobileOptions={
+              Object {
+                "header": "Count",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination, selection, sorting and column renderer 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_name_0",
+                  "name": "Name",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCellCheckbox
+          key="_selection_column_h"
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiTableHeaderCellCheckbox>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_name_0"
+          onSort={[Function]}
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_1"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={false}
+          >
+            NAME1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_2"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={false}
+          >
+            NAME2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_3"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={false}
+          >
+            NAME3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination, selection, sorting and multiple record actions 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_name_0",
+                  "name": "Name",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCellCheckbox
+          key="_selection_column_h"
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiTableHeaderCellCheckbox>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_name_0"
+          onSort={[Function]}
+        >
+          Name
+        </WuiTableHeaderCell>
+        <WuiTableHeaderCell
+          align="right"
+          key="_actions_h_1"
+        >
+          Actions
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          hasActions={true}
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_1"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_1_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "description": "edit",
+                    "name": "Edit",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                  Object {
+                    "description": "delete",
+                    "name": "Delete",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "1",
+                  "name": "name1",
+                }
+              }
+              itemId="1"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          hasActions={true}
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_2"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_2_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "description": "edit",
+                    "name": "Edit",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                  Object {
+                    "description": "delete",
+                    "name": "Delete",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "2",
+                  "name": "name2",
+                }
+              }
+              itemId="2"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          hasActions={true}
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_3"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_3_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+          <WuiTableRowCell
+            align="right"
+            hasActions={true}
+            key="record_actions_3_1"
+            showOnHover={true}
+            textOnly={false}
+          >
+            <ExpandedItemActions
+              actionEnabled={[Function]}
+              actions={
+                Array [
+                  Object {
+                    "description": "edit",
+                    "name": "Edit",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                  Object {
+                    "description": "delete",
+                    "name": "Delete",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                ]
+              }
+              item={
+                Object {
+                  "id": "3",
+                  "name": "name3",
+                }
+              }
+              itemId="3"
+            />
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with pagination, selection, sorting, column renderer and column dataType 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiFlexItem>
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_count_0",
+                  "name": "Count",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows out of {totalItemCount} rows; Page {page} of {pageCount}."
+              token="wuiBasicTable.tableAutoCaptionWithPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                  "page": 1,
+                  "pageCount": 2,
+                  "totalItemCount": 5,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCellCheckbox
+          key="_selection_column_h"
+        >
+          <WuiI18n
+            default="Select all rows"
+            token="wuiBasicTable.selectAllRows"
+          >
+            <Component />
+          </WuiI18n>
+        </WuiTableHeaderCellCheckbox>
+        <WuiTableHeaderCell
+          align="right"
+          data-test-subj="tableHeaderCell_count_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_count_0"
+          onSort={[Function]}
+        >
+          Count
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_1"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="right"
+            key="_data_column_count_1_0"
+            mobileOptions={
+              Object {
+                "header": "Count",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={false}
+          >
+            x
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_2"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="right"
+            key="_data_column_count_2_0"
+            mobileOptions={
+              Object {
+                "header": "Count",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={false}
+          >
+            xx
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelectable={true}
+          isSelected={false}
+        >
+          <WuiTableRowCellCheckbox
+            key="_selection_column_3"
+          >
+            <WuiI18n
+              default="Select this row"
+              token="wuiBasicTable.selectThisRow"
+            >
+              <Component />
+            </WuiI18n>
+          </WuiTableRowCellCheckbox>
+          <WuiTableRowCell
+            align="right"
+            key="_data_column_count_3_0"
+            mobileOptions={
+              Object {
+                "header": "Count",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={false}
+          >
+            xxx
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+  <PaginationBar
+    aria-controls="generated-id"
+    onPageChange={[Function]}
+    onPageSizeChange={[Function]}
+    pagination={
+      Object {
+        "pageIndex": 0,
+        "pageSize": 3,
+        "totalItemCount": 5,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`WuiBasicTable with sortable columns and sorting disabled 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        />
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          key="_data_h_name_0"
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_0_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable with sorting 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_name_0",
+                  "name": "Name",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_name_0"
+          onSort={[Function]}
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_0_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;
+
+exports[`WuiBasicTable with sorting enabled and enable all columns for sorting 1`] = `
+<div
+  className="wuiBasicTable"
+>
+  <div>
+    <WuiTableHeaderMobile>
+      <WuiFlexGroup
+        alignItems="baseline"
+        justifyContent="spaceBetween"
+        responsive={false}
+      >
+        <WuiFlexItem
+          grow={false}
+        />
+        <WuiFlexItem
+          grow={false}
+        >
+          <WuiTableSortMobile
+            items={
+              Array [
+                Object {
+                  "isSortAscending": true,
+                  "isSorted": true,
+                  "key": "_data_s_name_0",
+                  "name": "Name",
+                  "onSort": [Function],
+                },
+              ]
+            }
+          />
+        </WuiFlexItem>
+      </WuiFlexGroup>
+    </WuiTableHeaderMobile>
+    <WuiTable
+      id="generated-id"
+      responsive={true}
+      tableLayout="fixed"
+    >
+      <WuiScreenReaderOnly>
+        <caption
+          className="wuiTableCaption"
+        >
+          <WuiDelayRender
+            delay={500}
+          >
+            <WuiI18n
+              default="This table contains {itemCount} rows."
+              token="wuiBasicTable.tableAutoCaptionWithoutPagination"
+              values={
+                Object {
+                  "itemCount": 3,
+                }
+              }
+            />
+          </WuiDelayRender>
+        </caption>
+      </WuiScreenReaderOnly>
+      <WuiTableHeader>
+        <WuiTableHeaderCell
+          align="left"
+          data-test-subj="tableHeaderCell_name_0"
+          isSortAscending={true}
+          isSorted={true}
+          key="_data_h_name_0"
+          onSort={[Function]}
+        >
+          Name
+        </WuiTableHeaderCell>
+      </WuiTableHeader>
+      <WuiTableBody
+        bodyRef={[Function]}
+      >
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_0_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name1
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_1_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name2
+          </WuiTableRowCell>
+        </WuiTableRow>
+        <WuiTableRow
+          isSelected={false}
+        >
+          <WuiTableRowCell
+            align="left"
+            key="_data_column_name_2_0"
+            mobileOptions={
+              Object {
+                "header": "Name",
+                "render": undefined,
+              }
+            }
+            setScopeRow={false}
+            textOnly={true}
+          >
+            name3
+          </WuiTableRowCell>
+        </WuiTableRow>
+      </WuiTableBody>
+    </WuiTable>
+  </div>
+</div>
+`;

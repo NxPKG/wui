@@ -1,0 +1,41 @@
+.wuiLoadingContent__loader {
+  display: block;
+  width: 100%;
+}
+
+.wuiLoadingContent__singleLine {
+  display: block;
+  width: 100%;
+  height: $wuiSize;
+  margin-bottom: $wuiSizeS;
+  border-radius: $wuiBorderRadius;
+  overflow: hidden;
+
+  &:last-child:not(:only-child) {
+    width: 75%;
+  }
+}
+
+.wuiLoadingContent__singleLineBackground {
+  display: block;
+  width: 220%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    $wuiGradientStartStop 45%,
+    $wuiGradientMiddle 50%,
+    $wuiGradientStartStop 55%,
+    );
+  animation: wuiLoadingContentGradientLoad 1.5s $wuiAnimSlightResistance infinite;
+}
+
+@keyframes wuiLoadingContentGradientLoad {
+  0% {
+    transform: translateX(-53%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+

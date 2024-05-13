@@ -1,0 +1,28 @@
+@mixin wuiToolTipStyle($size: null) {
+  @include wuiBottomShadow($color: $wuiColorInk);
+  border-radius: $wuiBorderRadius;
+  background-color: $wuiTooltipBackgroundColor;
+  color: $wuiColorGhost;
+  z-index: $wuiZLevel9;
+  max-width: 256px;
+  overflow-wrap: break-word;
+
+  @if ($size == 's') {
+    @include wuiFontSizeXS;
+    padding: $wuiSizeS;
+  } @else {
+    @include wuiFontSizeS;
+    padding: $wuiSizeM;
+  }
+}
+
+@mixin wuiToolTipTitle {
+  font-weight: $wuiFontWeightBold;
+  border-bottom: solid 1px tintOrShade($wuiColorFullShade, 35%, 80%);
+  padding-bottom: $wuiSizeXS;
+  margin-bottom: $wuiSizeXS;
+}
+
+@mixin wuiToolTipAnimation($side: 'top') {
+  animation: #{map-get($wuiTooltipAnimations, $side)} $wuiAnimSpeedSlow ease-out 0s forwards;
+}

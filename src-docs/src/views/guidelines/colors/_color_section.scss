@@ -1,0 +1,15 @@
+@include wuiBreakpoint('m', 'l', 'xl') {
+  .guideColorsPage__stickySlider {
+    position: sticky;
+    top: 0;
+    z-index: $wuiZLevel1;
+  }
+}
+
+.guideColorSection__button {
+  padding: $wuiSizeXS;
+  margin-bottom: $wuiSizeXS / 2;
+  border-radius: $wuiBorderRadius;
+  width: 100%;
+  max-width: 300px;
+}

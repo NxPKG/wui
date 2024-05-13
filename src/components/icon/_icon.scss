@@ -1,0 +1,84 @@
+.wuiIcon {
+  flex-shrink: 0; // Ensures it never scales down below its intended size
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  transform: translate(0, 0); // Hack to fix Firefox "softness"
+
+  &:focus {
+    opacity: 1; // We often hide icons on hover. Make sure they appear on focus.
+    background: $wuiFocusBackgroundColor;
+  }
+}
+
+// App icons are two-toned so get an extra class. This provides the base color.
+.wuiIcon--app {
+  fill: $wuiTextColor;
+
+  // This provides the default secondary color
+  .wuiIcon__fillSecondary {
+    fill: makeGraphicContrastColor($wuiColorPrimary);
+  }
+}
+
+.wuiLogoFill {
+  fill: $wuiWazuhLogoPrimaryColor;
+}
+
+.wuiLogoSecondaryFill {
+  fill: $wuiWazuhLogoSecondaryColor;
+}
+
+.wuiIcon-isLoading {
+  opacity: $wuiIconLoadingOpacity;
+  background-color: currentColor;
+  border-radius: $wuiBorderRadius;
+}
+
+.wuiIcon-isLoaded {
+  animation: wuiIconLoading $wuiAnimSpeedNormal ease-in 0s 1 forwards;
+}
+
+// COLORS
+
+@each $name, $color in $wuiIconColors {
+  .wuiIcon--#{$name} {
+    // Use color attribute so currentColor can be used in more properties
+    color: $color;
+  }
+}
+
+// App icon special cases for fully mono
+.wuiIcon--text,
+.wuiIcon--subdued,
+.wuiIcon--primary {
+  &,
+  .wuiIcon__fillSecondary {
+    fill: currentColor;
+  }
+}
+
+// Use the negative fill on SVG elements that need to flip portions
+// of the icon to light and dark compatible modes. You can see this
+// in use on the Wazuh logo icons.
+.wuiIcon__fillNegative {
+  fill: $wuiColorDarkestShade;
+}
+
+// SIZES
+
+@each $name, $size in $wuiIconSizes {
+  .wuiIcon--#{$name} {
+    @include size($size);
+  }
+}
+
+@keyframes wuiIconLoading {
+  0% {
+    opacity: $wuiIconLoadingOpacity;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

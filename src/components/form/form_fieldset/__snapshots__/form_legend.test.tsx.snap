@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFormLegend is rendered 1`] = `
+<legend
+  aria-label="aria-label"
+  class="wuiFormLegend testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  Legend
+</legend>
+`;
+
+exports[`WuiFormLegend props compressed is rendered 1`] = `
+<legend
+  class="wuiFormLegend wuiFormLegend--compressed"
+>
+  Legend
+</legend>
+`;
+
+exports[`WuiFormLegend props hidden is rendered 1`] = `
+<legend
+  class="wuiFormLegend wuiFormLegend-isHidden"
+>
+  <span
+    class="wuiScreenReaderOnly"
+  >
+    Legend
+  </span>
+</legend>
+`;

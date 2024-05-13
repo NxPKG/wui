@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollapsedItemActions render 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorLeftCenter"
+  id="id-actions"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <span
+      class="wuiToolTipAnchor"
+    >
+      <button
+        aria-label="All actions"
+        class="wuiButtonIcon wuiButtonIcon--text"
+        data-test-subj="wuiCollapsedItemActionsButton"
+        type="button"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="boxesHorizontal"
+        />
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`CollapsedItemActions render with href and _target provided 1`] = `
+<WuiPopover
+  anchorPosition="leftCenter"
+  button={
+    <WuiI18n
+      default="All actions"
+      token="wuiCollapsedItemActions.allActions"
+    >
+      [Function]
+    </WuiI18n>
+  }
+  closePopover={[Function]}
+  display="inlineBlock"
+  hasArrow={true}
+  id="id-actions"
+  isOpen={true}
+  ownFocus={false}
+  panelPaddingSize="none"
+  popoverRef={[Function]}
+>
+  <WuiContextMenuPanel
+    hasFocus={true}
+    items={
+      Array [
+        <WuiContextMenuItem
+          disabled={false}
+          onClick={[Function]}
+        >
+          default1
+        </WuiContextMenuItem>,
+        <WuiContextMenuItem
+          onClick={[Function]}
+        >
+          <div />
+        </WuiContextMenuItem>,
+        <WuiContextMenuItem
+          disabled={false}
+          href="https://www.wazuh.com/"
+          onClick={[Function]}
+          target="_blank"
+        >
+          default2
+        </WuiContextMenuItem>,
+      ]
+    }
+  />
+</WuiPopover>
+`;

@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSuperDatePicker is rendered 1`] = `
+<WuiFlexGroup
+  className="wuiSuperDatePicker__flexWrapper"
+  gutterSize="s"
+  responsive={false}
+>
+  <WuiFlexItem>
+    <WuiFormControlLayout
+      className="wuiSuperDatePicker"
+      isDisabled={false}
+      prepend={
+        <WuiQuickSelectPopover
+          applyTime={[Function]}
+          commonlyUsedRanges={
+            Array [
+              Object {
+                "end": "now/d",
+                "label": "Today",
+                "start": "now/d",
+              },
+              Object {
+                "end": "now/w",
+                "label": "This week",
+                "start": "now/w",
+              },
+              Object {
+                "end": "now/M",
+                "label": "This month",
+                "start": "now/M",
+              },
+              Object {
+                "end": "now/y",
+                "label": "This year",
+                "start": "now/y",
+              },
+              Object {
+                "end": "now-1d/d",
+                "label": "Yesterday",
+                "start": "now-1d/d",
+              },
+              Object {
+                "end": "now",
+                "label": "Week to date",
+                "start": "now/w",
+              },
+              Object {
+                "end": "now",
+                "label": "Month to date",
+                "start": "now/M",
+              },
+              Object {
+                "end": "now",
+                "label": "Year to date",
+                "start": "now/y",
+              },
+            ]
+          }
+          dateFormat="MMM D, YYYY @ HH:mm:ss.SSS"
+          end="now"
+          isAutoRefreshOnly={false}
+          isDisabled={false}
+          isPaused={true}
+          recentlyUsedRanges={Array []}
+          refreshInterval={0}
+          start="now-15m"
+        />
+      }
+    >
+      <WuiDatePickerRange
+        className="wuiDatePickerRange--inGroup"
+        endDateControl={<div />}
+        iconType={false}
+        isCustom={true}
+        startDateControl={<div />}
+      >
+        <button
+          className="wuiSuperDatePicker__prettyFormat"
+          data-test-subj="superDatePickerShowDatesButton"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Last 15 minutes
+          <span
+            className="wuiSuperDatePicker__prettyFormatLink"
+          >
+            <WuiI18n
+              default="Show dates"
+              token="wuiSuperDatePicker.showDatesButtonLabel"
+            />
+          </span>
+        </button>
+      </WuiDatePickerRange>
+    </WuiFormControlLayout>
+  </WuiFlexItem>
+  <WuiFlexItem
+    grow={false}
+  >
+    <WuiSuperUpdateButton
+      data-test-subj="superDatePickerApplyTimeButton"
+      isDisabled={false}
+      isLoading={false}
+      needsUpdate={false}
+      onClick={[Function]}
+      showTooltip={true}
+    />
+  </WuiFlexItem>
+</WuiFlexGroup>
+`;

@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiContextMenu can pass-through horizontal rule props 1`] = `
+<div
+  class="wuiContextMenu"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <div
+      class="wuiPopoverTitle"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        Testing separator
+      </span>
+    </div>
+    <div>
+      <div>
+        <hr
+          class="wuiHorizontalRule wuiHorizontalRule--half wuiHorizontalRule--marginSmall"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiContextMenu testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiContextMenu panel item can be a separator line 1`] = `
+<div
+  class="wuiContextMenu"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <div
+      class="wuiPopoverTitle"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        Testing separator
+      </span>
+    </div>
+    <div>
+      <div>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              Foo
+            </span>
+          </span>
+        </button>
+        <hr
+          class="wuiHorizontalRule wuiHorizontalRule--full"
+        />
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              Bar
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu panel item can contain JSX 1`] = `
+<div
+  class="wuiContextMenu"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <div
+      class="wuiPopoverTitle"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        3
+      </span>
+    </div>
+    <div>
+      <div>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              <span
+                style="color:tomato"
+              >
+                foo
+              </span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu props panels and initialPanelId allows you to click the title button to go back to the previous panel 1`] = `
+<div
+  class="wuiContextMenu"
+  style="height: 0px;"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <button
+      class="wuiContextMenuPanelTitle"
+      data-test-subj="contextMenuPanelTitleButton"
+      type="button"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        <div
+          class="wuiContextMenu__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+        <span
+          class="wuiContextMenu__text"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <div>
+      <div>
+        <div>
+          2
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu props panels and initialPanelId allows you to click the title button to go back to the previous panel 2`] = `
+<div
+  class="wuiContextMenu"
+  style="height: 0px; width: 400px;"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel wuiContextMenuPanel-txOutRight"
+    tabindex="0"
+  >
+    <button
+      class="wuiContextMenuPanelTitle"
+      data-test-subj="contextMenuPanelTitleButton"
+      type="button"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        <div
+          class="wuiContextMenu__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+        <span
+          class="wuiContextMenu__text"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <div>
+      <div>
+        <div>
+          2
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel wuiContextMenuPanel-txInRight"
+    tabindex="0"
+  >
+    <button
+      class="wuiContextMenuPanelTitle"
+      data-test-subj="contextMenuPanelTitleButton"
+      type="button"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        <div
+          class="wuiContextMenu__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+        <span
+          class="wuiContextMenu__text"
+        >
+          1
+        </span>
+      </span>
+    </button>
+    <div>
+      <div>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              2a
+            </span>
+            <div
+              class="wuiContextMenu__arrow"
+              data-wuiicon-type="arrowRight"
+            />
+          </span>
+        </button>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              2b
+            </span>
+            <div
+              class="wuiContextMenu__arrow"
+              data-wuiicon-type="arrowRight"
+            />
+          </span>
+        </button>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              2c
+            </span>
+            <div
+              class="wuiContextMenu__arrow"
+              data-wuiicon-type="arrowRight"
+            />
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu props panels and initialPanelId renders the referenced panel 1`] = `
+<div
+  class="wuiContextMenu"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <button
+      class="wuiContextMenuPanelTitle"
+      data-test-subj="contextMenuPanelTitleButton"
+      type="button"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        <div
+          class="wuiContextMenu__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+        <span
+          class="wuiContextMenu__text"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <div>
+      <div>
+        <div>
+          2
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenuPanel is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiContextMenuPanel testClass1 testClass2"
+  data-test-subj="test subject string"
+  tabindex="0"
+>
+  <div>
+    <div>
+      Hello
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenuPanel props onClose renders a button as a title 1`] = `
+<div
+  class="wuiContextMenuPanel"
+  tabindex="0"
+>
+  <button
+    class="wuiContextMenuPanelTitle"
+    data-test-subj="contextMenuPanelTitleButton"
+    type="button"
+  >
+    <span
+      class="wuiContextMenu__itemLayout"
+    >
+      <div
+        class="wuiContextMenu__icon"
+        data-wuiicon-type="arrowLeft"
+      />
+      <span
+        class="wuiContextMenu__text"
+      >
+        Title
+      </span>
+    </span>
+  </button>
+  <div>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenuPanel props title is rendered 1`] = `
+<div
+  class="wuiContextMenuPanel"
+  tabindex="0"
+>
+  <div
+    class="wuiPopoverTitle"
+  >
+    <span
+      class="wuiContextMenu__itemLayout"
+    >
+      Title
+    </span>
+  </div>
+  <div>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenuPanel props transitionDirection next with transitionType in is rendered 1`] = `
+<div
+  class="wuiContextMenuPanel wuiContextMenuPanel-txInLeft"
+  tabindex="0"
+>
+  <div>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenuPanel props transitionDirection next with transitionType out is rendered 1`] = `
+<div
+  class="wuiContextMenuPanel wuiContextMenuPanel-txOutLeft"
+  tabindex="0"
+>
+  <div>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenuPanel props transitionDirection previous with transitionType in is rendered 1`] = `
+<div
+  class="wuiContextMenuPanel wuiContextMenuPanel-txInRight"
+  tabindex="0"
+>
+  <div>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenuPanel props transitionDirection previous with transitionType out is rendered 1`] = `
+<div
+  class="wuiContextMenuPanel wuiContextMenuPanel-txOutRight"
+  tabindex="0"
+>
+  <div>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenuPanel updating items and content updates to items should not re-render if any items's watchedItemProps did not change 1`] = `
+"<WuiContextMenuPanel items={{...}} hasFocus={true}>
+  <div className=\\"wuiContextMenuPanel\\" onKeyDown={[Function]} tabIndex={0} onAnimationEnd={[Function]}>
+    <div>
+      <WuiResizeObserver onResize={[Function: onResize]}>
+        <div>
+          <WuiContextMenuItem data-counter={0} buttonRef={[Function: bound ]}>
+            <button disabled={false} className=\\"wuiContextMenuItem\\" type=\\"button\\" data-counter={0}>
+              <span className=\\"wuiContextMenu__itemLayout\\">
+                <span className=\\"wuiContextMenuItem__text\\">
+                  Option A
+                </span>
+              </span>
+            </button>
+          </WuiContextMenuItem>
+          <WuiContextMenuItem data-counter={1} buttonRef={[Function: bound ]}>
+            <button disabled={false} className=\\"wuiContextMenuItem\\" type=\\"button\\" data-counter={1}>
+              <span className=\\"wuiContextMenu__itemLayout\\">
+                <span className=\\"wuiContextMenuItem__text\\">
+                  Option B
+                </span>
+              </span>
+            </button>
+          </WuiContextMenuItem>
+        </div>
+      </WuiResizeObserver>
+    </div>
+  </div>
+</WuiContextMenuPanel>"
+`;
+
+exports[`WuiContextMenuPanel updating items and content updates to items should not re-render if any items's watchedItemProps did not change 2`] = `
+"<WuiContextMenuPanel items={{...}} hasFocus={true}>
+  <div className=\\"wuiContextMenuPanel\\" onKeyDown={[Function]} tabIndex={0} onAnimationEnd={[Function]}>
+    <div>
+      <WuiResizeObserver onResize={[Function: onResize]}>
+        <div>
+          <WuiContextMenuItem data-counter={0} buttonRef={[Function: bound ]}>
+            <button disabled={false} className=\\"wuiContextMenuItem\\" type=\\"button\\" data-counter={0}>
+              <span className=\\"wuiContextMenu__itemLayout\\">
+                <span className=\\"wuiContextMenuItem__text\\">
+                  Option A
+                </span>
+              </span>
+            </button>
+          </WuiContextMenuItem>
+          <WuiContextMenuItem data-counter={1} buttonRef={[Function: bound ]}>
+            <button disabled={false} className=\\"wuiContextMenuItem\\" type=\\"button\\" data-counter={1}>
+              <span className=\\"wuiContextMenu__itemLayout\\">
+                <span className=\\"wuiContextMenuItem__text\\">
+                  Option B
+                </span>
+              </span>
+            </button>
+          </WuiContextMenuItem>
+        </div>
+      </WuiResizeObserver>
+    </div>
+  </div>
+</WuiContextMenuPanel>"
+`;
+
+exports[`WuiContextMenuPanel updating items and content updates to items should re-render at all times when children exists 1`] = `
+"<WuiContextMenuPanel hasFocus={true} items={{...}}>
+  <div className=\\"wuiContextMenuPanel\\" onKeyDown={[Function]} tabIndex={0} onAnimationEnd={[Function]}>
+    <div>
+      <WuiResizeObserver onResize={[Function: onResize]}>
+        <div>
+          Hello World
+        </div>
+      </WuiResizeObserver>
+    </div>
+  </div>
+</WuiContextMenuPanel>"
+`;
+
+exports[`WuiContextMenuPanel updating items and content updates to items should re-render at all times when children exists 2`] = `
+"<WuiContextMenuPanel hasFocus={true} items={{...}}>
+  <div className=\\"wuiContextMenuPanel\\" onKeyDown={[Function]} tabIndex={0} onAnimationEnd={[Function]}>
+    <div>
+      <WuiResizeObserver onResize={[Function: onResize]}>
+        <div>
+          More Salutations
+        </div>
+      </WuiResizeObserver>
+    </div>
+  </div>
+</WuiContextMenuPanel>"
+`;
+
+exports[`WuiContextMenuPanel updating items and content updates to items should re-render if any items's watchedItemProps did change 1`] = `
+"<WuiContextMenuPanel watchedItemProps={{...}} items={{...}} hasFocus={true}>
+  <div className=\\"wuiContextMenuPanel\\" onKeyDown={[Function]} tabIndex={0} onAnimationEnd={[Function]}>
+    <div>
+      <WuiResizeObserver onResize={[Function: onResize]}>
+        <div>
+          <WuiContextMenuItem data-counter={0} buttonRef={[Function: bound ]}>
+            <button disabled={false} className=\\"wuiContextMenuItem\\" type=\\"button\\" data-counter={0}>
+              <span className=\\"wuiContextMenu__itemLayout\\">
+                <span className=\\"wuiContextMenuItem__text\\">
+                  Option A
+                </span>
+              </span>
+            </button>
+          </WuiContextMenuItem>
+          <WuiContextMenuItem data-counter={1} buttonRef={[Function: bound ]}>
+            <button disabled={false} className=\\"wuiContextMenuItem\\" type=\\"button\\" data-counter={1}>
+              <span className=\\"wuiContextMenu__itemLayout\\">
+                <span className=\\"wuiContextMenuItem__text\\">
+                  Option B
+                </span>
+              </span>
+            </button>
+          </WuiContextMenuItem>
+        </div>
+      </WuiResizeObserver>
+    </div>
+  </div>
+</WuiContextMenuPanel>"
+`;
+
+exports[`WuiContextMenuPanel updating items and content updates to items should re-render if any items's watchedItemProps did change 2`] = `
+"<WuiContextMenuPanel watchedItemProps={{...}} items={{...}} hasFocus={true}>
+  <div className=\\"wuiContextMenuPanel\\" onKeyDown={[Function]} tabIndex={0} onAnimationEnd={[Function]}>
+    <div>
+      <WuiResizeObserver onResize={[Function: onResize]}>
+        <div>
+          <WuiContextMenuItem data-counter={2} buttonRef={[Function: bound ]}>
+            <button disabled={false} className=\\"wuiContextMenuItem\\" type=\\"button\\" data-counter={2}>
+              <span className=\\"wuiContextMenu__itemLayout\\">
+                <span className=\\"wuiContextMenuItem__text\\">
+                  Option A
+                </span>
+              </span>
+            </button>
+          </WuiContextMenuItem>
+          <WuiContextMenuItem data-counter={3} buttonRef={[Function: bound ]}>
+            <button disabled={false} className=\\"wuiContextMenuItem\\" type=\\"button\\" data-counter={3}>
+              <span className=\\"wuiContextMenu__itemLayout\\">
+                <span className=\\"wuiContextMenuItem__text\\">
+                  Option B
+                </span>
+              </span>
+            </button>
+          </WuiContextMenuItem>
+        </div>
+      </WuiResizeObserver>
+    </div>
+  </div>
+</WuiContextMenuPanel>"
+`;

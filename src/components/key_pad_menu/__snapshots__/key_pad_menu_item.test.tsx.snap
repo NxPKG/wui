@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiKeyPadMenuItem is rendered 1`] = `
+<a
+  aria-label="aria-label"
+  class="wuiKeyPadMenuItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  href="#"
+  rel="noreferrer"
+>
+  <div
+    class="wuiKeyPadMenuItem__inner"
+  >
+    <div
+      class="wuiKeyPadMenuItem__icon"
+    >
+      Icon
+    </div>
+    <p
+      class="wuiKeyPadMenuItem__label"
+    >
+      Label
+    </p>
+  </div>
+</a>
+`;
+
+exports[`WuiKeyPadMenuItem renders button 1`] = `
+<button
+  class="wuiKeyPadMenuItem"
+  type="button"
+>
+  <div
+    class="wuiKeyPadMenuItem__inner"
+  >
+    <div
+      class="wuiKeyPadMenuItem__icon"
+    >
+      Icon
+    </div>
+    <p
+      class="wuiKeyPadMenuItem__label"
+    >
+      Label
+    </p>
+  </div>
+</button>
+`;
+
+exports[`WuiKeyPadMenuItem renders href 1`] = `
+<a
+  class="wuiKeyPadMenuItem"
+  href="#"
+  rel="noreferrer"
+>
+  <div
+    class="wuiKeyPadMenuItem__inner"
+  >
+    <div
+      class="wuiKeyPadMenuItem__icon"
+    >
+      Icon
+    </div>
+    <p
+      class="wuiKeyPadMenuItem__label"
+    >
+      Label
+    </p>
+  </div>
+</a>
+`;
+
+exports[`WuiKeyPadMenuItem renders href with rel 1`] = `
+<a
+  class="wuiKeyPadMenuItem"
+  href="#"
+  rel="noreferrer"
+>
+  <div
+    class="wuiKeyPadMenuItem__inner"
+  >
+    <div
+      class="wuiKeyPadMenuItem__icon"
+    >
+      Icon
+    </div>
+    <p
+      class="wuiKeyPadMenuItem__label"
+    >
+      Label
+    </p>
+  </div>
+</a>
+`;

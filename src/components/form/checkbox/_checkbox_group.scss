@@ -1,0 +1,7 @@
+.wuiCheckboxGroup__item + .wuiCheckboxGroup__item {
+  margin-top: $wuiSizeXS;
+
+  &.wuiCheckbox--compressed {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,164 @@
+/**
+ * 1. Text-align defaults to center, so we have to override that.
+ * 2. Need this on the button element to color the underline.
+ */
+.wuiSideNavItemButton {
+  @include wuiFontSizeS;
+  text-align: left; /* 1 */
+  display: block;
+  width: 100%;
+  padding: $wuiSizeXS / 2 0;
+  color: $wuiTextColor; /* 2 */
+
+  &.wuiSideNavItemButton--isClickable {
+    &:hover .wuiSideNavItemButton__label {
+      text-decoration: underline;
+    }
+
+    // Focus state background regardless of index/selected state.
+    &:focus {
+      // sass-lint:disable-block no-important
+      background-color: $wuiFocusBackgroundColor !important;
+    }
+  }
+
+  &.wuiSideNavItemButton-isSelected {
+    .wuiSideNavItemButton__icon {
+      fill: $wuiColorPrimary;
+    }
+
+    .wuiSideNavItemButton__label {
+      color: $wuiColorPrimary;
+      font-weight: $wuiFontWeightBold;
+      text-decoration: underline;
+    }
+  }
+}
+
+.wuiSideNavItemButton__content {
+  display: flex;
+  align-items: center;
+}
+
+.wuiSideNavItemButton__icon {
+  margin-right: $wuiSizeS;
+}
+
+/**
+  * 1. Enable ellipsis overflow to work (https://css-tricks.com/flexbox-truncated-text/)
+  */
+.wuiSideNavItemButton__labelContainer {
+  min-width: 0; /* 1 */
+}
+
+.wuiSideNavItemButton__label {
+  color: $wuiTitleColor;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+/**
+ * 1. Draw the vertical line to group an expanded item's child items together.
+ */
+.wuiSideNavItem__items {
+  position: relative;
+
+  &:after { /* 1 */
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: $wuiSizeM;
+    width: 1px;
+    background: $wuiBorderColor;
+    left: 0;
+  }
+}
+
+.wuiSideNavItem--root {
+  &.wuiSideNavItem--rootIcon > .wuiSideNavItem__items {
+    margin-left: $wuiSizeL;
+  }
+
+  /**
+   * 1. Create padding around focus area without indenting the item itself.
+   */
+  & > .wuiSideNavItemButton {
+    margin-bottom: $wuiSizeS;
+    padding: 0;
+    padding-left: $wuiSizeS; /* 1 */
+    padding-right: $wuiSizeS; /* 1 */
+    margin-left: -$wuiSizeS; /* 1 */
+    width: calc(100% + #{$wuiSizeS * 2}); /* 1 */
+
+    .wuiSideNavItemButton__label {
+      @include wuiTitle('xs');
+    }
+  }
+
+
+  & > .wuiSideNavItem__items {
+    position: static;
+    margin-left: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  & + & {
+    margin-top: $wuiSizeXL;
+  }
+}
+
+.wuiSideNavItem--trunk {
+  /**
+   * 1. Create padding around focus area without indenting the item itself.
+   */
+  & > .wuiSideNavItemButton {
+    padding-left: $wuiSizeS; /* 1 */
+    padding-right: $wuiSizeS; /* 1 */
+    margin-left: -$wuiSizeS; /* 1 */
+    width: calc(100% + #{$wuiSizeS * 2}); /* 1 */
+  }
+
+  & > .wuiSideNavItem__items {
+    margin-left: $wuiSizeS;
+    width: 100%;
+  }
+}
+
+.wuiSideNavItem--branch {
+  /**
+   * 1. Absolutely position the horizontal tick connecting the item to the vertical line.
+   */
+  & > .wuiSideNavItemButton {
+    position: relative; /* 1 */
+    padding-left: $wuiSizeS;
+    padding-right: $wuiSizeS; /* 1 */
+
+    &:after {
+      position: absolute; /* 1 */
+      content: '';
+      top: 50%;
+      left: 0;
+      width: $wuiSizeXS;
+      height: 1px;
+      background: $wuiBorderColor;
+    }
+  }
+
+  & > .wuiSideNavItem__items {
+    margin-left: $wuiSize;
+  }
+
+  .wuiSideNavItemButton__icon {
+    fill: $wuiTextSubduedColor;
+  }
+
+  .wuiSideNavItemButton__label {
+    color: $wuiTextSubduedColor;
+  }
+}
+

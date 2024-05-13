@@ -1,0 +1,13 @@
+// Animations
+
+$wuiAnimSlightBounce: cubic-bezier(.34, 1.61, .7, 1) !default;
+$wuiAnimSlightResistance: cubic-bezier(.694, .0482, .335, 1) !default;
+
+$wuiAnimSpeedExtraFast: 90ms !default;
+$wuiAnimSpeedFast: 150ms !default;
+$wuiAnimSpeedNormal: 250ms !default;
+$wuiAnimSpeedSlow: 350ms !default;
+$wuiAnimSpeedExtraSlow: 500ms !default;
+
+// Keyframe animation declarations can be found in
+// utility/animations.scss

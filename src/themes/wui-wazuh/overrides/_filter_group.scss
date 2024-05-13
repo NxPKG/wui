@@ -1,0 +1,25 @@
+.wuiFilterGroup {
+  border: none;
+  border-radius: $wuiFormControlBorderRadius;
+  background-color: $wuiFormBackgroundColor;
+  box-shadow: inset 0 0 0 1px $wuiFormBorderColor;
+}
+
+.wuiFilterButton {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  // Box shadow simulates bottom and left borders
+  box-shadow: 0 1px 0 0 $wuiFormBorderColor, -1px 0 0 0 $wuiFormBorderColor;
+
+  .wuiFilterButton--withNext + & {
+    // Remove just the left faux border
+    box-shadow: 0 1px 0 0 $wuiFormBorderColor;
+  }
+}
+
+.wuiFormRow--compressed {
+  .wuiFilterGroup {
+    border-radius: $wuiBorderRadiusSmall;
+  }
+}

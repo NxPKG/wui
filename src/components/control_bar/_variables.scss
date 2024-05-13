@@ -1,0 +1,13 @@
+$wuiControlBarBackground: lightOrDarkTheme($wuiColorDarkestShade, $wuiColorInk);
+$wuiControlBarText: lighten(makeHighContrastColor($wuiColorLightestShade, $wuiControlBarBackground), 20%);
+$wuiControlBarBorderColor: transparentize($wuiColorGhost, .8);
+$wuiControlBarInitialHeight: $wuiSizeXXL;
+$wuiControlBarMaxHeight: calc(100vh - #{$wuiSize * 5});
+
+// Pixel heights ensure no blurriness caused by half pixel offsets
+$wuiControlBarHeights: (
+  s: $wuiSize * 15,
+  m: $wuiSize * 30,
+  l: 100vh,
+);
+

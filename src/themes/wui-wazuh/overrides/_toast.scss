@@ -1,0 +1,21 @@
+.wuiToast {
+  border: none;
+  border-radius: $wuiBorderRadius;
+}
+
+$wuiToastTypes: (
+  primary: $wuiColorPrimary,
+  success: $wuiColorSecondary,
+  warning: $wuiColorWarning,
+  danger: $wuiColorDanger
+);
+
+@each $name, $color in $wuiToastTypes {
+  .wuiToast--#{$name} {
+    border-top: 2px solid $color;
+  }
+}
+
+.wuiToastHeader__title {
+  font-weight: $wuiFontWeightBold;
+}

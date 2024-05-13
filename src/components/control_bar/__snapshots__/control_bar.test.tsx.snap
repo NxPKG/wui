@@ -1,0 +1,2207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiControlBar is rendered 1`] = `
+<section
+  aria-label="aria-label"
+  class="wuiControlBar testClass1 testClass2 wuiControlBar--large wuiControlBar--fixed"
+  data-test-subj="test subject string"
+  style="left: 0px; right: 0px;"
+>
+  <h2
+    class="wuiScreenReaderOnly"
+  >
+    Page level controls
+  </h2>
+  <div
+    class="wuiControlBar__controls"
+  >
+    <nav
+      aria-label="breadcrumb"
+      class="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+    >
+      <span
+        aria-current="false"
+        class="wuiBreadcrumb"
+        title="src"
+      >
+        src
+      </span>
+      <div
+        class="wuiBreadcrumbSeparator"
+      />
+      <span
+        aria-current="page"
+        class="wuiBreadcrumb wuiBreadcrumb--last"
+        title="components"
+      >
+        components
+      </span>
+    </nav>
+    <button
+      class="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+      data-test-subj="dts"
+      type="button"
+    >
+      <span
+        class="wuiButtonContent wuiButton__content"
+      >
+        <span
+          class="wuiButton__text"
+        >
+          Sound the Alarm
+        </span>
+      </span>
+    </button>
+    <div
+      class="wuiControlBar__text"
+    >
+      Close the Hatch
+    </div>
+    <div
+      class="wuiControlBar__divider"
+    />
+    <div
+      aria-label="Sample Icon"
+      class="wuiControlBar__icon"
+      color="danger"
+      data-wuiicon-type="alert"
+    />
+    <div
+      class="wuiControlBar__spacer"
+    />
+    <button
+      class="wuiControlBar__tab"
+    >
+      Flight 815
+    </button>
+  </div>
+</section>
+`;
+
+exports[`WuiControlBar props leftOffset is rendered 1`] = `
+<WuiControlBar
+  controls={
+    Array [
+      Object {
+        "breadcrumbs": Array [
+          Object {
+            "text": "src",
+          },
+          Object {
+            "text": "components",
+          },
+        ],
+        "controlType": "breadcrumbs",
+        "id": "current_file_path",
+        "responsive": false,
+      },
+      Object {
+        "controlType": "button",
+        "data-test-subj": "dts",
+        "id": "sound_the_alarm",
+        "label": "Sound the Alarm",
+        "onClick": [Function],
+      },
+      Object {
+        "controlType": "text",
+        "id": "close_the_hatch",
+        "text": "Close the Hatch",
+      },
+      Object {
+        "controlType": "divider",
+      },
+      Object {
+        "aria-label": "Sample Icon",
+        "color": "danger",
+        "controlType": "icon",
+        "iconType": "alert",
+        "id": "sample_icon",
+      },
+      Object {
+        "controlType": "spacer",
+      },
+      Object {
+        "controlType": "tab",
+        "id": "flight_815",
+        "label": "Flight 815",
+        "onClick": [Function],
+      },
+    ]
+  }
+  leftOffset={200}
+  position="fixed"
+  rightOffset={0}
+  showContent={false}
+  showOnMobile={false}
+  size="l"
+>
+  <WuiPortal>
+    <Portal
+      containerInfo={
+        <div>
+          <section
+            aria-label="Page level controls"
+            class="wuiControlBar wuiControlBar--large wuiControlBar--fixed"
+            style="left: 200px; right: 0px;"
+          >
+            <h2
+              class="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+            <div
+              class="wuiControlBar__controls"
+            >
+              <nav
+                aria-label="breadcrumb"
+                class="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <span
+                  aria-current="false"
+                  class="wuiBreadcrumb"
+                  title="src"
+                >
+                  src
+                </span>
+                <div
+                  class="wuiBreadcrumbSeparator"
+                />
+                <span
+                  aria-current="page"
+                  class="wuiBreadcrumb wuiBreadcrumb--last"
+                  title="components"
+                >
+                  components
+                </span>
+              </nav>
+              <button
+                class="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                data-test-subj="dts"
+                type="button"
+              >
+                <span
+                  class="wuiButtonContent wuiButton__content"
+                >
+                  <span
+                    class="wuiButton__text"
+                  >
+                    Sound the Alarm
+                  </span>
+                </span>
+              </button>
+              <div
+                class="wuiControlBar__text"
+              >
+                Close the Hatch
+              </div>
+              <div
+                class="wuiControlBar__divider"
+              />
+              <div
+                aria-label="Sample Icon"
+                class="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+              <div
+                class="wuiControlBar__spacer"
+              />
+              <button
+                class="wuiControlBar__tab"
+              >
+                Flight 815
+              </button>
+            </div>
+          </section>
+          <p
+            aria-live="assertive"
+            class="wuiScreenReaderOnly"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </p>
+        </div>
+      }
+    >
+      <WuiI18n
+        default="Page level controls"
+        token="wuiControlBar.screenReaderHeading"
+      >
+        <section
+          aria-label="Page level controls"
+          className="wuiControlBar wuiControlBar--large wuiControlBar--fixed"
+          style={
+            Object {
+              "left": 200,
+              "maxHeight": undefined,
+              "right": 0,
+            }
+          }
+        >
+          <WuiScreenReaderOnly>
+            <h2
+              className="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+          </WuiScreenReaderOnly>
+          <div
+            className="wuiControlBar__controls"
+          >
+            <WuiBreadcrumbs
+              breadcrumbs={
+                Array [
+                  Object {
+                    "text": "src",
+                  },
+                  Object {
+                    "text": "components",
+                  },
+                ]
+              }
+              className="wuiControlBar__breadcrumbs"
+              key="current_file_path"
+              responsive={false}
+            >
+              <nav
+                aria-label="breadcrumb"
+                className="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <WuiInnerText>
+                  <span
+                    aria-current="false"
+                    className="wuiBreadcrumb"
+                    title="src"
+                  >
+                    src
+                  </span>
+                </WuiInnerText>
+                <WuiBreadcrumbSeparator>
+                  <div
+                    className="wuiBreadcrumbSeparator"
+                  />
+                </WuiBreadcrumbSeparator>
+                <WuiInnerText>
+                  <span
+                    aria-current="page"
+                    className="wuiBreadcrumb wuiBreadcrumb--last"
+                    title="components"
+                  >
+                    components
+                  </span>
+                </WuiInnerText>
+              </nav>
+            </WuiBreadcrumbs>
+            <WuiButton
+              className="wuiControlBar__button"
+              color="ghost"
+              data-test-subj="dts"
+              key="sound_the_alarm1"
+              onClick={[Function]}
+              size="s"
+            >
+              <WuiButtonDisplay
+                className="wuiControlBar__button"
+                color="ghost"
+                data-test-subj="dts"
+                disabled={false}
+                element="button"
+                isDisabled={false}
+                onClick={[Function]}
+                size="s"
+                type="button"
+              >
+                <button
+                  className="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                  data-test-subj="dts"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <WuiButtonContent
+                    className="wuiButton__content"
+                    iconSide="left"
+                    textProps={
+                      Object {
+                        "className": "wuiButton__text",
+                      }
+                    }
+                  >
+                    <span
+                      className="wuiButtonContent wuiButton__content"
+                    >
+                      <span
+                        className="wuiButton__text"
+                      >
+                        Sound the Alarm
+                      </span>
+                    </span>
+                  </WuiButtonContent>
+                </button>
+              </WuiButtonDisplay>
+            </WuiButton>
+            <div
+              className="wuiControlBar__text"
+              key="close_the_hatch"
+            >
+              Close the Hatch
+            </div>
+            <div
+              className="wuiControlBar__divider"
+              key="divider3"
+            />
+            <WuiIcon
+              aria-label="Sample Icon"
+              className="wuiControlBar__icon"
+              color="danger"
+              key="sample_icon4"
+              type="alert"
+            >
+              <div
+                aria-label="Sample Icon"
+                className="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+            </WuiIcon>
+            <div
+              className="wuiControlBar__spacer"
+              key="spacer5"
+            />
+            <button
+              className="wuiControlBar__tab"
+              key="flight_8156"
+              onClick={[Function]}
+            >
+              Flight 815
+            </button>
+          </div>
+        </section>
+      </WuiI18n>
+      <WuiScreenReaderOnly>
+        <p
+          aria-live="assertive"
+          className="wuiScreenReaderOnly"
+        >
+          <WuiI18n
+            default="There is a new region landmark with page level controls at the end of the document."
+            token="wuiControlBar.screenReaderAnnouncement"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </WuiI18n>
+        </p>
+      </WuiScreenReaderOnly>
+    </Portal>
+  </WuiPortal>
+</WuiControlBar>
+`;
+
+exports[`WuiControlBar props maxHeight is rendered 1`] = `
+<WuiControlBar
+  controls={
+    Array [
+      Object {
+        "breadcrumbs": Array [
+          Object {
+            "text": "src",
+          },
+          Object {
+            "text": "components",
+          },
+        ],
+        "controlType": "breadcrumbs",
+        "id": "current_file_path",
+        "responsive": false,
+      },
+      Object {
+        "controlType": "button",
+        "data-test-subj": "dts",
+        "id": "sound_the_alarm",
+        "label": "Sound the Alarm",
+        "onClick": [Function],
+      },
+      Object {
+        "controlType": "text",
+        "id": "close_the_hatch",
+        "text": "Close the Hatch",
+      },
+      Object {
+        "controlType": "divider",
+      },
+      Object {
+        "aria-label": "Sample Icon",
+        "color": "danger",
+        "controlType": "icon",
+        "iconType": "alert",
+        "id": "sample_icon",
+      },
+      Object {
+        "controlType": "spacer",
+      },
+      Object {
+        "controlType": "tab",
+        "id": "flight_815",
+        "label": "Flight 815",
+        "onClick": [Function],
+      },
+    ]
+  }
+  leftOffset={0}
+  maxHeight="20rem"
+  position="fixed"
+  rightOffset={0}
+  showContent={false}
+  showOnMobile={false}
+  size="l"
+>
+  <WuiPortal>
+    <Portal
+      containerInfo={
+        <div>
+          <section
+            aria-label="Page level controls"
+            class="wuiControlBar wuiControlBar--large wuiControlBar--fixed"
+            style="left: 0px; right: 0px; max-height: 20rem;"
+          >
+            <h2
+              class="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+            <div
+              class="wuiControlBar__controls"
+            >
+              <nav
+                aria-label="breadcrumb"
+                class="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <span
+                  aria-current="false"
+                  class="wuiBreadcrumb"
+                  title="src"
+                >
+                  src
+                </span>
+                <div
+                  class="wuiBreadcrumbSeparator"
+                />
+                <span
+                  aria-current="page"
+                  class="wuiBreadcrumb wuiBreadcrumb--last"
+                  title="components"
+                >
+                  components
+                </span>
+              </nav>
+              <button
+                class="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                data-test-subj="dts"
+                type="button"
+              >
+                <span
+                  class="wuiButtonContent wuiButton__content"
+                >
+                  <span
+                    class="wuiButton__text"
+                  >
+                    Sound the Alarm
+                  </span>
+                </span>
+              </button>
+              <div
+                class="wuiControlBar__text"
+              >
+                Close the Hatch
+              </div>
+              <div
+                class="wuiControlBar__divider"
+              />
+              <div
+                aria-label="Sample Icon"
+                class="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+              <div
+                class="wuiControlBar__spacer"
+              />
+              <button
+                class="wuiControlBar__tab"
+              >
+                Flight 815
+              </button>
+            </div>
+          </section>
+          <p
+            aria-live="assertive"
+            class="wuiScreenReaderOnly"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </p>
+        </div>
+      }
+    >
+      <WuiI18n
+        default="Page level controls"
+        token="wuiControlBar.screenReaderHeading"
+      >
+        <section
+          aria-label="Page level controls"
+          className="wuiControlBar wuiControlBar--large wuiControlBar--fixed"
+          style={
+            Object {
+              "left": 0,
+              "maxHeight": "20rem",
+              "right": 0,
+            }
+          }
+        >
+          <WuiScreenReaderOnly>
+            <h2
+              className="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+          </WuiScreenReaderOnly>
+          <div
+            className="wuiControlBar__controls"
+          >
+            <WuiBreadcrumbs
+              breadcrumbs={
+                Array [
+                  Object {
+                    "text": "src",
+                  },
+                  Object {
+                    "text": "components",
+                  },
+                ]
+              }
+              className="wuiControlBar__breadcrumbs"
+              key="current_file_path"
+              responsive={false}
+            >
+              <nav
+                aria-label="breadcrumb"
+                className="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <WuiInnerText>
+                  <span
+                    aria-current="false"
+                    className="wuiBreadcrumb"
+                    title="src"
+                  >
+                    src
+                  </span>
+                </WuiInnerText>
+                <WuiBreadcrumbSeparator>
+                  <div
+                    className="wuiBreadcrumbSeparator"
+                  />
+                </WuiBreadcrumbSeparator>
+                <WuiInnerText>
+                  <span
+                    aria-current="page"
+                    className="wuiBreadcrumb wuiBreadcrumb--last"
+                    title="components"
+                  >
+                    components
+                  </span>
+                </WuiInnerText>
+              </nav>
+            </WuiBreadcrumbs>
+            <WuiButton
+              className="wuiControlBar__button"
+              color="ghost"
+              data-test-subj="dts"
+              key="sound_the_alarm1"
+              onClick={[Function]}
+              size="s"
+            >
+              <WuiButtonDisplay
+                className="wuiControlBar__button"
+                color="ghost"
+                data-test-subj="dts"
+                disabled={false}
+                element="button"
+                isDisabled={false}
+                onClick={[Function]}
+                size="s"
+                type="button"
+              >
+                <button
+                  className="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                  data-test-subj="dts"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <WuiButtonContent
+                    className="wuiButton__content"
+                    iconSide="left"
+                    textProps={
+                      Object {
+                        "className": "wuiButton__text",
+                      }
+                    }
+                  >
+                    <span
+                      className="wuiButtonContent wuiButton__content"
+                    >
+                      <span
+                        className="wuiButton__text"
+                      >
+                        Sound the Alarm
+                      </span>
+                    </span>
+                  </WuiButtonContent>
+                </button>
+              </WuiButtonDisplay>
+            </WuiButton>
+            <div
+              className="wuiControlBar__text"
+              key="close_the_hatch"
+            >
+              Close the Hatch
+            </div>
+            <div
+              className="wuiControlBar__divider"
+              key="divider3"
+            />
+            <WuiIcon
+              aria-label="Sample Icon"
+              className="wuiControlBar__icon"
+              color="danger"
+              key="sample_icon4"
+              type="alert"
+            >
+              <div
+                aria-label="Sample Icon"
+                className="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+            </WuiIcon>
+            <div
+              className="wuiControlBar__spacer"
+              key="spacer5"
+            />
+            <button
+              className="wuiControlBar__tab"
+              key="flight_8156"
+              onClick={[Function]}
+            >
+              Flight 815
+            </button>
+          </div>
+        </section>
+      </WuiI18n>
+      <WuiScreenReaderOnly>
+        <p
+          aria-live="assertive"
+          className="wuiScreenReaderOnly"
+        >
+          <WuiI18n
+            default="There is a new region landmark with page level controls at the end of the document."
+            token="wuiControlBar.screenReaderAnnouncement"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </WuiI18n>
+        </p>
+      </WuiScreenReaderOnly>
+    </Portal>
+  </WuiPortal>
+</WuiControlBar>
+`;
+
+exports[`WuiControlBar props mobile is rendered 1`] = `
+<WuiControlBar
+  controls={
+    Array [
+      Object {
+        "breadcrumbs": Array [
+          Object {
+            "text": "src",
+          },
+          Object {
+            "text": "components",
+          },
+        ],
+        "controlType": "breadcrumbs",
+        "id": "current_file_path",
+        "responsive": false,
+      },
+      Object {
+        "controlType": "button",
+        "data-test-subj": "dts",
+        "id": "sound_the_alarm",
+        "label": "Sound the Alarm",
+        "onClick": [Function],
+      },
+      Object {
+        "controlType": "text",
+        "id": "close_the_hatch",
+        "text": "Close the Hatch",
+      },
+      Object {
+        "controlType": "divider",
+      },
+      Object {
+        "aria-label": "Sample Icon",
+        "color": "danger",
+        "controlType": "icon",
+        "iconType": "alert",
+        "id": "sample_icon",
+      },
+      Object {
+        "controlType": "spacer",
+      },
+      Object {
+        "controlType": "tab",
+        "id": "flight_815",
+        "label": "Flight 815",
+        "onClick": [Function],
+      },
+    ]
+  }
+  leftOffset={0}
+  position="fixed"
+  rightOffset={0}
+  showContent={false}
+  showOnMobile={true}
+  size="l"
+>
+  <WuiPortal>
+    <Portal
+      containerInfo={
+        <div>
+          <section
+            aria-label="Page level controls"
+            class="wuiControlBar wuiControlBar--large wuiControlBar--fixed wuiControlBar--showOnMobile"
+            style="left: 0px; right: 0px;"
+          >
+            <h2
+              class="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+            <div
+              class="wuiControlBar__controls"
+            >
+              <nav
+                aria-label="breadcrumb"
+                class="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <span
+                  aria-current="false"
+                  class="wuiBreadcrumb"
+                  title="src"
+                >
+                  src
+                </span>
+                <div
+                  class="wuiBreadcrumbSeparator"
+                />
+                <span
+                  aria-current="page"
+                  class="wuiBreadcrumb wuiBreadcrumb--last"
+                  title="components"
+                >
+                  components
+                </span>
+              </nav>
+              <button
+                class="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                data-test-subj="dts"
+                type="button"
+              >
+                <span
+                  class="wuiButtonContent wuiButton__content"
+                >
+                  <span
+                    class="wuiButton__text"
+                  >
+                    Sound the Alarm
+                  </span>
+                </span>
+              </button>
+              <div
+                class="wuiControlBar__text"
+              >
+                Close the Hatch
+              </div>
+              <div
+                class="wuiControlBar__divider"
+              />
+              <div
+                aria-label="Sample Icon"
+                class="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+              <div
+                class="wuiControlBar__spacer"
+              />
+              <button
+                class="wuiControlBar__tab"
+              >
+                Flight 815
+              </button>
+            </div>
+          </section>
+          <p
+            aria-live="assertive"
+            class="wuiScreenReaderOnly"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </p>
+        </div>
+      }
+    >
+      <WuiI18n
+        default="Page level controls"
+        token="wuiControlBar.screenReaderHeading"
+      >
+        <section
+          aria-label="Page level controls"
+          className="wuiControlBar wuiControlBar--large wuiControlBar--fixed wuiControlBar--showOnMobile"
+          style={
+            Object {
+              "left": 0,
+              "maxHeight": undefined,
+              "right": 0,
+            }
+          }
+        >
+          <WuiScreenReaderOnly>
+            <h2
+              className="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+          </WuiScreenReaderOnly>
+          <div
+            className="wuiControlBar__controls"
+          >
+            <WuiBreadcrumbs
+              breadcrumbs={
+                Array [
+                  Object {
+                    "text": "src",
+                  },
+                  Object {
+                    "text": "components",
+                  },
+                ]
+              }
+              className="wuiControlBar__breadcrumbs"
+              key="current_file_path"
+              responsive={false}
+            >
+              <nav
+                aria-label="breadcrumb"
+                className="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <WuiInnerText>
+                  <span
+                    aria-current="false"
+                    className="wuiBreadcrumb"
+                    title="src"
+                  >
+                    src
+                  </span>
+                </WuiInnerText>
+                <WuiBreadcrumbSeparator>
+                  <div
+                    className="wuiBreadcrumbSeparator"
+                  />
+                </WuiBreadcrumbSeparator>
+                <WuiInnerText>
+                  <span
+                    aria-current="page"
+                    className="wuiBreadcrumb wuiBreadcrumb--last"
+                    title="components"
+                  >
+                    components
+                  </span>
+                </WuiInnerText>
+              </nav>
+            </WuiBreadcrumbs>
+            <WuiButton
+              className="wuiControlBar__button"
+              color="ghost"
+              data-test-subj="dts"
+              key="sound_the_alarm1"
+              onClick={[Function]}
+              size="s"
+            >
+              <WuiButtonDisplay
+                className="wuiControlBar__button"
+                color="ghost"
+                data-test-subj="dts"
+                disabled={false}
+                element="button"
+                isDisabled={false}
+                onClick={[Function]}
+                size="s"
+                type="button"
+              >
+                <button
+                  className="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                  data-test-subj="dts"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <WuiButtonContent
+                    className="wuiButton__content"
+                    iconSide="left"
+                    textProps={
+                      Object {
+                        "className": "wuiButton__text",
+                      }
+                    }
+                  >
+                    <span
+                      className="wuiButtonContent wuiButton__content"
+                    >
+                      <span
+                        className="wuiButton__text"
+                      >
+                        Sound the Alarm
+                      </span>
+                    </span>
+                  </WuiButtonContent>
+                </button>
+              </WuiButtonDisplay>
+            </WuiButton>
+            <div
+              className="wuiControlBar__text"
+              key="close_the_hatch"
+            >
+              Close the Hatch
+            </div>
+            <div
+              className="wuiControlBar__divider"
+              key="divider3"
+            />
+            <WuiIcon
+              aria-label="Sample Icon"
+              className="wuiControlBar__icon"
+              color="danger"
+              key="sample_icon4"
+              type="alert"
+            >
+              <div
+                aria-label="Sample Icon"
+                className="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+            </WuiIcon>
+            <div
+              className="wuiControlBar__spacer"
+              key="spacer5"
+            />
+            <button
+              className="wuiControlBar__tab"
+              key="flight_8156"
+              onClick={[Function]}
+            >
+              Flight 815
+            </button>
+          </div>
+        </section>
+      </WuiI18n>
+      <WuiScreenReaderOnly>
+        <p
+          aria-live="assertive"
+          className="wuiScreenReaderOnly"
+        >
+          <WuiI18n
+            default="There is a new region landmark with page level controls at the end of the document."
+            token="wuiControlBar.screenReaderAnnouncement"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </WuiI18n>
+        </p>
+      </WuiScreenReaderOnly>
+    </Portal>
+  </WuiPortal>
+</WuiControlBar>
+`;
+
+exports[`WuiControlBar props position is rendered 1`] = `
+<WuiControlBar
+  controls={
+    Array [
+      Object {
+        "breadcrumbs": Array [
+          Object {
+            "text": "src",
+          },
+          Object {
+            "text": "components",
+          },
+        ],
+        "controlType": "breadcrumbs",
+        "id": "current_file_path",
+        "responsive": false,
+      },
+      Object {
+        "controlType": "button",
+        "data-test-subj": "dts",
+        "id": "sound_the_alarm",
+        "label": "Sound the Alarm",
+        "onClick": [Function],
+      },
+      Object {
+        "controlType": "text",
+        "id": "close_the_hatch",
+        "text": "Close the Hatch",
+      },
+      Object {
+        "controlType": "divider",
+      },
+      Object {
+        "aria-label": "Sample Icon",
+        "color": "danger",
+        "controlType": "icon",
+        "iconType": "alert",
+        "id": "sample_icon",
+      },
+      Object {
+        "controlType": "spacer",
+      },
+      Object {
+        "controlType": "tab",
+        "id": "flight_815",
+        "label": "Flight 815",
+        "onClick": [Function],
+      },
+    ]
+  }
+  leftOffset={0}
+  position="absolute"
+  rightOffset={0}
+  showContent={false}
+  showOnMobile={false}
+  size="l"
+>
+  <WuiI18n
+    default="Page level controls"
+    token="wuiControlBar.screenReaderHeading"
+  >
+    <section
+      aria-label="Page level controls"
+      className="wuiControlBar wuiControlBar--large wuiControlBar--absolute"
+      style={
+        Object {
+          "left": 0,
+          "maxHeight": undefined,
+          "right": 0,
+        }
+      }
+    >
+      <WuiScreenReaderOnly>
+        <h2
+          className="wuiScreenReaderOnly"
+        >
+          Page level controls
+        </h2>
+      </WuiScreenReaderOnly>
+      <div
+        className="wuiControlBar__controls"
+      >
+        <WuiBreadcrumbs
+          breadcrumbs={
+            Array [
+              Object {
+                "text": "src",
+              },
+              Object {
+                "text": "components",
+              },
+            ]
+          }
+          className="wuiControlBar__breadcrumbs"
+          key="current_file_path"
+          responsive={false}
+        >
+          <nav
+            aria-label="breadcrumb"
+            className="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+          >
+            <WuiInnerText>
+              <span
+                aria-current="false"
+                className="wuiBreadcrumb"
+                title="src"
+              >
+                src
+              </span>
+            </WuiInnerText>
+            <WuiBreadcrumbSeparator>
+              <div
+                className="wuiBreadcrumbSeparator"
+              />
+            </WuiBreadcrumbSeparator>
+            <WuiInnerText>
+              <span
+                aria-current="page"
+                className="wuiBreadcrumb wuiBreadcrumb--last"
+                title="components"
+              >
+                components
+              </span>
+            </WuiInnerText>
+          </nav>
+        </WuiBreadcrumbs>
+        <WuiButton
+          className="wuiControlBar__button"
+          color="ghost"
+          data-test-subj="dts"
+          key="sound_the_alarm1"
+          onClick={[Function]}
+          size="s"
+        >
+          <WuiButtonDisplay
+            className="wuiControlBar__button"
+            color="ghost"
+            data-test-subj="dts"
+            disabled={false}
+            element="button"
+            isDisabled={false}
+            onClick={[Function]}
+            size="s"
+            type="button"
+          >
+            <button
+              className="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+              data-test-subj="dts"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              <WuiButtonContent
+                className="wuiButton__content"
+                iconSide="left"
+                textProps={
+                  Object {
+                    "className": "wuiButton__text",
+                  }
+                }
+              >
+                <span
+                  className="wuiButtonContent wuiButton__content"
+                >
+                  <span
+                    className="wuiButton__text"
+                  >
+                    Sound the Alarm
+                  </span>
+                </span>
+              </WuiButtonContent>
+            </button>
+          </WuiButtonDisplay>
+        </WuiButton>
+        <div
+          className="wuiControlBar__text"
+          key="close_the_hatch"
+        >
+          Close the Hatch
+        </div>
+        <div
+          className="wuiControlBar__divider"
+          key="divider3"
+        />
+        <WuiIcon
+          aria-label="Sample Icon"
+          className="wuiControlBar__icon"
+          color="danger"
+          key="sample_icon4"
+          type="alert"
+        >
+          <div
+            aria-label="Sample Icon"
+            className="wuiControlBar__icon"
+            color="danger"
+            data-wuiicon-type="alert"
+          />
+        </WuiIcon>
+        <div
+          className="wuiControlBar__spacer"
+          key="spacer5"
+        />
+        <button
+          className="wuiControlBar__tab"
+          key="flight_8156"
+          onClick={[Function]}
+        >
+          Flight 815
+        </button>
+      </div>
+    </section>
+  </WuiI18n>
+</WuiControlBar>
+`;
+
+exports[`WuiControlBar props rightOffset is rendered 1`] = `
+<WuiControlBar
+  controls={
+    Array [
+      Object {
+        "breadcrumbs": Array [
+          Object {
+            "text": "src",
+          },
+          Object {
+            "text": "components",
+          },
+        ],
+        "controlType": "breadcrumbs",
+        "id": "current_file_path",
+        "responsive": false,
+      },
+      Object {
+        "controlType": "button",
+        "data-test-subj": "dts",
+        "id": "sound_the_alarm",
+        "label": "Sound the Alarm",
+        "onClick": [Function],
+      },
+      Object {
+        "controlType": "text",
+        "id": "close_the_hatch",
+        "text": "Close the Hatch",
+      },
+      Object {
+        "controlType": "divider",
+      },
+      Object {
+        "aria-label": "Sample Icon",
+        "color": "danger",
+        "controlType": "icon",
+        "iconType": "alert",
+        "id": "sample_icon",
+      },
+      Object {
+        "controlType": "spacer",
+      },
+      Object {
+        "controlType": "tab",
+        "id": "flight_815",
+        "label": "Flight 815",
+        "onClick": [Function],
+      },
+    ]
+  }
+  leftOffset={0}
+  position="fixed"
+  rightOffset={200}
+  showContent={false}
+  showOnMobile={false}
+  size="l"
+>
+  <WuiPortal>
+    <Portal
+      containerInfo={
+        <div>
+          <section
+            aria-label="Page level controls"
+            class="wuiControlBar wuiControlBar--large wuiControlBar--fixed"
+            style="left: 0px; right: 200px;"
+          >
+            <h2
+              class="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+            <div
+              class="wuiControlBar__controls"
+            >
+              <nav
+                aria-label="breadcrumb"
+                class="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <span
+                  aria-current="false"
+                  class="wuiBreadcrumb"
+                  title="src"
+                >
+                  src
+                </span>
+                <div
+                  class="wuiBreadcrumbSeparator"
+                />
+                <span
+                  aria-current="page"
+                  class="wuiBreadcrumb wuiBreadcrumb--last"
+                  title="components"
+                >
+                  components
+                </span>
+              </nav>
+              <button
+                class="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                data-test-subj="dts"
+                type="button"
+              >
+                <span
+                  class="wuiButtonContent wuiButton__content"
+                >
+                  <span
+                    class="wuiButton__text"
+                  >
+                    Sound the Alarm
+                  </span>
+                </span>
+              </button>
+              <div
+                class="wuiControlBar__text"
+              >
+                Close the Hatch
+              </div>
+              <div
+                class="wuiControlBar__divider"
+              />
+              <div
+                aria-label="Sample Icon"
+                class="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+              <div
+                class="wuiControlBar__spacer"
+              />
+              <button
+                class="wuiControlBar__tab"
+              >
+                Flight 815
+              </button>
+            </div>
+          </section>
+          <p
+            aria-live="assertive"
+            class="wuiScreenReaderOnly"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </p>
+        </div>
+      }
+    >
+      <WuiI18n
+        default="Page level controls"
+        token="wuiControlBar.screenReaderHeading"
+      >
+        <section
+          aria-label="Page level controls"
+          className="wuiControlBar wuiControlBar--large wuiControlBar--fixed"
+          style={
+            Object {
+              "left": 0,
+              "maxHeight": undefined,
+              "right": 200,
+            }
+          }
+        >
+          <WuiScreenReaderOnly>
+            <h2
+              className="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+          </WuiScreenReaderOnly>
+          <div
+            className="wuiControlBar__controls"
+          >
+            <WuiBreadcrumbs
+              breadcrumbs={
+                Array [
+                  Object {
+                    "text": "src",
+                  },
+                  Object {
+                    "text": "components",
+                  },
+                ]
+              }
+              className="wuiControlBar__breadcrumbs"
+              key="current_file_path"
+              responsive={false}
+            >
+              <nav
+                aria-label="breadcrumb"
+                className="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <WuiInnerText>
+                  <span
+                    aria-current="false"
+                    className="wuiBreadcrumb"
+                    title="src"
+                  >
+                    src
+                  </span>
+                </WuiInnerText>
+                <WuiBreadcrumbSeparator>
+                  <div
+                    className="wuiBreadcrumbSeparator"
+                  />
+                </WuiBreadcrumbSeparator>
+                <WuiInnerText>
+                  <span
+                    aria-current="page"
+                    className="wuiBreadcrumb wuiBreadcrumb--last"
+                    title="components"
+                  >
+                    components
+                  </span>
+                </WuiInnerText>
+              </nav>
+            </WuiBreadcrumbs>
+            <WuiButton
+              className="wuiControlBar__button"
+              color="ghost"
+              data-test-subj="dts"
+              key="sound_the_alarm1"
+              onClick={[Function]}
+              size="s"
+            >
+              <WuiButtonDisplay
+                className="wuiControlBar__button"
+                color="ghost"
+                data-test-subj="dts"
+                disabled={false}
+                element="button"
+                isDisabled={false}
+                onClick={[Function]}
+                size="s"
+                type="button"
+              >
+                <button
+                  className="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                  data-test-subj="dts"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <WuiButtonContent
+                    className="wuiButton__content"
+                    iconSide="left"
+                    textProps={
+                      Object {
+                        "className": "wuiButton__text",
+                      }
+                    }
+                  >
+                    <span
+                      className="wuiButtonContent wuiButton__content"
+                    >
+                      <span
+                        className="wuiButton__text"
+                      >
+                        Sound the Alarm
+                      </span>
+                    </span>
+                  </WuiButtonContent>
+                </button>
+              </WuiButtonDisplay>
+            </WuiButton>
+            <div
+              className="wuiControlBar__text"
+              key="close_the_hatch"
+            >
+              Close the Hatch
+            </div>
+            <div
+              className="wuiControlBar__divider"
+              key="divider3"
+            />
+            <WuiIcon
+              aria-label="Sample Icon"
+              className="wuiControlBar__icon"
+              color="danger"
+              key="sample_icon4"
+              type="alert"
+            >
+              <div
+                aria-label="Sample Icon"
+                className="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+            </WuiIcon>
+            <div
+              className="wuiControlBar__spacer"
+              key="spacer5"
+            />
+            <button
+              className="wuiControlBar__tab"
+              key="flight_8156"
+              onClick={[Function]}
+            >
+              Flight 815
+            </button>
+          </div>
+        </section>
+      </WuiI18n>
+      <WuiScreenReaderOnly>
+        <p
+          aria-live="assertive"
+          className="wuiScreenReaderOnly"
+        >
+          <WuiI18n
+            default="There is a new region landmark with page level controls at the end of the document."
+            token="wuiControlBar.screenReaderAnnouncement"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </WuiI18n>
+        </p>
+      </WuiScreenReaderOnly>
+    </Portal>
+  </WuiPortal>
+</WuiControlBar>
+`;
+
+exports[`WuiControlBar props showContent is rendered 1`] = `
+<WuiControlBar
+  controls={
+    Array [
+      Object {
+        "breadcrumbs": Array [
+          Object {
+            "text": "src",
+          },
+          Object {
+            "text": "components",
+          },
+        ],
+        "controlType": "breadcrumbs",
+        "id": "current_file_path",
+        "responsive": false,
+      },
+      Object {
+        "controlType": "button",
+        "data-test-subj": "dts",
+        "id": "sound_the_alarm",
+        "label": "Sound the Alarm",
+        "onClick": [Function],
+      },
+      Object {
+        "controlType": "text",
+        "id": "close_the_hatch",
+        "text": "Close the Hatch",
+      },
+      Object {
+        "controlType": "divider",
+      },
+      Object {
+        "aria-label": "Sample Icon",
+        "color": "danger",
+        "controlType": "icon",
+        "iconType": "alert",
+        "id": "sample_icon",
+      },
+      Object {
+        "controlType": "spacer",
+      },
+      Object {
+        "controlType": "tab",
+        "id": "flight_815",
+        "label": "Flight 815",
+        "onClick": [Function],
+      },
+    ]
+  }
+  leftOffset={0}
+  position="fixed"
+  rightOffset={0}
+  showContent={true}
+  showOnMobile={false}
+  size="l"
+>
+  <WuiPortal>
+    <Portal
+      containerInfo={
+        <div>
+          <section
+            aria-label="Page level controls"
+            class="wuiControlBar wuiControlBar-isOpen wuiControlBar--large wuiControlBar--fixed"
+            style="left: 0px; right: 0px;"
+          >
+            <h2
+              class="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+            <div
+              class="wuiControlBar__controls"
+            >
+              <nav
+                aria-label="breadcrumb"
+                class="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <span
+                  aria-current="false"
+                  class="wuiBreadcrumb"
+                  title="src"
+                >
+                  src
+                </span>
+                <div
+                  class="wuiBreadcrumbSeparator"
+                />
+                <span
+                  aria-current="page"
+                  class="wuiBreadcrumb wuiBreadcrumb--last"
+                  title="components"
+                >
+                  components
+                </span>
+              </nav>
+              <button
+                class="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                data-test-subj="dts"
+                type="button"
+              >
+                <span
+                  class="wuiButtonContent wuiButton__content"
+                >
+                  <span
+                    class="wuiButton__text"
+                  >
+                    Sound the Alarm
+                  </span>
+                </span>
+              </button>
+              <div
+                class="wuiControlBar__text"
+              >
+                Close the Hatch
+              </div>
+              <div
+                class="wuiControlBar__divider"
+              />
+              <div
+                aria-label="Sample Icon"
+                class="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+              <div
+                class="wuiControlBar__spacer"
+              />
+              <button
+                class="wuiControlBar__tab"
+              >
+                Flight 815
+              </button>
+            </div>
+            <div
+              class="wuiControlBar__content"
+            >
+              Content
+            </div>
+          </section>
+          <p
+            aria-live="assertive"
+            class="wuiScreenReaderOnly"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </p>
+        </div>
+      }
+    >
+      <WuiI18n
+        default="Page level controls"
+        token="wuiControlBar.screenReaderHeading"
+      >
+        <section
+          aria-label="Page level controls"
+          className="wuiControlBar wuiControlBar-isOpen wuiControlBar--large wuiControlBar--fixed"
+          style={
+            Object {
+              "left": 0,
+              "maxHeight": undefined,
+              "right": 0,
+            }
+          }
+        >
+          <WuiScreenReaderOnly>
+            <h2
+              className="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+          </WuiScreenReaderOnly>
+          <div
+            className="wuiControlBar__controls"
+          >
+            <WuiBreadcrumbs
+              breadcrumbs={
+                Array [
+                  Object {
+                    "text": "src",
+                  },
+                  Object {
+                    "text": "components",
+                  },
+                ]
+              }
+              className="wuiControlBar__breadcrumbs"
+              key="current_file_path"
+              responsive={false}
+            >
+              <nav
+                aria-label="breadcrumb"
+                className="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <WuiInnerText>
+                  <span
+                    aria-current="false"
+                    className="wuiBreadcrumb"
+                    title="src"
+                  >
+                    src
+                  </span>
+                </WuiInnerText>
+                <WuiBreadcrumbSeparator>
+                  <div
+                    className="wuiBreadcrumbSeparator"
+                  />
+                </WuiBreadcrumbSeparator>
+                <WuiInnerText>
+                  <span
+                    aria-current="page"
+                    className="wuiBreadcrumb wuiBreadcrumb--last"
+                    title="components"
+                  >
+                    components
+                  </span>
+                </WuiInnerText>
+              </nav>
+            </WuiBreadcrumbs>
+            <WuiButton
+              className="wuiControlBar__button"
+              color="ghost"
+              data-test-subj="dts"
+              key="sound_the_alarm1"
+              onClick={[Function]}
+              size="s"
+            >
+              <WuiButtonDisplay
+                className="wuiControlBar__button"
+                color="ghost"
+                data-test-subj="dts"
+                disabled={false}
+                element="button"
+                isDisabled={false}
+                onClick={[Function]}
+                size="s"
+                type="button"
+              >
+                <button
+                  className="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                  data-test-subj="dts"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <WuiButtonContent
+                    className="wuiButton__content"
+                    iconSide="left"
+                    textProps={
+                      Object {
+                        "className": "wuiButton__text",
+                      }
+                    }
+                  >
+                    <span
+                      className="wuiButtonContent wuiButton__content"
+                    >
+                      <span
+                        className="wuiButton__text"
+                      >
+                        Sound the Alarm
+                      </span>
+                    </span>
+                  </WuiButtonContent>
+                </button>
+              </WuiButtonDisplay>
+            </WuiButton>
+            <div
+              className="wuiControlBar__text"
+              key="close_the_hatch"
+            >
+              Close the Hatch
+            </div>
+            <div
+              className="wuiControlBar__divider"
+              key="divider3"
+            />
+            <WuiIcon
+              aria-label="Sample Icon"
+              className="wuiControlBar__icon"
+              color="danger"
+              key="sample_icon4"
+              type="alert"
+            >
+              <div
+                aria-label="Sample Icon"
+                className="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+            </WuiIcon>
+            <div
+              className="wuiControlBar__spacer"
+              key="spacer5"
+            />
+            <button
+              className="wuiControlBar__tab"
+              key="flight_8156"
+              onClick={[Function]}
+            >
+              Flight 815
+            </button>
+          </div>
+          <div
+            className="wuiControlBar__content"
+          >
+            Content
+          </div>
+        </section>
+      </WuiI18n>
+      <WuiScreenReaderOnly>
+        <p
+          aria-live="assertive"
+          className="wuiScreenReaderOnly"
+        >
+          <WuiI18n
+            default="There is a new region landmark with page level controls at the end of the document."
+            token="wuiControlBar.screenReaderAnnouncement"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </WuiI18n>
+        </p>
+      </WuiScreenReaderOnly>
+    </Portal>
+  </WuiPortal>
+</WuiControlBar>
+`;
+
+exports[`WuiControlBar props size is rendered 1`] = `
+<WuiControlBar
+  controls={
+    Array [
+      Object {
+        "breadcrumbs": Array [
+          Object {
+            "text": "src",
+          },
+          Object {
+            "text": "components",
+          },
+        ],
+        "controlType": "breadcrumbs",
+        "id": "current_file_path",
+        "responsive": false,
+      },
+      Object {
+        "controlType": "button",
+        "data-test-subj": "dts",
+        "id": "sound_the_alarm",
+        "label": "Sound the Alarm",
+        "onClick": [Function],
+      },
+      Object {
+        "controlType": "text",
+        "id": "close_the_hatch",
+        "text": "Close the Hatch",
+      },
+      Object {
+        "controlType": "divider",
+      },
+      Object {
+        "aria-label": "Sample Icon",
+        "color": "danger",
+        "controlType": "icon",
+        "iconType": "alert",
+        "id": "sample_icon",
+      },
+      Object {
+        "controlType": "spacer",
+      },
+      Object {
+        "controlType": "tab",
+        "id": "flight_815",
+        "label": "Flight 815",
+        "onClick": [Function],
+      },
+    ]
+  }
+  leftOffset={0}
+  position="fixed"
+  rightOffset={0}
+  showContent={false}
+  showOnMobile={false}
+  size="s"
+>
+  <WuiPortal>
+    <Portal
+      containerInfo={
+        <div>
+          <section
+            aria-label="Page level controls"
+            class="wuiControlBar wuiControlBar--small wuiControlBar--fixed"
+            style="left: 0px; right: 0px;"
+          >
+            <h2
+              class="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+            <div
+              class="wuiControlBar__controls"
+            >
+              <nav
+                aria-label="breadcrumb"
+                class="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <span
+                  aria-current="false"
+                  class="wuiBreadcrumb"
+                  title="src"
+                >
+                  src
+                </span>
+                <div
+                  class="wuiBreadcrumbSeparator"
+                />
+                <span
+                  aria-current="page"
+                  class="wuiBreadcrumb wuiBreadcrumb--last"
+                  title="components"
+                >
+                  components
+                </span>
+              </nav>
+              <button
+                class="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                data-test-subj="dts"
+                type="button"
+              >
+                <span
+                  class="wuiButtonContent wuiButton__content"
+                >
+                  <span
+                    class="wuiButton__text"
+                  >
+                    Sound the Alarm
+                  </span>
+                </span>
+              </button>
+              <div
+                class="wuiControlBar__text"
+              >
+                Close the Hatch
+              </div>
+              <div
+                class="wuiControlBar__divider"
+              />
+              <div
+                aria-label="Sample Icon"
+                class="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+              <div
+                class="wuiControlBar__spacer"
+              />
+              <button
+                class="wuiControlBar__tab"
+              >
+                Flight 815
+              </button>
+            </div>
+          </section>
+          <p
+            aria-live="assertive"
+            class="wuiScreenReaderOnly"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </p>
+        </div>
+      }
+    >
+      <WuiI18n
+        default="Page level controls"
+        token="wuiControlBar.screenReaderHeading"
+      >
+        <section
+          aria-label="Page level controls"
+          className="wuiControlBar wuiControlBar--small wuiControlBar--fixed"
+          style={
+            Object {
+              "left": 0,
+              "maxHeight": undefined,
+              "right": 0,
+            }
+          }
+        >
+          <WuiScreenReaderOnly>
+            <h2
+              className="wuiScreenReaderOnly"
+            >
+              Page level controls
+            </h2>
+          </WuiScreenReaderOnly>
+          <div
+            className="wuiControlBar__controls"
+          >
+            <WuiBreadcrumbs
+              breadcrumbs={
+                Array [
+                  Object {
+                    "text": "src",
+                  },
+                  Object {
+                    "text": "components",
+                  },
+                ]
+              }
+              className="wuiControlBar__breadcrumbs"
+              key="current_file_path"
+              responsive={false}
+            >
+              <nav
+                aria-label="breadcrumb"
+                className="wuiBreadcrumbs wuiControlBar__breadcrumbs wuiBreadcrumbs--truncate"
+              >
+                <WuiInnerText>
+                  <span
+                    aria-current="false"
+                    className="wuiBreadcrumb"
+                    title="src"
+                  >
+                    src
+                  </span>
+                </WuiInnerText>
+                <WuiBreadcrumbSeparator>
+                  <div
+                    className="wuiBreadcrumbSeparator"
+                  />
+                </WuiBreadcrumbSeparator>
+                <WuiInnerText>
+                  <span
+                    aria-current="page"
+                    className="wuiBreadcrumb wuiBreadcrumb--last"
+                    title="components"
+                  >
+                    components
+                  </span>
+                </WuiInnerText>
+              </nav>
+            </WuiBreadcrumbs>
+            <WuiButton
+              className="wuiControlBar__button"
+              color="ghost"
+              data-test-subj="dts"
+              key="sound_the_alarm1"
+              onClick={[Function]}
+              size="s"
+            >
+              <WuiButtonDisplay
+                className="wuiControlBar__button"
+                color="ghost"
+                data-test-subj="dts"
+                disabled={false}
+                element="button"
+                isDisabled={false}
+                onClick={[Function]}
+                size="s"
+                type="button"
+              >
+                <button
+                  className="wuiButton wuiButton--ghost wuiButton--small wuiControlBar__button"
+                  data-test-subj="dts"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <WuiButtonContent
+                    className="wuiButton__content"
+                    iconSide="left"
+                    textProps={
+                      Object {
+                        "className": "wuiButton__text",
+                      }
+                    }
+                  >
+                    <span
+                      className="wuiButtonContent wuiButton__content"
+                    >
+                      <span
+                        className="wuiButton__text"
+                      >
+                        Sound the Alarm
+                      </span>
+                    </span>
+                  </WuiButtonContent>
+                </button>
+              </WuiButtonDisplay>
+            </WuiButton>
+            <div
+              className="wuiControlBar__text"
+              key="close_the_hatch"
+            >
+              Close the Hatch
+            </div>
+            <div
+              className="wuiControlBar__divider"
+              key="divider3"
+            />
+            <WuiIcon
+              aria-label="Sample Icon"
+              className="wuiControlBar__icon"
+              color="danger"
+              key="sample_icon4"
+              type="alert"
+            >
+              <div
+                aria-label="Sample Icon"
+                className="wuiControlBar__icon"
+                color="danger"
+                data-wuiicon-type="alert"
+              />
+            </WuiIcon>
+            <div
+              className="wuiControlBar__spacer"
+              key="spacer5"
+            />
+            <button
+              className="wuiControlBar__tab"
+              key="flight_8156"
+              onClick={[Function]}
+            >
+              Flight 815
+            </button>
+          </div>
+        </section>
+      </WuiI18n>
+      <WuiScreenReaderOnly>
+        <p
+          aria-live="assertive"
+          className="wuiScreenReaderOnly"
+        >
+          <WuiI18n
+            default="There is a new region landmark with page level controls at the end of the document."
+            token="wuiControlBar.screenReaderAnnouncement"
+          >
+            There is a new region landmark with page level controls at the end of the document.
+          </WuiI18n>
+        </p>
+      </WuiScreenReaderOnly>
+    </Portal>
+  </WuiPortal>
+</WuiControlBar>
+`;

@@ -1,0 +1,29 @@
+.wuiLoadingChart {
+  height: $wuiSizeXL;
+  z-index: 500;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.wuiLoadingChart__bar {
+  height: 100%;
+  width: $wuiSizeS;
+  display: inline-block;
+}
+
+.wuiLoadingChart--mono {
+  filter: grayscale(1);
+}
+
+.wuiLoadingChart--medium {
+  height: $wuiSize;
+
+}
+
+.wuiLoadingChart--large {
+  height: $wuiSizeL;
+}
+
+.wuiLoadingChart--xLarge {
+  height: $wuiSizeXL;
+}

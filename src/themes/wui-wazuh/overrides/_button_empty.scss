@@ -1,0 +1,16 @@
+.wuiButtonEmpty {
+  border-radius: $wuiBorderRadius;
+
+  &.wuiButtonEmpty--small,
+  &.wuiButtonEmpty--xSmall {
+    // Use a moderately smaller radius on small buttons
+    // so that they don't appear completely rounded
+    border-radius: $wuiBorderRadius * .667;
+  }
+}
+
+@each $name, $color in $wuiButtonTypes {
+  .wuiButtonEmpty--#{$name}:enabled:focus {
+    background-color: transparentize($color, lightOrDarkTheme(.9, .8));
+  }
+}

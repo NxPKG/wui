@@ -1,0 +1,10 @@
+.wuiRangeInput {
+  width: auto;
+  min-width: $wuiSize * 4;
+
+  .wuiRange__popover & {
+    // sass-lint:disable no-important
+    margin: 0 !important;
+    width: 100%;
+  }
+}

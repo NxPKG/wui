@@ -1,0 +1,8 @@
+$wuiResizableButtonTransitionSpeed: $wuiAnimSpeedFast;
+
+$wuiResizableButtonSizeModifiers: (
+  'sizeSmall': $wuiSizeM,
+  'sizeMedium': $wuiSize,
+  'sizeLarge': $wuiSizeL,
+  'sizeExtraLarge': $wuiSizeXXL
+) !default;

@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHeader is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiHeader wuiHeader--default wuiHeader--static testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiHeader renders children 1`] = `
+<div
+  class="wuiHeader wuiHeader--default wuiHeader--static"
+>
+  <span>
+    Hello!
+  </span>
+</div>
+`;
+
+exports[`WuiHeader renders dark theme 1`] = `
+<div
+  class="wuiHeader wuiHeader--dark wuiHeader--static"
+/>
+`;
+
+exports[`WuiHeader renders in fixed position 1`] = `
+<div
+  class="wuiHeader wuiHeader--default wuiHeader--fixed"
+>
+  <span>
+    Hello!
+  </span>
+</div>
+`;
+
+exports[`WuiHeader sections render breadcrumbs and props 1`] = `
+<div
+  class="wuiHeader wuiHeader--default wuiHeader--static"
+>
+  <nav
+    aria-label="breadcrumb"
+    class="wuiBreadcrumbs wuiHeaderBreadcrumbs wuiBreadcrumbs--truncate"
+  >
+    <span
+      aria-current="page"
+      class="wuiBreadcrumb wuiBreadcrumb--last"
+    >
+      Breadcrumb
+    </span>
+  </nav>
+</div>
+`;
+
+exports[`WuiHeader sections render simple items and borders 1`] = `
+<div
+  class="wuiHeader wuiHeader--default wuiHeader--static"
+>
+  <div
+    class="wuiHeaderSection wuiHeaderSection--dontGrow wuiHeaderSection--left"
+  >
+    <div
+      class="wuiHeaderSectionItem wuiHeaderSectionItem--borderRight"
+    >
+      Item 1
+    </div>
+    <div
+      class="wuiHeaderSectionItem wuiHeaderSectionItem--borderRight"
+    >
+      Item 2
+    </div>
+  </div>
+  <div
+    class="wuiHeaderSection wuiHeaderSection--dontGrow wuiHeaderSection--left"
+  >
+    <div
+      class="wuiHeaderSectionItem wuiHeaderSectionItem--borderLeft"
+    >
+      Item A
+    </div>
+    <div
+      class="wuiHeaderSectionItem wuiHeaderSectionItem--borderLeft"
+    >
+      Item B
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiHeader throws a warning if both children and sections were passed 1`] = `
+<div
+  class="wuiHeader wuiHeader--default wuiHeader--static"
+>
+  <div
+    class="wuiHeaderSection wuiHeaderSection--dontGrow wuiHeaderSection--left"
+  >
+    <div
+      class="wuiHeaderSectionItem wuiHeaderSectionItem--borderLeft"
+    >
+      Item 1
+    </div>
+    <div
+      class="wuiHeaderSectionItem wuiHeaderSectionItem--borderLeft"
+    >
+      Item 2
+    </div>
+  </div>
+</div>
+`;

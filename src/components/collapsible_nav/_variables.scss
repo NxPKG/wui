@@ -1,0 +1,14 @@
+// Sizing
+$wuiCollapsibleNavWidth: $wuiSize * 20; // ~ 320px
+
+$wuiCollapsibleNavGroupLightBackgroundColor: $wuiPageBackgroundColor;
+
+$wuiCollapsibleNavGroupDarkBackgroundColor: lightOrDarkTheme(
+  shade($wuiColorDarkestShade, 20%),
+  shade($wuiColorLightestShade, 50%),
+);
+
+$wuiCollapsibleNavGroupDarkHighContrastColor: makeGraphicContrastColor(
+  $wuiColorPrimary,
+  $wuiCollapsibleNavGroupDarkBackgroundColor
+);

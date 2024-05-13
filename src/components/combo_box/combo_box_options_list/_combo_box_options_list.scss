@@ -1,0 +1,56 @@
+/**
+ * 1. Make width match that of the input and tweak position to match.
+ * 2. Put the list at the top of the screen, otherwise it will cause a scrollbar to show up when
+ *    the portal is appended to the body. This would throw off our logic for positioning the
+ *    list beneath the input.
+ * 3. The height can expand, hence auto
+ * 4. Using specificity to override panel shadow
+ */
+.wuiComboBoxOptionsList {
+  // z-index is programmatically added to the options list by JavaScript
+  @include wuiFormControlSize(auto, $includeAlternates: true); /* 3 */
+  position: absolute; /* 2 */
+  top: 0; /* 2 */
+
+  .ReactVirtualized__List {
+    @include wuiScrollBar;
+  }
+
+  &.wuiComboBoxOptionsList--bottom { /* 4 */
+    @include wuiBottomShadowMedium;
+  }
+
+  &.wuiComboBoxOptionsList--top { /* 4 */
+    // sass-lint:disable-block indentation
+    box-shadow:
+      0 -2px 4px -1px transparentize($wuiShadowColor, .8),
+      0 0 2px 0 transparentize($wuiShadowColor, .8);
+  }
+}
+
+.wuiComboBoxOptionsList--bottom {
+  // sass-lint:disable-block no-important
+  border-radius: 0 0 $wuiBorderRadius $wuiBorderRadius !important;
+  border-top: none !important;
+}
+
+.wuiComboBoxOptionsList--top {
+  // sass-lint:disable-block no-important
+  border-radius: $wuiBorderRadius $wuiBorderRadius 0 0 !important;
+}
+
+/**
+  * 1. Prevent really long input from overflowing the container.
+  */
+.wuiComboBoxOptionsList__empty {
+  padding: $wuiSizeS;
+  text-align: center;
+  color: $wuiColorDarkShade;
+  word-wrap: break-word; /* 1 */
+}
+
+.wuiComboBoxOptionsList__rowWrap {
+  padding: 0;
+  max-height: 200px;
+  overflow: hidden;
+}

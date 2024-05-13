@@ -1,0 +1,49 @@
+// Header. Includes breadcrumbs of nav buttons.
+
+.wuiHeader {
+  @include wuiBottomShadowSmall;
+
+  height: $wuiHeaderHeight + 1; // Add one for the border
+  position: relative;
+  z-index: $wuiZHeader; // ensure the shadow shows above content
+  display: flex;
+  justify-content: space-between;
+  background: $wuiHeaderBackgroundColor;
+  border-bottom: 1px solid $wuiHeaderBorderColor;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.wuiHeader--fixed + .wuiHeader--fixed,
+.wuiHeader--fixed + .wuiHeader--fixed + .wuiHeader--fixed {
+  top: $wuiHeaderHeightCompensation;
+  transition: all 150ms;
+
+  &.wuiHeader--collapsed {
+    top: 0;
+    z-index: 0;
+    box-shadow: none;
+  }
+
+  &.wuiNavDrawer--expanded {
+    padding-left: $wuiNavDrawerWidthExpanded + $wuiSizeM;
+  }
+}
+
+.wuiHeader--fixed + .wuiHeader--fixed + .wuiHeader--fixed {
+  top: $wuiHeaderHeightCompensation * 2;
+}
+
+.wuiHeader--dark {
+  @if (lightness($wuiTextColor) < 50) {
+    @include wuiHeaderDarkTheme($backgroundColor: shade($wuiColorDarkestShade, 28%));
+  } @else {
+    // Makes forced "dark" theme darker than the typical dark them to separate them visually
+    @include wuiHeaderDarkTheme($backgroundColor: shade($wuiColorLightestShade, 50%));
+  }
+}

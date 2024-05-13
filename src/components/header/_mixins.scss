@@ -1,0 +1,41 @@
+@mixin wuiHeaderDarkTheme($backgroundColor) {
+  background-color: $backgroundColor;
+  border-bottom-color: lightOrDarkTheme($backgroundColor, $wuiHeaderBorderColor);
+
+  .wuiHeaderLogo__text,
+  .wuiHeaderLink,
+  .wuiHeaderSectionItem__button {
+    color: $wuiColorGhost;
+  }
+
+  .wuiHeaderLink-isActive {
+    color: makeHighContrastColor($wuiColorPrimary, $backgroundColor);
+  }
+
+  .wuiHeaderSectionItem {
+    &:after {
+      background: lightOrDarkTheme($wuiColorDarkShade, $wuiColorLightestShade);
+    }
+  }
+
+  .wuiHeaderLogo,
+  .wuiHeaderLink,
+  .wuiHeaderSectionItem__button {
+    &:hover {
+      background: transparentize(lightOrDarkTheme($wuiColorDarkShade, $wuiColorLightestShade), .5);
+    }
+
+    &:focus {
+      background: shade($wuiColorPrimary, 50%);
+    }
+  }
+
+  .wuiHeaderNotification,
+  .wuiHeaderSectionItemButton__notification--badge {
+    box-shadow: 0 0 0 1px $backgroundColor;
+  }
+
+  .wuiHeaderSectionItemButton__notification--dot {
+    stroke: $backgroundColor;
+  }
+}

@@ -1,0 +1,70 @@
+.wuiTour--minWidth-default {
+  min-width: $wuiSizeL * 10;
+}
+
+.wuiTourHeader {
+  border-bottom: none;
+  // Overriding default `WuiPopoverTitle` styles
+  margin-bottom: $wuiSizeS !important; // sass-lint:disable-line no-important
+
+
+  .wuiTourHeader__title { // nested for additional specificity to override WuiTitle styles
+    margin-top: 0;
+    text-transform: capitalize;
+  }
+}
+
+.wuiTourHeader__subtitle {
+  color: $wuiColorDarkShade;
+}
+
+.wuiTourFooter {
+  background-color: $wuiColorLightestShade;
+  // Overriding default `WuiPopoverFooter` styles
+  margin-top: $wuiSizeL !important; // sass-lint:disable-line no-important
+}
+
+.wuiTour {
+  .wuiTour__beacon {
+    pointer-events: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0s $wuiAnimSpeedSlow; // delay time equals WuiPopover animation time
+  }
+
+  .wuiPopover__panelArrow.wuiPopover__panelArrow--right {
+    .wuiTour__beacon {
+      opacity: 1;
+      top: $wuiPopoverArrowSize / 2;
+      left: -$wuiPopoverArrowSize * 2;
+    }
+  }
+
+  .wuiPopover__panelArrow.wuiPopover__panelArrow--left {
+    .wuiTour__beacon {
+      opacity: 1;
+      top: $wuiPopoverArrowSize / 2;
+      left: $wuiPopoverArrowSize;
+    }
+  }
+
+  .wuiPopover__panelArrow.wuiPopover__panelArrow--top {
+    &:after {
+      border-top-color: $wuiColorLightestShade;
+    }
+
+    .wuiTour__beacon {
+      opacity: 1;
+      top: $wuiPopoverArrowSize;
+      left: $wuiPopoverArrowSize / 2;
+    }
+  }
+
+  .wuiPopover__panelArrow.wuiPopover__panelArrow--bottom {
+    .wuiTour__beacon {
+      opacity: 1;
+      top: -$wuiPopoverArrowSize * 2;
+      left: $wuiPopoverArrowSize / 2;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.wuiDataGridColumnSorting__item {
+
+  &-isDragging {
+    @include wuiBottomShadow;
+    background: $wuiColorEmptyShade;
+  }
+}
+
+.wuiDataGridColumnSortingPopover {
+  // Hack because the fixed positions of drag and drop don't work inside of transformed elements
+  // sass-lint:disable-block no-important
+  transform: none !important;
+  transition: none !important;
+  margin-top: -$wuiSizeS;
+  // IE11 needs a min-width
+  min-width: $wuiSize * 12;
+}
+
+.wuiDataGridColumnSorting__button {
+  // The button for sorting needs to be a bit more compact
+  // sass-lint:disable-block no-important
+  height: $wuiSize + $wuiSizeXS !important;
+  width: $wuiSize + $wuiSizeXS !important;
+  padding: $wuiSizeXS / 2 !important;
+}
+
+.wuiDataGridColumnSorting__fieldList {
+  @include wuiYScrollWithShadows;
+  max-height: 300px;
+}
+
+.wuiDataGridColumnSorting__field {
+  display: block;
+  padding: $wuiSizeXS;
+  width: 100%;
+
+  &:focus {
+    background: $wuiFocusBackgroundColor;
+    text-decoration: underline;
+  }
+}
+
+.wuiDataGridColumnSorting__orderButtons {
+  padding-left: $wuiSizeL;
+
+  .wuiDataGridColumnSorting__order {
+    min-width: 200px;
+    border: none;
+
+    // Hack to overwrite some nested, unreachable component code with button groups
+    // sass-lint:disable-block no-important
+    button {
+      font-size: $wuiFontSizeXS !important;
+    }
+  }
+}

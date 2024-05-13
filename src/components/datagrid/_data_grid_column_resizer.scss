@@ -1,0 +1,48 @@
+  // Resizer straddles the column border and is an invisible hitzone for dragging
+.wuiDataGridColumnResizer {
+  position: absolute;
+  top: 0;
+  right: -$wuiSizeS;
+  height: 100%;
+  width: $wuiSize;
+  cursor: ew-resize;
+  opacity: 0;
+  z-index: 2; // Needs to be a level above the cells themselves in case of overlaps
+
+  // Center a vertical line within the button above
+  &:after {
+    content: '';
+    position: absolute;
+    left: $wuiSizeS - 1px;
+    top: 0;
+    bottom: 0;
+    width: $wuiDataGridColumnResizerWidth;
+    background-color: $wuiColorPrimary;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 1;
+
+    ~ .wuiDataGridHeaderCell__content {
+      user-select: none;
+    }
+  }
+}
+
+// This is important. Because the resizer sits in the negative space to the right of the column
+// it can cause the full grid to be a few pixels longer than it actually is. So for the last one
+// we don't use negative positioning and the borders from the cell will match the container.
+@include wuiDataGridHeaderCell {
+  &:last-child {
+
+    .wuiDataGridColumnResizer {
+      right: 0;
+
+      &:after {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}

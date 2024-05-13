@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCheckableCard is rendered 1`] = `
+<div
+  class="wuiCheckableCard testClass1 testClass2"
+>
+  <div
+    class="wuiCheckableCard__row"
+  >
+    <div
+      class="wuiCheckableCard__control"
+    >
+      <div
+        aria-label="aria-label"
+        class="wuiRadio wuiRadio--noLabel"
+        data-test-subj="test subject string"
+      >
+        <input
+          class="wuiRadio__input"
+          id="id"
+          type="radio"
+        />
+        <div
+          class="wuiRadio__circle"
+        />
+      </div>
+    </div>
+    <label
+      class="wuiCheckableCard__label"
+      for="id"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`WuiCheckableCard renders a checkbox when specified 1`] = `
+<div
+  class="wuiCheckableCard testClass1 testClass2"
+>
+  <div
+    class="wuiCheckableCard__row"
+  >
+    <div
+      class="wuiCheckableCard__control"
+    >
+      <div
+        class="wuiCheckbox wuiCheckbox--noLabel"
+      >
+        <input
+          aria-label="aria-label"
+          class="wuiCheckbox__input"
+          data-test-subj="test subject string"
+          id="id"
+          type="checkbox"
+        />
+        <div
+          class="wuiCheckbox__square"
+        />
+      </div>
+    </div>
+    <label
+      class="wuiCheckableCard__label"
+      for="id"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;

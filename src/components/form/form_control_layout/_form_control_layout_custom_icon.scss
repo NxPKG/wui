@@ -1,0 +1,27 @@
+.wuiFormControlLayoutCustomIcon {
+  pointer-events: none;
+
+  .wuiFormControlLayoutCustomIcon__icon {
+    transform: translateY(-1px);
+  }
+}
+
+.wuiFormControlLayoutCustomIcon--clickable {
+  @include size($wuiSize);
+
+  pointer-events: all;
+
+  .wuiFormControlLayoutCustomIcon__icon {
+    vertical-align: baseline;
+    transform: none;
+  }
+
+  &:focus {
+    @include wuiFocusRing;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    color: $wuiFormControlDisabledColor;
+  }
+}

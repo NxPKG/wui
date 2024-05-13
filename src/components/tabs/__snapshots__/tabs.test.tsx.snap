@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTabs props display can be condensed 1`] = `
+<div
+  class="wuiTabs wuiTabs--condensed"
+  role="tablist"
+/>
+`;
+
+exports[`WuiTabs props expand is rendered 1`] = `
+<div
+  class="wuiTabs wuiTabs--expand"
+  role="tablist"
+/>
+`;
+
+exports[`WuiTabs props size can be small 1`] = `
+<div
+  class="wuiTabs wuiTabs--small"
+  role="tablist"
+/>
+`;
+
+exports[`WuiTabs renders 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiTabs testClass1 testClass2"
+  data-test-subj="test subject string"
+  role="tablist"
+/>
+`;

@@ -1,0 +1,85 @@
+.wuiToken {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.wuiToken--circle {
+  border-radius: 50%;
+}
+
+.wuiToken--square {
+  // These are pretty small elements, the standard size
+  // is just slightly too large.
+  border-radius: $wuiBorderRadius - 1px;
+}
+
+.wuiToken--xsmall {
+  width: $wuiSizeM;
+  height: $wuiSizeM;
+
+  &.wuiToken--rectangle {
+    padding: 0 $wuiSizeXS;
+  }
+}
+
+.wuiToken--small {
+  width: $wuiSize;
+  height: $wuiSize;
+
+  &.wuiToken--rectangle {
+    padding: 0 $wuiSizeXS;
+  }
+}
+
+.wuiToken--medium {
+  width: $wuiSizeL;
+  height: $wuiSizeL;
+
+  &.wuiToken--rectangle {
+    padding: 0 $wuiSizeS;
+  }
+}
+
+.wuiToken--large {
+  width: $wuiSizeXL;
+  height: $wuiSizeXL;
+
+  &.wuiToken--rectangle {
+    padding: 0 ($wuiSize * .5);
+  }
+}
+
+.wuiToken--rectangle {
+  box-sizing: content-box;
+}
+
+@each $type in $wuiTokenTypeKeys {
+  .wuiToken--#{$type} {
+    $color: map-get(map-get($wuiTokenTypes, $type), 'graphic');
+    $backgroundColor: tintOrShade($color, 90%, 70%);
+    $fillColor: makeHighContrastColor($color, $backgroundColor);
+
+    // Without a background, the fill color should be the graphic color
+    color: $color;
+
+    &.wuiToken--light {
+      color: $fillColor;
+      background-color: $backgroundColor;
+      box-shadow: inset 0 0 0 1px tintOrShade($color, 70%, 60%);
+    }
+
+    // Dark tokens uses the main color as the background against light or dark text
+    $color: map-get(map-get($wuiTokenTypes, $type), 'behindText');
+
+    &.wuiToken--dark {
+      background-color: $color;
+      color: chooseLightOrDarkText($color, $wuiColorGhost, $wuiColorInk);
+    }
+  }
+}

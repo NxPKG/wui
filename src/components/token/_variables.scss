@@ -1,0 +1,13 @@
+// sass-lint:disable indentation
+
+$wuiTokenGrayColor: lightOrDarkTheme($wuiColorDarkShade, $wuiColorMediumShade);
+
+// Appends the gray color to the color blind palette
+$wuiTokenTypes: map-merge($wuiPaletteColorBlind, (
+  'gray': (
+    graphic: $wuiTokenGrayColor,
+    behindText: $wuiTokenGrayColor,
+  )
+));
+
+$wuiTokenTypeKeys: map-keys($wuiTokenTypes);

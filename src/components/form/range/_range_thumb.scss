@@ -1,0 +1,18 @@
+.wuiRangeThumb {
+  @include wuiCustomControl($type: 'round');
+  @include wuiRangeThumbStyle;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -($wuiRangeThumbHeight / 2);
+  pointer-events: none;
+
+  &:focus {
+    @include wuiCustomControlFocused;
+  }
+
+  &--hasTicks {
+    top: 25%;
+  }
+}

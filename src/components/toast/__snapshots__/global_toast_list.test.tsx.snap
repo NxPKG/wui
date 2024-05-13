@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiGlobalToastList is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  aria-live="polite"
+  class="wuiGlobalToastList wuiGlobalToastList--right testClass1 testClass2"
+  data-test-subj="test subject string"
+  role="region"
+/>
+`;
+
+exports[`WuiGlobalToastList props side can be changed to left 1`] = `
+<div
+  aria-live="polite"
+  class="wuiGlobalToastList wuiGlobalToastList--left"
+  role="region"
+>
+  <div
+    class="wuiToast wuiToast--success wuiGlobalToastListItem"
+    data-test-subj="a"
+    id="a"
+  >
+    <p
+      class="wuiScreenReaderOnly"
+    >
+      A new notification appears
+    </p>
+    <div
+      aria-label="Notification"
+      class="wuiToastHeader wuiToastHeader--withBody"
+      data-test-subj="wuiToastHeader"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiToastHeader__icon"
+        data-wuiicon-type="check"
+      />
+      <span
+        class="wuiToastHeader__title"
+      >
+        A
+      </span>
+    </div>
+    <button
+      aria-label="Dismiss toast"
+      class="wuiToast__closeButton"
+      data-test-subj="toastCloseButton"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        data-wuiicon-type="cross"
+      />
+    </button>
+    <div
+      class="wuiText wuiText--small wuiToastBody"
+    >
+      a
+    </div>
+  </div>
+  <div
+    class="wuiToast wuiToast--danger wuiGlobalToastListItem"
+    data-test-subj="b"
+    id="b"
+  >
+    <p
+      class="wuiScreenReaderOnly"
+    >
+      A new notification appears
+    </p>
+    <div
+      aria-label="Notification"
+      class="wuiToastHeader wuiToastHeader--withBody"
+      data-test-subj="wuiToastHeader"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiToastHeader__icon"
+        data-wuiicon-type="alert"
+      />
+      <span
+        class="wuiToastHeader__title"
+      >
+        B
+      </span>
+    </div>
+    <button
+      aria-label="Dismiss toast"
+      class="wuiToast__closeButton"
+      data-test-subj="toastCloseButton"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        data-wuiicon-type="cross"
+      />
+    </button>
+    <div
+      class="wuiText wuiText--small wuiToastBody"
+    >
+      b
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiGlobalToastList props toasts is rendered 1`] = `
+<div
+  aria-live="polite"
+  class="wuiGlobalToastList wuiGlobalToastList--right"
+  role="region"
+>
+  <div
+    class="wuiToast wuiToast--success wuiGlobalToastListItem"
+    data-test-subj="a"
+    id="a"
+  >
+    <p
+      class="wuiScreenReaderOnly"
+    >
+      A new notification appears
+    </p>
+    <div
+      aria-label="Notification"
+      class="wuiToastHeader wuiToastHeader--withBody"
+      data-test-subj="wuiToastHeader"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiToastHeader__icon"
+        data-wuiicon-type="check"
+      />
+      <span
+        class="wuiToastHeader__title"
+      >
+        A
+      </span>
+    </div>
+    <button
+      aria-label="Dismiss toast"
+      class="wuiToast__closeButton"
+      data-test-subj="toastCloseButton"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        data-wuiicon-type="cross"
+      />
+    </button>
+    <div
+      class="wuiText wuiText--small wuiToastBody"
+    >
+      a
+    </div>
+  </div>
+  <div
+    class="wuiToast wuiToast--danger wuiGlobalToastListItem"
+    data-test-subj="b"
+    id="b"
+  >
+    <p
+      class="wuiScreenReaderOnly"
+    >
+      A new notification appears
+    </p>
+    <div
+      aria-label="Notification"
+      class="wuiToastHeader wuiToastHeader--withBody"
+      data-test-subj="wuiToastHeader"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiToastHeader__icon"
+        data-wuiicon-type="alert"
+      />
+      <span
+        class="wuiToastHeader__title"
+      >
+        B
+      </span>
+    </div>
+    <button
+      aria-label="Dismiss toast"
+      class="wuiToast__closeButton"
+      data-test-subj="toastCloseButton"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        data-wuiicon-type="cross"
+      />
+    </button>
+    <div
+      class="wuiText wuiText--small wuiToastBody"
+    >
+      b
+    </div>
+  </div>
+</div>
+`;

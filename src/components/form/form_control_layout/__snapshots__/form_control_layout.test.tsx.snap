@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFormControlLayout is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiFormControlLayout testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <input />
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayout props clear onClick is rendered 1`] = `
+<div
+  class="wuiFormControlLayout"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <div
+      class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+    >
+      <button
+        aria-label="Clear input"
+        class="wuiFormControlLayoutClearButton customClass"
+        data-test-subj="clearButton"
+        type="button"
+      >
+        <div
+          class="wuiFormControlLayoutClearButton__icon"
+          data-wuiicon-type="cross"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayout props fullWidth is rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+</div>
+`;
+
+exports[`WuiFormControlLayout props icon is rendered as a string 1`] = `
+<div
+  class="wuiFormControlLayout"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <div
+      class="wuiFormControlLayoutIcons"
+    >
+      <span
+        class="wuiFormControlLayoutCustomIcon"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiFormControlLayoutCustomIcon__icon"
+          data-wuiicon-type="alert"
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayout props icon is rendered as an object 1`] = `
+<div
+  class="wuiFormControlLayout"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <div
+      class="wuiFormControlLayoutIcons"
+    >
+      <span
+        class="wuiFormControlLayoutCustomIcon customClass"
+        data-test-subj="myIcon"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiFormControlLayoutCustomIcon__icon"
+          data-wuiicon-type="alert"
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayout props icon side left is rendered 1`] = `
+<div
+  class="wuiFormControlLayout"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <div
+      class="wuiFormControlLayoutIcons"
+    >
+      <span
+        class="wuiFormControlLayoutCustomIcon"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiFormControlLayoutCustomIcon__icon"
+          data-wuiicon-type="alert"
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayout props icon side right is rendered 1`] = `
+<div
+  class="wuiFormControlLayout"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <div
+      class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+    >
+      <span
+        class="wuiFormControlLayoutCustomIcon"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiFormControlLayoutCustomIcon__icon"
+          data-wuiicon-type="alert"
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayout props isLoading is rendered 1`] = `
+<div
+  class="wuiFormControlLayout"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  >
+    <div
+      class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+    >
+      <span
+        class="wuiLoadingSpinner wuiLoadingSpinner--medium"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiFormControlLayout props multiple appends are rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--group"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+  <span
+    class="wuiFormControlLayout__append"
+  >
+    1
+  </span>
+  <span
+    class="wuiFormControlLayout__append"
+  >
+    2
+  </span>
+</div>
+`;
+
+exports[`WuiFormControlLayout props multiple prepends are rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--group"
+>
+  <span
+    class="wuiFormControlLayout__prepend"
+  >
+    1
+  </span>
+  <span
+    class="wuiFormControlLayout__prepend"
+  >
+    2
+  </span>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+</div>
+`;
+
+exports[`WuiFormControlLayout props one append node is rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--group"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+  <span
+    class="wuiFormControlLayout__append"
+  >
+    1
+  </span>
+</div>
+`;
+
+exports[`WuiFormControlLayout props one append string is rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--group"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+  <label
+    class="wuiFormLabel wuiFormControlLayout__append"
+  >
+    1
+  </label>
+</div>
+`;
+
+exports[`WuiFormControlLayout props one prepend node is rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--group"
+>
+  <span
+    class="wuiFormControlLayout__prepend"
+  >
+    1
+  </span>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+</div>
+`;
+
+exports[`WuiFormControlLayout props one prepend node is rendered with className 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--group"
+>
+  <span
+    class="wuiFormControlLayout__prepend myClass"
+  >
+    1
+  </span>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+</div>
+`;
+
+exports[`WuiFormControlLayout props one prepend string is rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--group"
+>
+  <label
+    class="wuiFormLabel wuiFormControlLayout__prepend"
+  >
+    1
+  </label>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+</div>
+`;
+
+exports[`WuiFormControlLayout props readOnly is rendered 1`] = `
+<div
+  class="wuiFormControlLayout wuiFormControlLayout--readOnly"
+>
+  <div
+    class="wuiFormControlLayout__childrenWrapper"
+  />
+</div>
+`;

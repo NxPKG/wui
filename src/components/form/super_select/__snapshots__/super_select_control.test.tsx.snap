@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSuperSelectControl is rendered 1`] = `
+Array [
+  <input
+    type="hidden"
+    value=""
+  />,
+  <div
+    class="wuiFormControlLayout"
+  >
+    <div
+      class="wuiFormControlLayout__childrenWrapper"
+    >
+      <span
+        class="wuiScreenReaderOnly"
+        id="generated-id"
+      >
+        Select an option: , is selected
+      </span>
+      <button
+        aria-haspopup="true"
+        aria-label="aria-label"
+        aria-labelledby="undefined generated-id"
+        class="wuiSuperSelectControl testClass1 testClass2"
+        data-test-subj="test subject string"
+        type="button"
+      />
+      <div
+        class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+      >
+        <span
+          class="wuiFormControlLayoutCustomIcon"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiFormControlLayoutCustomIcon__icon"
+            data-wuiicon-type="arrowDown"
+          />
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`WuiSuperSelectControl props compressed is rendered 1`] = `
+Array [
+  <input
+    type="hidden"
+    value=""
+  />,
+  <div
+    class="wuiFormControlLayout wuiFormControlLayout--compressed"
+  >
+    <div
+      class="wuiFormControlLayout__childrenWrapper"
+    >
+      <span
+        class="wuiScreenReaderOnly"
+        id="generated-id"
+      >
+        Select an option: , is selected
+      </span>
+      <button
+        aria-haspopup="true"
+        aria-labelledby="undefined generated-id"
+        class="wuiSuperSelectControl wuiSuperSelectControl--compressed"
+        type="button"
+      />
+      <div
+        class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+      >
+        <span
+          class="wuiFormControlLayoutCustomIcon"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiFormControlLayoutCustomIcon__icon"
+            data-wuiicon-type="arrowDown"
+          />
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`WuiSuperSelectControl props disabled options are rendered 1`] = `
+Array [
+  <input
+    type="hidden"
+    value=""
+  />,
+  <div
+    class="wuiFormControlLayout"
+  >
+    <div
+      class="wuiFormControlLayout__childrenWrapper"
+    >
+      <span
+        class="wuiScreenReaderOnly"
+        id="generated-id"
+      >
+        Select an option: , is selected
+      </span>
+      <button
+        aria-haspopup="true"
+        aria-labelledby="undefined generated-id"
+        class="wuiSuperSelectControl"
+        type="button"
+      />
+      <div
+        class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+      >
+        <span
+          class="wuiFormControlLayoutCustomIcon"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiFormControlLayoutCustomIcon__icon"
+            data-wuiicon-type="arrowDown"
+          />
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`WuiSuperSelectControl props empty value option is rendered 1`] = `
+Array [
+  <input
+    type="hidden"
+    value=""
+  />,
+  <div
+    class="wuiFormControlLayout"
+  >
+    <div
+      class="wuiFormControlLayout__childrenWrapper"
+    >
+      <span
+        class="wuiScreenReaderOnly"
+        id="generated-id"
+      >
+        Select an option: , is selected
+      </span>
+      <button
+        aria-haspopup="true"
+        aria-labelledby="undefined generated-id"
+        class="wuiSuperSelectControl"
+        type="button"
+      />
+      <div
+        class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+      >
+        <span
+          class="wuiFormControlLayoutCustomIcon"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiFormControlLayoutCustomIcon__icon"
+            data-wuiicon-type="arrowDown"
+          />
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`WuiSuperSelectControl props fullWidth is rendered 1`] = `
+Array [
+  <input
+    type="hidden"
+    value=""
+  />,
+  <div
+    class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+  >
+    <div
+      class="wuiFormControlLayout__childrenWrapper"
+    >
+      <span
+        class="wuiScreenReaderOnly"
+        id="generated-id"
+      >
+        Select an option: , is selected
+      </span>
+      <button
+        aria-haspopup="true"
+        aria-labelledby="undefined generated-id"
+        class="wuiSuperSelectControl wuiSuperSelectControl--fullWidth"
+        type="button"
+      />
+      <div
+        class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+      >
+        <span
+          class="wuiFormControlLayoutCustomIcon"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiFormControlLayoutCustomIcon__icon"
+            data-wuiicon-type="arrowDown"
+          />
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`WuiSuperSelectControl props isInvalid is rendered 1`] = `
+Array [
+  <input
+    type="hidden"
+    value=""
+  />,
+  <div
+    class="wuiFormControlLayout"
+  >
+    <div
+      class="wuiFormControlLayout__childrenWrapper"
+    >
+      <span
+        class="wuiScreenReaderOnly"
+        id="generated-id"
+      >
+        Select an option: , is selected
+      </span>
+      <button
+        aria-haspopup="true"
+        aria-labelledby="undefined generated-id"
+        class="wuiSuperSelectControl wuiSuperSelectControl-isInvalid"
+        type="button"
+      />
+      <div
+        class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+      >
+        <span
+          class="wuiFormControlLayoutCustomIcon"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiFormControlLayoutCustomIcon__icon"
+            data-wuiicon-type="arrowDown"
+          />
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`WuiSuperSelectControl props isLoading is rendered 1`] = `
+Array [
+  <input
+    type="hidden"
+    value=""
+  />,
+  <div
+    class="wuiFormControlLayout"
+  >
+    <div
+      class="wuiFormControlLayout__childrenWrapper"
+    >
+      <span
+        class="wuiScreenReaderOnly"
+        id="generated-id"
+      >
+        Select an option: , is selected
+      </span>
+      <button
+        aria-haspopup="true"
+        aria-labelledby="undefined generated-id"
+        class="wuiSuperSelectControl wuiSuperSelectControl-isLoading"
+        type="button"
+      />
+      <div
+        class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+      >
+        <span
+          class="wuiLoadingSpinner wuiLoadingSpinner--medium"
+        />
+        <span
+          class="wuiFormControlLayoutCustomIcon"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiFormControlLayoutCustomIcon__icon"
+            data-wuiicon-type="arrowDown"
+          />
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`WuiSuperSelectControl props value option is rendered 1`] = `
+Array [
+  <input
+    type="hidden"
+    value="1"
+  />,
+  <div
+    class="wuiFormControlLayout"
+  >
+    <div
+      class="wuiFormControlLayout__childrenWrapper"
+    >
+      <span
+        class="wuiScreenReaderOnly"
+        id="generated-id"
+      >
+        Select an option: Option #1, is selected
+      </span>
+      <button
+        aria-haspopup="true"
+        aria-labelledby="undefined generated-id"
+        class="wuiSuperSelectControl"
+        type="button"
+      >
+        Option #1
+      </button>
+      <div
+        class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+      >
+        <span
+          class="wuiFormControlLayoutCustomIcon"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiFormControlLayoutCustomIcon__icon"
+            data-wuiicon-type="arrowDown"
+          />
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;

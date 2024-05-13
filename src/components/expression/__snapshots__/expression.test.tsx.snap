@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiExpression props color accent is rendered 1`] = `
+<span
+  aria-label="aria-label"
+  class="wuiExpression testClass1 testClass2 wuiExpression-isUppercase wuiExpression--accent"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props color danger is rendered 1`] = `
+<span
+  aria-label="aria-label"
+  class="wuiExpression testClass1 testClass2 wuiExpression-isUppercase wuiExpression--danger"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props color primary is rendered 1`] = `
+<span
+  aria-label="aria-label"
+  class="wuiExpression testClass1 testClass2 wuiExpression-isUppercase wuiExpression--primary"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props color secondary is rendered 1`] = `
+<span
+  aria-label="aria-label"
+  class="wuiExpression testClass1 testClass2 wuiExpression-isUppercase wuiExpression--secondary"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props color subdued is rendered 1`] = `
+<span
+  aria-label="aria-label"
+  class="wuiExpression testClass1 testClass2 wuiExpression-isUppercase wuiExpression--subdued"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props color warning is rendered 1`] = `
+<span
+  aria-label="aria-label"
+  class="wuiExpression testClass1 testClass2 wuiExpression-isUppercase wuiExpression--warning"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props descriptionWidth changes the description&apos;s width when using columns 1`] = `
+<span
+  class="wuiExpression wuiExpression-isUppercase wuiExpression--columns wuiExpression--danger"
+>
+  <span
+    class="wuiExpression__description"
+    style="flex-basis:50px"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+  <div
+    class="wuiExpression__icon"
+    color="danger"
+    data-wuiicon-type="alert"
+  />
+</span>
+`;
+
+exports[`WuiExpression props display can be columns 1`] = `
+<span
+  class="wuiExpression wuiExpression-isUppercase wuiExpression--columns wuiExpression--secondary"
+>
+  <span
+    class="wuiExpression__description"
+    style="flex-basis:20%"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props isActive false renders inactive 1`] = `
+<span
+  class="wuiExpression wuiExpression-isUppercase wuiExpression--secondary"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props isActive true renders active 1`] = `
+<span
+  class="wuiExpression wuiExpression-isActive wuiExpression-isUppercase wuiExpression--secondary"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props isInvalid renders error state 1`] = `
+<span
+  class="wuiExpression wuiExpression-isUppercase wuiExpression--danger"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+  <div
+    class="wuiExpression__icon"
+    color="danger"
+    data-wuiicon-type="alert"
+  />
+</span>
+`;
+
+exports[`WuiExpression props textWrap can truncate text 1`] = `
+<span
+  class="wuiExpression wuiExpression-isUppercase wuiExpression--secondary wuiExpression--truncate"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props uppercase false renders inherited case 1`] = `
+<span
+  class="wuiExpression wuiExpression--secondary"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression props uppercase true renders uppercase 1`] = `
+<span
+  class="wuiExpression wuiExpression-isUppercase wuiExpression--secondary"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</span>
+`;
+
+exports[`WuiExpression render with only description 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiExpression testClass1 testClass2 wuiExpression-isClickable wuiExpression-isUppercase wuiExpression--secondary"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+</button>
+`;
+
+exports[`WuiExpression renders 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiExpression testClass1 testClass2 wuiExpression-isClickable wuiExpression-isUppercase wuiExpression--secondary"
+  data-test-subj="test subject string"
+>
+  <span
+    class="wuiExpression__description"
+  >
+    the answer is
+  </span>
+   
+  <span
+    class="wuiExpression__value"
+  >
+    42
+  </span>
+</button>
+`;

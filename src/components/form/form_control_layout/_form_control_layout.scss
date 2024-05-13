@@ -1,0 +1,172 @@
+.wuiFormControlLayout {
+  // Let the height expand as needed
+  @include wuiFormControlSize($includeAlternates: true);
+}
+
+.wuiFormControlLayout__childrenWrapper {
+  position: relative;
+}
+
+/**
+ * 1. Account for inner box-shadow style border
+ * 2. Ensure truncation works in children elements
+ */
+
+.wuiFormControlLayout--group {
+  // Match just the regular drop shadow of inputs
+  @include wuiFormControlDefaultShadow;
+  display: flex;
+  align-items: stretch;
+  padding: 1px; /* 1 */
+
+  // Force the stretch of any children so they expand the full height of the control
+  > *,
+  .wuiPopover__anchor,
+  .wuiButtonEmpty,
+  .wuiText,
+  .wuiFormLabel,
+  .wuiButtonIcon {
+    height: 100%;
+  }
+
+  .wuiFormControlLayout__childrenWrapper {
+    flex-grow: 1;
+    overflow: hidden; /* 2 */
+  }
+
+  .wuiFormControlLayout__prepend,
+  .wuiFormControlLayout__append {
+    @include wuiTextTruncate;
+    flex-shrink: 0;
+    height: 100%;
+    border-radius: 0;
+
+    // ICONS
+
+    &.wuiIcon,
+    .wuiIcon {
+      padding: 0 $wuiSizeS;
+      width: $wuiSizeXL;
+      border-radius: 0;
+      background-color: $wuiFormInputGroupLabelBackground;
+    }
+
+
+    &.wuiButtonIcon,
+    &.wuiButtonEmpty,
+    .wuiButtonIcon,
+    .wuiButtonEmpty {
+      transform: none !important;
+
+      // Undo sizing from icons inside buttons
+      .wuiIcon {
+        background: none !important;
+        padding: 0;
+        width: $wuiSize;
+      }
+    }
+  }
+
+  .wuiButtonIcon {
+    padding: 0 $wuiSizeS;
+    width: $wuiSizeXL;
+    border-radius: 0;
+    background-color: $wuiFormInputGroupLabelBackground;
+
+    &:focus {
+      box-shadow: inset 0 0 0 2px $wuiFocusRingColor;
+    }
+  }
+
+  .wuiToolTipAnchor > .wuiIcon {
+    height: 100%;
+    background-color: $wuiFormInputGroupLabelBackground;
+    padding: 0 $wuiSizeS;
+    width: $wuiSizeXL;
+    border-radius: 0;
+  }
+
+  > .wuiFormControlLayout__prepend,
+  > .wuiFormControlLayout__append {
+    max-width: 50%; // Make sure max-width only applies to the outer most append/prepend element
+  }
+
+  // sass-lint:disable-block no-important
+  // This is the only way to target specific components to override styling
+
+  // TEXT
+
+  .wuiFormLabel,
+  .wuiText {
+    background-color: $wuiFormInputGroupLabelBackground;
+    padding: $wuiFormControlPadding;
+    line-height: $wuiFontSize !important;
+    cursor: default !important; // pointer cursor on some form labels but not others is confusing
+
+    // If the next sibling is not the input, pull it closer to the text to reduce space
+    + *:not(.wuiFormControlLayout__childrenWrapper) {
+      margin-left: -$wuiFormControlPadding;
+    }
+  }
+
+  // If any child that is not the input has a next sibling that is text, pull it closer to the text to reduce space
+  > *:not(.wuiFormControlLayout__childrenWrapper) {
+    + .wuiFormLabel,
+    + .wuiText {
+      margin-left: -$wuiFormControlPadding;
+    }
+  }
+
+  //
+  // BORDERS on buttons only
+
+  .wuiButtonEmpty {
+    border-right: $wuiFormInputGroupBorder;
+  }
+
+  // Any buttons after the children wrapper or inside any elements after the children wrapper
+  // Need to swap border sides
+  .wuiFormControlLayout__childrenWrapper ~ .wuiButtonEmpty,
+  .wuiFormControlLayout__childrenWrapper ~ * .wuiButtonEmpty {
+    border-right: none;
+    border-left: $wuiFormInputGroupBorder;
+  }
+
+  //
+  // Compressed alterations
+
+  &.wuiFormControlLayout--compressed {
+    @include wuiFormControlDefaultShadow($borderOnly: true);
+    border-radius: $wuiBorderRadius / 2;
+    overflow: hidden; // Keeps backgrounds inside border radius
+
+    // Padding
+    .wuiFormLabel,
+    .wuiText {
+      padding: $wuiFormControlCompressedPadding;
+
+      // If the next sibling is not the input, pull it closer to the text to reduce space
+      + *:not(.wuiFormControlLayout__childrenWrapper) {
+        margin-left: -$wuiFormControlCompressedPadding;
+      }
+    }
+
+    // If any child that is not the input has a next sibling that is text, pull it closer to the text to reduce space
+    > *:not(.wuiFormControlLayout__childrenWrapper) {
+      + .wuiFormLabel,
+      + .wuiText {
+        margin-left: -$wuiFormControlCompressedPadding;
+      }
+    }
+  }
+
+  //
+  // ReadOnly alterations
+  &.wuiFormControlLayout--readOnly {
+    @include wuiFormControlReadOnlyStyle;
+
+    input {
+      background-color: transparent; // Ensures the input and layout don't double up on background color
+    }
+  }
+}

@@ -1,0 +1,54 @@
+
+.wuiSaturation {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: $wuiBorderRadius / 2;
+  touch-action: none; // prevent TouchMove events from scrolling page
+  z-index: 3; // Required to be above the hue slider, which can overlap
+
+  .wuiSaturation__lightness,
+  .wuiSaturation__saturation {
+    position: absolute;
+    top: -1px; // hides a slight color inconsistency
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: $wuiBorderRadius / 2;
+  }
+
+  .wuiSaturation__lightness {
+    background: linear-gradient(to right, $wuiColorPickerValueRange0, $wuiColorPickerValueRange1);
+  }
+
+  .wuiSaturation__saturation {
+    background: linear-gradient(to top, $wuiColorPickerSaturationRange0, $wuiColorPickerSaturationRange1);
+  }
+
+  .wuiSaturation__indicator {
+    position: absolute;
+    height: $wuiColorPickerIndicatorSize;
+    width: $wuiColorPickerIndicatorSize;
+    border-radius: 100%;
+    margin-top: $wuiColorPickerIndicatorSize * -.5;
+    margin-left: $wuiColorPickerIndicatorSize * -.5;
+    border: 1px solid $wuiColorDarkestShade;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 100%;
+      border: 1px solid $wuiColorLightestShade;
+    }
+  }
+
+  &:focus {
+    .wuiSaturation__indicator {
+      @include wuiFocusRing;
+    }
+  }
+}

@@ -1,0 +1,1663 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiButtonGroup is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    aria-label="aria-label"
+    class="wuiButtonGroup wuiButtonGroup--s testClass1 testClass2"
+  />
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props buttonSize compressed is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--compressed"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props buttonSize m is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--m"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props buttonSize s is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props color danger is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--danger wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--danger wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--danger wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props color ghost is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--ghost wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--ghost wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--ghost wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props color primary is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--primary wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--primary wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--primary wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props color secondary is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--secondary wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--secondary wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--secondary wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props color text is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props color warning is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--warning wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--warning wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--warning wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props idSelected is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiToggle--checked wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        checked=""
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button wuiButtonGroup__button--selected wuiButton--fill"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props isDisabled is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonToggle--isDisabled wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        disabled=""
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button wuiButton-isDisabled"
+        disabled=""
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonToggle--isDisabled wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        disabled=""
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button wuiButton-isDisabled"
+        disabled=""
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonToggle--isDisabled wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        disabled=""
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button wuiButton-isDisabled"
+        disabled=""
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props isFullWidth is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset wuiButtonGroup__fieldset--fullWidth"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s wuiButtonGroup--fullWidth"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props isIconOnly is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonToggle--isIconOnly wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          />
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonToggle--isIconOnly wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          />
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonToggle--isIconOnly wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          />
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props legend is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <legend
+    class="wuiScreenReaderOnly"
+  >
+    legend
+  </legend>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props name is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        name="name"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        name="name"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        name="name"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props options are rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props options can pass down data-test-subj 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        data-test-subj="test"
+        title="Option one"
+        type="radio"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props type of multi idToSelectedMap is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiToggle--checked wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        checked=""
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="checkbox"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button wuiButtonGroup__button--selected wuiButton--fill"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiToggle--checked wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        checked=""
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="checkbox"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button wuiButtonGroup__button--selected wuiButton--fill"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="checkbox"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;
+
+exports[`WuiButtonGroup props type of multi is rendered 1`] = `
+<fieldset
+  class="wuiButtonGroup__fieldset"
+>
+  <div
+    class="wuiButtonGroup wuiButtonGroup--s"
+  >
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option one"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option one"
+        type="checkbox"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button00"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option one
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option two"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option two"
+        type="checkbox"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button01"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option two
+          </span>
+        </span>
+      </button>
+    </div>
+    <div
+      class="wuiToggle wuiButtonToggle__wrapper wuiButtonGroup__toggle"
+    >
+      <input
+        aria-label="Option three"
+        class="wuiToggle__input wuiButtonToggle__input"
+        title="Option three"
+        type="checkbox"
+      />
+      <button
+        class="wuiButton wuiButton--text wuiButton--small wuiButtonToggle wuiButtonGroup__button"
+        id="button02"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButton__content"
+        >
+          <span
+            class="wuiButton__text"
+          >
+            Option three
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</fieldset>
+`;

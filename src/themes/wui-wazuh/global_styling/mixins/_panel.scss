@@ -1,0 +1,51 @@
+@mixin wuiPanel($selector) {
+  @if variable-exists(selector) == false {
+    @error 'A $selector must be provided to @mixin wuiPanel().';
+  } @else {
+    #{$selector} {
+
+      @include wuiBottomShadowSmall;
+      background-color: $wuiColorEmptyShade;
+      border: none;
+      border-radius: $wuiBorderRadius;
+      flex-grow: 1;
+
+      &#{$selector}--flexGrowZero {
+        flex-grow: 0;
+      }
+
+      &#{$selector}--isClickable {
+        // in case of button wrapper which inherently is inline-block and no width
+        display: block;
+        width: 100%;
+        text-align: left;
+
+        // transition the shadow
+        transition: all $wuiAnimSpeedFast $wuiAnimSlightResistance;
+
+        &:hover,
+        &:focus {
+          @include wuiSlightShadowHover;
+          transform: translateY(-2px);
+          cursor: pointer;
+        }
+      }
+
+      &#{$selector}--shadow {
+        @include wuiBottomShadowMedium;
+
+        @if (lightness($wuiTextColor) < 50) {
+          border-bottom-color: transparentize($wuiShadowColor, .5);
+        } @else {
+          // Applied again here in case dark theme overrides light
+          border-bottom-color: $wuiBorderColor;
+        }
+
+        &#{$selector}--isClickable:hover,
+        &#{$selector}--isClickable:focus {
+          @include wuiBottomShadow($color: $wuiShadowColor);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.wuiContextMenuPanel {
+  width: 100%;
+  visibility: visible;
+
+  &.wuiContextMenuPanel-txInLeft {
+    pointer-events: none;
+    animation: wuiContextMenuPanelTxInLeft $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+  }
+
+  &.wuiContextMenuPanel-txOutLeft {
+    pointer-events: none;
+    animation: wuiContextMenuPanelTxOutLeft $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+  }
+
+  &.wuiContextMenuPanel-txInRight {
+    pointer-events: none;
+    animation: wuiContextMenuPanelTxInRight $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+  }
+
+  &.wuiContextMenuPanel-txOutRight {
+    pointer-events: none;
+    animation: wuiContextMenuPanelTxOutRight $wuiAnimSpeedNormal $wuiAnimSlightResistance;
+  }
+}
+
+.wuiContextMenuPanel--next {
+  transform: translateX($wuiContextMenuWidth);
+  visibility: hidden;
+}
+
+.wuiContextMenuPanel--previous {
+  transform: translateX(-$wuiContextMenuWidth);
+  visibility: hidden;
+}
+
+.wuiContextMenuPanelTitle {
+  @include wuiPopoverTitle;
+
+  width: 100%;
+  text-align: left;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+@keyframes wuiContextMenuPanelTxInLeft {
+  0% {
+    transform: translateX($wuiContextMenuWidth);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes wuiContextMenuPanelTxOutLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-$wuiContextMenuWidth);
+  }
+}
+
+@keyframes wuiContextMenuPanelTxInRight {
+  0% {
+    transform: translateX(-$wuiContextMenuWidth);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes wuiContextMenuPanelTxOutRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX($wuiContextMenuWidth);
+  }
+}

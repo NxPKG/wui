@@ -1,0 +1,31 @@
+/*
+ * 1. Overwrites the base styling of WuiBadge, to give it a larger size and margins
+ * that make sense in the input wrap.
+ */
+.wuiComboBoxPill {
+  height: $wuiSizeL - 2px;
+  line-height: $wuiSizeL - 2px;
+  vertical-align: baseline;
+
+  &,
+  & + & /* 1 */ {
+    margin: $wuiSizeXS;
+  }
+
+  .wuiComboBox--compressed &,
+  .wuiComboBox--compressed & + & /* 1 */ {
+    margin: ($wuiSizeXS + 1px) $wuiSizeXS 0 0;
+  }
+
+  &--plainText {
+    @include wuiFont;
+    @include wuiTextTruncate;
+
+    line-height: $wuiSizeL;
+    font-size: $wuiFontSizeS;
+    padding: 0;
+    color: $wuiTextColor;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}

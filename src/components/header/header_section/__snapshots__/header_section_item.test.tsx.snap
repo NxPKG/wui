@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHeaderSectionItem border defaults to left 1`] = `
+<div
+  class="wuiHeaderSectionItem wuiHeaderSectionItem--borderLeft"
+/>
+`;
+
+exports[`WuiHeaderSectionItem border renders right 1`] = `
+<div
+  class="wuiHeaderSectionItem wuiHeaderSectionItem--borderRight"
+/>
+`;
+
+exports[`WuiHeaderSectionItem is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiHeaderSectionItem wuiHeaderSectionItem--borderLeft testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiHeaderSectionItem renders children 1`] = `
+<div
+  class="wuiHeaderSectionItem wuiHeaderSectionItem--borderLeft"
+>
+  <span>
+    Call me Ishmael.
+  </span>
+</div>
+`;

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSwitch assigns automatically generated ID to label 1`] = `
+<div
+  class="wuiSwitch"
+>
+  <button
+    aria-checked="false"
+    aria-labelledby="generated-id"
+    class="wuiSwitch__button"
+    id="generated-id"
+    role="switch"
+    type="button"
+  >
+    <span
+      class="wuiSwitch__body"
+    >
+      <span
+        class="wuiSwitch__thumb"
+      />
+      <span
+        class="wuiSwitch__track"
+      >
+        <div
+          class="wuiSwitch__icon"
+          data-wuiicon-type="cross"
+        />
+        <div
+          class="wuiSwitch__icon wuiSwitch__icon--checked"
+          data-wuiicon-type="check"
+        />
+      </span>
+    </span>
+  </button>
+  <span
+    class="wuiSwitch__label"
+    id="generated-id"
+  >
+    Label
+  </span>
+</div>
+`;
+
+exports[`WuiSwitch is rendered 1`] = `
+<div
+  class="wuiSwitch testClass1 testClass2"
+>
+  <button
+    aria-checked="false"
+    aria-label="aria-label"
+    aria-labelledby="generated-id"
+    class="wuiSwitch__button"
+    data-test-subj="test subject string"
+    id="test"
+    role="switch"
+    type="button"
+  >
+    <span
+      class="wuiSwitch__body"
+    >
+      <span
+        class="wuiSwitch__thumb"
+      />
+      <span
+        class="wuiSwitch__track"
+      >
+        <div
+          class="wuiSwitch__icon"
+          data-wuiicon-type="cross"
+        />
+        <div
+          class="wuiSwitch__icon wuiSwitch__icon--checked"
+          data-wuiicon-type="check"
+        />
+      </span>
+    </span>
+  </button>
+  <span
+    class="wuiSwitch__label"
+    id="generated-id"
+  >
+    Label
+  </span>
+</div>
+`;

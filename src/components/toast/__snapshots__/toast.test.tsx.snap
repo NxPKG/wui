@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiToast Props color danger is rendered 1`] = `
+<WuiToast
+  color="danger"
+  title="test title"
+>
+  <div
+    className="wuiToast wuiToast--danger"
+  >
+    <WuiScreenReaderOnly>
+      <p
+        className="wuiScreenReaderOnly"
+      >
+        <WuiI18n
+          default="A new notification appears"
+          token="wuiToast.newNotification"
+        >
+          A new notification appears
+        </WuiI18n>
+      </p>
+    </WuiScreenReaderOnly>
+    <WuiI18n
+      default="Notification"
+      token="wuiToast.notification"
+    >
+      <div
+        aria-label="Notification"
+        className="wuiToastHeader"
+        data-test-subj="wuiToastHeader"
+      >
+        <span
+          className="wuiToastHeader__title"
+        >
+          test title
+        </span>
+      </div>
+    </WuiI18n>
+  </div>
+</WuiToast>
+`;
+
+exports[`WuiToast Props color primary is rendered 1`] = `
+<WuiToast
+  color="primary"
+  title="test title"
+>
+  <div
+    className="wuiToast wuiToast--primary"
+  >
+    <WuiScreenReaderOnly>
+      <p
+        className="wuiScreenReaderOnly"
+      >
+        <WuiI18n
+          default="A new notification appears"
+          token="wuiToast.newNotification"
+        >
+          A new notification appears
+        </WuiI18n>
+      </p>
+    </WuiScreenReaderOnly>
+    <WuiI18n
+      default="Notification"
+      token="wuiToast.notification"
+    >
+      <div
+        aria-label="Notification"
+        className="wuiToastHeader"
+        data-test-subj="wuiToastHeader"
+      >
+        <span
+          className="wuiToastHeader__title"
+        >
+          test title
+        </span>
+      </div>
+    </WuiI18n>
+  </div>
+</WuiToast>
+`;
+
+exports[`WuiToast Props color success is rendered 1`] = `
+<WuiToast
+  color="success"
+  title="test title"
+>
+  <div
+    className="wuiToast wuiToast--success"
+  >
+    <WuiScreenReaderOnly>
+      <p
+        className="wuiScreenReaderOnly"
+      >
+        <WuiI18n
+          default="A new notification appears"
+          token="wuiToast.newNotification"
+        >
+          A new notification appears
+        </WuiI18n>
+      </p>
+    </WuiScreenReaderOnly>
+    <WuiI18n
+      default="Notification"
+      token="wuiToast.notification"
+    >
+      <div
+        aria-label="Notification"
+        className="wuiToastHeader"
+        data-test-subj="wuiToastHeader"
+      >
+        <span
+          className="wuiToastHeader__title"
+        >
+          test title
+        </span>
+      </div>
+    </WuiI18n>
+  </div>
+</WuiToast>
+`;
+
+exports[`WuiToast Props color warning is rendered 1`] = `
+<WuiToast
+  color="warning"
+  title="test title"
+>
+  <div
+    className="wuiToast wuiToast--warning"
+  >
+    <WuiScreenReaderOnly>
+      <p
+        className="wuiScreenReaderOnly"
+      >
+        <WuiI18n
+          default="A new notification appears"
+          token="wuiToast.newNotification"
+        >
+          A new notification appears
+        </WuiI18n>
+      </p>
+    </WuiScreenReaderOnly>
+    <WuiI18n
+      default="Notification"
+      token="wuiToast.notification"
+    >
+      <div
+        aria-label="Notification"
+        className="wuiToastHeader"
+        data-test-subj="wuiToastHeader"
+      >
+        <span
+          className="wuiToastHeader__title"
+        >
+          test title
+        </span>
+      </div>
+    </WuiI18n>
+  </div>
+</WuiToast>
+`;
+
+exports[`WuiToast Props iconType is rendered 1`] = `
+<WuiToast
+  iconType="user"
+  title="test title"
+>
+  <div
+    className="wuiToast"
+  >
+    <WuiScreenReaderOnly>
+      <p
+        className="wuiScreenReaderOnly"
+      >
+        <WuiI18n
+          default="A new notification appears"
+          token="wuiToast.newNotification"
+        >
+          A new notification appears
+        </WuiI18n>
+      </p>
+    </WuiScreenReaderOnly>
+    <WuiI18n
+      default="Notification"
+      token="wuiToast.notification"
+    >
+      <div
+        aria-label="Notification"
+        className="wuiToastHeader"
+        data-test-subj="wuiToastHeader"
+      >
+        <WuiIcon
+          aria-hidden="true"
+          className="wuiToastHeader__icon"
+          size="m"
+          type="user"
+        >
+          <div
+            aria-hidden="true"
+            className="wuiToastHeader__icon"
+            data-wuiicon-type="user"
+            size="m"
+          />
+        </WuiIcon>
+        <span
+          className="wuiToastHeader__title"
+        >
+          test title
+        </span>
+      </div>
+    </WuiI18n>
+  </div>
+</WuiToast>
+`;
+
+exports[`WuiToast Props title is rendered 1`] = `
+<WuiToast
+  title="toast title"
+>
+  <div
+    className="wuiToast"
+  >
+    <WuiScreenReaderOnly>
+      <p
+        className="wuiScreenReaderOnly"
+      >
+        <WuiI18n
+          default="A new notification appears"
+          token="wuiToast.newNotification"
+        >
+          A new notification appears
+        </WuiI18n>
+      </p>
+    </WuiScreenReaderOnly>
+    <WuiI18n
+      default="Notification"
+      token="wuiToast.notification"
+    >
+      <div
+        aria-label="Notification"
+        className="wuiToastHeader"
+        data-test-subj="wuiToastHeader"
+      >
+        <span
+          className="wuiToastHeader__title"
+        >
+          toast title
+        </span>
+      </div>
+    </WuiI18n>
+  </div>
+</WuiToast>
+`;
+
+exports[`WuiToast is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiToast testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <p
+    class="wuiScreenReaderOnly"
+  >
+    A new notification appears
+  </p>
+  <div
+    aria-label="Notification"
+    class="wuiToastHeader wuiToastHeader--withBody"
+    data-test-subj="wuiToastHeader"
+  >
+    <span
+      class="wuiToastHeader__title"
+    >
+      test title
+    </span>
+  </div>
+  <div
+    class="wuiText wuiText--small wuiToastBody"
+  >
+    <p>
+      Hi
+    </p>
+  </div>
+</div>
+`;

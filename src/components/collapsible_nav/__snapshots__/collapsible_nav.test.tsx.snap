@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCollapsibleNav close button can be hidden 1`] = `
+Array [
+  <div />,
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="1"
+    />
+    <div
+      data-focus-lock-disabled="false"
+    >
+      <nav
+        class="wuiCollapsibleNav"
+        id="id"
+      />
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiCollapsibleNav close button extends WuiButtonEmpty 1`] = `
+Array [
+  <div />,
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="1"
+    />
+    <div
+      data-focus-lock-disabled="false"
+    >
+      <nav
+        class="wuiCollapsibleNav"
+        id="id"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiScreenReaderOnly--showOnFocus wuiCollapsibleNav__closeButton class"
+          data-test-subj="test"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="cross"
+            />
+            <span
+              class="wuiButtonEmpty__text wuiCollapsibleNav__closeButtonText"
+            >
+              close
+            </span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiCollapsibleNav does not render if isOpen is false 1`] = `null`;
+
+exports[`WuiCollapsibleNav is rendered 1`] = `
+Array [
+  <div />,
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="1"
+    />
+    <div
+      data-focus-lock-disabled="false"
+    >
+      <nav
+        aria-label="aria-label"
+        class="wuiCollapsibleNav testClass1 testClass2"
+        data-test-subj="test subject string"
+        id="id"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiScreenReaderOnly--showOnFocus wuiCollapsibleNav__closeButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="cross"
+            />
+            <span
+              class="wuiButtonEmpty__text wuiCollapsibleNav__closeButtonText"
+            >
+              close
+            </span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiCollapsibleNav props button 1`] = `
+Array [
+  <button
+    aria-controls="id"
+    aria-expanded="true"
+    aria-pressed="true"
+    class="wuiCollapsibleNav__toggle"
+  />,
+  <div />,
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="1"
+    />
+    <div
+      data-focus-lock-disabled="false"
+    >
+      <nav
+        class="wuiCollapsibleNav"
+        id="id"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiScreenReaderOnly--showOnFocus wuiCollapsibleNav__closeButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="cross"
+            />
+            <span
+              class="wuiButtonEmpty__text wuiCollapsibleNav__closeButtonText"
+            >
+              close
+            </span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiCollapsibleNav props can alter mask props with maskProps without throwing error 1`] = `
+Array [
+  <div />,
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="1"
+    />
+    <div
+      data-focus-lock-disabled="false"
+    >
+      <nav
+        class="wuiCollapsibleNav"
+        id="id"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiScreenReaderOnly--showOnFocus wuiCollapsibleNav__closeButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="cross"
+            />
+            <span
+              class="wuiButtonEmpty__text wuiCollapsibleNav__closeButtonText"
+            >
+              close
+            </span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiCollapsibleNav props dockedBreakpoint 1`] = `
+Array [
+  <div />,
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="1"
+    />
+    <div
+      data-focus-lock-disabled="false"
+    >
+      <nav
+        class="wuiCollapsibleNav"
+        id="id"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiScreenReaderOnly--showOnFocus wuiCollapsibleNav__closeButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="cross"
+            />
+            <span
+              class="wuiButtonEmpty__text wuiCollapsibleNav__closeButtonText"
+            >
+              close
+            </span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiCollapsibleNav props isDocked 1`] = `
+<div>
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />
+  <div
+    data-focus-lock-disabled="disabled"
+  >
+    <nav
+      class="wuiCollapsibleNav wuiCollapsibleNav--isDocked"
+      id="id"
+    >
+      <button
+        class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiScreenReaderOnly--showOnFocus wuiCollapsibleNav__closeButton"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButtonEmpty__content"
+        >
+          <div
+            class="wuiButtonContent__icon"
+            data-wuiicon-type="cross"
+          />
+          <span
+            class="wuiButtonEmpty__text wuiCollapsibleNav__closeButtonText"
+          >
+            close
+          </span>
+        </span>
+      </button>
+    </nav>
+  </div>
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />
+</div>
+`;
+
+exports[`WuiCollapsibleNav props onClose 1`] = `
+Array [
+  <div />,
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="1"
+    />
+    <div
+      data-focus-lock-disabled="false"
+    >
+      <nav
+        class="wuiCollapsibleNav"
+        id="id"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiScreenReaderOnly--showOnFocus wuiCollapsibleNav__closeButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="cross"
+            />
+            <span
+              class="wuiButtonEmpty__text wuiCollapsibleNav__closeButtonText"
+            >
+              close
+            </span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="0"
+    />
+  </div>,
+]
+`;
+
+exports[`WuiCollapsibleNav props showButtonIfDocked 1`] = `
+Array [
+  <button
+    aria-controls="id"
+    aria-expanded="true"
+    aria-pressed="true"
+    class="wuiCollapsibleNav__toggle"
+  />,
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+    <div
+      data-focus-lock-disabled="disabled"
+    >
+      <nav
+        class="wuiCollapsibleNav wuiCollapsibleNav--isDocked"
+        id="id"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiScreenReaderOnly--showOnFocus wuiCollapsibleNav__closeButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="cross"
+            />
+            <span
+              class="wuiButtonEmpty__text wuiCollapsibleNav__closeButtonText"
+            >
+              close
+            </span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+  </div>,
+]
+`;

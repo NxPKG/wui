@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFlexItem grow 1 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow1"
+/>
+`;
+
+exports[`WuiFlexItem grow 2 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow2"
+/>
+`;
+
+exports[`WuiFlexItem grow 3 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow3"
+/>
+`;
+
+exports[`WuiFlexItem grow 4 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow4"
+/>
+`;
+
+exports[`WuiFlexItem grow 5 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow5"
+/>
+`;
+
+exports[`WuiFlexItem grow 6 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow6"
+/>
+`;
+
+exports[`WuiFlexItem grow 7 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow7"
+/>
+`;
+
+exports[`WuiFlexItem grow 8 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow8"
+/>
+`;
+
+exports[`WuiFlexItem grow 9 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow9"
+/>
+`;
+
+exports[`WuiFlexItem grow 10 is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrow10"
+/>
+`;
+
+exports[`WuiFlexItem grow false is rendered 1`] = `
+<div
+  class="wuiFlexItem wuiFlexItem--flexGrowZero"
+/>
+`;
+
+exports[`WuiFlexItem grow true is rendered 1`] = `
+<div
+  class="wuiFlexItem"
+/>
+`;
+
+exports[`WuiFlexItem is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiFlexItem testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;

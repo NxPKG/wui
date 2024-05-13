@@ -1,0 +1,60 @@
+/**
+ * 1. Account for inner box-shadow style border
+ */
+
+.wuiDatePickerRange {
+  @include wuiFormControlSize(auto, $includeAlternates: true);
+  // Match just the regular drop shadow of inputs
+  @include wuiFormControlDefaultShadow();
+  display: flex;
+  align-items: center;
+  padding: 1px; /* 1 */
+
+  // Allow any child to fill entire range container
+  > * {
+    flex-grow: 1;
+  }
+
+  .wuiFieldText.wuiDatePicker {
+    box-shadow: none !important; // including all states
+    text-align: center;
+
+  }
+
+  .react-datepicker-popper .wuiFieldText.wuiDatePicker {
+    // set any subsequent children in popper back to left align
+    text-align: left;
+  }
+
+  &--inGroup {
+    box-shadow: none;
+    padding: 0;
+
+    .wuiDatePicker {
+      height: $wuiFormControlLayoutGroupInputHeight;
+    }
+  }
+
+  &--compressed {
+    box-shadow: none;
+    padding: 0;
+
+    .wuiDatePicker {
+      height: $wuiFormControlLayoutGroupInputCompressedHeight;
+    }
+  }
+
+  // Direct descendent selectors to override `> span`
+
+  > .wuiDatePickerRange__delimeter {
+    background-color: transparent !important; // override .wuiFormControlLayout--group .wuiText
+    line-height: 1 !important;
+    flex: 0 0 auto;
+    padding-left: $wuiFormControlPadding / 2;
+    padding-right: $wuiFormControlPadding / 2;
+  }
+}
+
+.wuiDatePickerRange--readOnly {
+  background: $wuiFormBackgroundDisabledColor;
+}

@@ -1,0 +1,38 @@
+.wuiDescribedFormGroup {
+  max-width: $wuiFormMaxWidth * 2;
+
+  + * {
+    margin-top: $wuiSizeL;
+  }
+
+  &.wuiDescribedFormGroup--fullWidth {
+    max-width: 100%;
+  }
+
+  .wuiDescribedFormGroup__description {
+    padding-top: $wuiSizeS;
+  }
+
+  .wuiDescribedFormGroup__fields {
+    min-width: 0; // Needed to support shrinking appropriately with viewport (prevents x-axis content overflow)
+  }
+
+  .wuiDescribedFormGroup__fieldPadding {
+    &--xxxsmall {padding-top: ($wuiFontSizeXS * 1.5) - $wuiFontSizeXS + 2px;}
+    &--xxsmall {padding-top: ($wuiFontSizeS * 1.5) - $wuiFontSizeXS + 2px;}
+    &--xsmall {padding-top: ($wuiFontSize * 1.5) - $wuiFontSizeXS + 2px;}
+    &--small {padding-top: ($wuiFontSizeL * 1.5) - $wuiFontSizeXS + 2px;}
+    &--medium {padding-top: ($wuiFontSizeXL * 1.5) - $wuiFontSizeXS + 2px;}
+    &--large {padding-top: ($wuiFontSizeXXL * 1.5) - $wuiFontSizeXS + 2px;}
+  }
+
+  @include wuiBreakpoint('xs', 's') {
+    .wuiDescribedFormGroup__fields {
+      padding-top: 0;
+
+      > .wuiFormRow--hasEmptyLabelSpace:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}

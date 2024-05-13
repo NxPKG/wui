@@ -1,0 +1,35 @@
+.wuiDroppable {
+  $wuiDroppableColor: $wuiColorSecondary;
+  transition: background-color $wuiAnimSpeedExtraSlow ease;
+
+  &.wuiDroppable--isDraggingType:not(.wuiDroppable--isDisabled) {
+    background-color: transparentize($wuiDroppableColor, .9);
+
+    &.wuiDroppable--isDraggingOver {
+      background-color: transparentize($wuiDroppableColor, .75);
+    }
+  }
+
+  .wuiDroppable__placeholder {
+    &.wuiDroppable__placeholder--isHidden {
+      // Overriding inline styles on JS-inserted HTML elements
+      display: none !important; // sass-lint:disable-line no-important
+    }
+  }
+}
+
+@include wuiPanel($selector: '.wuiDroppable--withPanel');
+
+.wuiDroppable--noGrow {
+  flex-grow: 0;
+}
+
+.wuiDroppable--grow {
+  flex-grow: 1;
+}
+
+@each $size, $spacing in $wuiDragAndDropSpacing {
+  .wuiDroppable--#{$size} {
+    padding: $spacing;
+  }
+}

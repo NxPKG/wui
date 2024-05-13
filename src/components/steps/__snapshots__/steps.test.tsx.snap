@@ -1,0 +1,341 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSteps renders step title inside "headingElement" element 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiSteps testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Step 1"
+        class="wuiStepNumber wuiStep__circle"
+      >
+        1
+      </div>
+      <h2
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        first title
+      </h2>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        Do this first
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Step 2"
+        class="wuiStepNumber wuiStep__circle"
+      >
+        2
+      </div>
+      <h2
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        second title
+      </h2>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        Then this
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Incomplete Step 3"
+        class="wuiStepNumber wuiStepNumber--incomplete wuiStepNumber-isHollow wuiStep__circle"
+      />
+      <h2
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        third title
+      </h2>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        And finally, do this
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSteps renders steps 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiSteps testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Step 1"
+        class="wuiStepNumber wuiStep__circle"
+      >
+        1
+      </div>
+      <p
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        first title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        Do this first
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Step 2"
+        class="wuiStepNumber wuiStep__circle"
+      >
+        2
+      </div>
+      <p
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        second title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        Then this
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Incomplete Step 3"
+        class="wuiStepNumber wuiStepNumber--incomplete wuiStepNumber-isHollow wuiStep__circle"
+      />
+      <p
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        third title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        And finally, do this
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSteps renders steps with firstStepNumber 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiSteps testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Step 10"
+        class="wuiStepNumber wuiStep__circle"
+      >
+        10
+      </div>
+      <p
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        first title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        Do this first
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Step 11"
+        class="wuiStepNumber wuiStep__circle"
+      >
+        11
+      </div>
+      <p
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        second title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        Then this
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiStep"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Incomplete Step 12"
+        class="wuiStepNumber wuiStepNumber--incomplete wuiStepNumber-isHollow wuiStep__circle"
+      />
+      <p
+        class="wuiTitle wuiTitle--small wuiStep__title"
+      >
+        third title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        And finally, do this
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSteps renders steps with titleSize 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiSteps testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiStep wuiStep--small"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Step 1"
+        class="wuiStepNumber wuiStep__circle wuiStepNumber--small"
+      >
+        1
+      </div>
+      <p
+        class="wuiTitle wuiTitle--xsmall wuiStep__title"
+      >
+        first title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        Do this first
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiStep wuiStep--small"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Step 2"
+        class="wuiStepNumber wuiStep__circle wuiStepNumber--small"
+      >
+        2
+      </div>
+      <p
+        class="wuiTitle wuiTitle--xsmall wuiStep__title"
+      >
+        second title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        Then this
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiStep wuiStep--small"
+  >
+    <div
+      class="wuiStep__titleWrapper"
+    >
+      <div
+        aria-label="Incomplete Step 3"
+        class="wuiStepNumber wuiStepNumber--incomplete wuiStepNumber-isHollow wuiStep__circle wuiStepNumber--small"
+      />
+      <p
+        class="wuiTitle wuiTitle--xsmall wuiStep__title"
+      >
+        third title
+      </p>
+    </div>
+    <div
+      class="wuiStep__content"
+    >
+      <p>
+        And finally, do this
+      </p>
+    </div>
+  </div>
+</div>
+`;

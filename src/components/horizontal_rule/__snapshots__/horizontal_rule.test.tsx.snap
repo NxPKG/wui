@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHorizontalRule is rendered 1`] = `
+<hr
+  aria-label="aria-label"
+  class="wuiHorizontalRule wuiHorizontalRule--full wuiHorizontalRule--marginLarge testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;

@@ -1,0 +1,104 @@
+.wuiToast {
+  border: $wuiBorderThin;
+  // This overwrites some of the border above
+  // sass-lint:disable-block mixins-before-declarations
+  @include wuiBottomShadowLarge($adjustBorders: true);
+
+  position: relative;
+  padding: $wuiSize;
+  background-color: $wuiColorEmptyShade;
+  width: 100%;
+
+  &:hover .wuiToast__closeButton,
+  &:focus .wuiToast__closeButton {
+    opacity: 1;
+  }
+}
+
+/**
+  * 1. Fit button to icon.
+  */
+.wuiToast__closeButton {
+  position: absolute;
+  top: $wuiSize;
+  right: $wuiSize;
+  line-height: 0; /* 1 */
+  appearance: none;
+  opacity: 0;
+  transition: opacity $wuiAnimSpeedFast $wuiAnimSlightResistance;
+
+  svg {
+    fill: tintOrShade($wuiTitleColor, 50%, 70%);
+  }
+
+  &:hover {
+    svg {
+      fill: $wuiTitleColor;
+    }
+  }
+
+  &:focus {
+    background-color: $wuiFocusBackgroundColor;
+    opacity: 1;
+
+    svg {
+      fill: $wuiColorPrimary;
+    }
+  }
+}
+
+// Modifier naming and colors.
+$wuiToastTypes: (
+  primary: makeGraphicContrastColor($wuiColorPrimary, $wuiColorEmptyShade),
+  success: makeGraphicContrastColor($wuiColorSecondary, $wuiColorEmptyShade),
+  warning: makeGraphicContrastColor($wuiColorWarning, $wuiColorEmptyShade),
+  danger: makeGraphicContrastColor($wuiColorDanger, $wuiColorEmptyShade),
+);
+
+// Create button modifiers based upon the map.
+@each $name, $color in $wuiToastTypes {
+  .wuiToast--#{$name} {
+    border-top: 2px solid $color;
+  }
+}
+
+/**
+ * 1. Align icon with first line of title text if it wraps.
+ * 2. Apply margin to all but last item in the flex.
+ * 3. Account for close button.
+ */
+.wuiToastHeader {
+  padding-right: $wuiSizeL; /* 3 */
+  display: flex;
+  align-items: baseline; /* 1 */
+
+  > * + * {
+    margin-left: $wuiSizeS; /* 2 */
+  }
+}
+
+/**
+  * 1. Vertically center icon with first line of title.
+  */
+.wuiToastHeader__icon {
+  flex: 0 0 auto;
+  fill: $wuiTitleColor;
+  transform: translateY(2px); /* 1 */
+}
+
+.wuiToastHeader__title {
+  @include wuiTitle('xs');
+  @include wuiTextBreakWord;
+  font-weight: $wuiFontWeightLight;
+}
+
+.wuiToastHeader--withBody {
+  margin-bottom: $wuiSizeS;
+}
+
+/**
+ * 1. Prevent long lines from overflowing.
+ */
+.wuiToastBody {
+  word-wrap: break-word; /* 1 */
+}

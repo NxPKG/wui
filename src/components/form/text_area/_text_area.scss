@@ -1,0 +1,25 @@
+.wuiTextArea {
+  @include wuiFormControlStyle;
+  line-height: $wuiLineHeight; // give more spacing between multiple lines
+
+  // Textareas have their own sizing
+  &,
+  &--compressed {
+    height: auto;
+  }
+}
+
+// resize modifiers
+$textareaResizing: (
+  vertical: 'resizeVertical',
+  horizontal: 'resizeHorizontal',
+  both: 'resizeBoth',
+  none: 'resizeNone',
+);
+
+// Create button modifiers based upon the map.
+@each $direction, $modifier in $textareaResizing {
+  .wuiTextArea--#{$modifier} {
+    resize: #{$direction};
+  }
+}

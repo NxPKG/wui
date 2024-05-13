@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiMark is rendered 1`] = `
+<mark
+  class="wuiMark"
+>
+  Marked
+</mark>
+`;

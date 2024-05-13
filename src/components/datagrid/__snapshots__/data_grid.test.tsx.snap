@@ -1,0 +1,3378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiDataGrid pagination renders 1`] = `
+<div
+  class="wuiFlexGroup wuiFlexGroup--gutterLarge wuiFlexGroup--alignItemsCenter wuiFlexGroup--justifyContentSpaceBetween wuiFlexGroup--directionRow"
+>
+  <div
+    class="wuiFlexItem wuiFlexItem--flexGrowZero"
+  >
+    <div
+      class="wuiPopover wuiPopover--anchorUpRight wuiPopover--withTitle"
+    >
+      <div
+        class="wuiPopover__anchor"
+      >
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall"
+          data-test-subj="tablePaginationPopoverButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="arrowDown"
+            />
+            <span
+              class="wuiButtonEmpty__text"
+            >
+              Rows per page: 6
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiFlexItem wuiFlexItem--flexGrowZero"
+  >
+    <nav
+      aria-label="Pagination for preceding grid: test grid"
+      class="wuiPagination"
+    >
+      <a
+        aria-controls="htmlId"
+        aria-label="Previous page, 1"
+        class="wuiButtonIcon wuiButtonIcon--text"
+        data-test-subj="pagination-button-previous"
+        href="#htmlId"
+        rel="noreferrer"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+      </a>
+      <ul
+        aria-label="Pagination for preceding grid: test grid"
+        class="wuiPagination__list"
+      >
+        <li
+          class="wuiPagination__item"
+        >
+          <a
+            aria-controls="htmlId"
+            aria-label="Page 1 of 2"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiPaginationButton wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-0"
+            href="#htmlId"
+            rel="noreferrer"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                1
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          class="wuiPagination__item"
+        >
+          <button
+            aria-controls="htmlId"
+            aria-current="true"
+            aria-label="Page 2 of 2"
+            class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiButtonEmpty-isDisabled wuiPaginationButton wuiPaginationButton-isActive wuiPaginationButton--hideOnMobile"
+            data-test-subj="pagination-button-1"
+            disabled=""
+            type="button"
+          >
+            <span
+              class="wuiButtonContent wuiButtonEmpty__content"
+            >
+              <span
+                class="wuiButtonEmpty__text"
+              >
+                2
+              </span>
+            </span>
+          </button>
+        </li>
+      </ul>
+      <button
+        aria-label="Next page"
+        class="wuiButtonIcon wuiButtonIcon--text"
+        data-test-subj="pagination-button-next"
+        disabled=""
+        type="button"
+      >
+        <div
+          aria-hidden="true"
+          class="wuiButtonIcon__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </button>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`WuiDataGrid render column actions renders various column actions configurations 1`] = `
+<ul
+  className="wuiListGroup wuiListGroup-maxWidthDefault"
+  data-test-subj="dataGridHeaderCellActionGroup-B"
+>
+  <WuiListGroupItem
+    color="text"
+    iconType="eyeClosed"
+    key="title-0"
+    label={
+      <WuiI18n
+        default="Hide column"
+        token="wuiColumnActions.hideColumn"
+      />
+    }
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="eyeClosed"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="eyeClosed"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="Hide column"
+        >
+          <WuiI18n
+            default="Hide column"
+            token="wuiColumnActions.hideColumn"
+          >
+            Hide column
+          </WuiI18n>
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    className=""
+    color="text"
+    iconType="sortUp"
+    isDisabled={false}
+    key="title-1"
+    label={
+      <WuiI18n
+        default="Sort schema asc"
+        token="wuiColumnActions.sortAsc"
+      />
+    }
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortUp"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortUp"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="Sort schema asc"
+        >
+          <WuiI18n
+            default="Sort schema asc"
+            token="wuiColumnActions.sortAsc"
+          >
+            Sort schema asc
+          </WuiI18n>
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    className=""
+    color="text"
+    iconType="sortDown"
+    isDisabled={false}
+    key="title-2"
+    label={
+      <WuiI18n
+        default="Sort schema desc"
+        token="wuiColumnActions.sortDesc"
+      />
+    }
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortDown"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortDown"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="Sort schema desc"
+        >
+          <WuiI18n
+            default="Sort schema desc"
+            token="wuiColumnActions.sortDesc"
+          >
+            Sort schema desc
+          </WuiI18n>
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    color="text"
+    iconType="sortLeft"
+    isDisabled={false}
+    key="title-3"
+    label={
+      <WuiI18n
+        default="Move left"
+        token="wuiColumnActions.moveLeft"
+      />
+    }
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortLeft"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortLeft"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="Move left"
+        >
+          <WuiI18n
+            default="Move left"
+            token="wuiColumnActions.moveLeft"
+          >
+            Move left
+          </WuiI18n>
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    color="text"
+    iconType="sortRight"
+    isDisabled={false}
+    key="title-4"
+    label={
+      <WuiI18n
+        default="Move right"
+        token="wuiColumnActions.moveRight"
+      />
+    }
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortRight"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortRight"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="Move right"
+        >
+          <WuiI18n
+            default="Move right"
+            token="wuiColumnActions.moveRight"
+          >
+            Move right
+          </WuiI18n>
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+</ul>
+`;
+
+exports[`WuiDataGrid render column actions renders various column actions configurations 2`] = `
+<ul
+  className="wuiListGroup wuiListGroup-maxWidthDefault"
+  data-test-subj="dataGridHeaderCellActionGroup-C"
+>
+  <WuiListGroupItem
+    key="title-0"
+    label="test"
+    onClick={[Function]}
+    showToolTip={false}
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="wuiListGroupItem__label"
+          title="test"
+        >
+          test
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+</ul>
+`;
+
+exports[`WuiDataGrid render column actions renders various column actions configurations 3`] = `
+<ul
+  className="wuiListGroup wuiListGroup-maxWidthDefault"
+  data-test-subj="dataGridHeaderCellActionGroup-D"
+>
+  <WuiListGroupItem
+    className=""
+    color="text"
+    iconType="sortUp"
+    isDisabled={false}
+    key="title-0"
+    label={
+      <WuiI18n
+        default="Sort schema asc"
+        token="wuiColumnActions.sortAsc"
+      />
+    }
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortUp"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortUp"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="Sort schema asc"
+        >
+          <WuiI18n
+            default="Sort schema asc"
+            token="wuiColumnActions.sortAsc"
+          >
+            Sort schema asc
+          </WuiI18n>
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    className=""
+    color="text"
+    iconType="sortDown"
+    isDisabled={false}
+    key="title-1"
+    label={
+      <WuiI18n
+        default="Sort schema desc"
+        token="wuiColumnActions.sortDesc"
+      />
+    }
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortDown"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortDown"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="Sort schema desc"
+        >
+          <WuiI18n
+            default="Sort schema desc"
+            token="wuiColumnActions.sortDesc"
+          >
+            Sort schema desc
+          </WuiI18n>
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    key="title-2"
+    label="test"
+    onClick={[Function]}
+    showToolTip={false}
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="wuiListGroupItem__label"
+          title="test"
+        >
+          test
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+</ul>
+`;
+
+exports[`WuiDataGrid render column actions renders various column actions configurations 4`] = `
+<ul
+  className="wuiListGroup wuiListGroup-maxWidthDefault"
+  data-test-subj="dataGridHeaderCellActionGroup-E"
+>
+  <WuiListGroupItem
+    color="text"
+    iconType="eyeClosed"
+    key="title-0"
+    label="1"
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="eyeClosed"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="eyeClosed"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="1"
+        >
+          1
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    className=""
+    color="text"
+    iconType="sortUp"
+    isDisabled={false}
+    key="title-1"
+    label="2"
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortUp"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortUp"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="2"
+        >
+          2
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    className=""
+    color="text"
+    iconType="sortDown"
+    isDisabled={false}
+    key="title-2"
+    label="3"
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortDown"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortDown"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="3"
+        >
+          3
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    color="text"
+    iconType="sortLeft"
+    isDisabled={false}
+    key="title-3"
+    label="4"
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortLeft"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortLeft"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="4"
+        >
+          4
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    color="text"
+    iconType="sortRight"
+    isDisabled={true}
+    key="title-4"
+    label="5"
+    onClick={[Function]}
+    showToolTip={false}
+    size="xs"
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--xSmall wuiListGroupItem--text wuiListGroupItem-isDisabled wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <WuiIcon
+          className="wuiListGroupItem__icon"
+          type="sortRight"
+        >
+          <div
+            className="wuiListGroupItem__icon"
+            data-wuiicon-type="sortRight"
+          />
+        </WuiIcon>
+        <span
+          className="wuiListGroupItem__label"
+          title="5"
+        >
+          5
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+  <WuiListGroupItem
+    key="title-5"
+    label="test"
+    onClick={[Function]}
+    showToolTip={false}
+    wrapText={false}
+  >
+    <li
+      className="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable"
+    >
+      <button
+        className="wuiListGroupItem__button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="wuiListGroupItem__label"
+          title="test"
+        >
+          test
+        </span>
+      </button>
+    </li>
+  </WuiListGroupItem>
+</ul>
+`;
+
+exports[`WuiDataGrid rendering renders additional toolbar controls 1`] = `
+Array [
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+  <div
+    class="wuiDataGrid__focusWrap"
+    data-focus-lock-disabled="disabled"
+  >
+    <div
+      class="wuiDataGrid wuiDataGrid--bordersAll wuiDataGrid--headerShade wuiDataGrid--footerOverline wuiDataGrid--rowHoverHighlight wuiDataGrid--stickyFooter testClass1 testClass2"
+    >
+      <div
+        class="wuiDataGrid__controls"
+        data-test-sub="dataGridControls"
+      >
+        <button>
+          Button
+        </button>
+        <div
+          class="wuiPopover wuiPopover--anchorDownLeft"
+          data-test-subj="dataGridColumnSelectorPopover"
+        >
+          <div
+            class="wuiPopover__anchor"
+          >
+            <button
+              class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn"
+              data-test-subj="dataGridColumnSelectorButton"
+              type="button"
+            >
+              <span
+                class="wuiButtonContent wuiButtonEmpty__content"
+              >
+                <div
+                  class="wuiButtonContent__icon"
+                  data-wuiicon-type="listAdd"
+                />
+                <span
+                  class="wuiButtonEmpty__text"
+                >
+                  Columns
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="wuiPopover wuiPopover--anchorDownCenter"
+          data-test-subj="dataGridStyleSelectorPopover"
+        >
+          <div
+            class="wuiPopover__anchor"
+          >
+            <button
+              class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn"
+              data-test-subj="dataGridStyleSelectorButton"
+              type="button"
+            >
+              <span
+                class="wuiButtonContent wuiButtonEmpty__content"
+              >
+                <div
+                  class="wuiButtonContent__icon"
+                  data-wuiicon-type="tableDensityExpanded"
+                />
+                <span
+                  class="wuiButtonEmpty__text"
+                >
+                  Density
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn testClass1 testClass2"
+          data-test-subj="dataGridFullScrenButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="fullScreen"
+            />
+            <span
+              class="wuiButtonEmpty__text"
+            >
+              Full screen
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        class="wuiDataGrid__verticalScroll"
+        data-test-subj="test subject string"
+      >
+        <div
+          class="wuiDataGrid__overflow"
+        >
+          <div
+            aria-label="aria-label"
+            class="wuiDataGrid__content"
+            data-test-subj="dataGridWrapper"
+            id="htmlId"
+            role="grid"
+            tabindex="0"
+          >
+            <div
+              class="wuiDataGridHeader"
+              data-test-subj="dataGridHeader"
+              role="row"
+            >
+              <div
+                class="wuiDataGridHeaderCell"
+                data-test-subj="dataGridHeaderCell-A"
+                role="columnheader"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridColumnResizer"
+                  data-test-subj="dataGridColumnResizer"
+                  style="margin-right:0px"
+                />
+                <button
+                  class="wuiDataGridHeaderCell__button"
+                >
+                  <div
+                    class="wuiDataGridHeaderCell__content"
+                  >
+                    A
+                  </div>
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownRight wuiDataGridHeaderCell__popover"
+                  >
+                    <div
+                      class="wuiPopover__anchor"
+                    >
+                      <div
+                        aria-label="Header actions"
+                        color="text"
+                        data-test-subj="dataGridHeaderCellActionButton-A"
+                        data-wuiicon-type="arrowDown"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="wuiDataGridHeaderCell"
+                data-test-subj="dataGridHeaderCell-B"
+                role="columnheader"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridColumnResizer"
+                  data-test-subj="dataGridColumnResizer"
+                  style="margin-right:0px"
+                />
+                <button
+                  class="wuiDataGridHeaderCell__button"
+                >
+                  <div
+                    class="wuiDataGridHeaderCell__content"
+                  >
+                    B
+                  </div>
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownRight wuiDataGridHeaderCell__popover"
+                  >
+                    <div
+                      class="wuiPopover__anchor"
+                    >
+                      <div
+                        aria-label="Header actions"
+                        color="text"
+                        data-test-subj="dataGridHeaderCellActionButton-B"
+                        data-wuiicon-type="arrowDown"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 1, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            0, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 1, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            0, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 2, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            1, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 2, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            1, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 3, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            2, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 3, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            2, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        hidden=""
+        id="htmlId"
+      >
+        Cell contains interactive content.
+      </p>
+    </div>
+  </div>,
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+]
+`;
+
+exports[`WuiDataGrid rendering renders control columns 1`] = `
+Array [
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+  <div
+    class="wuiDataGrid__focusWrap"
+    data-focus-lock-disabled="disabled"
+  >
+    <div
+      class="wuiDataGrid wuiDataGrid--bordersAll wuiDataGrid--headerShade wuiDataGrid--footerOverline wuiDataGrid--rowHoverHighlight wuiDataGrid--stickyFooter testClass1 testClass2"
+    >
+      <div
+        class="wuiDataGrid__controls"
+        data-test-sub="dataGridControls"
+      >
+        <button>
+          Button
+        </button>
+        <div
+          class="wuiPopover wuiPopover--anchorDownLeft"
+          data-test-subj="dataGridColumnSelectorPopover"
+        >
+          <div
+            class="wuiPopover__anchor"
+          >
+            <button
+              class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn"
+              data-test-subj="dataGridColumnSelectorButton"
+              type="button"
+            >
+              <span
+                class="wuiButtonContent wuiButtonEmpty__content"
+              >
+                <div
+                  class="wuiButtonContent__icon"
+                  data-wuiicon-type="listAdd"
+                />
+                <span
+                  class="wuiButtonEmpty__text"
+                >
+                  Columns
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="wuiPopover wuiPopover--anchorDownCenter"
+          data-test-subj="dataGridStyleSelectorPopover"
+        >
+          <div
+            class="wuiPopover__anchor"
+          >
+            <button
+              class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn"
+              data-test-subj="dataGridStyleSelectorButton"
+              type="button"
+            >
+              <span
+                class="wuiButtonContent wuiButtonEmpty__content"
+              >
+                <div
+                  class="wuiButtonContent__icon"
+                  data-wuiicon-type="tableDensityExpanded"
+                />
+                <span
+                  class="wuiButtonEmpty__text"
+                >
+                  Density
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn testClass1 testClass2"
+          data-test-subj="dataGridFullScrenButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="fullScreen"
+            />
+            <span
+              class="wuiButtonEmpty__text"
+            >
+              Full screen
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        class="wuiDataGrid__verticalScroll"
+        data-test-subj="test subject string"
+      >
+        <div
+          class="wuiDataGrid__overflow"
+        >
+          <div
+            aria-label="aria-label"
+            class="wuiDataGrid__content"
+            data-test-subj="dataGridWrapper"
+            id="htmlId"
+            role="grid"
+            tabindex="0"
+          >
+            <div
+              class="wuiDataGridHeader"
+              data-test-subj="dataGridHeader"
+              role="row"
+            >
+              <div
+                class="wuiDataGridHeaderCell wuiDataGridHeaderCell--controlColumn"
+                data-test-subj="dataGridHeaderCell-leading"
+                role="columnheader"
+                style="width:50px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridHeaderCell__content"
+                >
+                  <span>
+                    leading heading
+                  </span>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridHeaderCell"
+                data-test-subj="dataGridHeaderCell-A"
+                role="columnheader"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridColumnResizer"
+                  data-test-subj="dataGridColumnResizer"
+                  style="margin-right:0px"
+                />
+                <button
+                  class="wuiDataGridHeaderCell__button"
+                >
+                  <div
+                    class="wuiDataGridHeaderCell__content"
+                  >
+                    A
+                  </div>
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownRight wuiDataGridHeaderCell__popover"
+                  >
+                    <div
+                      class="wuiPopover__anchor"
+                    >
+                      <div
+                        aria-label="Header actions"
+                        color="text"
+                        data-test-subj="dataGridHeaderCellActionButton-A"
+                        data-wuiicon-type="arrowDown"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="wuiDataGridHeaderCell"
+                data-test-subj="dataGridHeaderCell-B"
+                role="columnheader"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridColumnResizer"
+                  data-test-subj="dataGridColumnResizer"
+                  style="margin-right:0px"
+                />
+                <button
+                  class="wuiDataGridHeaderCell__button"
+                >
+                  <div
+                    class="wuiDataGridHeaderCell__content"
+                  >
+                    B
+                  </div>
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownRight wuiDataGridHeaderCell__popover"
+                  >
+                    <div
+                      class="wuiPopover__anchor"
+                    >
+                      <div
+                        aria-label="Header actions"
+                        color="text"
+                        data-test-subj="dataGridHeaderCellActionButton-B"
+                        data-wuiicon-type="arrowDown"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="wuiDataGridHeaderCell wuiDataGridHeaderCell--controlColumn"
+                data-test-subj="dataGridHeaderCell-trailing"
+                role="columnheader"
+                style="width:50px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridHeaderCell__content"
+                >
+                  <span>
+                    trailing heading
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell wuiDataGridRowCell--controlColumn"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:50px"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-lock-disabled="disabled"
+                  >
+                    <div
+                      class="wuiDataGridRowCell__expandFlex"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandContent"
+                      >
+                        <p
+                          class="wuiScreenReaderOnly"
+                        >
+                          <span>
+                            Row: 1, Column: 1:
+                          </span>
+                        </p>
+                        <div
+                          class="wuiDataGridRowCell__truncate"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 1, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            0, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 1, Column: 3:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            0, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell wuiDataGridRowCell--controlColumn"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:50px"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-lock-disabled="disabled"
+                  >
+                    <div
+                      class="wuiDataGridRowCell__expandFlex"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandContent"
+                      >
+                        <p
+                          class="wuiScreenReaderOnly"
+                        >
+                          <span>
+                            Row: 1, Column: 4:
+                          </span>
+                        </p>
+                        <div
+                          class="wuiDataGridRowCell__truncate"
+                        >
+                          0
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell wuiDataGridRowCell--controlColumn"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:50px"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-lock-disabled="disabled"
+                  >
+                    <div
+                      class="wuiDataGridRowCell__expandFlex"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandContent"
+                      >
+                        <p
+                          class="wuiScreenReaderOnly"
+                        >
+                          <span>
+                            Row: 2, Column: 1:
+                          </span>
+                        </p>
+                        <div
+                          class="wuiDataGridRowCell__truncate"
+                        >
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 2, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            1, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 2, Column: 3:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            1, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell wuiDataGridRowCell--controlColumn"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:50px"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-lock-disabled="disabled"
+                  >
+                    <div
+                      class="wuiDataGridRowCell__expandFlex"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandContent"
+                      >
+                        <p
+                          class="wuiScreenReaderOnly"
+                        >
+                          <span>
+                            Row: 2, Column: 4:
+                          </span>
+                        </p>
+                        <div
+                          class="wuiDataGridRowCell__truncate"
+                        >
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell wuiDataGridRowCell--controlColumn"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:50px"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-lock-disabled="disabled"
+                  >
+                    <div
+                      class="wuiDataGridRowCell__expandFlex"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandContent"
+                      >
+                        <p
+                          class="wuiScreenReaderOnly"
+                        >
+                          <span>
+                            Row: 3, Column: 1:
+                          </span>
+                        </p>
+                        <div
+                          class="wuiDataGridRowCell__truncate"
+                        >
+                          2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 3, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            2, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 3, Column: 3:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            2, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell wuiDataGridRowCell--controlColumn"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:50px"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                  <div
+                    data-focus-lock-disabled="disabled"
+                  >
+                    <div
+                      class="wuiDataGridRowCell__expandFlex"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandContent"
+                      >
+                        <p
+                          class="wuiScreenReaderOnly"
+                        >
+                          <span>
+                            Row: 3, Column: 4:
+                          </span>
+                        </p>
+                        <div
+                          class="wuiDataGridRowCell__truncate"
+                        >
+                          2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-focus-guard="true"
+                    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        hidden=""
+        id="htmlId"
+      >
+        Cell contains interactive content.
+      </p>
+    </div>
+  </div>,
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+]
+`;
+
+exports[`WuiDataGrid rendering renders custom column headers 1`] = `
+Array [
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+  <div
+    class="wuiDataGrid__focusWrap"
+    data-focus-lock-disabled="disabled"
+  >
+    <div
+      class="wuiDataGrid wuiDataGrid--bordersAll wuiDataGrid--headerShade wuiDataGrid--footerOverline wuiDataGrid--rowHoverHighlight wuiDataGrid--stickyFooter testClass1 testClass2"
+    >
+      <div
+        class="wuiDataGrid__controls"
+        data-test-sub="dataGridControls"
+      >
+        <div
+          class="wuiPopover wuiPopover--anchorDownLeft"
+          data-test-subj="dataGridColumnSelectorPopover"
+        >
+          <div
+            class="wuiPopover__anchor"
+          >
+            <button
+              class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn"
+              data-test-subj="dataGridColumnSelectorButton"
+              type="button"
+            >
+              <span
+                class="wuiButtonContent wuiButtonEmpty__content"
+              >
+                <div
+                  class="wuiButtonContent__icon"
+                  data-wuiicon-type="listAdd"
+                />
+                <span
+                  class="wuiButtonEmpty__text"
+                >
+                  Columns
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="wuiPopover wuiPopover--anchorDownCenter"
+          data-test-subj="dataGridStyleSelectorPopover"
+        >
+          <div
+            class="wuiPopover__anchor"
+          >
+            <button
+              class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn"
+              data-test-subj="dataGridStyleSelectorButton"
+              type="button"
+            >
+              <span
+                class="wuiButtonContent wuiButtonEmpty__content"
+              >
+                <div
+                  class="wuiButtonContent__icon"
+                  data-wuiicon-type="tableDensityExpanded"
+                />
+                <span
+                  class="wuiButtonEmpty__text"
+                >
+                  Density
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn testClass1 testClass2"
+          data-test-subj="dataGridFullScrenButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="fullScreen"
+            />
+            <span
+              class="wuiButtonEmpty__text"
+            >
+              Full screen
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        class="wuiDataGrid__verticalScroll"
+        data-test-subj="test subject string"
+      >
+        <div
+          class="wuiDataGrid__overflow"
+        >
+          <div
+            aria-label="aria-label"
+            class="wuiDataGrid__content"
+            data-test-subj="dataGridWrapper"
+            id="htmlId"
+            role="grid"
+            tabindex="0"
+          >
+            <div
+              class="wuiDataGridHeader"
+              data-test-subj="dataGridHeader"
+              role="row"
+            >
+              <div
+                class="wuiDataGridHeaderCell"
+                data-test-subj="dataGridHeaderCell-A"
+                role="columnheader"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridColumnResizer"
+                  data-test-subj="dataGridColumnResizer"
+                  style="margin-right:0px"
+                />
+                <button
+                  class="wuiDataGridHeaderCell__button"
+                >
+                  <div
+                    class="wuiDataGridHeaderCell__content"
+                  >
+                    Column A
+                  </div>
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownRight wuiDataGridHeaderCell__popover"
+                  >
+                    <div
+                      class="wuiPopover__anchor"
+                    >
+                      <div
+                        aria-label="Header actions"
+                        color="text"
+                        data-test-subj="dataGridHeaderCellActionButton-A"
+                        data-wuiicon-type="arrowDown"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="wuiDataGridHeaderCell"
+                data-test-subj="dataGridHeaderCell-B"
+                role="columnheader"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridColumnResizer"
+                  data-test-subj="dataGridColumnResizer"
+                  style="margin-right:0px"
+                />
+                <button
+                  class="wuiDataGridHeaderCell__button"
+                >
+                  <div
+                    class="wuiDataGridHeaderCell__content"
+                  >
+                    <div>
+                      More Elements
+                    </div>
+                  </div>
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownRight wuiDataGridHeaderCell__popover"
+                  >
+                    <div
+                      class="wuiPopover__anchor"
+                    >
+                      <div
+                        aria-label="Header actions"
+                        color="text"
+                        data-test-subj="dataGridHeaderCellActionButton-B"
+                        data-wuiicon-type="arrowDown"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 1, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            0, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 1, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            0, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 2, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            1, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 2, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            1, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 3, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            2, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 3, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            2, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        hidden=""
+        id="htmlId"
+      >
+        Cell contains interactive content.
+      </p>
+    </div>
+  </div>,
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+]
+`;
+
+exports[`WuiDataGrid rendering renders with common and div attributes 1`] = `
+Array [
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+  <div
+    class="wuiDataGrid__focusWrap"
+    data-focus-lock-disabled="disabled"
+  >
+    <div
+      class="wuiDataGrid wuiDataGrid--bordersAll wuiDataGrid--headerShade wuiDataGrid--footerOverline wuiDataGrid--rowHoverHighlight wuiDataGrid--stickyFooter testClass1 testClass2"
+    >
+      <div
+        class="wuiDataGrid__controls"
+        data-test-sub="dataGridControls"
+      >
+        <div
+          class="wuiPopover wuiPopover--anchorDownLeft"
+          data-test-subj="dataGridColumnSelectorPopover"
+        >
+          <div
+            class="wuiPopover__anchor"
+          >
+            <button
+              class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn"
+              data-test-subj="dataGridColumnSelectorButton"
+              type="button"
+            >
+              <span
+                class="wuiButtonContent wuiButtonEmpty__content"
+              >
+                <div
+                  class="wuiButtonContent__icon"
+                  data-wuiicon-type="listAdd"
+                />
+                <span
+                  class="wuiButtonEmpty__text"
+                >
+                  Columns
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="wuiPopover wuiPopover--anchorDownCenter"
+          data-test-subj="dataGridStyleSelectorPopover"
+        >
+          <div
+            class="wuiPopover__anchor"
+          >
+            <button
+              class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn"
+              data-test-subj="dataGridStyleSelectorButton"
+              type="button"
+            >
+              <span
+                class="wuiButtonContent wuiButtonEmpty__content"
+              >
+                <div
+                  class="wuiButtonContent__icon"
+                  data-wuiicon-type="tableDensityExpanded"
+                />
+                <span
+                  class="wuiButtonEmpty__text"
+                >
+                  Density
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <button
+          class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiDataGrid__controlBtn testClass1 testClass2"
+          data-test-subj="dataGridFullScrenButton"
+          type="button"
+        >
+          <span
+            class="wuiButtonContent wuiButtonEmpty__content"
+          >
+            <div
+              class="wuiButtonContent__icon"
+              data-wuiicon-type="fullScreen"
+            />
+            <span
+              class="wuiButtonEmpty__text"
+            >
+              Full screen
+            </span>
+          </span>
+        </button>
+      </div>
+      <div
+        class="wuiDataGrid__verticalScroll"
+        data-test-subj="test subject string"
+      >
+        <div
+          class="wuiDataGrid__overflow"
+        >
+          <div
+            aria-label="aria-label"
+            class="wuiDataGrid__content"
+            data-test-subj="dataGridWrapper"
+            id="htmlId"
+            role="grid"
+            tabindex="0"
+          >
+            <div
+              class="wuiDataGridHeader"
+              data-test-subj="dataGridHeader"
+              role="row"
+            >
+              <div
+                class="wuiDataGridHeaderCell"
+                data-test-subj="dataGridHeaderCell-A"
+                role="columnheader"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridColumnResizer"
+                  data-test-subj="dataGridColumnResizer"
+                  style="margin-right:0px"
+                />
+                <button
+                  class="wuiDataGridHeaderCell__button"
+                >
+                  <div
+                    class="wuiDataGridHeaderCell__content"
+                  >
+                    A
+                  </div>
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownRight wuiDataGridHeaderCell__popover"
+                  >
+                    <div
+                      class="wuiPopover__anchor"
+                    >
+                      <div
+                        aria-label="Header actions"
+                        color="text"
+                        data-test-subj="dataGridHeaderCellActionButton-A"
+                        data-wuiicon-type="arrowDown"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div
+                class="wuiDataGridHeaderCell"
+                data-test-subj="dataGridHeaderCell-B"
+                role="columnheader"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridColumnResizer"
+                  data-test-subj="dataGridColumnResizer"
+                  style="margin-right:0px"
+                />
+                <button
+                  class="wuiDataGridHeaderCell__button"
+                >
+                  <div
+                    class="wuiDataGridHeaderCell__content"
+                  >
+                    B
+                  </div>
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownRight wuiDataGridHeaderCell__popover"
+                  >
+                    <div
+                      class="wuiPopover__anchor"
+                    >
+                      <div
+                        aria-label="Header actions"
+                        color="text"
+                        data-test-subj="dataGridHeaderCellActionButton-B"
+                        data-wuiicon-type="arrowDown"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 1, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            0, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 1, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            0, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 2, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            1, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 2, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            1, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wuiDataGridRow"
+              data-test-subj="dataGridRow"
+              role="row"
+            >
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 3, Column: 1:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            2, A
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wuiDataGridRowCell"
+                data-test-subj="dataGridRowCell"
+                role="gridcell"
+                style="width:100px"
+                tabindex="-1"
+              >
+                <div
+                  class="wuiDataGridRowCell__content"
+                >
+                  <div
+                    class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock"
+                  >
+                    <div
+                      class="wuiPopover__anchor wuiDataGridRowCell__expand"
+                    >
+                      <div
+                        class="wuiDataGridRowCell__expandFlex"
+                      >
+                        <div
+                          class="wuiDataGridRowCell__expandContent"
+                        >
+                          <p
+                            class="wuiScreenReaderOnly"
+                          >
+                            <span>
+                              Row: 3, Column: 2:
+                            </span>
+                          </p>
+                          <div
+                            class="wuiDataGridRowCell__truncate"
+                          >
+                            2, B
+                          </div>
+                        </div>
+                        <div
+                          class="wuiDataGridRowCell__expandButton"
+                        >
+                          <button
+                            aria-hidden="true"
+                            class="wuiButtonIcon wuiButtonIcon--text wuiDataGridRowCell__expandButtonIcon"
+                            tabindex="-1"
+                            title="Click or hit enter to interact with cell content"
+                            type="button"
+                          >
+                            <div
+                              aria-hidden="true"
+                              class="wuiButtonIcon__icon"
+                              data-wuiicon-type="expandMini"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        hidden=""
+        id="htmlId"
+      >
+        Cell contains interactive content.
+      </p>
+    </div>
+  </div>,
+  <div
+    data-focus-guard="true"
+    style="width:1px;height:0px;padding:0;overflow:hidden;position:fixed;top:1px;left:1px"
+    tabindex="-1"
+  />,
+]
+`;

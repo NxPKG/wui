@@ -1,0 +1,49 @@
+.wuiDatePopoverButton {
+  @include wuiSuperDatePickerText;
+  background-size: 100%; // For the bottom "border" via background-image
+
+  &:focus,
+  &-isSelected {
+    background-image: wuiFormControlGradient();
+  }
+
+  &-needsUpdating {
+    $backgroundColor: tintOrShade($wuiColorSuccess, 90%, 70%);
+    $textColor: makeHighContrastColor($wuiColorSuccess, $backgroundColor);
+
+    background-color: $backgroundColor;
+    color: $textColor;
+
+    &:focus,
+    &.wuiDatePopoverButton-isSelected {
+      background-image: wuiFormControlGradient($wuiColorSuccess);
+    }
+  }
+
+  &-isInvalid {
+    $backgroundColor: tintOrShade($wuiColorDanger, 90%, 70%);
+    $textColor: makeHighContrastColor($wuiColorDanger, $backgroundColor);
+
+    background-color: $backgroundColor;
+    color: $textColor;
+
+    &:focus,
+    &.wuiDatePopoverButton-isSelected {
+      background-image: wuiFormControlGradient($wuiColorDanger);
+    }
+  }
+
+  &:disabled {
+    background-color: $wuiFormBackgroundDisabledColor;
+    color: $wuiColorDarkShade;
+    cursor: default;
+  }
+}
+
+.wuiDatePopoverButton--start {
+  text-align: right;
+}
+
+.wuiDatePopoverButton--end {
+  text-align: left;
+}

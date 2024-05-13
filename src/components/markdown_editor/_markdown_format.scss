@@ -1,0 +1,276 @@
+// Default styles for Markdown Format
+// 1. Headings
+// 2. Images
+// 3. Blockquotes
+// 4. Horizontal rules
+// 5. Lists
+// 6. Tables
+// 7. Code
+
+// The Markdown Format uses by default a few WUI components
+// to render elements: WuiLink and WuiCode.
+
+$browserDefaultFontSize: 16px;
+
+// We're setting a function o transform px in em
+// because it's easier to think in px
+@function em($pixels, $context: $browserDefaultFontSize) {
+  @return #{$pixels/$context}em;
+}
+
+.wuiMarkdownFormat {
+  @include wuiFont;
+  @include wuiText;
+
+  // We're using `em` values to support apps where consumers might adjust sizes
+  // and consequently the markdown needs to adjust to these changes
+
+  // Font size variables
+  $wuiMarkdownFontSizeXS: em(12px);
+  $wuiMarkdownFontSizeS: em(14px);
+  $wuiMarkdownFontSize: em(16px);
+  $wuiMarkdownFontSizeM:  em(18px);
+  $wuiMarkdownFontSizeL: em(20px);
+  $wuiMarkdownFontSizeXL: em(28px);
+  $wuiMarkdownFontSizeXXL: em(36px);
+
+  // Spacing variables
+  $wuiMarkdownSizeXXS: em(4px);
+  $wuiMarkdownSizeXS: em(8px);
+  $wuiMarkdownSizeS: em(12px);
+  $wuiMarkdownSize: em(16px);
+  $wuiMarkdownSizeL: em(24px);
+
+  // We're using alpha values to support apps that
+  // display markdown on backgrounds of various colors
+
+  // Grayscale variables
+  $wuiMarkdownAlphaLightestShade: rgba($wuiColorFullShade, .05);
+  $wuiMarkdownAlphaLightShade: rgba($wuiColorFullShade, .15);
+  $wuiMarkdownAlphaDarkShade: rgba($wuiColorFullShade, .65);
+
+  // Reverse grayscale for opposite of theme
+  $wuiMarkdownAlphaLightestShadeReversed: rgba($wuiColorEmptyShade, .05);
+  $wuiMarkdownAlphaLightShadeReversed: rgba($wuiColorEmptyShade, .15);
+  $wuiMarkdownAlphaDarkShadeReversed: rgba($wuiColorEmptyShade, .65);
+
+  &--reversed {
+    color: $wuiColorLightestShade;
+  }
+
+  > div > *:first-child {
+    // sass-lint:disable-block no-important
+    margin-top: 0 !important;
+  }
+
+  > div > * {
+    margin-top: 0;
+    margin-bottom: $wuiMarkdownSize;
+  }
+
+  > div > *:last-child,
+  .wuiCheckbox {
+    // sass-lint:disable-block no-important
+    margin-bottom: 0 !important;
+  }
+
+  .wuiCheckbox + *:not(.wuiCheckbox) {
+    margin-top: $wuiMarkdownSize;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  pre,
+  table {
+    margin-top: 0;
+    margin-bottom: $wuiMarkdownSize;
+    line-height: 1.5em;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  // 2. Headings
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: $wuiMarkdownSizeXS;
+  }
+
+  h1 {
+    font-size: $wuiMarkdownFontSizeXXL;
+    line-height: 1.333333em;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: $wuiMarkdownFontSizeXL;
+    line-height: 1.428571em;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: $wuiMarkdownFontSizeL;
+    line-height: 1.6em;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: $wuiMarkdownSize;
+    line-height: 1.5em;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: $wuiMarkdownFontSizeS;
+    line-height: 1.142857em;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-size: $wuiMarkdownFontSizeXS;
+    line-height: 1.333333em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  // 3. Images
+  img {
+    max-width: 100%;
+    box-sizing: content-box;
+    border-style: none;
+  }
+
+  // 4. Blockquotes
+  blockquote {
+    padding: 0 1em;
+    border-left: $wuiMarkdownSizeXXS solid $wuiMarkdownAlphaLightShade;
+  }
+
+  &--reversed blockquote {
+    border-left-color: $wuiMarkdownAlphaLightShadeReversed;
+  }
+
+  // 5. Horizontal rules
+  hr {
+    border: none;
+    height: 1px;
+    background-color: $wuiMarkdownAlphaLightShade;
+    margin: $wuiMarkdownSizeL 0;
+  }
+
+  hr::before {
+    display: table;
+    content: '';
+  }
+
+  hr::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+  // 6. Lists
+  ul,
+  ol {
+    padding-left: $wuiMarkdownSizeL;
+    margin-top: 0;
+    margin-bottom: $wuiMarkdownSize;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul ul {
+    list-style-type: circle;
+  }
+
+  ol ol,
+  ul ol {
+    list-style-type: lower-roman;
+  }
+
+  ul ul ol,
+  ul ol ol,
+  ol ul ol,
+  ol ol ol {
+    list-style-type: lower-alpha;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  li > p {
+    margin-bottom: $wuiMarkdownSizeXS;
+  }
+
+  li + li {
+    margin-top: $wuiMarkdownSizeXXS;
+  }
+
+  .task-list-item {
+    list-style-type: none;
+  }
+
+  .task-list-item + .task-list-item {
+    margin-top: $wuiMarkdownSizeXXS;
+  }
+
+  .task-list-item input {
+    margin: 0 .2em .25em -1.6em;
+    vertical-align: middle;
+  }
+
+  // 7. Tables
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    border-left: 1px solid $wuiMarkdownAlphaLightShade;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    padding: 0;
+  }
+
+  table th,
+  table td {
+    padding: $wuiMarkdownSizeXXS $wuiMarkdownSizeXS;
+    border-top: 1px solid $wuiMarkdownAlphaLightShade;
+    border-bottom: 1px solid $wuiMarkdownAlphaLightShade;
+
+    &:last-child {
+      border-right: 1px solid $wuiMarkdownAlphaLightShade;
+    }
+  }
+
+  table tr {
+    background-color: transparent;
+    border-top: 1px solid $wuiMarkdownAlphaLightShade;
+  }
+}

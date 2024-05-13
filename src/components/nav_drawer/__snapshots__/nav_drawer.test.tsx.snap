@@ -1,0 +1,739 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiNavDrawer is rendered 1`] = `
+<nav
+  class="wuiNavDrawer wuiNavDrawer-isCollapsed wuiNavDrawer-flyoutIsCollapsed"
+>
+  <div
+    class="wuiFlexGroup wuiFlexGroup--directionRow"
+  >
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <div
+        class="wuiNavDrawerMenu wuiNavDrawerMenu-hasFooter"
+        id="navDrawerMenu"
+      >
+        <ul
+          class="wuiListGroup wuiListGroup-flush wuiListGroup-maxWidthDefault wuiNavDrawer__expandButton"
+        >
+          <li
+            class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable navDrawerExpandButton-isCollapsed"
+          >
+            <button
+              class="wuiListGroupItem__button"
+              data-test-subj="navDrawerExpandButton-isCollapsed"
+              type="button"
+            >
+              <div
+                class="wuiListGroupItem__icon"
+                data-wuiicon-type="lockOpen"
+              />
+              <span
+                class="wuiListGroupItem__label"
+                title="Undocked"
+              >
+                Undocked
+              </span>
+            </button>
+          </li>
+        </ul>
+        <ul
+          class="wuiListGroup wuiListGroup-flush wuiListGroup--gutterSmall wuiListGroup-maxWidthDefault wuiNavDrawerGroup"
+        >
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <button
+                aria-expanded="false"
+                aria-label="Recently viewed"
+                class="wuiListGroupItem__button"
+                data-name="Recently viewed"
+                type="button"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="clock"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Recently viewed
+                </span>
+              </button>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <button
+                aria-expanded="false"
+                aria-label="Favorites"
+                class="wuiListGroupItem__button"
+                data-name="Favorites"
+                type="button"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="starEmpty"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Favorites
+                </span>
+              </button>
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="wuiListGroup wuiListGroup-flush wuiListGroup--gutterSmall wuiListGroup-maxWidthDefault wuiNavDrawerGroup"
+        >
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isActive wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Canvas"
+                class="wuiListGroupItem__button"
+                data-name="Canvas"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="canvasApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Canvas
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Discover"
+                class="wuiListGroupItem__button"
+                data-name="Discover"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="discoverApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Discover
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Visualize"
+                class="wuiListGroupItem__button"
+                data-name="Visualize"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="visualizeApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Visualize
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Dashboard"
+                class="wuiListGroupItem__button"
+                data-name="Dashboard"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="dashboardApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Dashboard
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Machine learning"
+                class="wuiListGroupItem__button"
+                data-name="Machine learning"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="machineLearningApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Machine learning
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Custom Plugin (no icon)"
+                class="wuiListGroupItem__button"
+                data-name="Custom Plugin (no icon)"
+                href="#"
+                rel="noreferrer"
+              >
+                <span
+                  class="wuiListGroupItem__icon wuiNavDrawerGroup__itemDefaultIcon"
+                >
+                  CP
+                </span>
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Custom Plugin (no icon)
+                </span>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      aria-labelledby="navDrawerFlyoutTitle"
+      class="wuiNavDrawerFlyout wuiNavDrawerFlyout-isCollapsed"
+      id="navDrawerFlyout"
+    >
+      <div
+        class="wuiTitle wuiTitle--xxsmall wuiNavDrawerFlyout__title"
+        id="navDrawerFlyoutTitle"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`WuiNavDrawer renders with falsy children 1`] = `
+<nav
+  class="wuiNavDrawer wuiNavDrawer-isCollapsed wuiNavDrawer-flyoutIsCollapsed"
+>
+  <div
+    class="wuiFlexGroup wuiFlexGroup--directionRow"
+  >
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <div
+        class="wuiNavDrawerMenu wuiNavDrawerMenu-hasFooter"
+        id="navDrawerMenu"
+      >
+        <ul
+          class="wuiListGroup wuiListGroup-flush wuiListGroup-maxWidthDefault wuiNavDrawer__expandButton"
+        >
+          <li
+            class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable navDrawerExpandButton-isCollapsed"
+          >
+            <button
+              class="wuiListGroupItem__button"
+              data-test-subj="navDrawerExpandButton-isCollapsed"
+              type="button"
+            >
+              <div
+                class="wuiListGroupItem__icon"
+                data-wuiicon-type="lockOpen"
+              />
+              <span
+                class="wuiListGroupItem__label"
+                title="Undocked"
+              >
+                Undocked
+              </span>
+            </button>
+          </li>
+        </ul>
+        <ul
+          class="wuiListGroup wuiListGroup-flush wuiListGroup--gutterSmall wuiListGroup-maxWidthDefault wuiNavDrawerGroup"
+        >
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isActive wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Canvas"
+                class="wuiListGroupItem__button"
+                data-name="Canvas"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="canvasApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Canvas
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Discover"
+                class="wuiListGroupItem__button"
+                data-name="Discover"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="discoverApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Discover
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Visualize"
+                class="wuiListGroupItem__button"
+                data-name="Visualize"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="visualizeApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Visualize
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Dashboard"
+                class="wuiListGroupItem__button"
+                data-name="Dashboard"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="dashboardApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Dashboard
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Machine learning"
+                class="wuiListGroupItem__button"
+                data-name="Machine learning"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="machineLearningApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Machine learning
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Custom Plugin (no icon)"
+                class="wuiListGroupItem__button"
+                data-name="Custom Plugin (no icon)"
+                href="#"
+                rel="noreferrer"
+              >
+                <span
+                  class="wuiListGroupItem__icon wuiNavDrawerGroup__itemDefaultIcon"
+                >
+                  CP
+                </span>
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Custom Plugin (no icon)
+                </span>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      aria-labelledby="navDrawerFlyoutTitle"
+      class="wuiNavDrawerFlyout wuiNavDrawerFlyout-isCollapsed"
+      id="navDrawerFlyout"
+    >
+      <div
+        class="wuiTitle wuiTitle--xxsmall wuiNavDrawerFlyout__title"
+        id="navDrawerFlyoutTitle"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`WuiNavDrawer renders with fragments 1`] = `
+<nav
+  class="wuiNavDrawer wuiNavDrawer-isCollapsed wuiNavDrawer-flyoutIsCollapsed"
+>
+  <div
+    class="wuiFlexGroup wuiFlexGroup--directionRow"
+  >
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      <div
+        class="wuiNavDrawerMenu wuiNavDrawerMenu-hasFooter"
+        id="navDrawerMenu"
+      >
+        <ul
+          class="wuiListGroup wuiListGroup-flush wuiListGroup-maxWidthDefault wuiNavDrawer__expandButton"
+        >
+          <li
+            class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable navDrawerExpandButton-isCollapsed"
+          >
+            <button
+              class="wuiListGroupItem__button"
+              data-test-subj="navDrawerExpandButton-isCollapsed"
+              type="button"
+            >
+              <div
+                class="wuiListGroupItem__icon"
+                data-wuiicon-type="lockOpen"
+              />
+              <span
+                class="wuiListGroupItem__label"
+                title="Undocked"
+              >
+                Undocked
+              </span>
+            </button>
+          </li>
+        </ul>
+        <ul
+          class="wuiListGroup wuiListGroup-flush wuiListGroup--gutterSmall wuiListGroup-maxWidthDefault wuiNavDrawerGroup"
+        >
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <button
+                aria-expanded="false"
+                aria-label="Recently viewed"
+                class="wuiListGroupItem__button"
+                data-name="Recently viewed"
+                type="button"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="clock"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Recently viewed
+                </span>
+              </button>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <button
+                aria-expanded="false"
+                aria-label="Favorites"
+                class="wuiListGroupItem__button"
+                data-name="Favorites"
+                type="button"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="starEmpty"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Favorites
+                </span>
+              </button>
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="wuiListGroup wuiListGroup-flush wuiListGroup--gutterSmall wuiListGroup-maxWidthDefault wuiNavDrawerGroup"
+        >
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isActive wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Canvas"
+                class="wuiListGroupItem__button"
+                data-name="Canvas"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="canvasApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Canvas
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Discover"
+                class="wuiListGroupItem__button"
+                data-name="Discover"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="discoverApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Discover
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Visualize"
+                class="wuiListGroupItem__button"
+                data-name="Visualize"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="visualizeApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Visualize
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Dashboard"
+                class="wuiListGroupItem__button"
+                data-name="Dashboard"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="dashboardApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Dashboard
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Machine learning"
+                class="wuiListGroupItem__button"
+                data-name="Machine learning"
+                href="#"
+                rel="noreferrer"
+              >
+                <div
+                  class="wuiListGroupItem__icon"
+                  data-wuiicon-type="machineLearningApp"
+                />
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Machine learning
+                </span>
+              </a>
+            </span>
+          </li>
+          <li
+            class="wuiListGroupItem wuiListGroupItem--small wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiNavDrawerGroup__item"
+          >
+            <span
+              class="wuiToolTipAnchor wuiListGroupItem__tooltip"
+            >
+              <a
+                aria-label="Custom Plugin (no icon)"
+                class="wuiListGroupItem__button"
+                data-name="Custom Plugin (no icon)"
+                href="#"
+                rel="noreferrer"
+              >
+                <span
+                  class="wuiListGroupItem__icon wuiNavDrawerGroup__itemDefaultIcon"
+                >
+                  CP
+                </span>
+                <span
+                  class="wuiListGroupItem__label"
+                >
+                  Custom Plugin (no icon)
+                </span>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      aria-labelledby="navDrawerFlyoutTitle"
+      class="wuiNavDrawerFlyout wuiNavDrawerFlyout-isCollapsed"
+      id="navDrawerFlyout"
+    >
+      <div
+        class="wuiTitle wuiTitle--xxsmall wuiNavDrawerFlyout__title"
+        id="navDrawerFlyoutTitle"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</nav>
+`;

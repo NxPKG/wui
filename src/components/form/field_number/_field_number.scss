@@ -1,0 +1,9 @@
+.wuiFieldNumber {
+  @include wuiFormControlStyle;
+  @include wuiFormControlWithIcon($isIconOptional: true);
+  @include wuiFormControlIsLoading;
+}
+
+.wuiFieldNumber--withIcon.wuiFieldNumber--compressed {
+  @include wuiFormControlWithIcon($isIconOptional: false, $side: 'left', $compressed: true);
+}

@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTreeView is rendered 1`] = `
+<div
+  class="wuiText wuiText--medium wuiTreeView__wrapper"
+>
+  <p
+    class="wuiScreenReaderOnly"
+    id="htmlId--instruction"
+  >
+    You can quickly navigate this list using arrow keys.
+  </p>
+  <ul
+    aria-describedby="htmlId--instruction"
+    aria-label="aria-label"
+    class="wuiTreeView testClass1 testClass2"
+    data-test-subj="test subject string"
+    id="htmlId"
+  >
+    <li
+      class="wuiTreeView__node wuiTreeView__node--expanded"
+    >
+      <button
+        aria-controls="wuiNestedTreeView-htmlId"
+        aria-expanded="true"
+        class="wuiTreeView__nodeInner"
+        data-test-subj="wuiTreeViewButton-htmlId"
+        id="htmlId--0--node"
+      >
+        <span
+          class="wuiTreeView__iconWrapper"
+        >
+          <div
+            data-wuiicon-type="folderOpen"
+          />
+        </span>
+        <span
+          class="wuiTreeView__nodeLabel"
+        >
+          Item One
+        </span>
+      </button>
+      <div
+        id="wuiNestedTreeView-htmlId"
+      >
+        <div
+          class="wuiText wuiText--medium wuiTreeView__wrapper"
+        >
+          <ul
+            aria-label="Item One child of aria-label"
+            class="wuiTreeView"
+            id="htmlId"
+          >
+            <li
+              class="wuiTreeView__node"
+            >
+              <button
+                aria-controls="wuiNestedTreeView-htmlId"
+                aria-expanded="false"
+                class="wuiTreeView__nodeInner"
+                data-test-subj="wuiTreeViewButton-htmlId"
+                id="htmlId--0--node"
+              >
+                <span
+                  class="wuiTreeView__iconWrapper"
+                >
+                  <div
+                    data-wuiicon-type="document"
+                  />
+                </span>
+                <span
+                  class="wuiTreeView__nodeLabel"
+                >
+                  Item A
+                </span>
+              </button>
+              <div
+                id="wuiNestedTreeView-htmlId"
+              />
+            </li>
+            <li
+              class="wuiTreeView__node"
+            >
+              <button
+                aria-controls="wuiNestedTreeView-htmlId"
+                aria-expanded="false"
+                class="wuiTreeView__nodeInner"
+                data-test-subj="wuiTreeViewButton-htmlId"
+                id="htmlId--1--node"
+              >
+                <span
+                  class="wuiTreeView__iconWrapper"
+                >
+                  <div
+                    data-wuiicon-type="arrowRight"
+                  />
+                </span>
+                <span
+                  class="wuiTreeView__nodeLabel"
+                >
+                  Item B
+                </span>
+              </button>
+              <div
+                id="wuiNestedTreeView-htmlId"
+              />
+            </li>
+            <li
+              class="wuiTreeView__node"
+            >
+              <button
+                aria-controls="wuiNestedTreeView-htmlId"
+                aria-expanded="false"
+                class="wuiTreeView__nodeInner"
+                data-test-subj="wuiTreeViewButton-htmlId"
+                id="htmlId--2--node"
+              >
+                <span
+                  class="wuiTreeView__iconWrapper"
+                >
+                  <div
+                    data-wuiicon-type="arrowRight"
+                  />
+                </span>
+                <span
+                  class="wuiTreeView__nodeLabel"
+                >
+                  Item C
+                </span>
+              </button>
+              <div
+                id="wuiNestedTreeView-htmlId"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li
+      class="wuiTreeView__node"
+    >
+      <button
+        aria-controls="wuiNestedTreeView-htmlId"
+        aria-expanded="false"
+        class="wuiTreeView__nodeInner"
+        data-test-subj="wuiTreeViewButton-htmlId"
+        id="htmlId--1--node"
+      >
+        <span
+          class="wuiTreeView__nodeLabel"
+        >
+          Item Two
+        </span>
+      </button>
+      <div
+        id="wuiNestedTreeView-htmlId"
+      />
+    </li>
+  </ul>
+</div>
+`;

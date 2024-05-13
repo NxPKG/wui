@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTableSortMobile is rendered 1`] = `
+<div
+  class="wuiTableSortMobile testClass1 testClass2"
+>
+  <div
+    aria-label="aria-label"
+    class="wuiPopover wuiPopover--anchorDownRight"
+    data-test-subj="test subject string"
+  >
+    <div
+      class="wuiPopover__anchor"
+    >
+      <button
+        class="wuiButtonEmpty wuiButtonEmpty--primary wuiButtonEmpty--xSmall wuiButtonEmpty--flushRight"
+        type="button"
+      >
+        <span
+          class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+        >
+          <div
+            class="wuiButtonContent__icon"
+            data-wuiicon-type="arrowDown"
+          />
+          <span
+            class="wuiButtonEmpty__text"
+          >
+            Sorting
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

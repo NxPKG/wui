@@ -1,0 +1,16 @@
+// Themeable colors
+$wuiNavDrawerBackgroundColor: $wuiHeaderBackgroundColor;
+
+// Drawer variables
+$wuiNavDrawerWidthExpanded: 240px;
+$wuiNavDrawerWidthCollapsed: $wuiHeaderHeight;
+$wuiNavDrawerSideShadow: 2px 0 2px -1px rgba($wuiShadowColor, .3);
+
+// Layout variables
+$wuiNavDrawerTopPosition: $wuiHeaderHeight;
+
+// Animation variables
+$wuiNavDrawerExpandingDelay: $wuiAnimSpeedNormal;
+$wuiNavDrawerContractingDelay: $wuiAnimSpeedFast;
+$wuiNavDrawerExtendedDelay: $wuiAnimSpeedExtraSlow * 2;
+$wuiNavDrawerMenuAddedDelay: $wuiAnimSpeedExtraFast;

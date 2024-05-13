@@ -1,0 +1,7 @@
+.wuiInputPopover {
+  max-width: $wuiFormMaxWidth;
+
+  &.wuiInputPopover--fullWidth {
+    max-width: 100%;
+  }
+}

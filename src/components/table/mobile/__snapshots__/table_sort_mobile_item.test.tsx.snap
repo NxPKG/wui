@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTableSortMobileItem is rendered 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiContextMenuItem wuiTableSortMobileItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  type="button"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <div
+      class="wuiContextMenu__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiContextMenuItem__text"
+    />
+  </span>
+</button>
+`;

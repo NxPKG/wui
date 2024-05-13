@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFilterButton is rendered 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton testClass1 testClass2"
+  data-test-subj="test subject string"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton props grow can be turned off 1`] = `
+<button
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton wuiFilterButton--noGrow"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton props iconType and iconSide is rendered 1`] = `
+<button
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton wuiFilterButton--hasIcon"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <div
+      class="wuiButtonContent__icon"
+      data-wuiicon-type="user"
+    />
+    <span
+      class="wuiButtonEmpty__text"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton props isDisabled is rendered 1`] = `
+<button
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty-isDisabled wuiFilterButton"
+  disabled=""
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton props isSelected is rendered 1`] = `
+<button
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton wuiFilterButton-isSelected"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton props numActiveFilters and hasActiveFilters is rendered 1`] = `
+<button
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton wuiFilterButton-hasActiveFilters"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton props numFilters is rendered 1`] = `
+<button
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton wuiFilterButton-hasNotification"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text wuiFilterButton__text-hasNotification"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+      <span
+        aria-label="5 available filters"
+        class="wuiNotificationBadge wuiNotificationBadge--medium wuiNotificationBadge--subdued wuiFilterButton__notification"
+      >
+        5
+      </span>
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton props type is rendered 1`] = `
+<button
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton props withNext is rendered 1`] = `
+<button
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton wuiFilterButton--withNext"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiFilterButton renders zero properly 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiButtonEmpty wuiButtonEmpty--text wuiFilterButton wuiFilterButton-hasNotification testClass1 testClass2"
+  data-test-subj="test subject string"
+  type="button"
+>
+  <span
+    class="wuiButtonContent wuiButtonContent--iconRight wuiButtonEmpty__content"
+  >
+    <span
+      class="wuiButtonEmpty__text wuiFilterButton__text-hasNotification"
+    >
+      <span
+        class="wuiFilterButton__textShift"
+      />
+      <span
+        aria-label="0 available filters"
+        class="wuiNotificationBadge wuiNotificationBadge--medium wuiNotificationBadge--subdued wuiFilterButton__notification"
+      >
+        0
+      </span>
+    </span>
+  </span>
+</button>
+`;

@@ -1,0 +1,734 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiToken is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--light wuiToken--small testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    aria-label="aria-label"
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color can be a custom hex 1`] = `
+<span
+  class="wuiToken wuiToken--circle wuiToken--dark wuiToken--small"
+  style="background-color:#FF0000;color:#000000"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color gray is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis0 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis0 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis1 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis1 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis2 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis2 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis3 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis3 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis4 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis4 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis5 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis5 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis6 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis6 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis7 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis7 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis8 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis8 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props color wuiColorVis9 is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis9 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props fill dark is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--dark wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props fill light is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props fill none is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenAlias is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis3 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenAlias"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenAnnotation is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis5 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenAnnotation"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenArray is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis7 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenArray"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenBinary is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis4 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenBinary"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenBoolean is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis7 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenBoolean"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenClass is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis1 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenClass"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenCompletionSuggester is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis1 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenCompletionSuggester"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenConstant is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis0 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenConstant"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenDate is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis6 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenDate"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenDenseVector is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis2 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenDenseVector"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenElement is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis3 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenElement"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenEnum is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis3 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenEnum"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenEnumMember is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis7 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenEnumMember"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenEvent is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis4 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenEvent"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenException is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis0 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenException"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenField is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis0 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenField"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenFile is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--rectangle wuiToken--dark wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenFile"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenFlattened is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis7 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenFlattened"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenFunction is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis2 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenFunction"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenGeo is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis5 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenGeo"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenHistogram is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis6 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenHistogram"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenIP is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis9 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenIP"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenInterface is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis9 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenInterface"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenJoin is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis5 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenJoin"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenKey is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis5 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenKey"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenKeyword is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis9 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenKeyword"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenMethod is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis2 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenMethod"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenModule is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis4 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenModule"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenNamespace is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis1 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenNamespace"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenNested is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis2 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenNested"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenNull is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis2 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenNull"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenNumber is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis0 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenNumber"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenObject is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis3 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenObject"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenOperator is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis4 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenOperator"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenPackage is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis0 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenPackage"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenParameter is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis4 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenParameter"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenPercolator is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis6 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenPercolator"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenProperty is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis2 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenProperty"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenRange is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis4 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenRange"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenRankFeature is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis8 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenRankFeature"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenRankFeatures is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis3 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenRankFeatures"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenRepo is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis1 wuiToken--rectangle wuiToken--dark wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenRepo"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenSearchType is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis5 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenSearchType"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenShape is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis8 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenShape"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenString is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis1 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenString"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenStruct is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis0 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenStruct"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenSymbol is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis0 wuiToken--rectangle wuiToken--dark wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenSymbol"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenText is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis3 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenText"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenTokenCount is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis4 wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenTokenCount"
+  />
+</span>
+`;
+
+exports[`WuiToken props iconType as WuiTokenMapType tokenVariable is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--wuiColorVis7 wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="tokenVariable"
+  />
+</span>
+`;
+
+exports[`WuiToken props shape circle is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props shape rectangle is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--rectangle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props shape square is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--square wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props size l is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--light wuiToken--large"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props size m is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--light wuiToken--medium"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props size s is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--light wuiToken--small"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;
+
+exports[`WuiToken props size xs is rendered 1`] = `
+<span
+  class="wuiToken wuiToken--gray wuiToken--circle wuiToken--light wuiToken--xsmall"
+>
+  <div
+    data-wuiicon-type="dot"
+  />
+</span>
+`;

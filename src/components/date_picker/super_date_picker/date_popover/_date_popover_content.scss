@@ -1,0 +1,19 @@
+.wuiDatePopoverContent {
+  width: $wuiFormMaxWidth;
+  max-width: 100%;
+}
+
+.wuiDatePopoverContent__padded {
+  padding: $wuiSizeS;
+}
+
+.wuiDatePopoverContent__padded--large {
+  padding: $wuiSize;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiDatePopoverContent {
+    // Small screens drop the time selector
+    width: $wuiDatePickerCalendarWidth;
+  }
+}

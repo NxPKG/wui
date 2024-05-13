@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiDatePickerRange is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiDatePickerRange testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <span>
+    <span
+      class="wuiDatePicker wuiDatePicker--shadow"
+    >
+      <div
+        class="wuiFormControlLayout"
+      >
+        <div
+          class="wuiFormControlLayout__childrenWrapper"
+        >
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                aria-label=""
+                class="wuiDatePicker wuiFieldText wuiFieldText--withIcon"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="wuiFormControlLayoutIcons"
+          >
+            <span
+              class="wuiFormControlLayoutCustomIcon"
+            >
+              <div
+                aria-hidden="true"
+                class="wuiFormControlLayoutCustomIcon__icon"
+                data-wuiicon-type="calendar"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </span>
+  </span>
+  <div
+    class="wuiText wuiText--small wuiDatePickerRange__delimeter"
+  >
+    <div
+      class="wuiTextColor wuiTextColor--subdued"
+    >
+      →
+    </div>
+  </div>
+  <span>
+    <span
+      class="wuiDatePicker wuiDatePicker--shadow"
+    >
+      <div
+        class="wuiFormControlLayout"
+      >
+        <div
+          class="wuiFormControlLayout__childrenWrapper"
+        >
+          <div
+            class="react-datepicker-wrapper"
+          >
+            <div
+              class="react-datepicker__input-container"
+            >
+              <input
+                aria-label=""
+                class="wuiDatePicker wuiFieldText"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+  </span>
+</div>
+`;

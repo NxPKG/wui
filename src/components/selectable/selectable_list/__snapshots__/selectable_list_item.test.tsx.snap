@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSelectableListItem is rendered 1`] = `
+<li
+  aria-label="aria-label"
+  aria-selected="false"
+  class="wuiSelectableListItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiSelectableListItem__text"
+    />
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props append 1`] = `
+<li
+  aria-selected="false"
+  class="wuiSelectableListItem"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiSelectableListItem__text"
+    />
+    <span
+      class="wuiSelectableListItem__append"
+    >
+      <span />
+       
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props checked is off 1`] = `
+<li
+  aria-selected="true"
+  class="wuiSelectableListItem"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      color="text"
+      data-wuiicon-type="cross"
+    />
+    <span
+      class="wuiSelectableListItem__text"
+    />
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props checked is on 1`] = `
+<li
+  aria-selected="true"
+  class="wuiSelectableListItem"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      color="text"
+      data-wuiicon-type="check"
+    />
+    <span
+      class="wuiSelectableListItem__text"
+    />
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props disabled 1`] = `
+<li
+  aria-disabled="true"
+  aria-selected="false"
+  class="wuiSelectableListItem"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiSelectableListItem__text"
+    />
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props isFocused 1`] = `
+<li
+  aria-selected="false"
+  class="wuiSelectableListItem wuiSelectableListItem-isFocused"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiSelectableListItem__text"
+    />
+    <span
+      class="wuiSelectableListItem__append"
+    >
+       
+      <span
+        aria-hidden="true"
+        class="wuiBadge wuiBadge--hollow wuiBadge--iconLeft wuiSelectableListItem__onFocusBadge"
+      >
+        <span
+          class="wuiBadge__content"
+        >
+          <div
+            class="wuiBadge__icon"
+            data-wuiicon-type="returnKey"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props onFocusBadge can be custom 1`] = `
+<li
+  aria-selected="false"
+  class="wuiSelectableListItem"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiSelectableListItem__text"
+    />
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props onFocusBadge can be true 1`] = `
+<li
+  aria-selected="false"
+  class="wuiSelectableListItem"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiSelectableListItem__text"
+    />
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props prepend 1`] = `
+<li
+  aria-selected="false"
+  class="wuiSelectableListItem"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <div
+      class="wuiSelectableListItem__icon"
+      data-wuiicon-type="empty"
+    />
+    <span
+      class="wuiSelectableListItem__prepend"
+    >
+      <span />
+    </span>
+    <span
+      class="wuiSelectableListItem__text"
+    />
+  </span>
+</li>
+`;
+
+exports[`WuiSelectableListItem props showIcons can be turned off 1`] = `
+<li
+  aria-selected="false"
+  class="wuiSelectableListItem"
+  role="option"
+>
+  <span
+    class="wuiSelectableListItem__content"
+  >
+    <span
+      class="wuiSelectableListItem__text"
+    />
+  </span>
+</li>
+`;

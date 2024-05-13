@@ -1,0 +1,7 @@
+.wuiButtonContent {
+  @include wuiButtonContent;
+}
+
+.wuiButtonContent--iconRight {
+  @include wuiButtonContent($isReverse: true);
+}

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSuggestInput is rendered 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownLeft wuiPopover--displayBlock wuiInputPopover wuiInputPopover--fullWidth wuiSuggestInput testClass1 testClass2"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <div>
+      <div
+        class="wuiFormControlLayout wuiFormControlLayout--fullWidth wuiFormControlLayout--group"
+      >
+        <div
+          class="wuiFormControlLayout__childrenWrapper"
+        >
+          <input
+            aria-label="aria-label"
+            class="wuiFieldText wuiFieldText--fullWidth wuiFieldText--inGroup"
+            data-test-subj="test subject string"
+            type="text"
+            value=""
+          />
+        </div>
+        <span
+          class="wuiToolTipAnchor"
+        >
+          <div
+            class="wuiSuggestInput__statusIcon"
+            color="accent"
+            data-wuiicon-type="dot"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

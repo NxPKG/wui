@@ -1,0 +1,52 @@
+.wuiComboBoxOption {
+  font-size: $wuiFontSizeS;
+  padding: $wuiSizeXS $wuiSizeS $wuiSizeXS #{$wuiSizeM + $wuiSizeXS};
+  width: 100%;
+  text-align: left;
+  border: $wuiBorderThin;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.wuiComboBoxOption-isFocused {
+    cursor: pointer;
+    color: $wuiColorPrimary;
+    background-color: $wuiFocusBackgroundColor;
+  }
+
+  &.wuiComboBoxOption-isDisabled {
+    color: $wuiColorMediumShade;
+    cursor: not-allowed;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.wuiComboBoxOption__contentWrapper {
+  display: flex;
+
+  .wuiComboBoxOption__emptyStateText {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .wuiComboBoxOption__enterBadge {
+    align-self: flex-start;
+    margin-left: $wuiSizeXS;
+  }
+}
+
+.wuiComboBoxOption__content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+  text-align: left;
+}

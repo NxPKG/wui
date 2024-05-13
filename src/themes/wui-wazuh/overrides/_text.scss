@@ -1,0 +1,5 @@
+// Increase the medium (currently default) size of WuiText to original 16px
+.wuiText--medium {
+  @include fontSize($wuiFontSizeM);
+  @include wuiScaleText($wuiFontSizeM);
+}

@@ -1,0 +1,14 @@
+.guideSection {
+  & + .guideSection {
+    margin-top: $wuiSizeXL * 2;
+  }
+}
+
+.guideSection__space {
+  height: $wuiSizeL;
+}
+
+.guideSection__tableCodeBlock {
+  padding-left: $wuiSizeXS;
+  padding-right: $wuiSizeXS;
+}

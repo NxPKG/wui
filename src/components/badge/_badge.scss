@@ -1,0 +1,138 @@
+/**
+ * 1. Accounts for the border
+ */
+.wuiBadge {
+  font-size: $wuiFontSizeXS;
+  font-weight: $wuiFontWeightMedium;
+  line-height: $wuiSize + 2px; /* 1 */
+  padding: 0 $wuiSizeS;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: $wuiBorderRadius / 2;
+  border: solid 1px transparent;
+  background-color: transparent;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: default;
+  max-width: 100%;
+  // The badge will only ever be as wide as its content
+  // So, make the text left aligned to ensure all badges line up the same
+  text-align: left;
+
+  &.wuiBadge-isDisabled {
+    // sass-lint:disable-block no-important
+    // Using !important to override inline styles
+    color: makeHighContrastColor($wuiButtonColorDisabled, $wuiButtonColorDisabled, 2) !important;
+    background-color: $wuiButtonColorDisabled !important;
+  }
+
+  &:focus-within {
+    @include wuiFocusRing('small');
+  }
+
+  + .wuiBadge {
+    margin-left: $wuiSizeXS;
+  }
+
+  .wuiBadge__content {
+    min-height: $wuiSize + ($wuiBorderWidthThin * 2); // Ensure proper height in case of just displaying an icon
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .wuiBadge__childButton {
+    @include wuiTextTruncate;
+    flex: 1 1 auto; // Must be 1 and 1 for IE to properly truncate
+    text-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    &:not(:disabled) {
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .wuiBadge__iconButton {
+    flex: 0 0 auto;
+    font-size: 0; // Makes the button only as large as the icon so it aligns vertically better
+    margin-left: $wuiSizeXS;
+
+    &:focus {
+      background-color: transparentize($wuiColorGhost, .2);
+      color: $wuiColorInk;
+      border-radius: 2px;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    .wuiBadge__icon {
+      // Remove margins from icon itself so that focus state doesn't include that space
+      margin: 0 !important; // sass-lint:disable-line no-important
+    }
+  }
+
+  .wuiBadge__text {
+    @include wuiTextTruncate;
+    flex: 1 1 auto;
+    cursor: default;
+  }
+
+  .wuiBadge__icon {
+    flex: 0 0 auto;
+
+    &:not(:only-child) {
+      margin-left: $wuiSizeXS;
+    }
+  }
+
+  &.wuiBadge--iconLeft {
+    .wuiBadge__content {
+      flex-direction: row-reverse;
+    }
+
+    .wuiBadge__iconButton,
+    .wuiBadge__icon:not(:only-child) {
+      margin-right: $wuiSizeXS;
+      margin-left: 0;
+    }
+  }
+}
+
+.wuiBadge-isClickable {
+  &:not(:disabled) {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &.wuiBadge-isDisabled {
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    @include wuiFocusRing('small');
+  }
+
+  .wuiBadge__text {
+    cursor: inherit;
+  }
+}
+
+// Hollow has a border and is mostly used for autocompleters.
+.wuiBadge--hollow {
+  background-color: $wuiColorEmptyShade;
+  border-color: lightOrDarkTheme($wuiBorderColor, tint($wuiBorderColor, 15%));
+  color: $wuiTextColor;
+}

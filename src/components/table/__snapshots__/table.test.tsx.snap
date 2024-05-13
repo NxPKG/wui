@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders WuiTable 1`] = `
+<table
+  aria-label="aria-label"
+  class="wuiTable testClass1 testClass2 wuiTable--responsive"
+  data-test-subj="test subject string"
+  tabindex="-1"
+>
+  <thead>
+    <tr>
+      <th
+        class="wuiTableHeaderCell"
+        role="columnheader"
+        scope="col"
+      >
+        <div
+          class="wuiTableCellContent"
+        >
+          <span
+            class="wuiTableCellContent__text"
+          >
+            Hi Title
+          </span>
+        </div>
+      </th>
+      <th
+        class="wuiTableHeaderCell"
+        role="columnheader"
+        scope="col"
+      >
+        <div
+          class="wuiTableCellContent"
+        >
+          <span
+            class="wuiTableCellContent__text"
+          >
+            Bye Title
+          </span>
+        </div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      class="wuiTableRow"
+    >
+      <td
+        class="wuiTableRowCell"
+      >
+        <div
+          class="wuiTableCellContent"
+        >
+          <span
+            class="wuiTableCellContent__text"
+          >
+            Hi
+          </span>
+        </div>
+      </td>
+    </tr>
+    <tr
+      class="wuiTableRow"
+    >
+      <td
+        class="wuiTableRowCell"
+      >
+        <div
+          class="wuiTableCellContent"
+        >
+          <span
+            class="wuiTableCellContent__text"
+          >
+            Bye
+          </span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

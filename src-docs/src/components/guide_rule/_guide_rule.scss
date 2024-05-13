@@ -1,0 +1,21 @@
+.guideRule {
+  margin-top: $wuiSizeXXL;
+
+  + .guideRule {
+    margin-top: $wuiSizeL;
+
+    &.guideRule--hasDescription {
+      margin-top: $wuiSizeXXL * 1.5;
+    }
+
+    &.guideRule--hasHeading {
+      margin-top: $wuiSizeXXL * 2;
+    }
+  }
+
+  .guideRule__title + &:not(.guideRule--hasHeading) {
+    margin-top: 0;
+  }
+}
+
+

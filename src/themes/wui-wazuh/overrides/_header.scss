@@ -1,0 +1,42 @@
+@import '../global_styling/mixins/button';
+
+.wuiHeader {
+  height: $wuiHeaderHeight;
+  padding-left: $wuiSizeS;
+  padding-right: $wuiSizeS;
+  box-shadow: 0;
+}
+
+// Remove borders without deleting the prop just yet
+.wuiHeaderSectionItem:after {
+  display: none !important; // sass-lint:disable-line no-important
+}
+
+.wuiHeaderSectionItem__button {
+  border-radius: $wuiSizeS;
+}
+
+.wuiHeaderLogo {
+  @include wuiBreakpoint('xs') {
+    padding-left: $wuiSizeXS;
+  }
+
+  border-radius: $wuiSizeS;
+  padding-left: $wuiSizeS;
+  padding-right: $wuiSizeS;
+  min-width: $wuiHeaderChildSize;
+}
+
+.wuiHeaderLogo__text {
+  @include wuiTitle('xxs');
+}
+
+.wuiHeader--fixed + .wuiHeader--fixed {
+  background-color: $wuiColorLightestShade;
+  padding-left: $wuiNavDrawerWidthCollapsed + $wuiSizeM;
+}
+
+.wuiHeader--fixed + .wuiHeader--fixed + .wuiHeader--fixed {
+  background-color: $wuiColorEmptyShade;
+  padding-left: $wuiNavDrawerWidthCollapsed + $wuiSizeM;
+}

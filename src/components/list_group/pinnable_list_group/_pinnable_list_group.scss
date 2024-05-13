@@ -1,0 +1,9 @@
+.wuiPinnableListGroup__itemExtraAction {
+  svg {
+    transform: rotate(45deg);
+  }
+}
+
+.wuiPinnableListGroup__itemExtraAction-pinned:not(:hover):not(:focus) {
+  color: makeGraphicContrastColor($wuiColorLightShade);
+}

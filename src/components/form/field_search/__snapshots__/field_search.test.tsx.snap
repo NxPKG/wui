@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiFieldSearch is rendered 1`] = `
+<wui-form-control-layout
+  clear="[object Object]"
+  compressed="false"
+  fullwidth="false"
+  icon="search"
+  isloading="false"
+>
+  <wui-validatable-control>
+    <input
+      aria-label="aria-label"
+      class="wuiFieldSearch wuiFieldSearch-isClearable testClass1 testClass2"
+      data-test-subj="test subject string"
+      id="1"
+      name="wazuh"
+      placeholder="Placeholder"
+      type="search"
+      value="1"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldSearch props append is rendered 1`] = `
+<wui-form-control-layout
+  compressed="false"
+  fullwidth="false"
+  icon="search"
+  isloading="false"
+  prepend="Append"
+>
+  <wui-validatable-control>
+    <input
+      class="wuiFieldSearch wuiFieldText--inGroup wuiFieldSearch-isClearable"
+      type="search"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldSearch props fullWidth is rendered 1`] = `
+<wui-form-control-layout
+  compressed="false"
+  fullwidth="true"
+  icon="search"
+  isloading="false"
+>
+  <wui-validatable-control>
+    <input
+      class="wuiFieldSearch wuiFieldSearch--fullWidth wuiFieldSearch-isClearable"
+      type="search"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldSearch props isInvalid is rendered 1`] = `
+<wui-form-control-layout
+  compressed="false"
+  fullwidth="false"
+  icon="search"
+  isloading="false"
+>
+  <wui-validatable-control
+    isinvalid="true"
+  >
+    <input
+      class="wuiFieldSearch wuiFieldSearch-isClearable"
+      type="search"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldSearch props isLoading is rendered 1`] = `
+<wui-form-control-layout
+  compressed="false"
+  fullwidth="false"
+  icon="search"
+  isloading="true"
+>
+  <wui-validatable-control>
+    <input
+      class="wuiFieldSearch wuiFieldSearch-isLoading wuiFieldSearch-isClearable"
+      type="search"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;
+
+exports[`WuiFieldSearch props prepend is rendered 1`] = `
+<wui-form-control-layout
+  compressed="false"
+  fullwidth="false"
+  icon="search"
+  isloading="false"
+  prepend="Prepend"
+>
+  <wui-validatable-control>
+    <input
+      class="wuiFieldSearch wuiFieldText--inGroup wuiFieldSearch-isClearable"
+      type="search"
+    />
+  </wui-validatable-control>
+</wui-form-control-layout>
+`;

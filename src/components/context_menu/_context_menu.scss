@@ -1,0 +1,27 @@
+$wuiContextMenuWidth: $wuiSize * 16;
+
+.wuiContextMenu {
+  width: $wuiContextMenuWidth;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: height $wuiAnimSpeedFast $wuiAnimSlightResistance;
+  border-radius: $wuiBorderRadius;
+
+  .wuiContextMenu__content {
+    padding: $wuiSizeS;
+  }
+}
+
+/**
+  * 1. When there are multiple ContextMenuPanels, the ContextMenu will absolutely
+  *    position them. ContextMenuPanel will break the layout of a Popover if it's
+  *    absolutely positioned by default.
+  */
+.wuiContextMenu__panel {
+  position: absolute; /* 1 */
+}
+
+.wuiContextMenu__icon {
+  margin-right: $wuiSizeS;
+}

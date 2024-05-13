@@ -1,0 +1,462 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCard is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props a null icon 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props children 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned wuiCard--hasChildren"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+    Child
+  </div>
+</div>
+`;
+
+exports[`WuiCard props display 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--plain wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props footer 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+  <div
+    class="wuiCard__footer"
+  >
+    <span>
+      Footer
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props horizontal 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned wuiCard--horizontal"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props href supports href as a link 1`] = `
+<WuiCard
+  description="There"
+  href="#"
+  title="Hoi"
+>
+  <div
+    className="wuiCard wuiCard--paddingMedium wuiCard--centerAligned wuiCard--isClickable"
+    onClick={[Function]}
+  >
+    <div
+      className="wuiCard__content"
+    >
+      <WuiTitle
+        className="wuiCard__title"
+        id="generated-idTitle"
+        size="s"
+      >
+        <span
+          className="wuiTitle wuiTitle--small wuiCard__title"
+          id="generated-idTitle"
+        >
+          <a
+            aria-describedby="generated-idDescription"
+            className="wuiCard__titleAnchor"
+            href="#"
+            rel="noreferrer"
+          >
+            Hoi
+          </a>
+        </span>
+      </WuiTitle>
+      <WuiText
+        className="wuiCard__description"
+        id="generated-idDescription"
+        size="s"
+      >
+        <div
+          className="wuiText wuiText--small wuiCard__description"
+          id="generated-idDescription"
+        >
+          <p>
+            There
+          </p>
+        </div>
+      </WuiText>
+    </div>
+  </div>
+</WuiCard>
+`;
+
+exports[`WuiCard props icon 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned wuiCard--hasIcon"
+>
+  <div
+    class="wuiCard__top"
+  >
+    <div
+      class="myIconClass wuiCard__icon"
+      data-wuiicon-type="apmApp"
+    />
+  </div>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props paddingSize l is applied 1`] = `
+<div
+  class="wuiCard wuiCard--paddingLarge wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props paddingSize m is applied 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props paddingSize none is applied 1`] = `
+<div
+  class="wuiCard wuiCard--paddingNone wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props paddingSize s is applied 1`] = `
+<div
+  class="wuiCard wuiCard--paddingSmall wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props selectable 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned wuiCard--isClickable wuiCard--isSelectable wuiCard--isSelectable--text"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+  <button
+    aria-checked="false"
+    aria-describedby="generated-idTitle generated-idDescription"
+    class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--xSmall wuiCardSelect wuiCardSelect--text"
+    role="switch"
+    type="button"
+  >
+    <span
+      class="wuiButtonContent wuiButtonEmpty__content"
+    >
+      <span
+        class="wuiButtonEmpty__text"
+      >
+        Select
+      </span>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`WuiCard props textAlign 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--rightAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props titleElement 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <h4
+      class="wuiTitle wuiTitle--small wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </h4>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiCard props titleSize 1`] = `
+<div
+  class="wuiCard wuiCard--paddingMedium wuiCard--centerAligned"
+>
+  <div
+    class="wuiCard__content"
+  >
+    <span
+      class="wuiTitle wuiTitle--xsmall wuiCard__title"
+      id="generated-idTitle"
+    >
+      Card title
+    </span>
+    <div
+      class="wuiText wuiText--small wuiCard__description"
+      id="generated-idDescription"
+    >
+      <p>
+        Card description
+      </p>
+    </div>
+  </div>
+</div>
+`;

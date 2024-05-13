@@ -1,0 +1,334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiContextMenu can pass-through horizontal rule props 1`] = `
+<div
+  class="wuiContextMenu"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <div
+      class="wuiPopoverTitle"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        Testing separator
+      </span>
+    </div>
+    <div>
+      <div>
+        <hr
+          class="wuiHorizontalRule wuiHorizontalRule--half wuiHorizontalRule--marginSmall"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiContextMenu testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiContextMenu panel item can be a separator line 1`] = `
+<div
+  class="wuiContextMenu"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <div
+      class="wuiPopoverTitle"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        Testing separator
+      </span>
+    </div>
+    <div>
+      <div>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              Foo
+            </span>
+          </span>
+        </button>
+        <hr
+          class="wuiHorizontalRule wuiHorizontalRule--full"
+        />
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              Bar
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu panel item can contain JSX 1`] = `
+<div
+  class="wuiContextMenu"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <div
+      class="wuiPopoverTitle"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        3
+      </span>
+    </div>
+    <div>
+      <div>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              <span
+                style="color:tomato"
+              >
+                foo
+              </span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu props panels and initialPanelId allows you to click the title button to go back to the previous panel 1`] = `
+<div
+  class="wuiContextMenu"
+  style="height: 0px;"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <button
+      class="wuiContextMenuPanelTitle"
+      data-test-subj="contextMenuPanelTitleButton"
+      type="button"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        <div
+          class="wuiContextMenu__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+        <span
+          class="wuiContextMenu__text"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <div>
+      <div>
+        <div>
+          2
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu props panels and initialPanelId allows you to click the title button to go back to the previous panel 2`] = `
+<div
+  class="wuiContextMenu"
+  style="height: 0px; width: 400px;"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel wuiContextMenuPanel-txOutRight"
+    tabindex="0"
+  >
+    <button
+      class="wuiContextMenuPanelTitle"
+      data-test-subj="contextMenuPanelTitleButton"
+      type="button"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        <div
+          class="wuiContextMenu__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+        <span
+          class="wuiContextMenu__text"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <div>
+      <div>
+        <div>
+          2
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel wuiContextMenuPanel-txInRight"
+    tabindex="0"
+  >
+    <button
+      class="wuiContextMenuPanelTitle"
+      data-test-subj="contextMenuPanelTitleButton"
+      type="button"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        <div
+          class="wuiContextMenu__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+        <span
+          class="wuiContextMenu__text"
+        >
+          1
+        </span>
+      </span>
+    </button>
+    <div>
+      <div>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              2a
+            </span>
+            <div
+              class="wuiContextMenu__arrow"
+              data-wuiicon-type="arrowRight"
+            />
+          </span>
+        </button>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              2b
+            </span>
+            <div
+              class="wuiContextMenu__arrow"
+              data-wuiicon-type="arrowRight"
+            />
+          </span>
+        </button>
+        <button
+          class="wuiContextMenuItem"
+          type="button"
+        >
+          <span
+            class="wuiContextMenu__itemLayout"
+          >
+            <span
+              class="wuiContextMenuItem__text"
+            >
+              2c
+            </span>
+            <div
+              class="wuiContextMenu__arrow"
+              data-wuiicon-type="arrowRight"
+            />
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiContextMenu props panels and initialPanelId renders the referenced panel 1`] = `
+<div
+  class="wuiContextMenu"
+>
+  <div
+    class="wuiContextMenuPanel wuiContextMenu__panel"
+    tabindex="0"
+  >
+    <button
+      class="wuiContextMenuPanelTitle"
+      data-test-subj="contextMenuPanelTitleButton"
+      type="button"
+    >
+      <span
+        class="wuiContextMenu__itemLayout"
+      >
+        <div
+          class="wuiContextMenu__icon"
+          data-wuiicon-type="arrowLeft"
+        />
+        <span
+          class="wuiContextMenu__text"
+        >
+          2
+        </span>
+      </span>
+    </button>
+    <div>
+      <div>
+        <div>
+          2
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

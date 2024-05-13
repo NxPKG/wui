@@ -1,0 +1,12 @@
+@mixin wuiLink {
+  text-align: left;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+    background: $wuiFocusBackgroundColor;
+  }
+}

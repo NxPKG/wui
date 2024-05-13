@@ -1,0 +1,22 @@
+$wuiSelectableTemplateSitewideTypes: (
+  'application': (
+    'color': makeHighContrastColor($wuiColorVis1),
+    'font-weight': $wuiFontWeightMedium,
+  ),
+  'deployment': (
+    'color': makeHighContrastColor($wuiColorVis0),
+    'font-weight': $wuiFontWeightMedium,
+  ),
+  'article': (
+    'color': makeHighContrastColor($wuiColorVis3),
+    'font-weight': $wuiFontWeightMedium,
+  ),
+  'case': (
+    'color': makeHighContrastColor($wuiColorVis9),
+    'font-weight': $wuiFontWeightMedium,
+  ),
+  'platform': (
+    'color': makeHighContrastColor($wuiColorVis5),
+    'font-weight': $wuiFontWeightMedium,
+  ),
+);

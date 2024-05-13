@@ -1,0 +1,47 @@
+.wuiAvatar {
+  flex-shrink: 0; // Ensures it never scales down below its intended size
+  display: inline-block;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  overflow-x: hidden;
+  font-weight: $wuiFontWeightMedium; // Explicitly state so it doesn't get overridden by inheritance
+}
+
+.wuiAvatar--user {
+  @include innerBorder('dark', 50%, .05);
+  border-radius: 50%;
+}
+
+.wuiAvatar--space {
+  @include innerBorder('dark', $wuiBorderRadius, .05);
+  border-radius: $wuiBorderRadius;
+}
+
+// Modifiers for sizing.
+$avatarSizing: (
+  s: (
+    size: $wuiSizeL,
+    font-size: $wuiSizeM
+  ),
+  m: (
+    size: $wuiSizeXL,
+    font-size: $wuiSize*.9
+  ),
+  l: (
+    size: $wuiSizeXXL,
+    font-size: $wuiSizeL*.8
+  ),
+  xl: (
+    size: ($wuiSize * 4),
+    font-size: $wuiSizeXL*.8
+  ),
+);
+
+@each $size, $map in $avatarSizing {
+  .wuiAvatar--#{$size} {
+    @include size(map-get($map, 'size'));
+    line-height: map-get($map, 'size');
+    font-size: map-get($map, 'font-size');
+  }
+}

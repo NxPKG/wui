@@ -1,0 +1,8 @@
+$wuiTooltipBackgroundColor: tintOrShade($wuiColorFullShade, 25%, 100%) !default;
+
+$wuiTooltipAnimations: (
+  top: wuiToolTipTop,
+  left: wuiToolTipBottom,
+  bottom: wuiToolTipLeft,
+  right: wuiToolTipRight,
+) !default;

@@ -1,0 +1,11 @@
+// Themeable colors
+$wuiHeaderBackgroundColor: $wuiColorEmptyShade !default;
+$wuiHeaderBorderColor: $wuiBorderColor !default;
+$wuiHeaderBreadcrumbColor: $wuiColorDarkestShade !default;
+
+// Layout vars
+$wuiHeaderHeight: $wuiSizeXXL + $wuiSizeS !default;
+$wuiHeaderChildSize: $wuiHeaderHeight !default;
+
+// Use the following variable in other components to afford for the fixed header
+$wuiHeaderHeightCompensation: $wuiHeaderHeight + 1px !default;

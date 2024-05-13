@@ -1,0 +1,23 @@
+$wuiBadgeGroupGutterTypes: (
+  gutterExtraSmall: $wuiSizeXS,
+  gutterSmall: $wuiSizeS,
+);
+
+.wuiBadgeGroup__item {
+  display: inline-block;
+  max-width: 100%;
+}
+
+// Gutter Sizes
+@each $gutterName, $gutterSize in $wuiBadgeGroupGutterTypes {
+  $halfGutterSize: $gutterSize * .5;
+
+  .wuiBadgeGroup--#{$gutterName} {
+    margin: -$halfGutterSize;
+
+    & > .wuiBadgeGroup__item {
+      margin: $halfGutterSize;
+      max-width: calc(100% - #{$gutterSize});
+    }
+  }
+}

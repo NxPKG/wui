@@ -1,0 +1,23 @@
+.wuiErrorBoundary {
+  $color1: transparentize($wuiColorDanger, .75);
+  $color2: transparentize($wuiColorDanger, .95);
+
+  background: repeating-linear-gradient(
+    45deg,
+    $color1,
+    $color1 1px,
+    $color2 1px,
+    $color2 20px
+  );
+  overflow: auto;
+  padding: $wuiSize;
+}
+
+.wuiErrorBoundary__text {
+  background-color: $wuiColorEmptyShade;
+  padding: $wuiSizeS;
+}
+
+.wuiErrorBoundary__stack {
+  white-space: pre-wrap;
+}

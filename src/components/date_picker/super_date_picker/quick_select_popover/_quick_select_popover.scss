@@ -1,0 +1,22 @@
+.wuiQuickSelectPopover__content {
+  width: $wuiFormMaxWidth;
+  max-width: 100%;
+}
+
+.wuiQuickSelectPopover__section {
+  @include wuiScrollBar;
+  max-height: $wuiSizeM * 11;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: $wuiSizeXS 0; // Offset negative margin from flex items
+}
+
+// sass-lint:disable no-important
+.wuiQuickSelectPopover__buttonText {
+  // Override specificity from universal and sibling selectors
+  margin-right: $wuiSizeXS !important;
+}
+
+.wuiQuickSelectPopover__anchor {
+  height: 100%;
+}

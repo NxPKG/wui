@@ -1,0 +1,27 @@
+.wuiCommentTimeline__content {
+  min-width: $wuiSizeXXL;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wuiCommentTimeline__icon--default {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  border-radius: 50%;
+  background-color: $wuiColorLightestShade;
+
+  &.wuiCommentTimeline__icon--regular {
+    width: $wuiSizeXXL;
+    height: $wuiSizeXXL;
+  }
+
+  &.wuiCommentTimeline__icon--update {
+    width: $wuiSizeL;
+    height: $wuiSizeL;
+  }
+}

@@ -1,0 +1,327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiPinnableListGroup can have custom pin icon titles 1`] = `
+<ul
+  aria-label="aria-label"
+  class="wuiListGroup wuiListGroup--gutterSmall wuiListGroup-maxWidthDefault wuiPinnableListGroup testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <span
+      class="wuiListGroupItem__text"
+    >
+      <div
+        class="wuiListGroupItem__icon"
+        data-wuiicon-type="stop"
+      />
+      <span
+        class="wuiListGroupItem__label"
+        title="Label with iconType"
+      >
+        Label with iconType
+      </span>
+    </span>
+    <button
+      aria-label="Pin Label with iconType to the top"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiPinnableListGroup__itemExtraAction"
+      title="Pin Label with iconType to the top"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="pinFilled"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <span
+      class="wuiListGroupItem__text"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Custom extra action"
+      >
+        Custom extra action
+      </span>
+    </span>
+    <button
+      aria-label="bell"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiListGroupItem__extraAction-alwaysShow"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="bell"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isActive wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <a
+      class="wuiListGroupItem__button"
+      href="#"
+      rel="noreferrer"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Active link"
+      >
+        Active link
+      </span>
+    </a>
+    <button
+      aria-label="Pin Active link to the top"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiPinnableListGroup__itemExtraAction"
+      title="Pin Active link to the top"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="pinFilled"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <button
+      class="wuiListGroupItem__button"
+      type="button"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Button with onClick"
+      >
+        Button with onClick
+      </span>
+    </button>
+    <button
+      aria-label="Unpin Button with onClick to the top"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiListGroupItem__extraAction-alwaysShow wuiPinnableListGroup__itemExtraAction wuiPinnableListGroup__itemExtraAction-pinned"
+      title="Unpin Button with onClick to the top"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="pinFilled"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <a
+      class="wuiListGroupItem__button"
+      href="#"
+      rel="noreferrer"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Link with href"
+      >
+        Link with href
+      </span>
+    </a>
+    <button
+      aria-label="Pin Link with href to the top"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiPinnableListGroup__itemExtraAction"
+      title="Pin Link with href to the top"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="pinFilled"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable wuiPinnableListGroup__item"
+  >
+    <a
+      class="wuiListGroupItem__button"
+      href="#"
+      rel="noreferrer"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Not pinnable"
+      >
+        Not pinnable
+      </span>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`WuiPinnableListGroup is rendered 1`] = `
+<ul
+  aria-label="aria-label"
+  class="wuiListGroup wuiListGroup--gutterSmall wuiListGroup-maxWidthDefault wuiPinnableListGroup testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <span
+      class="wuiListGroupItem__text"
+    >
+      <div
+        class="wuiListGroupItem__icon"
+        data-wuiicon-type="stop"
+      />
+      <span
+        class="wuiListGroupItem__label"
+        title="Label with iconType"
+      >
+        Label with iconType
+      </span>
+    </span>
+    <button
+      aria-label="Pin item"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiPinnableListGroup__itemExtraAction"
+      title="Pin item"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="pinFilled"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <span
+      class="wuiListGroupItem__text"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Custom extra action"
+      >
+        Custom extra action
+      </span>
+    </span>
+    <button
+      aria-label="bell"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiListGroupItem__extraAction-alwaysShow"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="bell"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isActive wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <a
+      class="wuiListGroupItem__button"
+      href="#"
+      rel="noreferrer"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Active link"
+      >
+        Active link
+      </span>
+    </a>
+    <button
+      aria-label="Pin item"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiPinnableListGroup__itemExtraAction"
+      title="Pin item"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="pinFilled"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <button
+      class="wuiListGroupItem__button"
+      type="button"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Button with onClick"
+      >
+        Button with onClick
+      </span>
+    </button>
+    <button
+      aria-label="Unpin item"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiListGroupItem__extraAction-alwaysShow wuiPinnableListGroup__itemExtraAction wuiPinnableListGroup__itemExtraAction-pinned"
+      title="Unpin item"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="pinFilled"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable wuiListGroupItem-hasExtraAction wuiPinnableListGroup__item"
+  >
+    <a
+      class="wuiListGroupItem__button"
+      href="#"
+      rel="noreferrer"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Link with href"
+      >
+        Link with href
+      </span>
+    </a>
+    <button
+      aria-label="Pin item"
+      class="wuiButtonIcon wuiButtonIcon--primary wuiListGroupItem__extraAction wuiPinnableListGroup__itemExtraAction"
+      title="Pin item"
+      type="button"
+    >
+      <div
+        aria-hidden="true"
+        class="wuiButtonIcon__icon"
+        data-wuiicon-type="pinFilled"
+      />
+    </button>
+  </li>
+  <li
+    class="wuiListGroupItem wuiListGroupItem--medium wuiListGroupItem-isClickable wuiPinnableListGroup__item"
+  >
+    <a
+      class="wuiListGroupItem__button"
+      href="#"
+      rel="noreferrer"
+    >
+      <span
+        class="wuiListGroupItem__label"
+        title="Not pinnable"
+      >
+        Not pinnable
+      </span>
+    </a>
+  </li>
+</ul>
+`;

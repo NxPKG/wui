@@ -1,0 +1,44 @@
+$textColors: (
+  subdued: $wuiTextSubduedColor,
+  primary: $wuiColorPrimaryText,
+  secondary: $wuiColorSecondaryText,
+  accent: $wuiColorAccentText,
+  warning: $wuiColorWarningText,
+  danger: $wuiColorDangerText,
+  text: $wuiTextColor,
+  ghost: $wuiColorGhost,
+);
+
+.wuiLink {
+  @include wuiLink;
+
+  .wuiLink__externalIcon {
+    margin-left: $wuiSizeXS;
+  }
+
+  &.wuiLink-disabled {
+    text-decoration: none;
+    cursor: default;
+  }
+
+  // Create color modifiers based on the map
+  @each $name, $color in $textColors {
+    &.wuiLink--#{$name} {
+      color: $color;
+
+      &:hover {
+        color: darken($color, 10%);
+      }
+
+      &:focus {
+        outline: solid 3px transparentize($color, .9);
+        background-color: transparentize($color, .9);
+      }
+    }
+  }
+}
+
+// Make button WuiLink's text selectable
+button.wuiLink { // sass-lint:disable-line no-qualifying-elements
+  user-select: text;
+}

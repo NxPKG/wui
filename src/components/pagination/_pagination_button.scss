@@ -1,0 +1,39 @@
+.wuiPaginationButton {
+  font-size: $wuiFontSizeS;
+  padding: 0;
+  text-align: center;
+  border-radius: $wuiBorderRadius;
+}
+
+.wuiPaginationButton-isActive {
+  font-weight: $wuiFontWeightBold;
+
+  &#{&} {
+    color: $wuiColorPrimary;
+
+    .wuiButtonEmpty__content {
+      cursor: default;
+    }
+
+    &,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.wuiPaginationButton-isPlaceholder {
+  align-items: baseline;
+  color: $wuiButtonColorDisabledText;
+  font-size: $wuiFontSizeS;
+  padding: 0 $wuiSizeS;
+  height: $wuiSizeL;
+  padding-top: $wuiSizeM / 2;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiPaginationButton-isPlaceholder,
+  .wuiPaginationButton--hideOnMobile {
+    display: none;
+  }
+}

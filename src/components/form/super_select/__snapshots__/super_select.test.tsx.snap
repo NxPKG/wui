@@ -1,0 +1,725 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiSuperSelect is rendered 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value=""
+    />
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: , is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-label="aria-label"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl testClass1 testClass2"
+          data-test-subj="test subject string"
+          type="button"
+        />
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSuperSelect props compressed is rendered 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value=""
+    />
+    <div
+      class="wuiFormControlLayout wuiFormControlLayout--compressed"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: , is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-label="aria-label"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl wuiSuperSelectControl--compressed testClass1 testClass2"
+          data-test-subj="test subject string"
+          type="button"
+        />
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSuperSelect props custom display is propagated to dropdown 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value=""
+    />
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: , is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl wuiSuperSelect--isOpen__button"
+          data-test-subj="superSelect"
+          type="button"
+        />
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+    <div
+      data-focus-lock-disabled="disabled"
+    >
+      <div
+        aria-live="assertive"
+        aria-modal="true"
+        class="wuiPanel wuiPopover__panel wuiPopover__panel--bottom wuiPopover__panel-noArrow wuiSuperSelect__popoverPanel"
+        role="dialog"
+        style="top: 8px; left: -22px; z-index: 2000;"
+      >
+        <div
+          class="wuiPopover__panelArrow wuiPopover__panelArrow--bottom"
+        />
+        <div>
+          <p
+            class="wuiScreenReaderOnly"
+            role="alert"
+          >
+            You are in a form selector of 2 items and must select a single option. Use the up and down keys to navigate or escape to close.
+          </p>
+          <div
+            class="wuiSuperSelect__listbox"
+            role="listbox"
+            tabindex="0"
+          >
+            <button
+              aria-selected="false"
+              class="wuiContextMenuItem wuiSuperSelect__item"
+              id="1"
+              role="option"
+              type="button"
+            >
+              <span
+                class="wuiContextMenu__itemLayout"
+              >
+                <div
+                  class="wuiContextMenu__icon"
+                  data-wuiicon-type="empty"
+                />
+                <span
+                  class="wuiContextMenuItem__text"
+                >
+                  Custom Display #1
+                </span>
+              </span>
+            </button>
+            <button
+              aria-selected="false"
+              class="wuiContextMenuItem wuiSuperSelect__item"
+              id="2"
+              role="option"
+              type="button"
+            >
+              <span
+                class="wuiContextMenu__itemLayout"
+              >
+                <div
+                  class="wuiContextMenu__icon"
+                  data-wuiicon-type="empty"
+                />
+                <span
+                  class="wuiContextMenuItem__text"
+                >
+                  Custom Display #2
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiSuperSelect props fullWidth is rendered 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect wuiSuperSelect--fullWidth"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value=""
+    />
+    <div
+      class="wuiFormControlLayout wuiFormControlLayout--fullWidth"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: , is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-label="aria-label"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl wuiSuperSelectControl--fullWidth testClass1 testClass2"
+          data-test-subj="test subject string"
+          type="button"
+        />
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSuperSelect props is rendered with a prepend and append 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value=""
+    />
+    <div
+      class="wuiFormControlLayout wuiFormControlLayout--group"
+    >
+      <label
+        class="wuiFormLabel wuiFormControlLayout__prepend"
+      >
+        prepend
+      </label>
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: , is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-label="aria-label"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl wuiSuperSelectControl--inGroup testClass1 testClass2"
+          data-test-subj="test subject string"
+          type="button"
+        />
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+      <label
+        class="wuiFormLabel wuiFormControlLayout__append"
+      >
+        append
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSuperSelect props more props are propogated to each option 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value="1"
+    />
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: Option #1, is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl wuiSuperSelect--isOpen__button"
+          data-test-subj="superSelect"
+          type="button"
+        >
+          Option #1
+        </button>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+    <div
+      data-focus-lock-disabled="disabled"
+    >
+      <div
+        aria-live="assertive"
+        aria-modal="true"
+        class="wuiPanel wuiPopover__panel wuiPopover__panel--bottom wuiPopover__panel-noArrow wuiSuperSelect__popoverPanel"
+        role="dialog"
+        style="top: 8px; left: -22px; z-index: 2000;"
+      >
+        <div
+          class="wuiPopover__panelArrow wuiPopover__panelArrow--bottom"
+        />
+        <div>
+          <p
+            class="wuiScreenReaderOnly"
+            role="alert"
+          >
+            You are in a form selector of 2 items and must select a single option. Use the up and down keys to navigate or escape to close.
+          </p>
+          <div
+            aria-activedescendant="1"
+            class="wuiSuperSelect__listbox"
+            role="listbox"
+            tabindex="0"
+          >
+            <button
+              aria-selected="true"
+              class="wuiContextMenuItem wuiSuperSelect__item wuiContextMenuItem-isDisabled"
+              disabled=""
+              id="1"
+              role="option"
+              type="button"
+            >
+              <span
+                class="wuiContextMenu__itemLayout"
+              >
+                <div
+                  class="wuiContextMenu__icon"
+                  data-wuiicon-type="check"
+                />
+                <span
+                  class="wuiContextMenuItem__text"
+                >
+                  Option #1
+                </span>
+              </span>
+            </button>
+            <button
+              aria-selected="false"
+              class="wuiContextMenuItem wuiSuperSelect__item"
+              data-test-subj="option two"
+              id="2"
+              role="option"
+              type="button"
+            >
+              <span
+                class="wuiContextMenu__itemLayout"
+              >
+                <div
+                  class="wuiContextMenu__icon"
+                  data-wuiicon-type="empty"
+                />
+                <span
+                  class="wuiContextMenuItem__text"
+                >
+                  Option #2
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiSuperSelect props options are rendered when select is open 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value=""
+    />
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: , is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl wuiSuperSelect--isOpen__button"
+          data-test-subj="superSelect"
+          type="button"
+        />
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+    <div
+      data-focus-lock-disabled="disabled"
+    >
+      <div
+        aria-live="assertive"
+        aria-modal="true"
+        class="wuiPanel wuiPopover__panel wuiPopover__panel--bottom wuiPopover__panel-noArrow wuiSuperSelect__popoverPanel"
+        role="dialog"
+        style="top: 8px; left: -22px; z-index: 2000;"
+      >
+        <div
+          class="wuiPopover__panelArrow wuiPopover__panelArrow--bottom"
+        />
+        <div>
+          <p
+            class="wuiScreenReaderOnly"
+            role="alert"
+          >
+            You are in a form selector of 2 items and must select a single option. Use the up and down keys to navigate or escape to close.
+          </p>
+          <div
+            class="wuiSuperSelect__listbox"
+            role="listbox"
+            tabindex="0"
+          >
+            <button
+              aria-selected="false"
+              class="wuiContextMenuItem wuiSuperSelect__item"
+              id="1"
+              role="option"
+              type="button"
+            >
+              <span
+                class="wuiContextMenu__itemLayout"
+              >
+                <div
+                  class="wuiContextMenu__icon"
+                  data-wuiicon-type="empty"
+                />
+                <span
+                  class="wuiContextMenuItem__text"
+                >
+                  Option #1
+                </span>
+              </span>
+            </button>
+            <button
+              aria-selected="false"
+              class="wuiContextMenuItem wuiSuperSelect__item"
+              id="2"
+              role="option"
+              type="button"
+            >
+              <span
+                class="wuiContextMenu__itemLayout"
+              >
+                <div
+                  class="wuiContextMenu__icon"
+                  data-wuiicon-type="empty"
+                />
+                <span
+                  class="wuiContextMenuItem__text"
+                >
+                  Option #2
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-focus-guard="true"
+      style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`WuiSuperSelect props select component is rendered 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value=""
+    />
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: , is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl"
+          type="button"
+        />
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiSuperSelect props valueSelected is rendered 1`] = `
+<div
+  class="wuiPopover wuiPopover--anchorDownCenter wuiPopover--displayBlock wuiSuperSelect"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <input
+      type="hidden"
+      value="2"
+    />
+    <div
+      class="wuiFormControlLayout"
+    >
+      <div
+        class="wuiFormControlLayout__childrenWrapper"
+      >
+        <span
+          class="wuiScreenReaderOnly"
+          id="generated-id"
+        >
+          Select an option: Option #2, is selected
+        </span>
+        <button
+          aria-haspopup="true"
+          aria-labelledby="undefined generated-id"
+          class="wuiSuperSelectControl"
+          type="button"
+        >
+          Option #2
+        </button>
+        <div
+          class="wuiFormControlLayoutIcons wuiFormControlLayoutIcons--right"
+        >
+          <span
+            class="wuiFormControlLayoutCustomIcon"
+          >
+            <div
+              aria-hidden="true"
+              class="wuiFormControlLayoutCustomIcon__icon"
+              data-wuiicon-type="arrowDown"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

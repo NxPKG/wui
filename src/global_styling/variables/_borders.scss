@@ -1,0 +1,10 @@
+// Borders
+
+$wuiBorderWidthThin: 1px !default;
+$wuiBorderWidthThick: 2px !default;
+
+$wuiBorderColor: $wuiColorLightShade !default;
+$wuiBorderRadius: 4px !default;
+$wuiBorderThick: $wuiBorderWidthThick solid $wuiBorderColor !default;
+$wuiBorderThin: $wuiBorderWidthThin solid $wuiBorderColor !default;
+$wuiBorderEditable: $wuiBorderWidthThick dotted $wuiBorderColor !default;

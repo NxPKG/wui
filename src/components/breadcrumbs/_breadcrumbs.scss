@@ -1,0 +1,68 @@
+/**
+ * 1. Add vertical space between breadcrumbs,
+ *    but make sure the whole breadcrumb set doesn't add space below itself
+ */
+
+.wuiBreadcrumbs {
+  @include wuiFontSizeS;
+  margin-bottom: -$wuiSizeXS; /* 1 */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wuiBreadcrumb {
+  display: inline-block;
+  margin-bottom: $wuiSizeXS; /* 1 */
+
+  &:not(.wuiBreadcrumb--last) {
+    margin-right: $wuiBreadcrumbSpacing;
+    color: $wuiTextSubduedColor;
+  }
+}
+
+.wuiBreadcrumb--last {
+  font-weight: $wuiFontWeightMedium;
+}
+
+.wuiBreadcrumb--collapsed {
+  flex-shrink: 0;
+}
+
+.wuiBreadcrumbSeparator {
+  flex-shrink: 0;
+  display: inline-block;
+  margin-right: $wuiBreadcrumbSpacing;
+  width: 1px;
+  height: $wuiSize;
+  transform: translateY(-1px) rotate(15deg);
+  background: $wuiColorLightShade;
+}
+
+.wuiBreadcrumbs__inPopover .wuiBreadcrumb--last {
+  font-weight: $wuiFontWeightRegular;
+  color: $wuiColorDarkShade !important; // sass-lint:disable-line no-important
+}
+
+.wuiBreadcrumbs--truncate {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  .wuiBreadcrumb:not(.wuiBreadcrumb--collapsed) {
+    max-width: $wuiBreadcrumbTruncateWidth;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.wuiBreadcrumb--last {
+      max-width: none;
+    }
+  }
+}
+
+.wuiBreadcrumb--truncate {
+  @include wuiTextTruncate;
+  max-width: $wuiBreadcrumbTruncateWidth;
+  text-align: center;
+  vertical-align: top; // overflow hidden causes misalignment of links and slashes, this fixes that
+}

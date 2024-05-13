@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTextAlign direction prop center is rendered 1`] = `
+<div
+  class="wuiTextAlign wuiTextAlign--center"
+/>
+`;
+
+exports[`WuiTextAlign direction prop left is rendered 1`] = `
+<div
+  class="wuiTextAlign wuiTextAlign--left"
+/>
+`;
+
+exports[`WuiTextAlign direction prop right is rendered 1`] = `
+<div
+  class="wuiTextAlign wuiTextAlign--right"
+/>
+`;
+
+exports[`WuiTextAlign is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiTextAlign wuiTextAlign--left testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;

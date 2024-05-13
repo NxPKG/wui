@@ -1,0 +1,7 @@
+.wuiRadioGroup__item + .wuiRadioGroup__item {
+  margin-top: $wuiSizeXS;
+
+  &.wuiRadio--compressed {
+    margin-top: 0;
+  }
+}

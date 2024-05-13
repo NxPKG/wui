@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiEmptyPrompt is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiEmptyPrompt testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    color="subdued"
+    data-wuiicon-type="arrowUp"
+  />
+  <div
+    class="wuiSpacer wuiSpacer--s"
+  />
+  <span
+    class="wuiTextColor wuiTextColor--subdued"
+  >
+    <h2
+      class="wuiTitle wuiTitle--medium"
+    >
+      Title
+    </h2>
+    <div
+      class="wuiSpacer wuiSpacer--m"
+    />
+    <div
+      class="wuiText wuiText--medium"
+    >
+      <p>
+        Body
+      </p>
+    </div>
+  </span>
+  <div
+    class="wuiSpacer wuiSpacer--l"
+  />
+  <div
+    class="wuiSpacer wuiSpacer--s"
+  />
+  <div>
+    Actions
+  </div>
+</div>
+`;
+
+exports[`WuiEmptyPrompt props actions renders alone 1`] = `
+<div
+  class="wuiEmptyPrompt"
+>
+  <div
+    class="wuiSpacer wuiSpacer--s"
+  />
+  actions
+</div>
+`;
+
+exports[`WuiEmptyPrompt props actions renders an array 1`] = `
+<div
+  class="wuiEmptyPrompt"
+>
+  <div
+    class="wuiSpacer wuiSpacer--s"
+  />
+  <div
+    class="wuiFlexGroup wuiFlexGroup--gutterMedium wuiFlexGroup--alignItemsCenter wuiFlexGroup--justifyContentCenter wuiFlexGroup--directionColumn wuiFlexGroup--responsive"
+  >
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      action1
+    </div>
+    <div
+      class="wuiFlexItem wuiFlexItem--flexGrowZero"
+    >
+      action2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiEmptyPrompt props body renders alone 1`] = `
+<div
+  class="wuiEmptyPrompt"
+>
+  <span
+    class="wuiTextColor wuiTextColor--subdued"
+  >
+    <div
+      class="wuiText wuiText--medium"
+    >
+      body
+    </div>
+  </span>
+</div>
+`;
+
+exports[`WuiEmptyPrompt props iconType renders alone 1`] = `
+<div
+  class="wuiEmptyPrompt"
+>
+  <div
+    color="subdued"
+    data-wuiicon-type="arrowUp"
+  />
+  <div
+    class="wuiSpacer wuiSpacer--s"
+  />
+</div>
+`;
+
+exports[`WuiEmptyPrompt props title renders alone 1`] = `
+<div
+  class="wuiEmptyPrompt"
+>
+  <span
+    class="wuiTextColor wuiTextColor--subdued"
+  >
+    <div
+      class="wuiTitle wuiTitle--medium"
+    >
+      title
+    </div>
+    <div
+      class="wuiSpacer wuiSpacer--m"
+    />
+  </span>
+</div>
+`;

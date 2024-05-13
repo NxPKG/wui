@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiIconTip is rendered 1`] = `
+<span
+  class="wuiToolTipAnchor"
+>
+  <div
+    aria-label="aria-label"
+    data-wuiicon-type="questionInCircle"
+    tabindex="0"
+  />
+</span>
+`;
+
+exports[`WuiIconTip props color is rendered as the icon color 1`] = `
+<span
+  class="wuiToolTipAnchor"
+>
+  <div
+    aria-label="Info"
+    color="warning"
+    data-wuiicon-type="questionInCircle"
+    tabindex="0"
+  />
+</span>
+`;
+
+exports[`WuiIconTip props size is rendered as the icon size 1`] = `
+<span
+  class="wuiToolTipAnchor"
+>
+  <div
+    aria-label="Info"
+    data-wuiicon-type="questionInCircle"
+    tabindex="0"
+  />
+</span>
+`;
+
+exports[`WuiIconTip props type is rendered as the icon 1`] = `
+<span
+  class="wuiToolTipAnchor"
+>
+  <div
+    aria-label="Info"
+    data-wuiicon-type="alert"
+    tabindex="0"
+  />
+</span>
+`;

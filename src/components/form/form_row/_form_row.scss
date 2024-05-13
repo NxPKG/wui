@@ -1,0 +1,101 @@
+/**
+ * 1. Coerce inline form elements to behave as block-level elements.
+ * 2. For inline forms, we need to add margin if the label doesn't exist.
+ */
+.wuiFormRow {
+  display: flex; /* 1 */
+  flex-direction: column; /* 1 */
+  max-width: $wuiFormMaxWidth;
+
+  + .wuiFormRow,
+  + .wuiButton {
+    margin-top: $wuiSize;
+  }
+}
+
+.wuiFormRow--fullWidth {
+  max-width: 100%;
+}
+
+.wuiFormRow--hasEmptyLabelSpace {
+  margin-top: ($wuiFontSizeXS * $wuiLineHeight) + $wuiSizeXS; /* 2 */
+  // the following ensure that contents that aren't inherently the same height
+  // as inputs will align to the vertical center
+  min-height: $wuiFormControlHeight;
+  padding-bottom: 0;
+  justify-content: center;
+}
+
+.wuiFormRow__labelWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: $wuiSizeXS;
+}
+
+.wuiFormRow--horizontal {
+  flex-direction: row;
+  align-items: stretch;
+
+  .wuiFormRow__label {
+    @include wuiTextBreakWord;
+    hyphens: auto;
+    max-width: 100%; // Fixes IE
+  }
+
+  .wuiFormRow__labelWrapper {
+    display: block;
+    line-height: $wuiFormControlCompressedHeight - 1px; // The 1px less helps the alignment of the text baseline
+    width: calc(33% - #{$wuiSizeS});
+    margin-right: $wuiSizeS;
+    margin-bottom: 0;
+  }
+
+  .wuiFormRow__fieldWrapper {
+    width: 67%;
+  }
+
+  + .wuiFormRow--horizontal {
+    margin-top: $wuiSizeS;
+  }
+
+  + .wuiFormRow--horizontal.wuiFormRow--hasSwitch {
+    margin-top: $wuiSizeM; // More spacing since we reduced the height to match that of the switch
+  }
+
+  &.wuiFormRow--hasSwitch {
+    .wuiFormRow__labelWrapper {
+      line-height: $wuiSwitchHeight - 1px; // The 1px less helps the alignment of the text baseline
+      width: auto;
+      min-width: calc(33% - #{$wuiSizeS});
+    }
+
+    .wuiFormRow__fieldWrapper {
+      width: auto;
+
+      .wuiSwitch--compressed {
+        margin-top: $wuiSizeXS / 2; // Better vertical alignment of a compressed switch to the horizontal label
+      }
+    }
+
+    + .wuiFormRow--horizontal {
+      margin-top: $wuiSizeM; // More spacing since we reduced the height to match that of the switch
+    }
+  }
+}
+
+.wuiFormRow__fieldWrapperDisplayOnly {
+  min-height: $wuiFormControlHeight;
+  display: flex;
+  align-items: center;
+}
+
+.wuiFormRow--compressed {
+  &.wuiFormRow--hasEmptyLabelSpace {
+    min-height: $wuiFormControlCompressedHeight;
+  }
+
+  .wuiFormRow__fieldWrapperDisplayOnly {
+    min-height: $wuiFormControlCompressedHeight;
+  }
+}

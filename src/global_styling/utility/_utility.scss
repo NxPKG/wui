@@ -1,0 +1,131 @@
+// This file utilizes !importants on purpose
+// sass-lint:disable no-important
+
+// Vertical alignment
+.wui-alignBaseline { vertical-align: baseline !important; }
+.wui-alignBottom { vertical-align: bottom !important; }
+.wui-alignMiddle { vertical-align: middle !important; }
+.wui-alignTop { vertical-align: top !important; }
+
+// Display
+.wui-displayBlock {display: block !important;}
+.wui-displayInline {display: inline !important;}
+.wui-displayInlineBlock {display: inline-block !important;}
+
+.wui-fullWidth {
+  display: block !important;
+  width: 100% !important;
+}
+
+// Text
+.wui-textCenter {text-align: center !important;}
+.wui-textLeft {text-align: left !important;}
+.wui-textRight {text-align: right !important;}
+.wui-textNoWrap {white-space: nowrap !important;}
+.wui-textInheritColor {color: inherit !important;}
+
+.wui-textBreakWord {
+  @include wuiTextBreakWord;
+}
+
+.wui-textBreakAll {
+  overflow-wrap: break-word !important; // Fixes FF when dashes are involved #2288
+  word-break: break-all !important;
+}
+
+.wui-textBreakNormal {
+  overflow-wrap: normal !important;
+  word-wrap: normal !important;
+  word-break: normal !important;
+}
+
+// TODO: 7/23 DEPRECATE in favor of .wui-textBreakWord now that it's working as intended
+.wui-textOverflowWrap {
+  @include internetExplorerOnly {
+    word-break: break-all !important;
+  }
+  overflow-wrap: break-word !important;
+}
+
+.wui-textTruncate {
+  @include wuiTextTruncate;
+}
+
+/**
+ *  Responsive
+ *
+ *  1. Be sure to hide the element initially
+ */
+
+[class*='wui-showFor'] {
+  display: none !important; /* 1 */
+}
+
+@each $size in $wuiBreakpointKeys {
+  .wui-hideFor--#{$size} {
+    @include wuiBreakpoint($size) { display: none !important; }
+  }
+
+  .wui-showFor--#{$size} {
+    @include  wuiBreakpoint($size) { display: inline !important; }
+  }
+
+  .wui-showFor--#{$size}--block {
+    @include  wuiBreakpoint($size) { display: block !important; }
+  }
+
+  .wui-showFor--#{$size}--inlineBlock {
+    @include  wuiBreakpoint($size) { display: inline-block !important; }
+  }
+
+  .wui-showFor--#{$size}--flex {
+    @include  wuiBreakpoint($size) { display: flex !important; }
+  }
+}
+
+/**
+  * IE doesn't properly wrap groups if it is within a flex-item of a flex-group.
+  * Adding the following styles to the flex-item that contains the wrapping group, will fix IE.
+  * https://github.com/philipwalton/flexbugs/issues/104
+  */
+.wuiIEFlexWrapFix {
+  @include internetExplorerOnly {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+}
+
+/**
+  * Overflow scrolling
+  */
+.wui-yScroll {
+  @include wuiYScroll;
+}
+
+.wui-xScroll {
+  @include wuiXScroll;
+}
+
+/**
+  * Overflow scrolling with shadows
+  */
+.wui-yScrollWithShadows {
+  @include wuiYScrollWithShadows;
+}
+
+.wui-xScrollWithShadows {
+  @include wuiXScrollWithShadows;
+}
+
+// TODO: 10/22 DEPRECATE in favor of the correctly formatted class .wui-yScrollWithShadows
+.wuiYScrollWithShadows {
+  @include wuiYScrollWithShadows;
+}
+
+/**
+  * Forcing focus ring on non-WUI elements
+  */
+.wui-isFocusable:focus {
+  @include wuiFocusRing('large');
+}

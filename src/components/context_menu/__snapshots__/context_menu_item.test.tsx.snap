@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiContextMenuItem is rendered 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiContextMenuItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  type="button"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <span
+      class="wuiContextMenuItem__text"
+    >
+      Hello
+    </span>
+  </span>
+</button>
+`;
+
+exports[`WuiContextMenuItem props disabled is rendered 1`] = `
+<button
+  class="wuiContextMenuItem wuiContextMenuItem-isDisabled"
+  disabled=""
+  type="button"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <span
+      class="wuiContextMenuItem__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiContextMenuItem props hasPanel is rendered 1`] = `
+<button
+  class="wuiContextMenuItem"
+  type="button"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <span
+      class="wuiContextMenuItem__text"
+    />
+    <div
+      class="wuiContextMenu__arrow"
+      data-wuiicon-type="arrowRight"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiContextMenuItem props href renders a link 1`] = `
+<a
+  aria-label="aria-label"
+  class="wuiContextMenuItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  href="url"
+  rel="noreferrer"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <span
+      class="wuiContextMenuItem__text"
+    />
+  </span>
+</a>
+`;
+
+exports[`WuiContextMenuItem props icon is rendered 1`] = `
+<button
+  class="wuiContextMenuItem"
+  type="button"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <span
+      class="wuiContextMenu__icon"
+    />
+    <span
+      class="wuiContextMenuItem__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiContextMenuItem props onClick renders a button 1`] = `
+<button
+  aria-label="aria-label"
+  class="wuiContextMenuItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  type="button"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <span
+      class="wuiContextMenuItem__text"
+    />
+  </span>
+</button>
+`;
+
+exports[`WuiContextMenuItem props rel is rendered 1`] = `
+<a
+  aria-label="aria-label"
+  class="wuiContextMenuItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  href="url"
+  rel="help noreferrer"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <span
+      class="wuiContextMenuItem__text"
+    />
+  </span>
+</a>
+`;
+
+exports[`WuiContextMenuItem props target is rendered 1`] = `
+<a
+  aria-label="aria-label"
+  class="wuiContextMenuItem testClass1 testClass2"
+  data-test-subj="test subject string"
+  href="url"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <span
+    class="wuiContextMenu__itemLayout"
+  >
+    <span
+      class="wuiContextMenuItem__text"
+    />
+  </span>
+</a>
+`;

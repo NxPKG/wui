@@ -1,0 +1,16 @@
+.wuiHeaderLinks {
+  display: flex;
+}
+
+.wuiHeaderLinks__list {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+@each $name, $gutterSize in $wuiHeaderLinksGutterSizes {
+  .wuiHeaderLinks__list--#{$name} > * {
+    // Apply margins to any children
+    margin: 0 $gutterSize;
+  }
+}

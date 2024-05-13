@@ -1,0 +1,569 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiAccordion behavior closes when clicked twice 1`] = `
+<WuiAccordion
+  arrowDisplay="left"
+  id="12"
+  initialIsOpen={false}
+  isLoading={false}
+  isLoadingMessage={false}
+  paddingSize="none"
+>
+  <div
+    className="wuiAccordion"
+  >
+    <div
+      className="wuiAccordion__triggerWrapper"
+    >
+      <button
+        aria-controls="12"
+        aria-expanded={false}
+        className="wuiAccordion__button"
+        id="generated-id"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="wuiAccordion__iconWrapper"
+        >
+          <WuiIcon
+            className="wuiAccordion__icon"
+            size="m"
+            type="arrowRight"
+          >
+            <div
+              className="wuiAccordion__icon"
+              data-wuiicon-type="arrowRight"
+              size="m"
+            />
+          </WuiIcon>
+        </span>
+        <span
+          className="wuiIEFlexWrapFix"
+        />
+      </button>
+    </div>
+    <div
+      className="wuiAccordion__childWrapper"
+      id="12"
+    >
+      <WuiResizeObserver
+        onResize={[Function]}
+      >
+        <div>
+          <div
+            className=""
+          />
+        </div>
+      </WuiResizeObserver>
+    </div>
+  </div>
+</WuiAccordion>
+`;
+
+exports[`WuiAccordion behavior opens when clicked once 1`] = `
+<WuiAccordion
+  arrowDisplay="left"
+  id="11"
+  initialIsOpen={false}
+  isLoading={false}
+  isLoadingMessage={false}
+  paddingSize="none"
+>
+  <div
+    className="wuiAccordion wuiAccordion-isOpen"
+  >
+    <div
+      className="wuiAccordion__triggerWrapper"
+    >
+      <button
+        aria-controls="11"
+        aria-expanded={true}
+        className="wuiAccordion__button"
+        id="generated-id"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="wuiAccordion__iconWrapper"
+        >
+          <WuiIcon
+            className="wuiAccordion__icon wuiAccordion__icon-isOpen"
+            size="m"
+            type="arrowRight"
+          >
+            <div
+              className="wuiAccordion__icon wuiAccordion__icon-isOpen"
+              data-wuiicon-type="arrowRight"
+              size="m"
+            />
+          </WuiIcon>
+        </span>
+        <span
+          className="wuiIEFlexWrapFix"
+        />
+      </button>
+    </div>
+    <div
+      className="wuiAccordion__childWrapper"
+      id="11"
+    >
+      <WuiResizeObserver
+        onResize={[Function]}
+      >
+        <div>
+          <div
+            className=""
+          />
+        </div>
+      </WuiResizeObserver>
+    </div>
+  </div>
+</WuiAccordion>
+`;
+
+exports[`WuiAccordion is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiAccordion testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="0"
+      aria-expanded="false"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      />
+    </button>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="0"
+  >
+    <div>
+      <div
+        class=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props arrowDisplay none is rendered 1`] = `
+<div
+  class="wuiAccordion"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="6"
+      aria-expanded="false"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiIEFlexWrapFix"
+      />
+    </button>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="6"
+  >
+    <div>
+      <div
+        class=""
+      >
+        <p>
+          You can see me.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props arrowDisplay right is rendered 1`] = `
+<div
+  class="wuiAccordion"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="5"
+      aria-expanded="false"
+      class="wuiAccordion__button wuiAccordion__buttonReverse"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      />
+    </button>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="5"
+  >
+    <div>
+      <div
+        class=""
+      >
+        <p>
+          You can see me.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props buttonContent is rendered 1`] = `
+<div
+  class="wuiAccordion"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="2"
+      aria-expanded="false"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      >
+        <div>
+          Button content
+        </div>
+      </span>
+    </button>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="2"
+  >
+    <div>
+      <div
+        class=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props buttonContentClassName is rendered 1`] = `
+<div
+  class="wuiAccordion"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="1"
+      aria-expanded="false"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix button content class name"
+      />
+    </button>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="1"
+  >
+    <div>
+      <div
+        class=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props extraAction is rendered 1`] = `
+<div
+  class="wuiAccordion"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="3"
+      aria-expanded="false"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      />
+    </button>
+    <div
+      class="wuiAccordion__optionalAction"
+    >
+      <button>
+        Extra action
+      </button>
+    </div>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="3"
+  >
+    <div>
+      <div
+        class=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props forceState is rendered 1`] = `
+<div
+  class="wuiAccordion"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="7"
+      aria-expanded="false"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      />
+    </button>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="7"
+  >
+    <div>
+      <div
+        class=""
+      >
+        <p>
+          You can not see me
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props initialIsOpen is rendered 1`] = `
+<div
+  class="wuiAccordion wuiAccordion-isOpen"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="4"
+      aria-expanded="true"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon wuiAccordion__icon-isOpen"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      />
+    </button>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="4"
+  >
+    <div>
+      <div
+        class=""
+      >
+        <p>
+          You can see me.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props isLoading is rendered 1`] = `
+<div
+  class="wuiAccordion"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="9"
+      aria-expanded="false"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      />
+    </button>
+    <div
+      class="wuiAccordion__optionalAction"
+    >
+      <span
+        class="wuiLoadingSpinner wuiLoadingSpinner--medium"
+      />
+    </div>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="9"
+  >
+    <div>
+      <div
+        class="wuiAccordion__children-isLoading"
+      >
+        <p>
+          You can see me.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WuiAccordion props isLoadingMessage is rendered 1`] = `
+<div
+  class="wuiAccordion"
+>
+  <div
+    class="wuiAccordion__triggerWrapper"
+  >
+    <button
+      aria-controls="10"
+      aria-expanded="false"
+      class="wuiAccordion__button"
+      id="generated-id"
+      type="button"
+    >
+      <span
+        class="wuiAccordion__iconWrapper"
+      >
+        <div
+          class="wuiAccordion__icon"
+          data-wuiicon-type="arrowRight"
+        />
+      </span>
+      <span
+        class="wuiIEFlexWrapFix"
+      />
+    </button>
+    <div
+      class="wuiAccordion__optionalAction"
+    >
+      <span
+        class="wuiLoadingSpinner wuiLoadingSpinner--medium"
+      />
+    </div>
+  </div>
+  <div
+    class="wuiAccordion__childWrapper"
+    id="10"
+  >
+    <div>
+      <div
+        class="wuiAccordion__children-isLoading"
+      >
+        <span
+          class="wuiLoadingSpinner wuiLoadingSpinner--medium wuiAccordion__spinner"
+        />
+        <span>
+          Please wait
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

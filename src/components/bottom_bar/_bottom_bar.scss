@@ -1,0 +1,35 @@
+.wuiBottomBar {
+  @include wuiBottomShadowFlat($wuiShadowColorLarge);
+  background: tintOrShade($wuiColorFullShade, 25%, 100%);
+  color: $wuiColorEmptyShade;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  animation: wuiBottomBarAppear $wuiAnimSpeedSlow $wuiAnimSlightResistance;
+  z-index: $wuiZHeader - 2;
+
+  &.wuiBottomBar--paddingSmall {
+    padding: $wuiSizeS;
+  }
+
+  &.wuiBottomBar--paddingMedium {
+    padding: $wuiSize;
+  }
+
+  &.wuiBottomBar--paddingLarge {
+    padding: $wuiSizeL;
+  }
+}
+
+@keyframes wuiBottomBarAppear {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(00%);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,32 @@
+/**
+ * The List Group component provides neatly styled lists containing plain text
+ * or links. The outer container can be bordered, with padding, or borderless
+ * with links flush to the sides.
+ */
+
+.wuiListGroup {
+  &.wuiListGroup-flush {
+    padding: 0;
+    border: none;
+  }
+
+  &.wuiListGroup-bordered {
+    border-radius: $wuiBorderRadius;
+    border: $wuiBorderThin;
+  }
+}
+
+.wuiListGroup-maxWidthDefault {
+  max-width: $wuiFormMaxWidth;
+}
+
+// Gutter Sizes
+@each $gutterName, $gutterSize in $wuiListGroupGutterTypes {
+  .wuiListGroup--#{$gutterName} {
+    padding: $gutterSize;
+
+    .wuiListGroupItem:not(:first-of-type) {
+      margin-top: $gutterSize;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiTourStep can be closed 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiPopover wuiPopover--anchorLeftUp wuiPopover--withTitle"
+  data-test-subj="test subject string"
+  offset="10"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <span>
+      Test
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiTourStep can override the footer action 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiPopover wuiPopover--anchorLeftUp wuiPopover--withTitle"
+  data-test-subj="test subject string"
+  offset="10"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <span>
+      Test
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiTourStep can set a minWidth 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiPopover wuiPopover--anchorLeftUp wuiPopover--withTitle"
+  data-test-subj="test subject string"
+  offset="10"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <span>
+      Test
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiTourStep can turn off the beacon 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiPopover wuiPopover--anchorLeftUp wuiPopover--withTitle"
+  data-test-subj="test subject string"
+  offset="0"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <span>
+      Test
+    </span>
+  </div>
+</div>
+`;
+
+exports[`WuiTourStep is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiPopover wuiPopover--anchorLeftUp wuiPopover--withTitle"
+  data-test-subj="test subject string"
+  offset="10"
+>
+  <div
+    class="wuiPopover__anchor"
+  >
+    <span>
+      Test
+    </span>
+  </div>
+</div>
+`;

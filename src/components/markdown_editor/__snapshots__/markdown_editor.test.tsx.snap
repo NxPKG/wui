@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiMarkdownEditor is rendered 1`] = `
+<div
+  class="wuiMarkdownEditor testClass1 testClass2"
+  data-test-subj="test subject string"
+>
+  <div
+    class="wuiMarkdownEditorToolbar"
+  >
+    <div
+      class="wuiMarkdownEditorToolbar__buttons"
+    >
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Bold"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="editorBold"
+          />
+        </button>
+      </span>
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Italic"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="editorItalic"
+          />
+        </button>
+      </span>
+      <span
+        class="wuiMarkdownEditorToolbar__divider"
+      />
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Unordered list"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="editorUnorderedList"
+          />
+        </button>
+      </span>
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Ordered list"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="editorOrderedList"
+          />
+        </button>
+      </span>
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Task list"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="MarkdownCheckmark"
+          />
+        </button>
+      </span>
+      <span
+        class="wuiMarkdownEditorToolbar__divider"
+      />
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Quote"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="quote"
+          />
+        </button>
+      </span>
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Code"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="editorCodeBlock"
+          />
+        </button>
+      </span>
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Link"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="editorLink"
+          />
+        </button>
+      </span>
+      <span
+        class="wuiMarkdownEditorToolbar__divider"
+      />
+      <span
+        class="wuiToolTipAnchor"
+      >
+        <button
+          aria-label="Tooltip"
+          class="wuiButtonIcon wuiButtonIcon--text"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="editorComment"
+          />
+        </button>
+      </span>
+    </div>
+    <button
+      class="wuiButtonEmpty wuiButtonEmpty--text wuiButtonEmpty--small"
+      type="button"
+    >
+      <span
+        class="wuiButtonContent wuiButtonEmpty__content"
+      >
+        <div
+          class="wuiButtonContent__icon"
+          data-wuiicon-type="eye"
+        />
+        <span
+          class="wuiButtonEmpty__text"
+        >
+          Preview
+        </span>
+      </span>
+    </button>
+  </div>
+  <div
+    style="display:block"
+  >
+    <div
+      class="wuiMarkdownEditorDropZone"
+    >
+      <textarea
+        aria-label="aria-label"
+        class="wuiMarkdownEditorTextArea"
+        id="editorId"
+        rows="6"
+        style="height:calc(116px"
+      />
+      <div
+        class="wuiMarkdownEditorFooter"
+      >
+        <div
+          class="wuiMarkdownEditorFooter__actions"
+        />
+        <button
+          aria-label="Show markdown help"
+          class="wuiButtonIcon wuiButtonIcon--text wuiMarkdownEditorFooter__help"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            class="wuiButtonIcon__icon"
+            data-wuiicon-type="MarkdownLogo"
+          />
+        </button>
+      </div>
+      <input
+        autocomplete="off"
+        multiple=""
+        style="display:none"
+        tabindex="-1"
+        type="file"
+      />
+    </div>
+  </div>
+</div>
+`;

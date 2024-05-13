@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiCode renders a code snippet 1`] = `
+<span
+  class="wuiCodeBlock wuiCodeBlock--fontSmall wuiCodeBlock--paddingLarge wuiCodeBlock--inline testClass1 testClass2"
+>
+  <code
+    aria-label="aria-label"
+    class="wuiCodeBlock__code"
+    data-test-subj="test subject string"
+  >
+    var some = 'code';
+console.log(some);
+  </code>
+</span>
+`;

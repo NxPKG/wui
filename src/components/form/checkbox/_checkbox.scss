@@ -1,0 +1,97 @@
+.wuiCheckbox {
+  position: relative;
+
+  .wuiCheckbox__input {
+    @include wuiScreenReaderOnly;
+
+    ~ .wuiCheckbox__label {
+      display: inline-block;
+      padding-left: ($wuiCheckBoxSize * 1.5);
+      line-height: $wuiSizeL;
+      font-size: $wuiFontSizeS;
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    + .wuiCheckbox__square {
+      @include wuiCustomControl($type: 'square', $size: $wuiCheckBoxSize);
+
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: (($wuiSizeL - $wuiCheckBoxSize) / 2) - 1px;
+    }
+
+    &:checked {
+      + .wuiCheckbox__square {
+        @include wuiCustomControlSelected($type: 'check');
+      }
+    }
+
+    &:indeterminate {
+      + .wuiCheckbox__square {
+        @include wuiCustomControlSelected($type: 'square');
+      }
+    }
+
+    &[disabled] {
+      // sass-lint:disable-block no-important
+      cursor: not-allowed !important;
+
+      ~ .wuiCheckbox__label {
+        color: $wuiFormControlDisabledColor;
+        cursor: not-allowed !important;
+      }
+
+      + .wuiCheckbox__square {
+        @include wuiCustomControlDisabled;
+      }
+    }
+
+    &:checked[disabled] {
+      + .wuiCheckbox__square {
+        @include wuiCustomControlDisabled($type: 'check');
+      }
+    }
+
+    &:indeterminate[disabled] {
+      + .wuiCheckbox__square {
+        @include wuiCustomControlDisabled($type: 'dot');
+      }
+    }
+
+    &:focus,
+    &:active:not(:disabled) {
+      + .wuiCheckbox__square {
+        @include wuiCustomControlFocused;
+      }
+    }
+  }
+
+  /**
+   * 1. Float above the visual radio and match its dimension, so that when users try to click it
+   *    they actually click this input.
+   */
+
+  &.wuiCheckbox--inList,
+  &.wuiCheckbox--noLabel {
+    min-height: $wuiCheckBoxSize;
+    min-width: $wuiCheckBoxSize;
+
+    .wuiCheckbox__square {
+      top: 0;
+    }
+
+    .wuiCheckbox__input {
+      @include size($wuiCheckBoxSize); /* 1 */
+
+      position: absolute; /* 1 */
+      opacity: 0; /* 1 */
+      z-index: 1; /* 1 */
+      margin: 0; /* 1 */
+      left: 0; /* 1 */
+      cursor: pointer;
+    }
+  }
+}

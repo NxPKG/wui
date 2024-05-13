@@ -1,0 +1,70 @@
+$wuiDataGridPrefix: '.wuiDataGrid--';
+
+// Things can get nesty so it's nice to have an approved list that match our typings
+$wuiDataGridStyles: (
+  'bordersAll'
+  'bordersNone'
+  'bordersHorizontal'
+  'paddingSmall'
+  'paddingMedium'
+  'paddingLarge'
+  'stripes'
+  'rowHoverNone'
+  'rowHoverHighlight'
+  'headerShade'
+  'headerUnderline'
+  'footerShade'
+  'footerOverline'
+  'fontSizeSmall'
+  'fontSizeLarge'
+  'noControls'
+  'stickyFooter'
+);
+
+// All this does is take some of the above and make a sibling selector
+// selector(headerShade, fontSizeLarge)
+// will produce `.wuiDataGrid--headerShade.wuiDataGrid--fontSizeLarge
+@function wuiDataGridSelector($selectorKeys...) {
+  $selectorList: '';
+  @each $selector in $selectorKeys {
+    // Spit out warnings when you make typos!
+    @if (index($wuiDataGridStyles, $selector != true)) {
+      @error '#{$selector} is not an allowed value in the wuiDataGridStyles() mixin';
+    }
+    $selctorValue: #{$wuiDataGridPrefix}#{$selector};
+    $selectorList: str-insert($selectorList, $selctorValue, 1000);
+  }
+
+  @return $selectorList;
+}
+
+@mixin wuiDataGridStyles($selectorKeys...) {
+  #{wuiDataGridSelector($selectorKeys...)} {
+    @content;
+  }
+}
+
+@mixin wuiDataGridHeaderCell {
+  .wuiDataGridHeaderCell {
+    @content;
+  }
+}
+
+@mixin wuiDataGridCellFocus {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 2px $wuiFocusRingColor;
+  border-radius: 1px;
+  z-index: 2; // Needed so it sits above potential striping in the next row
+}
+
+@mixin wuiDataGridRowCell {
+  .wuiDataGridRowCell {
+    @content;
+  }
+}
+
+@mixin wuiDataGridFooterCell {
+  .wuiDataGridRowCell.wuiDataGridFooterCell {
+    @content;
+  }
+}

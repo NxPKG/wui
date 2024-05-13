@@ -1,0 +1,15 @@
+// These are variable overwrites used only for this theme.
+@import 'themes/wui-wazuh/wui_wazuh_colors_dark';
+
+// Global styling
+@import 'themes/wui-wazuh/global_styling/index';
+
+// Components
+@import 'components/index';
+
+// Packages
+@import '../packages/index';
+
+// Component overrides
+// Comes after the component import and overrides via cascade
+@import 'themes/wui-wazuh/overrides/index';

@@ -1,0 +1,83 @@
+.wuiSuperDatePicker__flexWrapper {
+  // Need to offset 8px because of negative margins added by small size gutter
+  max-width: calc(100% + #{$wuiSizeS});
+  width: $wuiSuperDatePickerWidth + $wuiSuperDatePickerButtonWidth + $wuiSizeS;
+}
+
+.wuiSuperDatePicker__flexWrapper--isAutoRefreshOnly {
+  width: $wuiFormMaxWidth;
+  max-width: 100%
+}
+
+.wuiSuperDatePicker__flexWrapper--noUpdateButton {
+  width: $wuiSuperDatePickerWidth;
+  max-width: 100%
+}
+
+.wuiSuperDatePicker {
+  // sass-lint:disable-block no-important
+  // Allow it to always grow to fit the container since the default form max width is too small
+  max-width: 100% !important;
+
+  > .wuiFormControlLayout__childrenWrapper {
+    flex: 1 1 100%;
+    overflow: hidden;
+
+    > .wuiDatePickerRange {
+      max-width: none;
+      width: auto;
+      border-radius: 0 $wuiFormControlBorderRadius $wuiFormControlBorderRadius 0;
+    }
+  }
+}
+
+.wuiSuperDatePicker__startPopoverButton {
+  // Fixes margin around delimiter
+  // Only needed on first popover since basic .wuiFormControlLayout takes care of the last one
+  margin-right: -$wuiSizeM;
+}
+
+.wuiSuperDatePicker__prettyFormat {
+  @include wuiSuperDatePickerText;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+
+  &:not(:disabled):hover,
+  &:focus {
+    text-decoration: none;
+
+    .wuiSuperDatePicker__prettyFormatLink {
+      text-decoration: underline;
+    }
+  }
+
+  &:disabled {
+    background-color: $wuiFormBackgroundDisabledColor;
+    color: $wuiColorDarkShade;
+    cursor: not-allowed;
+
+    .wuiSuperDatePicker__prettyFormatLink {
+      display: none;
+    }
+  }
+}
+
+.wuiSuperDatePicker__prettyFormatLink {
+  color: $wuiLinkColor;
+  padding-left: $wuiSizeXS; // Adds some separation between date text and link
+  flex-shrink: 0;
+}
+
+@include wuiBreakpoint('xs', 's') {
+  .wuiSuperDatePicker__flexWrapper,
+  .wuiSuperDatePicker__flexWrapper--isAutoRefreshOnly,
+  .wuiSuperDatePicker__flexWrapper--noUpdateButton {
+    width: 100%;
+  }
+
+  .wuiSuperDatePicker__prettyFormatLink {
+    flex-shrink: 1;
+    min-width: 3em; // Ensures at least "Show" is always visible
+  }
+}

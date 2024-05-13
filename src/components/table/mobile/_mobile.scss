@@ -1,0 +1,19 @@
+// Hide mobile-only elements by default
+.wuiTableHeaderMobile,
+.wuiTableHeaderCell--hideForDesktop {
+  display: none;
+}
+
+@include wuiBreakpoint('xs', 's') {
+
+  .wuiTableHeaderMobile {
+    display: flex;
+    justify-content: flex-end;
+    padding: $wuiTableCellContentPadding 0;
+  }
+
+  .wuiTableSortMobile {
+    display: block;
+  }
+
+}

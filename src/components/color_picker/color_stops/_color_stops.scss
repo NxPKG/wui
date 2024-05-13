@@ -1,0 +1,102 @@
+.wuiColorStops:not(.wuiColorStops-isDisabled) {
+  &:focus {
+    outline: 2px solid $wuiFocusRingColor;
+  }
+}
+
+.wuiColorStops__addContainer {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: $wuiRangeThumbHeight;
+  margin-top: $wuiRangeThumbHeight * -.5;
+
+  &:hover:not(.wuiColorStops__addContainer-isDisabled) {
+    cursor: pointer;
+
+    .wuiColorStops__addTarget {
+      opacity: .7;
+    }
+  }
+}
+
+.wuiColorStops__addTarget {
+  @include wuiCustomControl($type: 'round');
+  @include wuiRangeThumbStyle;
+  position: absolute;
+  top: 0;
+  height: $wuiRangeThumbHeight;
+  width: $wuiRangeThumbHeight;
+  background-color: $wuiColorLightestShade;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity $wuiAnimSpeedFast;
+}
+
+.wuiColorStop {
+  width: $wuiColorPickerWidth;
+}
+
+.wuiColorStopPopover.wuiPopover {
+  position: absolute;
+  top: 50%;
+  width: $wuiRangeThumbWidth;
+  height: $wuiRangeThumbHeight;
+  margin-top: $wuiRangeThumbHeight * -.5;
+}
+
+.wuiColorStopPopover-hasFocus {
+  z-index: 1;
+}
+
+.wuiColorStopPopover__anchor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  // Background color can potentially have opacity
+  // Pseudo element placed below the thumb to prevent the track from showing through 
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: $wuiRangeThumbHeight;
+    width: $wuiRangeThumbHeight;
+    border-radius: $wuiRangeThumbHeight;
+    background: $wuiColorEmptyShade;
+  }
+}
+
+.wuiColorStopThumb.wuiRangeThumb:not(:disabled) {
+  // sass-lint:disable-block no-color-literals, indentation
+  top: 0;
+  margin-top: 0;
+  pointer-events: auto;
+  cursor: grab;
+  border: solid ($wuiSizeXS - 1px) $wuiColorEmptyShade;
+  box-shadow:
+    0 0 0 1px $wuiColorMediumShade,
+    0 2px 2px -1px rgba($wuiShadowColor, .2),
+    0 1px 5px -2px rgba($wuiShadowColor, .2);
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.wuiColorStopPopover-isLoadingPanel {
+  // sass-lint:disable-block no-important
+  visibility: hidden !important; // Overrides a stateful class on WuiPopover -> WuiPanel
+}
+
+.wuiColorStops.wuiColorStops-isDragging:not(.wuiColorStops-isDisabled):not(.wuiColorStops-isReadOnly) {
+  cursor: grabbing;
+}
+
+.wuiColorStops__highlight {
+  color: $wuiRangeTrackColor;
+}

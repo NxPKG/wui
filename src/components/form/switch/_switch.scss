@@ -1,0 +1,206 @@
+.wuiSwitch {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  min-height: $wuiSwitchHeight;
+
+  .wuiSwitch__label {
+    cursor: pointer;
+    padding-left: $wuiSizeS;
+    line-height: $wuiSwitchHeight;
+    font-size: $wuiFontSizeS;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .wuiSwitch__button {
+    flex-shrink: 0; // ensures the button doesn't lose width because of a long label
+    line-height: 0; // ensures button takes height of switch inside
+
+    &:focus .wuiSwitch__track {
+      @include wuiCustomControlFocused;
+    }
+
+    &:disabled {
+      &:hover,
+      ~ .wuiSwitch__label:hover {
+        cursor: not-allowed;
+      }
+
+      .wuiSwitch__body {
+        background-color: $wuiSwitchOffColor;
+      }
+
+      .wuiSwitch__thumb {
+        @include wuiCustomControlDisabled;
+        background-color: $wuiSwitchOffColor;
+      }
+
+      .wuiSwitch__icon {
+        fill: $wuiFormCustomControlDisabledIconColor;
+      }
+
+      + .wuiSwitch__label {
+        color: $wuiFormControlDisabledColor;
+      }
+    }
+
+    &[aria-checked='false'] {
+      .wuiSwitch__body {
+        background-color: $wuiSwitchOffColor;
+      }
+
+      // When input is not checked, we shift around the positioning of the thumb and the icon
+      .wuiSwitch__thumb { // move the thumb left
+        left: 0;
+      }
+
+      .wuiSwitch__icon { // move the icon right
+        right: -$wuiSizeS;
+
+        &.wuiSwitch__icon--checked {
+          right: auto;
+          left: -($wuiSwitchWidth - ($wuiSwitchThumbSize / 2));
+        }
+      }
+    }
+  }
+
+  .wuiSwitch__body {
+    pointer-events: none;
+    width: $wuiSwitchWidth;
+    height: $wuiSwitchHeight;
+    background-color: $wuiColorPrimary;
+    display: inline-block;
+    position: relative;
+    border-radius: $wuiSwitchHeight;
+    vertical-align: middle;
+  }
+
+  .wuiSwitch__thumb {
+    @include wuiCustomControl($type: 'round', $size: $wuiSwitchThumbSize);
+
+    position: absolute;
+    display: inline-block;
+    left: $wuiSwitchWidth - $wuiSwitchThumbSize;
+    transition: border-color $wuiAnimSpeedNormal $wuiAnimSlightBounce, background-color $wuiAnimSpeedNormal $wuiAnimSlightBounce, left $wuiAnimSpeedNormal $wuiAnimSlightBounce, transform $wuiAnimSpeedNormal $wuiAnimSlightBounce;
+  }
+
+  .wuiSwitch__track {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: $wuiSwitchHeight;
+  }
+
+  .wuiSwitch__icon {
+    position: absolute;
+    right: -($wuiSwitchWidth - ($wuiSwitchThumbSize / 2));
+    top: ($wuiSwitchHeight - $wuiSwitchIconHeight) / 2;
+    bottom: 0;
+    width: $wuiSwitchWidth - ($wuiSwitchThumbSize / 2) + $wuiSizeS;
+    height: $wuiSwitchIconHeight;
+    transition: left $wuiAnimSpeedNormal $wuiAnimSlightBounce, right $wuiAnimSpeedNormal $wuiAnimSlightBounce;
+    fill: $wuiTextColor;
+  }
+
+  .wuiSwitch__icon--checked {
+    right: auto;
+    left: -$wuiSizeS;
+    fill: $wuiColorEmptyShade;
+  }
+
+  &:hover .wuiSwitch__button {
+    &:not(:disabled) .wuiSwitch__thumb {
+      transform: scale(1.05);
+    }
+
+    &:active .wuiSwitch__thumb {
+      transform: scale(.95);
+    }
+  }
+
+  // Compressed switches operate very similar to the normal versions, but are smaller, contain no icon signifiers
+  &.wuiSwitch--compressed {
+    min-height: $wuiSwitchHeightCompressed;
+
+    .wuiSwitch__label {
+      line-height: $wuiSwitchHeightCompressed;
+    }
+
+    .wuiSwitch__body {
+      width: $wuiSwitchWidthCompressed;
+      height: $wuiSwitchHeightCompressed;
+      border-radius: $wuiSwitchHeightCompressed;
+    }
+
+    .wuiSwitch__thumb {
+      @include wuiCustomControl($type: 'round', $size: ($wuiSwitchThumbSizeCompressed) - 2px);
+
+      left: ($wuiSwitchWidthCompressed) - (($wuiSwitchThumbSizeCompressed) - 2px) - 1px;
+      top: 1px;
+      transition: border-color $wuiAnimSpeedNormal $wuiAnimSlightBounce, background-color $wuiAnimSpeedNormal $wuiAnimSlightBounce, left $wuiAnimSpeedNormal $wuiAnimSlightBounce, transform $wuiAnimSpeedNormal $wuiAnimSlightBounce;
+    }
+
+    .wuiSwitch__track {
+      border-radius: $wuiSwitchHeightCompressed;
+    }
+  }
+
+  // Mini styling is similar to compressed, but even smaller. It's undocumented because it has very specific uses.
+  &.wuiSwitch--mini {
+    min-height: $wuiSwitchHeightMini;
+
+    .wuiSwitch__label {
+      line-height: $wuiSwitchHeightMini;
+      font-size: $wuiFontSizeXS;
+    }
+
+    .wuiSwitch__body {
+      width: $wuiSwitchWidthMini;
+      height: $wuiSwitchHeightMini;
+      border-radius: $wuiSwitchHeightMini;
+    }
+
+    .wuiSwitch__thumb {
+      @include wuiCustomControl($type: 'round', $size: ($wuiSwitchThumbSizeMini) - 2px);
+
+      left: ($wuiSwitchWidthMini) - (($wuiSwitchThumbSizeMini) - 2px) - 1px;
+      top: 1px;
+      transition: border-color $wuiAnimSpeedNormal $wuiAnimSlightBounce, background-color $wuiAnimSpeedNormal $wuiAnimSlightBounce, left $wuiAnimSpeedNormal $wuiAnimSlightBounce, transform $wuiAnimSpeedNormal $wuiAnimSlightBounce;
+    }
+
+    .wuiSwitch__track {
+      border-radius: $wuiSwitchHeightMini;
+    }
+  }
+
+  // Compressed and mini switches have some style overlap
+  &.wuiSwitch--compressed,
+  &.wuiSwitch--mini {
+
+    .wuiSwitch__button[aria-checked='false'] {
+      .wuiSwitch__thumb {
+        left: 1px;
+      }
+    }
+
+    // Compressed and mini switches need slightly darker borders since they don't have icons
+    .wuiSwitch__button[aria-checked='false'],
+    .wuiSwitch__button[aria-checked='true']:disabled {
+      .wuiSwitch__thumb {
+        border-color: $wuiFormCustomControlBorderColor;
+      }
+    }
+
+    // Similar additional treatment needed while checked
+    .wuiSwitch__button[aria-checked='true'] {
+      .wuiSwitch__thumb {
+        border-color: $wuiColorPrimary;
+      }
+    }
+  }
+}

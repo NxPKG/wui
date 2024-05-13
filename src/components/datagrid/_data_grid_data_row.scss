@@ -1,0 +1,199 @@
+.wuiDataGridRow {
+  display: inline-flex;
+  min-width: 100%; // Needed to prevent wraps. Inline flex is tricky
+}
+
+@include wuiDataGridRowCell {
+  @include wuiFontSizeS;
+
+  padding: $wuiDataGridCellPaddingM;
+  border-right: $wuiDataGridVerticalBorder;
+  border-bottom: $wuiBorderThin;
+  flex: 0 0 auto;
+  background: $wuiColorEmptyShade;
+  position: relative;
+  align-items: center;
+  display: flex;
+
+  // Hack to allow for all the focus guard stuff
+  > * {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &:first-of-type {
+    border-left: $wuiBorderThin;
+  }
+
+  &:last-of-type {
+    border-right-color: $wuiBorderColor;
+  }
+
+  &:focus {
+    @include wuiDataGridCellFocus;
+    margin-top: -1px;
+
+    .wuiDataGridRowCell__expandButton {
+      margin-left: $wuiDataGridCellPaddingM;
+    }
+
+    .wuiDataGridRowCell__expandButtonIcon {
+      display: flex;
+      width: inherit;
+      visibility: visible;
+    }
+  }
+
+  &:focus:not(:first-of-type) {
+    // Needed because the focus state adds a border, which needs to be subtracted from padding
+    padding-left: $wuiDataGridCellPaddingM - 1px;
+  }
+
+  &.wuiDataGridRowCell--numeric {
+    text-align: right;
+  }
+
+  &.wuiDataGridRowCell--currency {
+    text-align: right;
+  }
+
+
+  &.wuiDataGridRowCell--boolean {
+    text-transform: capitalize;
+  }
+
+  // We only truncate if the cell is not a control column.
+  &:not(.wuiDataGridRowCell--controlColumn) {
+    .wuiDataGridRowCell__content,
+    .wuiDataGridRowCell__truncate,
+    .wuiDataGridRowCell__expandContent {
+      @include wuiTextTruncate;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.wuiDataGridRowCell__popover {
+  @include wuiScrollBar;
+  overflow: auto;
+  // sass-lint:disable-block no-important
+  max-width: 400px !important;
+  max-height: 400px !important;
+}
+
+.wuiDataGridRowCell__expand {
+  width: 100%;
+  max-width: 100%;
+}
+
+.wuiDataGridRowCell__expandFlex {
+  display: flex;
+  align-items: center;
+}
+
+.wuiDataGridRowCell__expandContent {
+  flex-grow: 1;
+}
+
+
+.wuiDataGridRowCell__expandButton {
+  display: flex;
+  flex-grow: 0;
+
+  &-isActive,
+  &:focus {
+    margin-left: $wuiDataGridCellPaddingM;
+  }
+}
+
+.wuiDataGridRowCell__expandButtonIcon {
+  height: $wuiSizeM;
+  min-height: $wuiSizeM;
+  background: $wuiColorPrimary;
+  color: $wuiColorGhost;
+  border-radius: $wuiBorderRadius / 2;
+  padding: 0;
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+  visibility: hidden;
+
+  &-isActive,
+  &:focus {
+    width: inherit;
+    visibility: visible;
+    background: $wuiColorPrimary;
+  }
+}
+
+// Row highlights
+@include wuiDataGridStyles(rowHoverHighlight) {
+  .wuiDataGridRow:hover {
+    @include wuiDataGridRowCell {
+      // sass-lint:disable-block no-important
+      // Needed to overtake striping
+      background-color: $wuiColorHighlight !important;
+    }
+  }
+}
+
+// Stripes
+@include wuiDataGridStyles(stripes) {
+  .wuiDataGridRow:nth-child(odd) {
+    @include wuiDataGridRowCell {
+      background: $wuiColorLightestShade;
+    }
+  }
+}
+
+// Border alternates
+@include wuiDataGridStyles(bordersNone) {
+  @include wuiDataGridRowCell {
+    // sass-lint:disable-block no-important
+    border-color: transparent !important;
+  }
+}
+
+@include wuiDataGridStyles(bordersHorizontal) {
+  @include wuiDataGridRowCell {
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+// Font alternates
+@include wuiDataGridStyles(fontSizeSmall) {
+  @include wuiDataGridRowCell {
+    @include wuiFontSizeXS;
+  }
+}
+
+@include wuiDataGridStyles(fontSizeLarge) {
+  @include wuiDataGridRowCell {
+    @include wuiFontSize;
+  }
+}
+
+// Padding alternates
+@include wuiDataGridStyles(paddingSmall) {
+  @include wuiDataGridRowCell {
+    padding: $wuiDataGridCellPaddingS;
+
+    &:focus:not(:first-of-type) {
+      // Needed because the focus state adds a border, which needs to be subtracted from padding
+      padding-left: $wuiDataGridCellPaddingS - 1px;
+    }
+  }
+}
+
+@include wuiDataGridStyles(paddingLarge) {
+  @include wuiDataGridRowCell {
+    padding: $wuiDataGridCellPaddingL;
+
+    &:focus:not(:first-of-type) {
+      // Needed because the focus state adds a border, which needs to be subtracted from padding
+      padding-left: $wuiDataGridCellPaddingL - 1px;
+    }
+  }
+}

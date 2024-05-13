@@ -1,0 +1,20 @@
+.wuiSkipLink {
+  transition: none !important; // sass-lint:disable-line no-important
+
+  &:focus {
+    animation: none !important; // sass-lint:disable-line no-important
+  }
+
+  // Set positions on focus only as to no override screenReaderOnly position
+  // When positioned absolutely, consumers still need to tell it WHERE (top,left,etc...)
+  &.wuiSkipLink--absolute:focus {
+    position: absolute;
+  }
+
+  &.wuiSkipLink--fixed:focus {
+    position: fixed;
+    top: $wuiSizeXS;
+    left: $wuiSizeXS;
+    z-index: $wuiZHeader + 1;
+  }
+}

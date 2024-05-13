@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiHeaderSection grow defaults to false 1`] = `
+<div
+  class="wuiHeaderSection wuiHeaderSection--dontGrow wuiHeaderSection--left"
+/>
+`;
+
+exports[`WuiHeaderSection grow renders true 1`] = `
+<div
+  class="wuiHeaderSection wuiHeaderSection--grow wuiHeaderSection--left"
+/>
+`;
+
+exports[`WuiHeaderSection is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiHeaderSection wuiHeaderSection--dontGrow wuiHeaderSection--left testClass1 testClass2"
+  data-test-subj="test subject string"
+/>
+`;
+
+exports[`WuiHeaderSection renders optional params 1`] = `
+<div
+  class="wuiHeaderSection wuiHeaderSection--dontGrow wuiHeaderSection--left"
+  style="color:blue"
+>
+  <span>
+    Some years ago never mind how long precisely...
+  </span>
+</div>
+`;
+
+exports[`WuiHeaderSection side defaults to left 1`] = `
+<div
+  class="wuiHeaderSection wuiHeaderSection--dontGrow wuiHeaderSection--left"
+/>
+`;
+
+exports[`WuiHeaderSection side renders right 1`] = `
+<div
+  class="wuiHeaderSection wuiHeaderSection--dontGrow wuiHeaderSection--right"
+/>
+`;

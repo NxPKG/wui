@@ -1,0 +1,16 @@
+.wuiFieldText {
+  @include wuiFormControlStyle;
+  @include wuiFormControlWithIcon($isIconOptional: true);
+  @include wuiFormControlIsLoading;
+
+  /* Invalid state normally comes from :invalid, but several components
+  /* like WuiDatePicker need it toggled through an extra class.
+  */
+  &.wuiFieldText-isInvalid {
+    @include wuiFormControlInvalidStyle;
+  }
+}
+
+.wuiFieldText--withIcon.wuiFieldText--compressed {
+  @include wuiFormControlWithIcon($isIconOptional: false, $side: 'left', $compressed: true);
+}

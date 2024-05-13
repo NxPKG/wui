@@ -1,0 +1,7 @@
+// Curated border color to fade into the shadow without looking too much like a border
+// It adds separation between the header and flyout
+$wuiHeaderBorderColor: lightOrDarkTheme(shade($wuiBorderColor, 3%), shade($wuiColorEmptyShade, 35%));
+
+$wuiHeaderHeight: $wuiSizeXXL + $wuiSizeS;
+$wuiHeaderChildSize: $wuiSizeXXL;
+$wuiHeaderHeightCompensation: $wuiHeaderHeight;

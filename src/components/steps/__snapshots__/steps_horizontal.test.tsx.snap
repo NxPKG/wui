@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WuiStepsHorizontal is rendered 1`] = `
+<div
+  aria-label="aria-label"
+  class="wuiStepsHorizontal testClass1 testClass2"
+  data-test-subj="test subject string"
+  role="tablist"
+>
+  <div
+    aria-disabled="false"
+    aria-selected="false"
+    class="wuiStepHorizontal wuiStepHorizontal-isComplete"
+    role="tab"
+    tabindex="0"
+    title="Step 1: Completed Step 1 is complete"
+  >
+    <div
+      class="wuiScreenReaderOnly"
+    >
+      Step
+    </div>
+    <div
+      class="wuiStepNumber wuiStepNumber--complete wuiStepHorizontal__number"
+    >
+      <div
+        aria-label="complete"
+        class="wuiStepNumber__icon"
+        data-wuiicon-type="check"
+      />
+    </div>
+    <div
+      class="wuiStepHorizontal__title"
+    >
+      Completed Step 1
+    </div>
+  </div>
+  <div
+    aria-disabled="false"
+    aria-selected="true"
+    class="wuiStepHorizontal wuiStepHorizontal-isSelected"
+    role="tab"
+    tabindex="0"
+    title="Step 2: Selected Step 2"
+  >
+    <div
+      class="wuiScreenReaderOnly"
+    >
+      Step
+    </div>
+    <div
+      class="wuiStepNumber wuiStepHorizontal__number"
+    >
+      2
+    </div>
+    <div
+      class="wuiStepHorizontal__title"
+    >
+      Selected Step 2
+    </div>
+  </div>
+  <div
+    aria-disabled="false"
+    aria-selected="false"
+    class="wuiStepHorizontal wuiStepHorizontal-isIncomplete"
+    role="tab"
+    tabindex="0"
+    title="Step 3: Incomplete Step 3"
+  >
+    <div
+      class="wuiScreenReaderOnly"
+    >
+      Step
+    </div>
+    <div
+      class="wuiStepNumber wuiStepNumber--incomplete wuiStepHorizontal__number"
+    >
+      3
+    </div>
+    <div
+      class="wuiStepHorizontal__title"
+    >
+      Incomplete Step 3
+    </div>
+  </div>
+  <div
+    aria-disabled="true"
+    aria-selected="false"
+    class="wuiStepHorizontal wuiStepHorizontal-isIncomplete wuiStepHorizontal-isDisabled"
+    role="tab"
+    tabindex="-1"
+    title="Step 4: Disabled Step 4 is disabled"
+  >
+    <div
+      class="wuiScreenReaderOnly"
+    >
+      Step
+    </div>
+    <div
+      class="wuiStepNumber wuiStepNumber--disabled wuiStepHorizontal__number"
+    >
+      4
+    </div>
+    <div
+      class="wuiStepHorizontal__title"
+    >
+      Disabled Step 4
+    </div>
+  </div>
+</div>
+`;
