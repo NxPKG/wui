@@ -136,7 +136,7 @@
     "chai-webdriverio": "^0.4.3",
     "chalk": "^4.1.0",
     "chokidar": "^3.4.2",
-    "chromedriver": "^77.0.0",
+    "chromedriver": "^119.0.1",
     "circular-dependency-plugin": "^5.2.0",
     "codesandbox": "^2.1.16",
     "core-js": "^2.5.1",
